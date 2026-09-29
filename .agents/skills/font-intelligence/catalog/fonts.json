@@ -120,7 +120,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "aclonica",
@@ -250,7 +251,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permissive open-source license allowing commercial use, redistribution, and modification with copyright notice."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "aix-milan",
@@ -363,7 +365,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "al-saflers",
@@ -508,7 +511,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "alphakind",
@@ -639,7 +643,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "ampunsuhu",
@@ -756,7 +761,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial design use permitted. However, Section 3 of FFC explicitly prohibits standalone font file redistribution, bundling, or re-hosting on GitHub/mirrors without written author permission."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "anak-bijak",
@@ -885,7 +891,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial license covers end-product creation by licensee. License text strictly prohibits redistributing, sharing, sublicensing, or extracting raw font binary files."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "anak-gedong",
@@ -1005,7 +1012,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial license covers end-product creation by licensee. License text strictly prohibits redistributing, sharing, sublicensing, or extracting raw font binary files."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "antapani",
@@ -1144,7 +1152,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "RESTRICTED: Contains standard copyright notice without explicit open-source or redistribution grant. Font files must not be published to public code repos."
         }
-      }
+      },
+      "distribution_status": "unknown"
     },
     {
       "id": "arnprior",
@@ -1264,7 +1273,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "bakula",
@@ -1392,7 +1402,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial license covers end-product creation by licensee. License text strictly prohibits redistributing, sharing, sublicensing, or extracting raw font binary files."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "balhattan",
@@ -1558,7 +1569,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "bedizen",
@@ -1681,7 +1693,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "biocats",
@@ -1803,7 +1816,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial license covers end-product creation by licensee. License text strictly prohibits redistributing, sharing, sublicensing, or extracting raw font binary files."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "bjorn",
@@ -1937,7 +1951,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "RESTRICTED: Contains standard copyright notice without explicit open-source or redistribution grant. Font files must not be published to public code repos."
         }
-      }
+      },
+      "distribution_status": "unknown"
     },
     {
       "id": "bm-dohyeon",
@@ -2091,7 +2106,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "butflow",
@@ -2215,7 +2231,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial license covers end-product creation by licensee. License text strictly prohibits redistributing, sharing, sublicensing, or extracting raw font binary files."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "castle-chunk",
@@ -2345,7 +2362,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial design use permitted. However, Section 3 of FFC explicitly prohibits standalone font file redistribution, bundling, or re-hosting on GitHub/mirrors without written author permission."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "chillax",
@@ -2811,7 +2829,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permissive foundry license from Indian Type Foundry allowing commercial use, embedding, and redistribution with attribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "courbe-sans",
@@ -2950,7 +2969,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author grants free standard commercial design usage, but does not grant third-party public git repository redistribution rights."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "credit-river",
@@ -3077,7 +3097,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "credit-valley",
@@ -3231,7 +3252,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "crucial",
@@ -3375,7 +3397,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial design use permitted. However, Section 3 of FFC explicitly prohibits standalone font file redistribution, bundling, or re-hosting on GitHub/mirrors without written author permission."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "cuyabra",
@@ -3522,7 +3545,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "delta-block",
@@ -3671,7 +3695,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "die-nasty",
@@ -3801,7 +3826,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "dosis",
@@ -4001,7 +4027,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "enter-sansman",
@@ -4128,7 +4155,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "free-cheese",
@@ -4279,7 +4307,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "garute",
@@ -4651,7 +4680,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "RESTRICTED: Contains standard copyright notice without explicit open-source or redistribution grant. Font files must not be published to public code repos."
         }
-      }
+      },
+      "distribution_status": "unknown"
     },
     {
       "id": "general-sans",
@@ -5439,7 +5469,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permissive foundry license from Indian Type Foundry allowing commercial use, embedding, and redistribution with attribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "guanine",
@@ -5559,7 +5590,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "gudea",
@@ -5708,7 +5740,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "halo-dek",
@@ -5829,7 +5862,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial license covers end-product creation by licensee. License text strictly prohibits redistributing, sharing, sublicensing, or extracting raw font binary files."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "heming",
@@ -5960,7 +5994,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "hijo",
@@ -6108,7 +6143,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "hirolliv",
@@ -6238,7 +6274,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "holstein",
@@ -6361,7 +6398,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "No rights reserved. Free for commercial use, redistribution, and modification."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "imuch",
@@ -6499,7 +6537,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "inflammable-age",
@@ -6622,7 +6661,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "ithaca",
@@ -6752,7 +6792,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "jazzy-huitbits",
@@ -6859,7 +6900,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "jazzyrabbit",
@@ -6969,7 +7011,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "jazzyrabbit-remake",
@@ -7079,7 +7122,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "jogrunge",
@@ -7189,7 +7233,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "jumping-chick",
@@ -7309,7 +7354,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial license covers end-product creation by licensee. License text strictly prohibits redistributing, sharing, sublicensing, or extracting raw font binary files."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "kalima",
@@ -7418,7 +7464,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "kaph",
@@ -7570,7 +7617,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "kastore",
@@ -7710,7 +7758,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial license covers end-product creation by licensee. License text strictly prohibits redistributing, sharing, sublicensing, or extracting raw font binary files."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "kineks-round",
@@ -7933,7 +7982,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "kingsbridge",
@@ -8567,7 +8617,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "lokro",
@@ -8690,7 +8741,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "RESTRICTED: Contains standard copyright notice without explicit open-source or redistribution grant. Font files must not be published to public code repos."
         }
-      }
+      },
+      "distribution_status": "unknown"
     },
     {
       "id": "lumierepolis",
@@ -8906,7 +8958,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "marker2",
@@ -9023,7 +9076,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial design use permitted. However, Section 3 of FFC explicitly prohibits standalone font file redistribution, bundling, or re-hosting on GitHub/mirrors without written author permission."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "martius",
@@ -9169,7 +9223,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "modestic-sans",
@@ -9331,7 +9386,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial license covers end-product creation by licensee. License text strictly prohibits redistributing, sharing, sublicensing, or extracting raw font binary files."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "mousou-record-g",
@@ -9447,7 +9503,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial design use permitted. However, Section 3 of FFC explicitly prohibits standalone font file redistribution, bundling, or re-hosting on GitHub/mirrors without written author permission."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "neris",
@@ -9689,7 +9746,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "RESTRICTED FOR REDISTRIBUTION: Commercial design use granted, but license explicitly forbids uploading to public file-sharing sites or redistributing font binaries."
         }
-      }
+      },
+      "distribution_status": "restricted"
     },
     {
       "id": "neuropol",
@@ -9817,7 +9875,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "newestshape",
@@ -9977,7 +10036,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "newshape",
@@ -10135,7 +10195,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "oligopoly",
@@ -10341,7 +10402,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "opsilon",
@@ -10495,7 +10557,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "paint-marker",
@@ -10612,7 +10675,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial design grant with receipt PDF. Prohibits raw font file distribution or open-source repackaging."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "pingsan",
@@ -10732,7 +10796,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial license covers end-product creation by licensee. License text strictly prohibits redistributing, sharing, sublicensing, or extracting raw font binary files."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "progo",
@@ -10850,7 +10915,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "quango",
@@ -10969,7 +11035,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "RESTRICTED: License text explicitly states 'strictly no redistribution, selling, or file sharing'. Commercial design usage requires commercial license purchase."
         }
-      }
+      },
+      "distribution_status": "restricted"
     },
     {
       "id": "raster-forge",
@@ -11087,7 +11154,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "reckoner",
@@ -11212,7 +11280,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial design use permitted. However, Section 3 of FFC explicitly prohibits standalone font file redistribution, bundling, or re-hosting on GitHub/mirrors without written author permission."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "relish-gargler",
@@ -11333,7 +11402,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "ruthless-sketch",
@@ -11471,7 +11541,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "sagewold",
@@ -11610,7 +11681,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "serati",
@@ -11771,7 +11843,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "simply-sans",
@@ -11929,7 +12002,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "society",
@@ -12044,7 +12118,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "UNKNOWN: No license document or author grant detected. Must be audited before any distribution."
         }
-      }
+      },
+      "distribution_status": "unknown"
     },
     {
       "id": "spicy-sale",
@@ -12166,7 +12241,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial license covers end-product creation by licensee. License text strictly prohibits redistributing, sharing, sublicensing, or extracting raw font binary files."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "stampcraft",
@@ -12310,7 +12386,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "street-cred",
@@ -12433,7 +12510,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "styllo",
@@ -12576,7 +12654,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "super-joyful",
@@ -12702,7 +12781,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "super-malibu",
@@ -12827,7 +12907,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "super-starfish",
@@ -12951,7 +13032,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "sweet-school",
@@ -13065,7 +13147,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "UNKNOWN: No license document or author grant detected. Must be audited before any distribution."
         }
-      }
+      },
+      "distribution_status": "unknown"
     },
     {
       "id": "talero",
@@ -13170,7 +13253,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "UNKNOWN: No license document or author grant detected. Must be audited before any distribution."
         }
-      }
+      },
+      "distribution_status": "unknown"
     },
     {
       "id": "the-bold-font",
@@ -13291,7 +13375,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "RESTRICTED: Contains standard copyright notice without explicit open-source or redistribution grant. Font files must not be published to public code repos."
         }
-      }
+      },
+      "distribution_status": "unknown"
     },
     {
       "id": "timeburner",
@@ -13427,7 +13512,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "RESTRICTED: License text explicitly states 'strictly no redistribution, selling, or file sharing'. Commercial design usage requires commercial license purchase."
         }
-      }
+      },
+      "distribution_status": "restricted"
     },
     {
       "id": "tycho",
@@ -13533,7 +13619,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial design use permitted. However, Section 3 of FFC explicitly prohibits standalone font file redistribution, bundling, or re-hosting on GitHub/mirrors without written author permission."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "ubuntu",
@@ -13756,7 +13843,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "ubuntu-condensed",
@@ -13906,7 +13994,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "ubuntu-mono",
@@ -14084,7 +14173,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "unispace",
@@ -14234,7 +14324,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "unsteady-oversteer",
@@ -14350,7 +14441,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "vaticanus",
@@ -14469,7 +14561,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "viga",
@@ -14594,7 +14687,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "vincendo",
@@ -14745,7 +14839,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "warriot",
@@ -14872,7 +14967,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "RESTRICTED: Personal use / demo cut only. Commercial usage and redistribution prohibited without purchasing commercial license from author."
         }
-      }
+      },
+      "distribution_status": "restricted"
     },
     {
       "id": "wide-road",
@@ -14989,7 +15085,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial design grant with receipt PDF. Prohibits raw font file distribution or open-source repackaging."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "world-of-water",
@@ -15113,7 +15210,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "zero-cool",
@@ -15253,7 +15351,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "zillah-modern",
@@ -15443,7 +15542,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         }
-      }
+      },
+      "distribution_status": "catalog-only"
     },
     {
       "id": "zorque",
@@ -15567,7 +15667,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "zt-nature",
@@ -15730,7 +15831,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "Commercial design use permitted. However, Section 3 of FFC explicitly prohibits standalone font file redistribution, bundling, or re-hosting on GitHub/mirrors without written author permission."
         }
-      }
+      },
+      "distribution_status": "public-asset"
     },
     {
       "id": "zt-shago",
@@ -16138,7 +16240,8 @@
           "verification_date": "2026-09-29",
           "redistribution_notes": "RESTRICTED: Contains standard copyright notice without explicit open-source or redistribution grant. Font files must not be published to public code repos."
         }
-      }
+      },
+      "distribution_status": "unknown"
     }
   ]
 }

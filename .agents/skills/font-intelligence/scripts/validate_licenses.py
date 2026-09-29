@@ -105,7 +105,7 @@ def main():
     parser.add_argument("--catalog", default=DEFAULT_CATALOG, help="Path to fonts.json")
     parser.add_argument(
         "--filter",
-        choices=["all", "issues-only", "commercial-only", "office-embeddable", "restricted"],
+        choices=["all", "issues-only", "commercial-only", "office-embeddable", "restricted", "public-safe"],
         default="all",
         help="Filter fonts displayed (default: all)"
     )
@@ -133,6 +133,8 @@ def main():
         fonts_list = [f for f in fonts_list if f["office_embeddable"]]
     elif args.filter == "restricted":
         fonts_list = [f for f in fonts_list if f["status"] == "RESTRICTED"]
+    elif args.filter == "public-safe":
+        fonts_list = [f for f in fonts_list if f["status"] == "PERMISSIVE"]
 
     if args.format == "json":
         filtered_report = dict(report)

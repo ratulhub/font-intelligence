@@ -111,7 +111,8 @@ def copy_font_assets(
     destination_dir: str,
     target_formats: List[str],
     include_license: bool = True,
-    dry_run: bool = False
+    dry_run: bool = False,
+    force_export: bool = False
 ) -> List[Dict[str, Any]]:
     """Copy font files to destination."""
     dest_path = os.path.abspath(destination_dir)
@@ -125,6 +126,24 @@ def copy_font_assets(
             continue
 
         family_name = font_entry["name"]
+        dist_status = font_entry.get("distribution_status", "unknown")
+        lic_type = font_entry.get("license", {}).get("type", "Unknown")
+
+        # Distribution Status Export Gate
+        if dist_status == "restricted" and not force_export:
+            print(f"[EXPORT BLOCKED] Font '{family_name}' ({fid}) is RESTRICTED (demo cut or non-commercial EULA).", file=sys.stderr)
+            print(f"                 Binary export prohibited for public distribution. Pass --force-export to override for private testing.", file=sys.stderr)
+            continue
+        elif dist_status == "unknown" and not force_export:
+            print(f"[EXPORT BLOCKED] Font '{family_name}' ({fid}) has UNKNOWN licensing provenance. Export blocked.", file=sys.stderr)
+            print(f"                 Pass --force-export to override for private testing.", file=sys.stderr)
+            continue
+        elif dist_status == "catalog-only":
+            print(f"[LICENSE NOTICE] Font '{family_name}' ({fid}) is CATALOG-ONLY ({lic_type}).", file=sys.stderr)
+            print(f"                 Permitted for local design recommendations; raw file redistribution requires foundry grant or commercial license proof.", file=sys.stderr)
+        elif dist_status == "public-asset":
+            print(f"[APPROVED] Font '{family_name}' ({fid}) verified for public distribution ({lic_type}).")
+
         files = font_entry.get("files", [])
 
         # Filter by format
@@ -198,6 +217,7 @@ def main():
     parser.add_argument("--no-license", dest="include_license", action="store_false", help="Do not copy license files")
     parser.add_argument("--snippets", choices=["css", "flutter", "all", "none"], default="css", help="Implementation snippets to generate (default: css)")
     parser.add_argument("--dry-run", action="store_true", help="Preview operations without copying files")
+    parser.add_argument("--force-export", action="store_true", help="Force export of restricted or unknown fonts for private testing")
     parser.add_argument("--catalog", default=CATALOG_PATH, help="Path to fonts.json")
 
     args = parser.parse_args()
@@ -216,7 +236,8 @@ def main():
         destination_dir=args.dest,
         target_formats=target_formats,
         include_license=args.include_license,
-        dry_run=args.dry_run
+        dry_run=args.dry_run,
+        force_export=args.force_export
     )
 
     print("=" * 80)

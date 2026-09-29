@@ -27,8 +27,9 @@ SOFTWARE.
 The MIT license above applies exclusively to the Font Intelligence software code,
 decision engine algorithms, schema definitions, agent skills, adapters, and documentation.
 
-The individual font files contained within the `All fonts/` directory are the intellectual
-property of their respective foundries and designers, and remain governed by their
-individual font licenses (SIL Open Font License, Apache 2.0, MIT, Creative Commons,
-or proprietary Freeware commercial grants) as tracked in `catalog/fonts.json` and
-detailed in `docs/redistribution-review.md`.
+The repository MIT license must NOT be interpreted as applying to third-party fonts.
+Third-party font binaries located in `assets/fonts/` and `All fonts/` are the intellectual
+property of their respective foundries and designers, and strictly retain their individual
+licenses (SIL Open Font License 1.1, Apache 2.0, MIT, Creative Commons Zero, Ubuntu Font License,
+or author grants) as documented in `catalog/fonts.json`, `docs/redistribution-review.md`, and
+the respective license text files bundled alongside each font.

@@ -468,6 +468,10 @@
                 }
               }
             }
+          },
+          "distribution_status": {
+            "type": "string",
+            "enum": ["public-asset", "catalog-only", "restricted", "unknown"]
           }
         }
       }
