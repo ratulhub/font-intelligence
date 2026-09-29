@@ -1,0 +1,308 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "title": "FontIntelligenceScoringModel",
+  "description": "Comprehensive 10-dimensional typographic pairing evaluation and decision rubric.",
+  "weights": {
+    "visual_contrast": 0.15,
+    "serif_sans_relationship": 0.12,
+    "personality": 0.12,
+    "readability": 0.15,
+    "width": 0.08,
+    "weight_availability": 0.10,
+    "role_compatibility": 0.10,
+    "project_style": 0.08,
+    "language": 0.05,
+    "platform": 0.05
+  },
+  "dimensions": {
+    "visual_contrast": {
+      "name": "Visual & Structural Contrast",
+      "weight": 0.15,
+      "description": "Measures weight delta, stroke modulation contrast, and structural distinction between primary and secondary typefaces.",
+      "metrics": {
+        "weight_delta": {
+          "optimal_range": [300, 600],
+          "scoring": {
+            ">= 400": 100,
+            "300": 90,
+            "200": 70,
+            "100": 45,
+            "0": 20
+          },
+          "explanation": "A weight difference of 300+ units (e.g. 700 Bold vs 400 Regular) provides unambiguous optical hierarchy."
+        },
+        "stroke_contrast_interplay": {
+          "scoring": {
+            "high_vs_low": 100,
+            "medium_vs_low": 85,
+            "low_vs_low_with_weight_delta": 80,
+            "high_vs_high": 35
+          },
+          "explanation": "Pairing a high-contrast display face with a monoline body face produces visual rhythm without cognitive strain."
+        }
+      }
+    },
+    "serif_sans_relationship": {
+      "name": "Serif / Sans Classification Harmony",
+      "weight": 0.12,
+      "description": "Evaluates cross-classification synergy, historical compatibility, and superfamily alignment.",
+      "rubric": {
+        "serif_heading_sans_body": {
+          "score": 100,
+          "rationale": "Classical editorial master pairing: serif conveys authoritative prestige while sans ensures modern screen legibility."
+        },
+        "sans_heading_serif_body": {
+          "score": 95,
+          "rationale": "Modern publishing cadence: clean geometric/grotesque title anchored by warm literary reading text."
+        },
+        "display_heading_sans_body": {
+          "score": 95,
+          "rationale": "High-impact visual anchor with functional, neutral body support."
+        },
+        "superfamily_same_design": {
+          "score": 98,
+          "rationale": "Guaranteed structural unity sharing underlying skeleton, proportions, and x-height."
+        },
+        "contrasting_sans_subtypes": {
+          "score": 85,
+          "rationale": "Geometric headline paired with Humanist or Neo-Grotesque body provides subtle contemporary contrast."
+        },
+        "same_sans_subtype_different_family": {
+          "score": 40,
+          "rationale": "Uncanny valley: two different neo-grotesques or two geometric sans look like an accidental mismatch."
+        },
+        "dual_display_or_dual_decorative": {
+          "score": 20,
+          "rationale": "Cacophony: competing expressive typefaces fight for focal dominance."
+        }
+      }
+    },
+    "personality": {
+      "name": "Personality & Mood Resonance",
+      "weight": 0.12,
+      "description": "Evaluates aesthetic coherence, brand tone harmony, and absence of accidental tonal friction.",
+      "rubric": {
+        "complementary_resonance": {
+          "score": 100,
+          "rationale": "Heading establishes bold stylistic stance while body provides understated, confident foundation."
+        },
+        "shared_mood": {
+          "score": 95,
+          "rationale": "Both fonts emanate the same thematic intent (e.g. both sleek minimal or both technical)."
+        },
+        "neutral_subordination": {
+          "score": 90,
+          "rationale": "Expressive primary font balanced by an entirely neutral, unopinionated workhorse."
+        },
+        "tonal_friction": {
+          "score": 45,
+          "rationale": "Conflicting emotional signals (e.g. playful cartoon marker with corporate legal serif)."
+        },
+        "polar_clash": {
+          "score": 15,
+          "rationale": "Severe mismatch that confuses the brand message and breaks immersion."
+        }
+      }
+    },
+    "readability": {
+      "name": "Readability & Optical Legibility",
+      "weight": 0.15,
+      "description": "Evaluates legibility factors for body and UI roles: x-height, open apertures, distinct letterforms, and numerals.",
+      "rubric": {
+        "body_readability_rating": {
+          "score_10": 100,
+          "score_9": 95,
+          "score_8": 85,
+          "score_7": 70,
+          "score_6": 50,
+          "score_below_6": 20
+        },
+        "ui_small_text_rating": {
+          "score_9_to_10": 100,
+          "score_7_to_8": 85,
+          "score_5_to_6": 55,
+          "score_below_5": 20
+        },
+        "numeral_clarity": {
+          "score_9_to_10": 100,
+          "score_7_to_8": 85,
+          "score_below_7": 60
+        }
+      }
+    },
+    "width": {
+      "name": "Width & Proportional Harmony",
+      "weight": 0.08,
+      "description": "Assesses horizontal rhythm, character width ratios, and optical tracking balance.",
+      "rubric": {
+        "balanced_proportions": {
+          "score": 100,
+          "rationale": "Both fonts share natural, comfortable letter proportions."
+        },
+        "deliberate_display_contrast": {
+          "score": 90,
+          "rationale": "Ultra-condensed or ultra-extended headline paired with standard-width body text for intentional editorial drama."
+        },
+        "accidental_width_discord": {
+          "score": 45,
+          "rationale": "Body font is noticeably condensed or unnaturally wide, hurting reading velocity."
+        }
+      }
+    },
+    "weight_availability": {
+      "name": "Weight Availability & Semantic Breadth",
+      "weight": 0.10,
+      "description": "Rewards fonts offering rich weight ladders, variable font axes, and true companion italics.",
+      "rubric": {
+        "variable_or_8_plus_weights": {
+          "score": 100,
+          "rationale": "Maximum flexibility for responsive breakpoints and intricate hierarchy ladders."
+        },
+        "5_to_7_weights": {
+          "score": 90,
+          "rationale": "Solid professional range covering Light, Regular, Medium, SemiBold, and Bold."
+        },
+        "3_to_4_weights": {
+          "score": 75,
+          "rationale": "Standard coverage for Regular, Italic, and Bold."
+        },
+        "1_to_2_weights": {
+          "score": 50,
+          "rationale": "Constrained hierarchy; requires artificial scaling or limited roles."
+        }
+      },
+      "modifiers": {
+        "has_true_italic": 10,
+        "is_variable": 10,
+        "lacks_italic_in_body": -15
+      }
+    },
+    "role_compatibility": {
+      "name": "Typographic Role Compatibility",
+      "weight": 0.10,
+      "description": "Verifies that each font satisfies the requirements of its assigned functional role (hero, heading, body, UI, code, button).",
+      "rubric": {
+        "perfect_role_fit": {
+          "score": 100,
+          "rationale": "Both fonts are natively engineered and curated for their assigned roles."
+        },
+        "acceptable_secondary_role": {
+          "score": 85,
+          "rationale": "Font is performing a secondary supported role without compromise."
+        },
+        "misassigned_role": {
+          "score": 25,
+          "rationale": "Font forced into an unsuitable role (e.g. decorative font as body or mono as display headline)."
+        }
+      }
+    },
+    "project_style": {
+      "name": "Project Style & Aesthetic Alignment",
+      "weight": 0.08,
+      "description": "Evaluates how accurately the pair embodies the intended aesthetic style (luxury, editorial, technical, brutalist, minimal, modern, corporate).",
+      "rubric": {
+        "both_match_project_style": {
+          "score": 100,
+          "rationale": "Cohesive immersion: both fonts strongly represent the target project aesthetic."
+        },
+        "headline_leads_style_body_neutral": {
+          "score": 90,
+          "rationale": "Heading articulates the brand style while body guarantees universal accessibility."
+        },
+        "style_mismatch": {
+          "score": 30,
+          "rationale": "Fonts evoke conflicting or inappropriate styles for the stated project goal."
+        }
+      }
+    },
+    "language": {
+      "name": "Language & Unicode Script Coverage",
+      "weight": 0.05,
+      "description": "Validates full glyph coverage for target languages and scripts, preventing glyph fallback and tofu boxes.",
+      "rubric": {
+        "full_script_and_language_parity": {
+          "score": 100,
+          "rationale": "All target language diacritics and character sets are fully supported by all fonts in the system."
+        },
+        "minor_extended_latin_delta": {
+          "score": 80,
+          "rationale": "Minor differences in obscure unicode blocks, but core target locale fully covered."
+        },
+        "critical_script_mismatch": {
+          "score": 10,
+          "rationale": "One font lacks Cyrillic, Greek, or accented characters required by the application."
+        }
+      }
+    },
+    "platform": {
+      "name": "Platform & Rendering Suitability",
+      "weight": 0.05,
+      "description": "Considers rendering engine targets, webfont formats (WOFF2/WOFF), payload efficiency, and screen rasterization.",
+      "rubric": {
+        "web_optimized_variable_woff2": {
+          "score": 100,
+          "rationale": "Modern WOFF2/variable font payload; lightning-fast page speed and smooth subpixel rendering."
+        },
+        "standard_web_otf_ttf": {
+          "score": 85,
+          "rationale": "High-quality desktop/web outlines; standard bundle size."
+        },
+        "legacy_or_heavy_outlines": {
+          "score": 60,
+          "rationale": "Heavy glyph outlines or missing modern compression formats."
+        }
+      }
+    }
+  },
+  "grade_tiers": [
+    {
+      "tier": "Masterclass",
+      "min_score": 95,
+      "max_score": 100,
+      "badge": "Exemplary",
+      "description": "Flawless typographic synergy. Optimal visual contrast, immaculate hierarchy, and effortless legibility."
+    },
+    {
+      "tier": "Exceptional",
+      "min_score": 88,
+      "max_score": 94,
+      "badge": "Highly Recommended",
+      "description": "Outstanding production pair. Expresses distinct personality with rock-solid reading comfort."
+    },
+    {
+      "tier": "Good",
+      "min_score": 80,
+      "max_score": 87,
+      "badge": "Recommended",
+      "description": "Dependable, practical pair. Clear hierarchy with minor styling or weight considerations."
+    },
+    {
+      "tier": "Acceptable",
+      "min_score": 70,
+      "max_score": 79,
+      "badge": "Functional",
+      "description": "Viable pairing, but requires deliberate size scaling, letter spacing, or weight selection to avoid flatness."
+    },
+    {
+      "tier": "Marginal",
+      "min_score": 55,
+      "max_score": 69,
+      "badge": "Suboptimal",
+      "description": "Noticeable contrast deficiency or slight aesthetic tension. Recommend exploring alternative partners."
+    },
+    {
+      "tier": "Incompatible",
+      "min_score": 0,
+      "max_score": 54,
+      "badge": "Anti-Pattern Detected",
+      "description": "Fails critical readability, contrast, or role criteria. Severe typographical discord."
+    }
+  ],
+  "anti_pattern_penalties": {
+    "critical": -45,
+    "high": -25,
+    "medium": -15,
+    "caution": -8
+  }
+}

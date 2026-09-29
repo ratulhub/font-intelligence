@@ -1,0 +1,788 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "title": "TypographyProjectUseCases",
+  "description": "Comprehensive project situation ontologies, platform rendering requirements, performance budgets, and typography recommendations.",
+  "total_use_cases": 29,
+  "style_interpretations": {
+    "expensive": {
+      "name": "Expensive / High-End Prestige",
+      "typographic_profile": {
+        "primary_categories": ["serif", "sans-serif"],
+        "subtypes": ["high-contrast-display-serif", "high-contrast-sans", "geometric-contemporary"],
+        "preferred_styles": ["luxury", "fashion", "premium", "editorial"],
+        "stroke_contrast": "high",
+        "weight_strategy": "Refined light to medium headlines with wide tracking; crisp neutral body.",
+        "avoid_styles": ["grunge", "playful", "chunky-arcade", "novelty"]
+      },
+      "why_it_works": "Luxury and expense in typography are communicated through optical tension, disciplined restraint, high stroke contrast (Didone serifs or sculpted display sans), and generous letter-spacing on all-caps titles. Avoids generic corporate defaults in favor of bespoke typographic craft."
+    },
+    "premium": {
+      "name": "Premium / Enterprise Excellence",
+      "typographic_profile": {
+        "primary_categories": ["sans-serif", "serif"],
+        "subtypes": ["geometric-neo-grotesque", "geometric-contemporary", "transitional-serif"],
+        "preferred_styles": ["premium", "modern", "corporate", "minimal"],
+        "stroke_contrast": "low-medium",
+        "weight_strategy": "SemiBold 600 headlines paired with Regular 400 body.",
+        "avoid_styles": ["grunge", "handwritten", "retro-beach-hand"]
+      },
+      "why_it_works": "Premium typography signals stability, precision, and investment. Characterized by balanced x-heights, flawless subpixel curves, multi-weight superfamily depth, and true companion italics."
+    },
+    "clean": {
+      "name": "Clean / Frictionless Clarity",
+      "typographic_profile": {
+        "primary_categories": ["sans-serif"],
+        "subtypes": ["clean-neo-grotesque", "geometric-neo-grotesque", "minimalist-contemporary"],
+        "preferred_styles": ["minimal", "modern", "corporate"],
+        "stroke_contrast": "low",
+        "weight_strategy": "Bold 700 headlines against clean Regular 400 body; generous whitespace.",
+        "avoid_styles": ["decorative", "grunge", "distressed", "novelty"]
+      },
+      "why_it_works": "Cleanliness arises from unadorned terminal geometry, open apertures, consistent stroke widths, and generous line-heights (1.6+), reducing visual noise to zero."
+    },
+    "modern": {
+      "name": "Modern / Contemporary Digital",
+      "typographic_profile": {
+        "primary_categories": ["sans-serif"],
+        "subtypes": ["geometric-contemporary", "geometric-neo-grotesque", "modern-grotesque"],
+        "preferred_styles": ["modern", "technical", "minimal"],
+        "stroke_contrast": "low",
+        "weight_strategy": "Variable weight axes, contemporary circular geometry, tight headline tracking.",
+        "avoid_styles": ["vintage", "classic", "blackletter"]
+      },
+      "why_it_works": "Modern typography celebrates contemporary digital geometry, variable font axes, and crisp rendering across high-DPI viewports."
+    },
+    "elegant": {
+      "name": "Elegant / Refined Grace",
+      "typographic_profile": {
+        "primary_categories": ["serif", "sans-serif"],
+        "subtypes": ["transitional-serif", "high-contrast-display-serif", "high-contrast-sans"],
+        "preferred_styles": ["luxury", "editorial", "classic", "premium"],
+        "stroke_contrast": "medium-high",
+        "weight_strategy": "Medium 500 or Light 300 headlines with generous breathing room.",
+        "avoid_styles": ["brutalist", "grunge", "heavy-slab-chunky"]
+      },
+      "why_it_works": "Elegance balances organic warmth with structural dignity: rhythmic italic cadences, graceful calligraphic terminals, and measured proportions."
+    },
+    "editorial": {
+      "name": "Editorial / Literary Authority",
+      "typographic_profile": {
+        "primary_categories": ["serif", "sans-serif"],
+        "subtypes": ["transitional-serif", "heavy-neo-grotesque", "grotesque-condensed-expanded"],
+        "preferred_styles": ["editorial", "classic", "modern", "premium"],
+        "stroke_contrast": "medium",
+        "weight_strategy": "ExtraBold 800 titles into classical serif body; small sans metadata annotations.",
+        "avoid_styles": ["novelty", "playful-marker", "cyberpunk-techno"]
+      },
+      "why_it_works": "Draws on centuries of print publishing mastery: clear distinction between editorial voice (serif text) and navigational apparatus (sans metadata)."
+    },
+    "futuristic": {
+      "name": "Futuristic / Speculative Tech",
+      "typographic_profile": {
+        "primary_categories": ["display", "monospace", "sans-serif"],
+        "subtypes": ["futuristic-geom", "futuristic-monospace", "cyberpunk-techno", "techno-rounded"],
+        "preferred_styles": ["futuristic", "technical", "modern"],
+        "stroke_contrast": "low",
+        "weight_strategy": "Curvilinear techno titles, monospaced telemetry figures, neutral UI.",
+        "avoid_styles": ["classic", "vintage", "handwritten", "organic"]
+      },
+      "why_it_works": "Evokes sci-fi HUDs, aerospace telemetry, and cyberpunk aesthetics through angular geometry, flat horizontal crossbars, and technical monospaced telemetry."
+    },
+    "playful": {
+      "name": "Playful / Approachable Warmth",
+      "typographic_profile": {
+        "primary_categories": ["handwriting", "sans-serif"],
+        "subtypes": ["friendly-casual-hand", "rounded-geometric", "bubbly-casual"],
+        "preferred_styles": ["playful", "organic", "modern"],
+        "stroke_contrast": "low-medium",
+        "weight_strategy": "Soft rounded titles with clean geometric body text.",
+        "avoid_styles": ["brutalist", "blackletter", "monumental-blackletter"]
+      },
+      "why_it_works": "Softens the interface with organic curve terminals, bouncy baselines, and human warmth, while maintaining accessible body readability."
+    },
+    "professional": {
+      "name": "Professional / Institutional Trust",
+      "typographic_profile": {
+        "primary_categories": ["sans-serif", "serif"],
+        "subtypes": ["geometric-neo-grotesque", "humanist", "transitional-serif"],
+        "preferred_styles": ["corporate", "modern", "technical", "premium"],
+        "stroke_contrast": "low-medium",
+        "weight_strategy": "SemiBold 600 headlines, Regular 400 text, Medium 500 data tables.",
+        "avoid_styles": ["grunge", "psychedelic", "graffiti", "distressed"]
+      },
+      "why_it_works": "Establishes immediate legal, financial, or corporate credibility through rock-solid proportions, high legibility ratings, and clear numerical figures."
+    },
+    "not AI-looking": {
+      "name": "Not AI-Looking / Bespoke Human Craft",
+      "typographic_profile": {
+        "primary_categories": ["serif", "sans-serif", "display"],
+        "subtypes": ["high-contrast-display-serif", "geometric-contemporary", "transitional-serif", "grotesque-condensed-expanded"],
+        "preferred_styles": ["luxury", "editorial", "brutalist", "fashion", "humanist"],
+        "stroke_contrast": "deliberate-contrast",
+        "weight_strategy": "Bold deliberate weight delta (300+ units), distinctive font alternates, calibrated tracking.",
+        "avoid_styles": ["generic-system-defaults", "flat-monotone-400"]
+      },
+      "why_it_works": "Eliminates the generic, homogenized 'AI look' (such as default Inter or Roboto set at flat 400 weight with zero personality). Replaces it with authentic typographic tension: pairing distinctive character-rich display cuts (e.g. Ithaca, Chillax, Reckoner, Credit Valley) with purposeful optical tracking and calibrated type scales."
+    }
+  },
+  "use_cases": {
+    "saas": {
+      "id": "saas",
+      "category": "web",
+      "name": "Modern SaaS Application",
+      "description": "High-velocity web software requiring clear feature marketing, user onboarding, and dense application dashboard interfaces.",
+      "primary_intent": "Product marketing conversion paired with functional application clarity.",
+      "key_requirements": {
+        "readability_priorities": {"ui": 9, "body": 9, "small_text": 8, "numbers": 9},
+        "recommended_hierarchy": {"primary": "hero/heading", "secondary": "body/ui", "accent": "code/number"},
+        "weight_diversity_needed": 4,
+        "ideal_styles": ["modern", "minimal", "technical", "premium"],
+        "forbidden_styles": ["grunge", "decorative", "handwritten"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web", "mobile-web"],
+        "preferred_formats": ["woff2", "woff"],
+        "variable_font_recommended": true,
+        "max_payload_kb": 120,
+        "font_display": "swap"
+      },
+      "recommended_curated_pairings": ["chillax-general-sans-tech-luxury", "general-sans-ubuntu-developer-portal"]
+    },
+    "landing-page": {
+      "id": "landing-page",
+      "category": "web",
+      "name": "High-Conversion Landing Page",
+      "description": "Marketing landing page focused on bold value propositions, punchy hero headlines, and clear visual calls to action.",
+      "primary_intent": "Immediate visual impact, brand distinction, and scannable benefits.",
+      "key_requirements": {
+        "readability_priorities": {"body": 8, "ui": 8, "small_text": 7, "numbers": 8},
+        "recommended_hierarchy": {"primary": "hero", "secondary": "body", "accent": "button"},
+        "weight_diversity_needed": 3,
+        "ideal_styles": ["modern", "premium", "luxury", "minimal"],
+        "forbidden_styles": ["grunge"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web", "mobile-web"],
+        "preferred_formats": ["woff2"],
+        "variable_font_recommended": true,
+        "max_payload_kb": 100,
+        "font_display": "swap"
+      },
+      "recommended_curated_pairings": ["chillax-general-sans-tech-luxury", "oligopoly-gudea-minimalist-product"]
+    },
+    "portfolio": {
+      "id": "portfolio",
+      "category": "web",
+      "name": "Creative & Designer Portfolio",
+      "description": "Showcase for designers, architects, photographers, and creative technologists where typography itself reflects artistic discernment.",
+      "primary_intent": "Unmistakable aesthetic individuality and sophisticated visual voice.",
+      "key_requirements": {
+        "readability_priorities": {"body": 8, "ui": 7, "small_text": 7, "numbers": 7},
+        "recommended_hierarchy": {"primary": "display", "secondary": "body", "accent": "caption"},
+        "weight_diversity_needed": 3,
+        "ideal_styles": ["editorial", "luxury", "brutalist", "minimal", "fashion"],
+        "forbidden_styles": ["corporate", "novelty-comic"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web"],
+        "preferred_formats": ["woff2", "otf"],
+        "variable_font_recommended": false,
+        "max_payload_kb": 150,
+        "font_display": "swap"
+      },
+      "recommended_curated_pairings": ["ithaca-general-sans-editorial-luxury", "kingsbridge-chillax-fashion-editorial"]
+    },
+    "dashboard": {
+      "id": "dashboard",
+      "category": "web",
+      "name": "Data-Heavy Analytics Dashboard",
+      "description": "Dense enterprise and analytics portals displaying complex charts, metrics, tabular data, and status indicators.",
+      "primary_intent": "Rapid data parsing, zero numeral ambiguity, and compact UI legibility.",
+      "key_requirements": {
+        "readability_priorities": {"numbers": 10, "ui": 10, "small_text": 9, "body": 8},
+        "recommended_hierarchy": {"primary": "heading/ui", "secondary": "ui/body", "accent": "number/code"},
+        "weight_diversity_needed": 4,
+        "ideal_styles": ["technical", "corporate", "modern"],
+        "forbidden_styles": ["handwritten", "display", "decorative", "grunge"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web", "desktop-app"],
+        "preferred_formats": ["woff2"],
+        "variable_font_recommended": true,
+        "max_payload_kb": 90,
+        "font_display": "optional"
+      },
+      "recommended_curated_pairings": ["general-sans-ubuntu-developer-portal"]
+    },
+    "ecommerce": {
+      "id": "ecommerce",
+      "category": "web",
+      "name": "E-Commerce & Digital Storefront",
+      "description": "Online retail platform balancing engaging brand presentation with clear product pricing and seamless checkout flow.",
+      "primary_intent": "Brand desire creation combined with trustworthy transaction readability.",
+      "key_requirements": {
+        "readability_priorities": {"numbers": 9, "ui": 9, "body": 8, "small_text": 8},
+        "recommended_hierarchy": {"primary": "hero/heading", "secondary": "body/ui", "accent": "number/button"},
+        "weight_diversity_needed": 4,
+        "ideal_styles": ["modern", "premium", "fashion", "minimal"],
+        "forbidden_styles": ["grunge", "cyberpunk-techno"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web", "mobile-web"],
+        "preferred_formats": ["woff2"],
+        "variable_font_recommended": true,
+        "max_payload_kb": 110,
+        "font_display": "swap"
+      },
+      "recommended_curated_pairings": ["chillax-general-sans-tech-luxury", "oligopoly-gudea-minimalist-product"]
+    },
+    "fashion": {
+      "id": "fashion",
+      "category": "web",
+      "name": "High Fashion & Apparel Brand",
+      "description": "Editorial storefront and lookbooks for luxury apparel, haute couture, and avant-garde streetwear.",
+      "primary_intent": "Elegance, trend-setting visual tension, and artistic poise.",
+      "key_requirements": {
+        "readability_priorities": {"body": 7, "ui": 8, "small_text": 7, "numbers": 7},
+        "recommended_hierarchy": {"primary": "display", "secondary": "body", "accent": "caption"},
+        "weight_diversity_needed": 3,
+        "ideal_styles": ["fashion", "luxury", "editorial", "minimal"],
+        "forbidden_styles": ["technical", "corporate", "playful-kids-script"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web", "mobile"],
+        "preferred_formats": ["woff2", "otf"],
+        "variable_font_recommended": false,
+        "max_payload_kb": 140,
+        "font_display": "swap"
+      },
+      "recommended_curated_pairings": ["ithaca-general-sans-editorial-luxury", "kingsbridge-chillax-fashion-editorial"]
+    },
+    "luxury": {
+      "id": "luxury",
+      "category": "web",
+      "name": "Ultra-Luxury & High Horlogerie",
+      "description": "Private wealth, bespoke jewelry, fine watches, and prestigious heritage estates.",
+      "primary_intent": "Uncompromised prestige, exclusivity, and classical perfection.",
+      "key_requirements": {
+        "readability_priorities": {"body": 8, "ui": 7, "small_text": 7, "numbers": 8},
+        "recommended_hierarchy": {"primary": "hero", "secondary": "body", "accent": "logo"},
+        "weight_diversity_needed": 3,
+        "ideal_styles": ["luxury", "premium", "editorial", "classic"],
+        "forbidden_styles": ["grunge", "playful", "industrial", "cyberpunk-techno"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web"],
+        "preferred_formats": ["woff2", "otf"],
+        "variable_font_recommended": false,
+        "max_payload_kb": 120,
+        "font_display": "swap"
+      },
+      "recommended_curated_pairings": ["ithaca-general-sans-editorial-luxury", "credit-valley-general-sans-modern-publishing"]
+    },
+    "restaurant": {
+      "id": "restaurant",
+      "category": "web",
+      "name": "Gastronomy, Bistro & Fine Dining",
+      "description": "Restaurant menu showcases, culinary storytelling, and reservation experiences.",
+      "primary_intent": "Appetite appeal, sensory atmosphere, and legible menu pricing.",
+      "key_requirements": {
+        "readability_priorities": {"body": 8, "numbers": 9, "ui": 8, "small_text": 7},
+        "recommended_hierarchy": {"primary": "hero/heading", "secondary": "body", "accent": "number"},
+        "weight_diversity_needed": 3,
+        "ideal_styles": ["editorial", "classic", "organic", "luxury"],
+        "forbidden_styles": ["technical", "cyberpunk-techno", "brutalist"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web", "mobile"],
+        "preferred_formats": ["woff2"],
+        "variable_font_recommended": false,
+        "max_payload_kb": 120,
+        "font_display": "swap"
+      },
+      "recommended_curated_pairings": ["credit-valley-general-sans-modern-publishing", "alphakind-simply-sans-playful-community"]
+    },
+    "finance": {
+      "id": "finance",
+      "category": "web",
+      "name": "Banking & Institutional Finance",
+      "description": "Traditional banking, asset management, and legal fiduciary portals.",
+      "primary_intent": "Rock-solid security, established credibility, and clarity.",
+      "key_requirements": {
+        "readability_priorities": {"numbers": 10, "body": 9, "ui": 9, "small_text": 9},
+        "recommended_hierarchy": {"primary": "heading", "secondary": "body", "accent": "number"},
+        "weight_diversity_needed": 4,
+        "ideal_styles": ["corporate", "classic", "modern", "premium"],
+        "forbidden_styles": ["grunge", "handwritten", "playful", "futuristic"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web", "desktop"],
+        "preferred_formats": ["woff2"],
+        "variable_font_recommended": true,
+        "max_payload_kb": 100,
+        "font_display": "swap"
+      },
+      "recommended_curated_pairings": ["general-sans-ubuntu-developer-portal", "credit-valley-general-sans-modern-publishing"]
+    },
+    "fintech": {
+      "id": "fintech",
+      "category": "web",
+      "name": "Modern Fintech & Neobanking",
+      "description": "Next-generation financial apps, investment dashboards, and borderless payment platforms.",
+      "primary_intent": "Digital speed, trust, and sharp modern sophistication.",
+      "key_requirements": {
+        "readability_priorities": {"numbers": 10, "ui": 9, "body": 9, "small_text": 8},
+        "recommended_hierarchy": {"primary": "hero", "secondary": "ui/body", "accent": "number"},
+        "weight_diversity_needed": 4,
+        "ideal_styles": ["modern", "technical", "premium", "minimal"],
+        "forbidden_styles": ["grunge", "decorative", "handwritten"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web", "mobile-app"],
+        "preferred_formats": ["woff2", "ttf"],
+        "variable_font_recommended": true,
+        "max_payload_kb": 100,
+        "font_display": "swap"
+      },
+      "recommended_curated_pairings": ["chillax-general-sans-tech-luxury", "general-sans-ubuntu-developer-portal"]
+    },
+    "crypto": {
+      "id": "crypto",
+      "category": "web",
+      "name": "Web3, Blockchain & Crypto Exchange",
+      "description": "Decentralized finance protocols, token analytics, and Web3 community hubs.",
+      "primary_intent": "Cutting-edge decentralization aesthetic with rapid token data readability.",
+      "key_requirements": {
+        "readability_priorities": {"numbers": 10, "ui": 9, "body": 8, "small_text": 8},
+        "recommended_hierarchy": {"primary": "hero", "secondary": "body/ui", "accent": "code/number"},
+        "weight_diversity_needed": 3,
+        "ideal_styles": ["futuristic", "technical", "brutalist", "modern"],
+        "forbidden_styles": ["vintage", "classic", "cute-cartoon"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web"],
+        "preferred_formats": ["woff2"],
+        "variable_font_recommended": true,
+        "max_payload_kb": 120,
+        "font_display": "swap"
+      },
+      "recommended_curated_pairings": ["neuropol-general-sans-futuristic-scifi", "reckoner-ubuntu-industrial-brutalist"]
+    },
+    "education": {
+      "id": "education",
+      "category": "web",
+      "name": "EdTech, Universities & E-Learning",
+      "description": "Learning management platforms, course libraries, and academic research repositories.",
+      "primary_intent": "Effortless multi-hour reading comfort and cognitive accessibility.",
+      "key_requirements": {
+        "readability_priorities": {"long_form": 10, "body": 10, "ui": 9, "small_text": 8},
+        "recommended_hierarchy": {"primary": "heading", "secondary": "body", "accent": "caption"},
+        "weight_diversity_needed": 4,
+        "ideal_styles": ["humanist", "modern", "editorial", "corporate"],
+        "forbidden_styles": ["grunge", "cyberpunk-techno"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web", "mobile-web"],
+        "preferred_formats": ["woff2"],
+        "variable_font_recommended": true,
+        "max_payload_kb": 100,
+        "font_display": "swap"
+      },
+      "recommended_curated_pairings": ["credit-valley-general-sans-modern-publishing", "general-sans-ubuntu-developer-portal"]
+    },
+    "gaming": {
+      "id": "gaming",
+      "category": "web",
+      "name": "Esports, Game Portals & Gaming UI",
+      "description": "Gaming studios, esports leagues, streaming platforms, and game inventory interfaces.",
+      "primary_intent": "Adrenaline-fueled theme immersion with rapid telemetry scanning.",
+      "key_requirements": {
+        "readability_priorities": {"numbers": 9, "ui": 8, "body": 8, "small_text": 7},
+        "recommended_hierarchy": {"primary": "hero", "secondary": "body", "accent": "number/code"},
+        "weight_diversity_needed": 3,
+        "ideal_styles": ["futuristic", "brutalist", "technical", "retro"],
+        "forbidden_styles": ["classic", "editorial", "vintage"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web", "desktop-app"],
+        "preferred_formats": ["woff2", "ttf"],
+        "variable_font_recommended": false,
+        "max_payload_kb": 140,
+        "font_display": "swap"
+      },
+      "recommended_curated_pairings": ["neuropol-general-sans-futuristic-scifi", "raster-forge-general-sans-retro-gaming"]
+    },
+    "news": {
+      "id": "news",
+      "category": "web",
+      "name": "Digital Journalism & News Media",
+      "description": "High-volume news outlets, investigative journalism, and breaking updates.",
+      "primary_intent": "Immediate front-page impact paired with tireless long-form reading stamina.",
+      "key_requirements": {
+        "readability_priorities": {"long_form": 10, "body": 10, "ui": 8, "small_text": 8},
+        "recommended_hierarchy": {"primary": "hero/heading", "secondary": "body", "accent": "caption"},
+        "weight_diversity_needed": 5,
+        "ideal_styles": ["editorial", "brutalist", "classic", "modern"],
+        "forbidden_styles": ["novelty", "handwritten", "playful"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web", "mobile-web"],
+        "preferred_formats": ["woff2"],
+        "variable_font_recommended": true,
+        "max_payload_kb": 110,
+        "font_display": "swap"
+      },
+      "recommended_curated_pairings": ["zt-shago-credit-valley-heavy-editorial", "credit-valley-general-sans-modern-publishing"]
+    },
+    "blog": {
+      "id": "blog",
+      "category": "web",
+      "name": "Editorial Blog & Thought Leadership",
+      "description": "Personal publications, essay series, and tech/design blogs.",
+      "primary_intent": "Fluid reading flow, distinctive authorial voice, and elegant typographic hierarchy.",
+      "key_requirements": {
+        "readability_priorities": {"long_form": 9, "body": 9, "ui": 8, "small_text": 7},
+        "recommended_hierarchy": {"primary": "heading", "secondary": "body", "accent": "caption"},
+        "weight_diversity_needed": 3,
+        "ideal_styles": ["editorial", "modern", "minimal", "humanist"],
+        "forbidden_styles": ["grunge", "heavy-slab-chunky"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web"],
+        "preferred_formats": ["woff2"],
+        "variable_font_recommended": true,
+        "max_payload_kb": 90,
+        "font_display": "swap"
+      },
+      "recommended_curated_pairings": ["credit-valley-general-sans-modern-publishing", "chillax-general-sans-tech-luxury"]
+    },
+    "agency": {
+      "id": "agency",
+      "category": "web",
+      "name": "Design & Digital Agency",
+      "description": "Creative agencies, branding studios, and boutique consultancies.",
+      "primary_intent": "Fearless design authority, bold art direction, and confident presentation.",
+      "key_requirements": {
+        "readability_priorities": {"body": 8, "ui": 8, "small_text": 7, "numbers": 7},
+        "recommended_hierarchy": {"primary": "hero", "secondary": "body", "accent": "button"},
+        "weight_diversity_needed": 3,
+        "ideal_styles": ["brutalist", "minimal", "modern", "fashion", "luxury"],
+        "forbidden_styles": ["corporate", "novelty-comic"]
+      },
+      "platform_performance": {
+        "target_platforms": ["web"],
+        "preferred_formats": ["woff2"],
+        "variable_font_recommended": true,
+        "max_payload_kb": 130,
+        "font_display": "swap"
+      },
+      "recommended_curated_pairings": ["reckoner-ubuntu-industrial-brutalist", "chillax-general-sans-tech-luxury"]
+    },
+    "mobile": {
+      "id": "mobile",
+      "category": "app",
+      "name": "Native Mobile Application (General)",
+      "description": "General native iOS/Android utility or productivity apps with small touch targets.",
+      "primary_intent": "Compact screen legibility, high pixel density clarity, and smooth 60fps rendering.",
+      "key_requirements": {
+        "readability_priorities": {"ui": 10, "small_text": 9, "body": 9, "numbers": 9},
+        "recommended_hierarchy": {"primary": "heading", "secondary": "ui/body", "accent": "button"},
+        "weight_diversity_needed": 4,
+        "ideal_styles": ["modern", "minimal", "corporate"],
+        "forbidden_styles": ["decorative", "grunge", "blackletter"]
+      },
+      "platform_performance": {
+        "target_platforms": ["ios", "android"],
+        "preferred_formats": ["ttf", "otf"],
+        "variable_font_recommended": true,
+        "max_payload_kb": 350,
+        "notes": "Prefer TrueType (.ttf) outlines with clear bytecode hinting for subpixel rasterization on varied Android screens."
+      },
+      "recommended_curated_pairings": ["chillax-general-sans-tech-luxury", "general-sans-ubuntu-developer-portal"]
+    },
+    "flutter": {
+      "id": "flutter",
+      "category": "app",
+      "name": "Flutter Cross-Platform App",
+      "description": "Multi-platform Flutter applications rendered via Impeller or Skia graphics engines.",
+      "primary_intent": "Consistent cross-platform font metrics and identical baseline rendering on iOS, Android, and Web.",
+      "key_requirements": {
+        "readability_priorities": {"ui": 9, "body": 9, "small_text": 8, "numbers": 9},
+        "recommended_hierarchy": {"primary": "heading", "secondary": "ui/body", "accent": "button"},
+        "weight_diversity_needed": 4,
+        "ideal_styles": ["modern", "minimal", "technical"],
+        "forbidden_styles": ["decorative"]
+      },
+      "platform_performance": {
+        "target_platforms": ["flutter-ios", "flutter-android", "flutter-web"],
+        "preferred_formats": ["ttf"],
+        "variable_font_recommended": true,
+        "max_payload_kb": 300,
+        "notes": "Define fonts explicitly in pubspec.yaml with matching weight integers (w400, w600, w700)."
+      },
+      "recommended_curated_pairings": ["chillax-general-sans-tech-luxury", "general-sans-ubuntu-developer-portal"]
+    },
+    "react-native": {
+      "id": "react-native",
+      "category": "app",
+      "name": "React Native Application",
+      "description": "Cross-platform React Native apps relying on native iOS and Android text renderers.",
+      "primary_intent": "Seamless native font linkage, predictable font-weight mapping, and zero layout shift.",
+      "key_requirements": {
+        "readability_priorities": {"ui": 9, "body": 9, "small_text": 8, "numbers": 9},
+        "recommended_hierarchy": {"primary": "heading", "secondary": "ui/body", "accent": "button"},
+        "weight_diversity_needed": 4,
+        "ideal_styles": ["modern", "minimal", "corporate"],
+        "forbidden_styles": ["decorative"]
+      },
+      "platform_performance": {
+        "target_platforms": ["react-native-ios", "react-native-android"],
+        "preferred_formats": ["ttf"],
+        "variable_font_recommended": false,
+        "max_payload_kb": 400,
+        "notes": "Ensure PostScript font names match file naming strictly to prevent Android fontWeight crashes."
+      },
+      "recommended_curated_pairings": ["chillax-general-sans-tech-luxury", "general-sans-ubuntu-developer-portal"]
+    },
+    "android": {
+      "id": "android",
+      "category": "app",
+      "name": "Native Android (Kotlin / Jetpack Compose)",
+      "description": "Native Android applications conforming to Material Design 3 guidelines.",
+      "primary_intent": "Clear rendering across thousands of varied OEM display matrices and display scales.",
+      "key_requirements": {
+        "readability_priorities": {"ui": 10, "small_text": 9, "body": 9, "numbers": 9},
+        "recommended_hierarchy": {"primary": "heading", "secondary": "ui/body", "accent": "button"},
+        "weight_diversity_needed": 4,
+        "ideal_styles": ["modern", "minimal", "corporate"],
+        "forbidden_styles": ["decorative", "grunge"]
+      },
+      "platform_performance": {
+        "target_platforms": ["android"],
+        "preferred_formats": ["ttf"],
+        "variable_font_recommended": true,
+        "max_payload_kb": 350,
+        "notes": "Place TTF binaries in res/font/ and reference via FontFamily. Downloadable font providers supported."
+      },
+      "recommended_curated_pairings": ["general-sans-ubuntu-developer-portal"]
+    },
+    "ios": {
+      "id": "ios",
+      "category": "app",
+      "name": "Native iOS (Swift / SwiftUI)",
+      "description": "Apple ecosystem apps conforming to Apple Human Interface Guidelines and Dynamic Type.",
+      "primary_intent": "Crisp Retina subpixel antialiasing and automatic Dynamic Type scaling.",
+      "key_requirements": {
+        "readability_priorities": {"ui": 10, "small_text": 9, "body": 9, "numbers": 9},
+        "recommended_hierarchy": {"primary": "heading", "secondary": "ui/body", "accent": "button"},
+        "weight_diversity_needed": 4,
+        "ideal_styles": ["modern", "minimal", "premium", "luxury"],
+        "forbidden_styles": ["grunge"]
+      },
+      "platform_performance": {
+        "target_platforms": ["ios", "ipados", "macos"],
+        "preferred_formats": ["otf", "ttf"],
+        "variable_font_recommended": true,
+        "max_payload_kb": 350,
+        "notes": "Register in Info.plist under UIAppFonts. PostScript CFF outlines (.otf) render beautifully on CoreText."
+      },
+      "recommended_curated_pairings": ["chillax-general-sans-tech-luxury", "ithaca-general-sans-editorial-luxury"]
+    },
+    "powerpoint": {
+      "id": "powerpoint",
+      "category": "document",
+      "name": "Microsoft PowerPoint Presentation",
+      "description": "Corporate slides, executive keynotes, and sales pitch decks.",
+      "primary_intent": "Auditorium projection legibility, high contrast, and 100% font embedding without font-swap errors on client PCs.",
+      "key_requirements": {
+        "readability_priorities": {"body": 8, "ui": 8, "small_text": 6, "numbers": 8},
+        "recommended_hierarchy": {"primary": "hero", "secondary": "body", "accent": "number"},
+        "weight_diversity_needed": 2,
+        "ideal_styles": ["corporate", "modern", "premium"],
+        "forbidden_styles": ["grunge", "cute-cartoon"]
+      },
+      "platform_performance": {
+        "target_platforms": ["powerpoint", "keynote", "google-slides"],
+        "preferred_formats": ["ttf"],
+        "variable_font_recommended": false,
+        "embedding_requirement": "Installable Embedding (unrestricted) or Editable Embedding",
+        "notes": "CRITICAL: Microsoft PowerPoint on Windows has severe bugs with OpenType PostScript (.otf) fonts. Always use TrueType (.ttf) files to ensure font embedding succeeds."
+      },
+      "recommended_curated_pairings": ["chillax-general-sans-tech-luxury", "oligopoly-gudea-minimalist-product"]
+    },
+    "presentation": {
+      "id": "presentation",
+      "category": "document",
+      "name": "Executive Pitch Deck & Keynote",
+      "description": "High-stakes venture capital pitches, product reveal keynotes, and conference talks.",
+      "primary_intent": "Monumental slide headers that command the stage, with minimal, impactful bullet points.",
+      "key_requirements": {
+        "readability_priorities": {"body": 8, "ui": 7, "small_text": 6, "numbers": 8},
+        "recommended_hierarchy": {"primary": "hero", "secondary": "body", "accent": "caption"},
+        "weight_diversity_needed": 3,
+        "ideal_styles": ["modern", "premium", "minimal", "brutalist"],
+        "forbidden_styles": ["grunge", "handwritten"]
+      },
+      "platform_performance": {
+        "target_platforms": ["keynote", "powerpoint", "pdf"],
+        "preferred_formats": ["ttf", "otf"],
+        "variable_font_recommended": false,
+        "embedding_requirement": "Installable Embedding",
+        "notes": "Keep slide headlines large (36pt–60pt). Test contrast in both 16:9 widescreen and projection lighting."
+      },
+      "recommended_curated_pairings": ["chillax-general-sans-tech-luxury", "reckoner-ubuntu-industrial-brutalist"]
+    },
+    "word": {
+      "id": "word",
+      "category": "document",
+      "name": "Microsoft Word Document",
+      "description": "Business contracts, legal proposals, policy memos, and institutional whitepapers.",
+      "primary_intent": "Dense tabular layout stability, print fidelity, and universal client PC compatibility.",
+      "key_requirements": {
+        "readability_priorities": {"long_form": 9, "body": 9, "numbers": 9, "small_text": 8},
+        "recommended_hierarchy": {"primary": "heading", "secondary": "body", "accent": "caption"},
+        "weight_diversity_needed": 3,
+        "ideal_styles": ["corporate", "classic", "modern", "editorial"],
+        "forbidden_styles": ["grunge", "futuristic", "playful"]
+      },
+      "platform_performance": {
+        "target_platforms": ["word", "libreoffice"],
+        "preferred_formats": ["ttf"],
+        "variable_font_recommended": false,
+        "embedding_requirement": "Editable Embedding",
+        "notes": "Use TrueType (.ttf) format to prevent Word from converting missing weights into synthetic bold/italics."
+      },
+      "recommended_curated_pairings": ["credit-valley-general-sans-modern-publishing", "general-sans-ubuntu-developer-portal"]
+    },
+    "pdf": {
+      "id": "pdf",
+      "category": "document",
+      "name": "PDF Export & Whitepaper",
+      "description": "Self-contained downloadable whitepapers, annual reports, and technical manuals.",
+      "primary_intent": "Exact vector outline preservation and subset embedding across all desktop/mobile PDF readers.",
+      "key_requirements": {
+        "readability_priorities": {"long_form": 9, "body": 9, "numbers": 9, "small_text": 8},
+        "recommended_hierarchy": {"primary": "heading", "secondary": "body", "accent": "caption"},
+        "weight_diversity_needed": 3,
+        "ideal_styles": ["editorial", "corporate", "modern", "premium"],
+        "forbidden_styles": ["novelty"]
+      },
+      "platform_performance": {
+        "target_platforms": ["pdf-readers"],
+        "preferred_formats": ["otf", "ttf"],
+        "variable_font_recommended": false,
+        "embedding_requirement": "Preview & Print Embedding or higher",
+        "notes": "Verify license allows font subsetting (fsType not 0x0100)."
+      },
+      "recommended_curated_pairings": ["credit-valley-general-sans-modern-publishing", "zt-shago-credit-valley-heavy-editorial"]
+    },
+    "resume": {
+      "id": "resume",
+      "category": "document",
+      "name": "Executive & Professional Resume / CV",
+      "description": "Single or two-page professional curriculum vitae read by recruiters and automated Applicant Tracking Systems (ATS).",
+      "primary_intent": "Instant optical scannability, compact information density, and polished professionalism.",
+      "key_requirements": {
+        "readability_priorities": {"body": 9, "small_text": 9, "ui": 8, "numbers": 8},
+        "recommended_hierarchy": {"primary": "heading", "secondary": "body", "accent": "caption"},
+        "weight_diversity_needed": 3,
+        "ideal_styles": ["modern", "corporate", "minimal", "editorial"],
+        "forbidden_styles": ["grunge", "decorative", "playful-kids-script", "cyberpunk-techno"]
+      },
+      "platform_performance": {
+        "target_platforms": ["pdf", "print"],
+        "preferred_formats": ["ttf", "otf"],
+        "variable_font_recommended": false,
+        "embedding_requirement": "Editable Embedding",
+        "notes": "Maintain 10pt–11pt body text with 1.3–1.4 line-height for optimal page density and ATS text extraction."
+      },
+      "recommended_curated_pairings": ["credit-valley-general-sans-modern-publishing", "general-sans-ubuntu-developer-portal"]
+    },
+    "poster": {
+      "id": "poster",
+      "category": "marketing",
+      "name": "Event, Festival & Exhibition Poster",
+      "description": "Large-format print and digital posters viewed from a distance of several feet.",
+      "primary_intent": "Distant visual capture, overwhelming graphic personality, and distinct hierarchy.",
+      "key_requirements": {
+        "readability_priorities": {"body": 6, "ui": 6, "small_text": 5, "numbers": 7},
+        "recommended_hierarchy": {"primary": "display", "secondary": "heading", "accent": "caption"},
+        "weight_diversity_needed": 2,
+        "ideal_styles": ["brutalist", "grunge", "futuristic", "fashion", "retro"],
+        "forbidden_styles": ["corporate"]
+      },
+      "platform_performance": {
+        "target_platforms": ["print-large-format", "digital-signage"],
+        "preferred_formats": ["otf"],
+        "variable_font_recommended": false,
+        "notes": "PostScript outlines (.otf) deliver supreme Bézier curve accuracy when scaled to 300DPI large format printing."
+      },
+      "recommended_curated_pairings": ["reckoner-ubuntu-industrial-brutalist", "zt-shago-credit-valley-heavy-editorial"]
+    },
+    "logo": {
+      "id": "logo",
+      "category": "marketing",
+      "name": "Logotype & Brand Wordmark",
+      "description": "Foundational brand logotypes and product wordmarks.",
+      "primary_intent": "Unique silhouette recognition, timeless trademark distinctiveness, and reduction clarity at favicon sizes.",
+      "key_requirements": {
+        "readability_priorities": {"body": 5, "ui": 6, "small_text": 6, "numbers": 6},
+        "recommended_hierarchy": {"primary": "logo", "secondary": "caption", "accent": "accent"},
+        "weight_diversity_needed": 1,
+        "ideal_styles": ["modern", "luxury", "minimal", "brutalist", "geometric"],
+        "forbidden_styles": []
+      },
+      "platform_performance": {
+        "target_platforms": ["vector-svg", "print", "app-icon"],
+        "preferred_formats": ["otf", "ttf"],
+        "variable_font_recommended": false,
+        "notes": "Convert typography to vector outlines (SVG) in production brand marks."
+      },
+      "recommended_curated_pairings": ["chillax-general-sans-tech-luxury", "ithaca-general-sans-editorial-luxury"]
+    },
+    "branding": {
+      "id": "branding",
+      "category": "marketing",
+      "name": "Comprehensive Brand Identity System",
+      "description": "Holistic brand guidelines spanning packaging, stationery, website, social assets, and corporate collateral.",
+      "primary_intent": "Cohesive brand voice across both digital and physical touchpoints.",
+      "key_requirements": {
+        "readability_priorities": {"body": 9, "ui": 9, "small_text": 8, "numbers": 8},
+        "recommended_hierarchy": {"primary": "hero", "secondary": "body", "accent": "caption"},
+        "weight_diversity_needed": 5,
+        "ideal_styles": ["modern", "luxury", "corporate", "premium", "editorial"],
+        "forbidden_styles": ["novelty-comic"]
+      },
+      "platform_performance": {
+        "target_platforms": ["omnichannel"],
+        "preferred_formats": ["otf", "ttf", "woff2"],
+        "variable_font_recommended": true,
+        "notes": "Select superfamilies with complete desktop (OTF/TTF) and webfont (WOFF2) licenses."
+      },
+      "recommended_curated_pairings": ["chillax-general-sans-tech-luxury", "kingsbridge-chillax-fashion-editorial"]
+    },
+    "advertisement": {
+      "id": "advertisement",
+      "category": "marketing",
+      "name": "Digital Ad & Billboard Campaign",
+      "description": "Social media display ads, web banners (IAB standard sizes), and outdoor digital billboards.",
+      "primary_intent": "Sub-second visual hook, punchy copy delivery, and instant brand recall.",
+      "key_requirements": {
+        "readability_priorities": {"body": 7, "ui": 8, "small_text": 7, "numbers": 8},
+        "recommended_hierarchy": {"primary": "hero", "secondary": "button", "accent": "caption"},
+        "weight_diversity_needed": 3,
+        "ideal_styles": ["brutalist", "modern", "fashion", "playful"],
+        "forbidden_styles": []
+      },
+      "platform_performance": {
+        "target_platforms": ["iab-ads", "digital-billboard", "social-media"],
+        "preferred_formats": ["woff2", "otf"],
+        "variable_font_recommended": false,
+        "max_payload_kb": 80,
+        "notes": "Ad networks impose strict asset payload limits (< 150KB total for the entire banner zip)."
+      },
+      "recommended_curated_pairings": ["reckoner-ubuntu-industrial-brutalist", "alphakind-simply-sans-playful-community"]
+    }
+  }
+}

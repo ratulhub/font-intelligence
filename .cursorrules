@@ -1,0 +1,27 @@
+# Cursor Rules — Font Intelligence Thin Adapter
+
+This project uses the **Font Intelligence Typography Decision System**.
+
+## Canonical Source of Truth
+Consult and follow:
+👉 [`.agents/skills/font-intelligence/SKILL.md`](file:///d:/font-intelligence/.agents/skills/font-intelligence/SKILL.md)
+
+## When to Activate
+Activate Font Intelligence when:
+- Writing or refactoring CSS/SCSS/Tailwind typography rules, `@font-face` definitions, or font variables.
+- Designing UI components, web pages, landing pages, dashboards, Flutter apps, or React Native views.
+- Selecting, pairing, or styling fonts for any digital or print use case.
+- Auditing font readability, licensing, or script coverage.
+
+## Commands & Resources
+- CLI Pair Recommender: `python scripts/recommend.py --use-case <id> --style "<vibe>" --platform <web|flutter|powerpoint>`
+- Catalog Data: `catalog/fonts.json`, `catalog/use-cases.json`, `catalog/pairings.json`
+- Scoring Engine: `scripts/score_pair.py`
+- Compact Fallback: [`lite/font-intelligence-lite.md`](file:///d:/font-intelligence/lite/font-intelligence-lite.md)
+
+## Core Guardrails
+- Never invent fonts, unverified weights, or unsupported language scripts.
+- Never use display/decorative fonts for body or dense UI text.
+- Respect explicit user font choices — anchor and pair around them.
+- Maximum 2 primary families (heading + body/UI), mono only when required.
+- Full protocol: [`.agents/skills/font-intelligence/SKILL.md`](file:///d:/font-intelligence/.agents/skills/font-intelligence/SKILL.md).

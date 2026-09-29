@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Font Intelligence Specimen & Visual Inspection System: Dynamic live typography preview, multi-criteria filtering, and licensing verification for 103 catalog families.">
+  <title>Font Intelligence — Typography Specimen & Inspection System</title>
+  
+  <!-- Modern Typography Fonts for UI Shell -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Dynamic Font-Faces injected by JavaScript -->
+  <style id="dynamic-font-faces"></style>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header Navigation -->
+    <header class="top-nav" role="banner">
+      <div class="nav-brand">
+        <div class="brand-logo" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect width="28" height="28" rx="8" fill="url(#brand-grad)"/>
+            <path d="M7 8H21M14 8V21M10 21H18" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="brand-grad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6366F1"/>
+                <stop offset="1" stop-color="#A855F7"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-titles">
+          <h1>Font Intelligence</h1>
+          <span class="brand-subtitle">Specimen & Visual Inspection System</span>
+        </div>
+      </div>
+
+      <!-- Live Metrics Bar -->
+      <div class="nav-metrics" id="nav-metrics" aria-label="Catalog Statistics">
+        <div class="metric-pill">
+          <span class="metric-num" id="stat-total-fonts">103</span>
+          <span class="metric-lbl">Families</span>
+        </div>
+        <div class="metric-pill">
+          <span class="metric-num" id="stat-open-source">48</span>
+          <span class="metric-lbl">Verified Open Source</span>
+        </div>
+        <div class="metric-pill">
+          <span class="metric-num" id="stat-variable-fonts">6</span>
+          <span class="metric-lbl">Variable</span>
+        </div>
+        <div class="metric-pill">
+          <span class="metric-num" id="stat-total-files">475</span>
+          <span class="metric-lbl">Verified Binaries</span>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="nav-actions">
+        <a href="../docs/redistribution-review.md" target="_blank" class="btn btn-secondary btn-sm" title="View redistribution audit report">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Licensing Audit
+        </a>
+        <button id="btn-reset-filters" class="btn btn-outline btn-sm" title="Reset all filters">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+          Reset
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-layout" role="main">
+      <!-- Sticky Filter Control Center -->
+      <section class="control-panel glass-panel" aria-label="Typography Search and Filters">
+        <!-- Search and Presets Row -->
+        <div class="control-row search-row">
+          <div class="search-box">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="search-input" placeholder="Search by font name, style, category, or notes (e.g. 'Chillax', 'luxury', 'monospace')..." autocomplete="off" spellcheck="false">
+            <span class="search-shortcut">/</span>
+          </div>
+
+          <div class="view-toggles">
+            <button id="view-grid" class="view-btn active" title="Grid View" aria-label="Grid View">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg>
+            </button>
+            <button id="view-stream" class="view-btn" title="Editorial Stream View" aria-label="Editorial Stream View">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="5" rx="1.5"/><rect x="3" y="11" width="18" height="5" rx="1.5"/><rect x="3" y="18" width="18" height="5" rx="1.5"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Filter Selects Grid -->
+        <div class="filter-grid">
+          <!-- Category Filter -->
+          <div class="filter-group">
+            <label for="filter-category">Category</label>
+            <div class="select-wrapper">
+              <select id="filter-category">
+                <option value="">All Categories</option>
+                <option value="sans-serif">Sans-Serif</option>
+                <option value="serif">Serif</option>
+                <option value="display">Display</option>
+                <option value="monospace">Monospace</option>
+                <option value="handwriting">Handwriting</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Style Filter -->
+          <div class="filter-group">
+            <label for="filter-style">Design Style</label>
+            <div class="select-wrapper">
+              <select id="filter-style">
+                <option value="">All Styles</option>
+                <option value="modern">Modern</option>
+                <option value="luxury">Luxury</option>
+                <option value="premium">Premium</option>
+                <option value="editorial">Editorial</option>
+                <option value="brutalist">Brutalist</option>
+                <option value="minimal">Minimal</option>
+                <option value="corporate">Corporate</option>
+                <option value="technical">Technical</option>
+                <option value="futuristic">Futuristic</option>
+                <option value="playful">Playful</option>
+                <option value="classic">Classic</option>
+                <option value="industrial">Industrial</option>
+                <option value="humanist">Humanist</option>
+                <option value="geometric">Geometric</option>
+                <option value="retro">Retro</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Script / Language Filter -->
+          <div class="filter-group">
+            <label for="filter-script">Language / Script</label>
+            <div class="select-wrapper">
+              <select id="filter-script">
+                <option value="">All Scripts</option>
+                <option value="Latin">Latin (103 families)</option>
+                <option value="Cyrillic">Cyrillic (18 verified)</option>
+                <option value="Greek">Greek (34 verified)</option>
+                <option value="Hangul">Hangul / Korean (11 verified)</option>
+                <option value="Devanagari">Devanagari (1 verified)</option>
+                <option value="Bangla">Bangla (Audit / Companion)</option>
+                <option value="Arabic">Arabic (Audit / Companion)</option>
+                <option value="CJK">CJK / East Asian</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Typography Role Filter -->
+          <div class="filter-group">
+            <label for="filter-role">Typography Role</label>
+            <div class="select-wrapper">
+              <select id="filter-role">
+                <option value="">All Roles</option>
+                <option value="heading">Heading</option>
+                <option value="body">Body Prose</option>
+                <option value="ui">UI & Buttons</option>
+                <option value="number">Numbers & Data</option>
+                <option value="display">Display & Branding</option>
+                <option value="hero">Hero Headline</option>
+                <option value="code">Code / Monospace</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- License Status Filter -->
+          <div class="filter-group">
+            <label for="filter-license">Redistribution Status</label>
+            <div class="select-wrapper">
+              <select id="filter-license">
+                <option value="">All Statuses</option>
+                <option value="verified">Verified Open Source (48)</option>
+                <option value="needs-review">Needs Review (42)</option>
+                <option value="restricted">Restricted (10)</option>
+                <option value="unknown">Unknown (3)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Variable Fonts Toggle -->
+          <div class="filter-group toggle-group">
+            <label for="filter-variable">Variable Fonts</label>
+            <label class="switch">
+              <input type="checkbox" id="filter-variable">
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <!-- Readability Threshold Slider -->
+          <div class="filter-group slider-group">
+            <div class="slider-header">
+              <label for="filter-readability">Min Readability</label>
+              <span id="readability-val" class="slider-badge">≥ 1/10</span>
+            </div>
+            <input type="range" id="filter-readability" min="1" max="10" value="1" step="1">
+          </div>
+        </div>
+
+        <!-- Specimen Customization Toolbar -->
+        <div class="specimen-toolbar">
+          <div class="custom-text-box">
+            <label for="custom-text-input">Preview Text:</label>
+            <input type="text" id="custom-text-input" value="Sphinx of black quartz, judge my vow." placeholder="Type custom specimen text...">
+          </div>
+
+          <div class="quick-presets">
+            <span class="presets-label">Presets:</span>
+            <button class="preset-pill active" data-preset="Sphinx of black quartz, judge my vow.">Pangram</button>
+            <button class="preset-pill" data-preset="Modern Digital Architecture & Typography">Headlines</button>
+            <button class="preset-pill" data-preset="Numbers: 0123456789  $4,892,105.40  +18.4%">Telemetry</button>
+            <button class="preset-pill" data-preset="Button CTA • Confirm Order • Metric Dashboard">UI Controls</button>
+            <button class="preset-pill" data-preset="আমাদের সুন্দর বাংলা বর্ণমালা এবং সংখ্যা ১২৩৪৫">Bangla</button>
+          </div>
+
+          <div class="size-controls">
+            <label for="font-size-slider">Size: <span id="font-size-val">28px</span></label>
+            <input type="range" id="font-size-slider" min="14" max="72" value="28" step="1">
+          </div>
+        </div>
+      </section>
+
+      <!-- Results Count & Active Tags -->
+      <div class="results-meta">
+        <span id="results-count" class="results-badge">Showing 103 font families</span>
+        <div id="active-filters-chips" class="active-chips"></div>
+      </div>
+
+      <!-- Specimen Cards Grid Container -->
+      <section class="specimen-grid" id="font-grid" aria-label="Font Specimens">
+        <!-- Dynamic Cards rendered via app.js -->
+        <div class="loading-state">
+          <div class="spinner"></div>
+          <p>Loading canonical font intelligence catalog...</p>
+        </div>
+      </section>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="empty-state hidden">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        <h3>No font families matched your criteria</h3>
+        <p>Try clearing active filters or reducing minimum readability thresholds.</p>
+        <button id="btn-clear-empty" class="btn btn-primary">Clear All Filters</button>
+      </div>
+    </main>
+
+    <!-- Inspection Modal / Character Drawer -->
+    <div id="inspector-modal" class="modal-backdrop hidden" aria-modal="true" role="dialog">
+      <div class="modal-window glass-panel">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <h2 id="modal-font-name">Font Name</h2>
+            <span id="modal-font-category" class="tag-pill">Category</span>
+            <span id="modal-font-id" class="tag-code">id</span>
+          </div>
+          <button id="modal-close-btn" class="close-btn" aria-label="Close dialog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <!-- Tabs -->
+          <div class="modal-tabs">
+            <button class="modal-tab active" data-tab="waterfall">Weights Waterfall</button>
+            <button class="modal-tab" data-tab="glyphs">Glyph Set</button>
+            <button class="modal-tab" data-tab="licensing">Licensing & Redistribution</button>
+            <button class="modal-tab" data-tab="tokens">Code Tokens</button>
+          </div>
+
+          <!-- Tab Content 1: Waterfall -->
+          <div id="tab-waterfall" class="tab-pane active">
+            <div id="modal-waterfall-list" class="waterfall-list"></div>
+          </div>
+
+          <!-- Tab Content 2: Glyphs -->
+          <div id="tab-glyphs" class="tab-pane">
+            <div class="glyph-section">
+              <h4>Uppercase & Lowercase Latin</h4>
+              <div id="modal-glyphs-letters" class="glyph-grid"></div>
+            </div>
+            <div class="glyph-section">
+              <h4>Numerals & Tabular Figures</h4>
+              <div id="modal-glyphs-numbers" class="glyph-grid"></div>
+            </div>
+            <div class="glyph-section">
+              <h4>Punctuation & Symbols</h4>
+              <div id="modal-glyphs-symbols" class="glyph-grid"></div>
+            </div>
+          </div>
+
+          <!-- Tab Content 3: Licensing -->
+          <div id="tab-licensing" class="tab-pane">
+            <div id="modal-licensing-content" class="licensing-details"></div>
+          </div>
+
+          <!-- Tab Content 4: Code Tokens -->
+          <div id="tab-tokens" class="tab-pane">
+            <div class="token-block">
+              <div class="token-header">
+                <span>CSS @font-face & Custom Properties</span>
+                <button id="btn-copy-css" class="btn btn-sm btn-outline">Copy CSS</button>
+              </div>
+              <pre><code id="modal-code-css"></code></pre>
+            </div>
+            <div class="token-block">
+              <div class="token-header">
+                <span>Flutter pubspec.yaml & TextStyle</span>
+                <button id="btn-copy-flutter" class="btn btn-sm btn-outline">Copy Flutter</button>
+              </div>
+              <pre><code id="modal-code-flutter"></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden" role="status" aria-live="polite">
+      <span id="toast-message">Copied to clipboard!</span>
+    </div>
+  </div>
+
+  <!-- Offline Data Bundle (Pre-bundled catalog for resilient zero-server file:// browsing) -->
+  <script src="fonts-data.js"></script>
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

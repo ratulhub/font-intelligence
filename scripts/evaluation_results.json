@@ -1,0 +1,426 @@
+{
+  "project_tests": [
+    {
+      "test_id": 1,
+      "request_name": "Premium fashion website",
+      "use_case_id": "fashion",
+      "use_case_resolved": "High Fashion & Apparel Brand",
+      "style_raw": "premium",
+      "style_interpreted": [
+        "Premium / Enterprise Excellence"
+      ],
+      "target_scripts": [
+        "Latin"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "Ithaca (500)",
+      "body_font": "General Sans (400)",
+      "pairing_score": 94,
+      "pairing_grade": "Exceptional",
+      "weight_delta": 100,
+      "body_readability": 9,
+      "platform": "web",
+      "has_implementation": true,
+      "anti_patterns": []
+    },
+    {
+      "test_id": 2,
+      "request_name": "Luxury ecommerce website",
+      "use_case_id": "ecommerce",
+      "use_case_resolved": "E-Commerce & Digital Storefront",
+      "style_raw": "luxury",
+      "style_interpreted": [
+        "Luxury"
+      ],
+      "target_scripts": [
+        "Latin"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "Chillax (700)",
+      "body_font": "General Sans (400)",
+      "pairing_score": 95,
+      "pairing_grade": "Masterclass",
+      "weight_delta": 300,
+      "body_readability": 9,
+      "platform": "web",
+      "has_implementation": true,
+      "anti_patterns": []
+    },
+    {
+      "test_id": 3,
+      "request_name": "SaaS landing page",
+      "use_case_id": "landing-page",
+      "use_case_resolved": "High-Conversion Landing Page",
+      "style_raw": "modern, clean",
+      "style_interpreted": [
+        "Clean / Frictionless Clarity",
+        "Modern / Contemporary Digital"
+      ],
+      "target_scripts": [
+        "Latin"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "Chillax (700)",
+      "body_font": "General Sans (400)",
+      "pairing_score": 94,
+      "pairing_grade": "Exceptional",
+      "weight_delta": 300,
+      "body_readability": 9,
+      "platform": "web",
+      "has_implementation": true,
+      "anti_patterns": []
+    },
+    {
+      "test_id": 4,
+      "request_name": "Fintech dashboard",
+      "use_case_id": "dashboard",
+      "use_case_resolved": "Data-Heavy Analytics Dashboard",
+      "style_raw": "professional, corporate",
+      "style_interpreted": [
+        "Professional / Institutional Trust"
+      ],
+      "target_scripts": [
+        "Latin"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "General Sans (700)",
+      "body_font": "Ubuntu (400)",
+      "pairing_score": 94,
+      "pairing_grade": "Exceptional",
+      "weight_delta": 300,
+      "body_readability": 9,
+      "platform": "web",
+      "has_implementation": true,
+      "anti_patterns": []
+    },
+    {
+      "test_id": 5,
+      "request_name": "Crypto dashboard",
+      "use_case_id": "crypto",
+      "use_case_resolved": "Web3, Blockchain & Crypto Exchange",
+      "style_raw": "futuristic, technical",
+      "style_interpreted": [
+        "Futuristic / Speculative Tech"
+      ],
+      "target_scripts": [
+        "Latin"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "Neuropol (400)",
+      "body_font": "General Sans (400)",
+      "pairing_score": 92,
+      "pairing_grade": "Exceptional",
+      "weight_delta": 0,
+      "body_readability": 9,
+      "platform": "web",
+      "has_implementation": true,
+      "anti_patterns": []
+    },
+    {
+      "test_id": 6,
+      "request_name": "Bangla news website",
+      "use_case_id": "news",
+      "use_case_resolved": "Digital Journalism & News Media",
+      "style_raw": "editorial",
+      "style_interpreted": [
+        "Editorial / Literary Authority"
+      ],
+      "target_scripts": [
+        "Bangla"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "Zt Shago (700)",
+      "body_font": "Credit Valley (400)",
+      "pairing_score": 93,
+      "pairing_grade": "Exceptional",
+      "weight_delta": 300,
+      "body_readability": 9,
+      "platform": "web",
+      "has_implementation": true,
+      "anti_patterns": []
+    },
+    {
+      "test_id": 7,
+      "request_name": "Bangla ecommerce website",
+      "use_case_id": "ecommerce",
+      "use_case_resolved": "E-Commerce & Digital Storefront",
+      "style_raw": "modern, clean",
+      "style_interpreted": [
+        "Clean / Frictionless Clarity",
+        "Modern / Contemporary Digital"
+      ],
+      "target_scripts": [
+        "Bangla"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "Chillax (700)",
+      "body_font": "General Sans (400)",
+      "pairing_score": 94,
+      "pairing_grade": "Exceptional",
+      "weight_delta": 300,
+      "body_readability": 9,
+      "platform": "web",
+      "has_implementation": true,
+      "anti_patterns": []
+    },
+    {
+      "test_id": 8,
+      "request_name": "Kids education app",
+      "use_case_id": "education",
+      "use_case_resolved": "EdTech, Universities & E-Learning",
+      "style_raw": "playful",
+      "style_interpreted": [
+        "Playful / Approachable Warmth"
+      ],
+      "target_scripts": [
+        "Latin"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "Credit Valley (700)",
+      "body_font": "Credit Valley (400)",
+      "pairing_score": 92,
+      "pairing_grade": "Exceptional",
+      "weight_delta": 300,
+      "body_readability": 9,
+      "platform": "mobile",
+      "has_implementation": true,
+      "anti_patterns": []
+    },
+    {
+      "test_id": 9,
+      "request_name": "Developer tool",
+      "use_case_id": "saas",
+      "use_case_resolved": "Modern SaaS Application",
+      "style_raw": "technical",
+      "style_interpreted": [
+        "Technical"
+      ],
+      "target_scripts": [
+        "Latin"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "Chillax (700)",
+      "body_font": "General Sans (400)",
+      "pairing_score": 94,
+      "pairing_grade": "Exceptional",
+      "weight_delta": 300,
+      "body_readability": 9,
+      "platform": "web",
+      "has_implementation": true,
+      "anti_patterns": []
+    },
+    {
+      "test_id": 10,
+      "request_name": "Restaurant website",
+      "use_case_id": "restaurant",
+      "use_case_resolved": "Gastronomy, Bistro & Fine Dining",
+      "style_raw": "elegant, luxury",
+      "style_interpreted": [
+        "Elegant / Refined Grace"
+      ],
+      "target_scripts": [
+        "Latin"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "Credit Valley (700)",
+      "body_font": "Credit Valley (400)",
+      "pairing_score": 95,
+      "pairing_grade": "Masterclass",
+      "weight_delta": 300,
+      "body_readability": 9,
+      "platform": "web",
+      "has_implementation": true,
+      "anti_patterns": []
+    },
+    {
+      "test_id": 11,
+      "request_name": "Startup pitch deck",
+      "use_case_id": "powerpoint",
+      "use_case_resolved": "Microsoft PowerPoint Presentation",
+      "style_raw": "premium, modern",
+      "style_interpreted": [
+        "Premium / Enterprise Excellence",
+        "Modern / Contemporary Digital"
+      ],
+      "target_scripts": [
+        "Latin"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "Chillax (700)",
+      "body_font": "General Sans (400)",
+      "pairing_score": 94,
+      "pairing_grade": "Exceptional",
+      "weight_delta": 300,
+      "body_readability": 9,
+      "platform": "powerpoint",
+      "has_implementation": true,
+      "anti_patterns": []
+    },
+    {
+      "test_id": 12,
+      "request_name": "University presentation",
+      "use_case_id": "presentation",
+      "use_case_resolved": "Executive Pitch Deck & Keynote",
+      "style_raw": "corporate, classic",
+      "style_interpreted": [
+        "Corporate, Classic"
+      ],
+      "target_scripts": [
+        "Latin"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "Chillax (700)",
+      "body_font": "General Sans (400)",
+      "pairing_score": 93,
+      "pairing_grade": "Exceptional",
+      "weight_delta": 300,
+      "body_readability": 9,
+      "platform": "powerpoint",
+      "has_implementation": true,
+      "anti_patterns": []
+    },
+    {
+      "test_id": 13,
+      "request_name": "Editorial magazine",
+      "use_case_id": "blog",
+      "use_case_resolved": "Editorial Blog & Thought Leadership",
+      "style_raw": "editorial",
+      "style_interpreted": [
+        "Editorial / Literary Authority"
+      ],
+      "target_scripts": [
+        "Latin"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "Credit Valley (700)",
+      "body_font": "Credit Valley (400)",
+      "pairing_score": 95,
+      "pairing_grade": "Masterclass",
+      "weight_delta": 300,
+      "body_readability": 9,
+      "platform": "web",
+      "has_implementation": true,
+      "anti_patterns": []
+    },
+    {
+      "test_id": 14,
+      "request_name": "Resume",
+      "use_case_id": "resume",
+      "use_case_resolved": "Executive & Professional Resume / CV",
+      "style_raw": "clean, professional",
+      "style_interpreted": [
+        "Clean / Frictionless Clarity",
+        "Professional / Institutional Trust"
+      ],
+      "target_scripts": [
+        "Latin"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "Credit Valley (700)",
+      "body_font": "Credit Valley (400)",
+      "pairing_score": 95,
+      "pairing_grade": "Masterclass",
+      "weight_delta": 300,
+      "body_readability": 9,
+      "platform": "word",
+      "has_implementation": true,
+      "anti_patterns": []
+    },
+    {
+      "test_id": 15,
+      "request_name": "Premium brand identity",
+      "use_case_id": "branding",
+      "use_case_resolved": "Comprehensive Brand Identity System",
+      "style_raw": "premium, luxury",
+      "style_interpreted": [
+        "Premium / Enterprise Excellence"
+      ],
+      "target_scripts": [
+        "Latin"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "Chillax (700)",
+      "body_font": "General Sans (400)",
+      "pairing_score": 94,
+      "pairing_grade": "Exceptional",
+      "weight_delta": 300,
+      "body_readability": 9,
+      "platform": "web",
+      "has_implementation": true,
+      "anti_patterns": []
+    },
+    {
+      "test_id": 16,
+      "request_name": "Logo typography",
+      "use_case_id": "logo",
+      "use_case_resolved": "Logotype & Brand Wordmark",
+      "style_raw": "modern, luxury",
+      "style_interpreted": [
+        "Modern / Contemporary Digital"
+      ],
+      "target_scripts": [
+        "Latin"
+      ],
+      "language_audit_passed": true,
+      "heading_font": "Chillax (700)",
+      "body_font": "General Sans (400)",
+      "pairing_score": 95,
+      "pairing_grade": "Masterclass",
+      "weight_delta": 300,
+      "body_readability": 9,
+      "platform": "web",
+      "has_implementation": true,
+      "anti_patterns": []
+    }
+  ],
+  "failure_tests": [
+    {
+      "name": "Requested font doesn't exist",
+      "status": "PASSED",
+      "behavior": "Engine caught missing font",
+      "details": "Primary font 'None' not found."
+    },
+    {
+      "name": "Bangla unsupported in catalog",
+      "status": "PASSED",
+      "behavior": "Catalog strictly reports 0 fonts for Bangla; warns zero tofu; injects verified companion fonts (Hind Siliguri, Noto Sans Bengali) into CSS fallback chain.",
+      "details": "0 catalog fonts reported, companion fonts injected: ['Hind Siliguri', 'Noto Sans Bengali']"
+    },
+    {
+      "name": "License unknown / restricted",
+      "status": "PASSED",
+      "behavior": "Audited as UNKNOWN / NO REDISTRIBUTION. Export tools block silent redistribution and flag legal warning banner.",
+      "details": "Society font status: unknown, commercial: False, redistribution: False"
+    },
+    {
+      "name": "Only Bold exists",
+      "status": "PASSED",
+      "behavior": "When a display font with only heavy weights (Reckoner 500/700) is forced into body text, system flags critical anti-pattern and rejects pair (score < 30).",
+      "details": "Assigned weight: 500, Score: 28, Anti-Patterns: ['Decorative or Display Typeface Used as Body Copy']"
+    },
+    {
+      "name": "Only Regular exists",
+      "status": "PASSED",
+      "behavior": "When both fonts only possess 400 Regular weight (delta=0), system relies on structural classification contrast (script vs geometric sans) to maintain optical hierarchy.",
+      "details": "Primary: 400, Secondary: 400, Delta: 0, Score: 77"
+    },
+    {
+      "name": "Existing project already has fonts",
+      "status": "PASSED",
+      "behavior": "System respects existing typography, does not overwrite unprompted (Hard Rule 6), and provides non-destructive integration notice.",
+      "details": "[\u2713] EXISTING DESIGN SYSTEM DETECTED: Found existing fonts [Inter, Roboto]. Recommending non-destructive additions without overriding existing typography (Hard Rule 6)."
+    },
+    {
+      "name": "User explicitly chooses a font",
+      "status": "PASSED",
+      "behavior": "System anchors user selection as primary lead and pairs highest-scoring catalog companions around it (Hard Rule 5).",
+      "details": "Anchored lead: Chillax, Notice: [\u2713] USER ANCHOR RESPECTED: Explicit user choice 'Chillax' anchored. Finding optimal catalog companion (Hard Rule 5)."
+    },
+    {
+      "name": "User asks for decorative font as body",
+      "status": "PASSED",
+      "behavior": "Critical anti-pattern triggered (-45 points). System classifies combination as INCOMPATIBLE and mandates high-readability body replacement.",
+      "details": "Overall Score: 22, Grade: Incompatible, Detected Anti-Pattern: ['decorative-as-body']"
+    }
+  ]
+}

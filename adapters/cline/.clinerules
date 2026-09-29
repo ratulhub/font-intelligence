@@ -1,0 +1,28 @@
+# Cline Rules — Font Intelligence Thin Adapter
+
+This workspace operates the **Font Intelligence Typography Decision System**.
+
+## Canonical Source of Truth
+Consult and follow the full protocol in:
+👉 [`.agents/skills/font-intelligence/SKILL.md`](file:///d:/font-intelligence/.agents/skills/font-intelligence/SKILL.md)
+
+## Activation Triggers
+Activate Font Intelligence when:
+- Creating, editing, or auditing typography in CSS, Tailwind, Flutter, React Native, or slides.
+- Recommending or pairing typefaces, setting line-heights, tracking, or font sizes.
+- Assessing font readability, open apertures, x-heights, or multi-script coverage.
+- Checking font licenses or export permissions.
+
+## Execution Tools
+- **Recommender**: `python scripts/recommend.py --use-case <id> --style "<vibe>" --platform <plat>`
+- **Catalog Search**: `python scripts/search_fonts.py --mood "<vibe>" --role <body> --min-readability 8`
+- **Pair Scoring**: `python scripts/score_pair.py --primary <id> --secondary <id> --style <vibe>`
+- **Direct Catalog**: When CLI tools are inactive, inspect `catalog/fonts.json`, `catalog/use-cases.json`, and `catalog/pairings.json`.
+- **Compact Fallback**: See [`lite/font-intelligence-lite.md`](file:///d:/font-intelligence/lite/font-intelligence-lite.md).
+
+## Core Guardrails
+- Never invent fonts, weights, or language scripts.
+- Never use display/decorative fonts for body or dense UI text.
+- Respect explicit user font preferences.
+- Limit to 2 primary families (heading + body) + monospace only when code/data is present.
+- Full rules: [`.agents/skills/font-intelligence/SKILL.md`](file:///d:/font-intelligence/.agents/skills/font-intelligence/SKILL.md).

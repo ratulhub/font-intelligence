@@ -1,0 +1,191 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "title": "TypographyAntiPatternsRulebook",
+  "description": "Exhaustive rulebook of flawed typographic combinations, failure mechanics, and remediation paths.",
+  "total_anti_patterns": 10,
+  "anti_patterns": [
+    {
+      "id": "decorative-as-body",
+      "name": "Decorative or Display Typeface Used as Body Copy",
+      "severity": "critical",
+      "penalty": 45,
+      "category": "readability",
+      "detection": {
+        "condition": "assigned_role in ['body', 'long_form', 'long-form'] and (font_category in ['display', 'handwriting'] or readability_body < 6)",
+        "explanation": "Typeface intended solely for display headlines is forced into continuous reading duty."
+      },
+      "why_it_fails": "Display and novelty typefaces are crafted with expressive contours, tight counters, high stroke contrast, or textured degradation designed to catch attention at large optical sizes (32px+). When rendered at 14-18px for paragraphs, their unique flourishes clump together, hairlines vanish in rasterization, and baseline rhythm becomes erratic. The human eye cannot form saccadic scanning patterns, causing severe cognitive fatigue and plummeting reading comprehension.",
+      "bad_pairing_example": {
+        "primary": "castle-chunk",
+        "secondary": "die-nasty",
+        "scenario": "Setting multi-paragraph case study body text in a distressed punk display font."
+      },
+      "remedy": "Confine decorative and display typefaces strictly to hero, display, and banner headline roles. Pair them with a neutral, high-legibility workhorse sans-serif or transitional serif (such as General Sans, Gudea, or Credit Valley)."
+    },
+    {
+      "id": "two-similar-display-fonts",
+      "name": "Competing Display Typefaces / Visual Cacophony",
+      "severity": "high",
+      "penalty": 30,
+      "category": "hierarchy",
+      "detection": {
+        "condition": "primary_category in ['display', 'handwriting'] and secondary_category in ['display', 'handwriting'] and secondary_role in ['heading', 'hero', 'display']",
+        "explanation": "Two expressive, attention-demanding fonts used simultaneously in header hierarchies."
+      },
+      "why_it_fails": "A layout can only support one primary typographic vocal lead. When two distinct display fonts (such as an industrial stencil headline and a heavy brutalist slab subheading) are placed in proximity, they compete for focal dominance. The visual friction destroys hierarchy, confusing the eye and making the design look amateur and uncurated.",
+      "bad_pairing_example": {
+        "primary": "reckoner",
+        "secondary": "talero",
+        "scenario": "Using an industrial condensed uppercase font for H1 and a futuristic condensed sci-fi font for H2."
+      },
+      "remedy": "Select one expressive typeface to command attention at key focal points, and let a clean, quiet neutral partner handle all secondary titles and body text."
+    },
+    {
+      "id": "weak-heading-body-contrast",
+      "name": "Insufficient Heading-to-Body Contrast / Flat Hierarchy",
+      "severity": "high",
+      "penalty": 25,
+      "category": "hierarchy",
+      "detection": {
+        "condition": "abs(primary_weight - secondary_weight) <= 100 and primary_category == secondary_category and classification_contrast == 'low'",
+        "explanation": "Heading and body fonts share identical or near-identical weights and visual structure without clear differentiation."
+      },
+      "why_it_fails": "Typographic hierarchy relies on instant visual differentiation. When a headline has the same weight (e.g. 400 Regular) and structural skeleton as the paragraph beneath it, the eye cannot easily scan document structure. Even with size scaling, the absence of stroke weight delta or stylistic contrast leaves the interface feeling muddy, monotone, and hard to navigate.",
+      "bad_pairing_example": {
+        "primary": "general-sans (400 Regular)",
+        "secondary": "gudea (400 Regular)",
+        "scenario": "Setting both headers and body text in 400 Regular weight of similar sans-serifs."
+      },
+      "remedy": "Enforce a minimum 2-step weight delta (e.g. Bold 700 or SemiBold 600 headlines vs Regular 400 body), incorporate classification shifts (Serif headline with Sans body), or use dramatic scale ratios (e.g. 2.5x+)."
+    },
+    {
+      "id": "excessive-font-families",
+      "name": "Typographic Clutter / Excessive Font Families (> 3 Families)",
+      "severity": "high",
+      "penalty": 25,
+      "category": "cohesion",
+      "detection": {
+        "condition": "distinct_font_families_count > 3",
+        "explanation": "More than 3 distinct font families loaded in a single design system."
+      },
+      "why_it_fails": "Using 4 or more typefaces dilutes brand cohesion, fragments the reading experience, and introduces inconsistent baseline metrics, ascender/descender heights, and optical weights. Furthermore, in digital environments, each additional font family incurs extra HTTP network requests and font file payloads, degrading Core Web Vitals (LCP, CLS).",
+      "bad_pairing_example": {
+        "primary": "ithaca",
+        "secondary": "chillax",
+        "tertiary": "credit-valley",
+        "quaternary": "ubuntu",
+        "scenario": "Using four distinct families for H1, H2, body, and navigation."
+      },
+      "remedy": "Limit the typographic system to a maximum of 2 families (or 3 if a dedicated code/monospace font is required). Achieve variety and expressive range by utilizing multiple weights and styles within the same families."
+    },
+    {
+      "id": "language-script-mismatch",
+      "name": "Unicode Script & Language Character Set Disconnect",
+      "severity": "critical",
+      "penalty": 45,
+      "category": "technical",
+      "detection": {
+        "condition": "target_languages not in secondary_supported_languages or target_scripts not in secondary_supported_scripts",
+        "explanation": "A font in the pairing is missing glyphs or diacritics required by the target audience locale."
+      },
+      "why_it_fails": "When a font lacks glyphs for specific language characters (such as Cyrillic alphabets, Greek, Polish diacritics like ą, ę, ł, or Korean Hangul), the browser or OS must substitute glyphs from a fallback system font. This results in missing character boxes ('tofu' squares) or jarring mid-word optical glitches where glyph weights, heights, and metrics clash violently with surrounding text.",
+      "bad_pairing_example": {
+        "primary": "bm-dohyeon",
+        "secondary": "aclonica",
+        "scenario": "Pairing a Hangul display font with a Latin-only body font for a bilingual Korean/English interface."
+      },
+      "remedy": "Audit character maps and OpenType cmap tables before pairing. Ensure both fonts fully support all target ISO language codes and required Unicode blocks."
+    },
+    {
+      "id": "low-x-height-ui",
+      "name": "Low x-Height or Closed Apertures in UI Controls & Microcopy",
+      "severity": "high",
+      "penalty": 20,
+      "category": "readability",
+      "detection": {
+        "condition": "assigned_role in ['ui', 'button', 'caption'] and (readability_ui < 7 or x_height_ratio == 'low')",
+        "explanation": "A typeface with small lowercase letters or tight letter openings is used in UI microcopy."
+      },
+      "why_it_fails": "At small interface sizes (10-13px in buttons, badges, tooltips, and table rows), lowercase characters with small x-heights look tiny compared to capital letters. Closed apertures cause letters like 'c', 'e', 'o', 'a' to visually merge into identical solid blobs, severely hurting readability and violating WCAG accessibility contrast criteria.",
+      "bad_pairing_example": {
+        "primary": "ithaca",
+        "secondary": "ithaca",
+        "scenario": "Setting 11px form field placeholder labels or button text in a high-contrast display serif."
+      },
+      "remedy": "Use fonts engineered with generous x-heights, open apertures, and robust stroke terminals (e.g. General Sans, Ubuntu, or Neris) for all UI controls and small annotations."
+    },
+    {
+      "id": "hairline-screen-fatigue",
+      "name": "Hairline / Ultra-Light Weight for Digital Screen Body Text",
+      "severity": "high",
+      "penalty": 20,
+      "category": "readability",
+      "detection": {
+        "condition": "assigned_role in ['body', 'long_form', 'ui'] and assigned_weight in [100, 200] and platform in ['web', 'mobile', 'digital']",
+        "explanation": "Weight 100 (Thin) or 200 (ExtraLight) assigned to running body paragraphs on screens."
+      },
+      "why_it_fails": "Digital displays rely on pixel grids and subpixel antialiasing. Hairline and ultra-light weights have strokes only 1 pixel wide (or less). Against bright backlights, thin strokes break, wash out, and blur, requiring readers to squint and exert high cognitive effort to decipher continuous prose.",
+      "bad_pairing_example": {
+        "primary": "chillax (700 Bold)",
+        "secondary": "chillax (200 ExtraLight)",
+        "scenario": "Using weight 200 for 14px mobile blog body text."
+      },
+      "remedy": "Maintain running body text at weight 400 (Regular) for light mode, and weight 450 to 500 (Medium) for dark mode to counteract optical irradiation."
+    },
+    {
+      "id": "monospace-longform-fatigue",
+      "name": "Monospace Typeface Used for Continuous Long-Form Prose",
+      "severity": "medium",
+      "penalty": 15,
+      "category": "readability",
+      "detection": {
+        "condition": "font_category == 'monospace' and assigned_role in ['body', 'long_form']",
+        "explanation": "Monospaced font assigned to multi-paragraph articles or continuous reading."
+      },
+      "why_it_fails": "Human reading speed depends on recognizable word shapes formed by proportional letter spacing ('i' taking less horizontal space than 'w'). In monospace typography, every character occupies an identical width cell, resulting in awkward gaps around thin letters and squeezed wide letters. This disrupts natural saccadic eye movement and reduces reading velocity by 15-25%.",
+      "bad_pairing_example": {
+        "primary": "neuropol",
+        "secondary": "ubuntu-mono",
+        "scenario": "Setting a 2,000-word documentation guide body entirely in Ubuntu Mono."
+      },
+      "remedy": "Confine monospace typefaces to code snippets, logs, tabular data columns, and small technical badges. Use a proportional sans or serif for long-form prose."
+    },
+    {
+      "id": "uncanny-sans-mismatch",
+      "name": "Uncanny Valley / Discordant Near-Identical Sans-Serifs",
+      "severity": "medium",
+      "penalty": 15,
+      "category": "cohesion",
+      "detection": {
+        "condition": "primary_category == 'sans-serif' and secondary_category == 'sans-serif' and primary_id != secondary_id and primary_subtype == secondary_subtype",
+        "explanation": "Two different sans fonts from the same subtype (e.g. two neo-grotesques) paired together without distinct personality contrast."
+      },
+      "why_it_fails": "When two typefaces are nearly identical but have slight, subtle differences in terminal cut angles, oval curvature, or capital heights, the human eye perceives it as an error or an incomplete web font load rather than an intentional design choice. It lacks the clarity of either harmony or deliberate contrast.",
+      "bad_pairing_example": {
+        "primary": "general-sans (Heading)",
+        "secondary": "modestic-sans (Body)",
+        "scenario": "Mixing two slightly different neo-grotesque sans families in the same interface."
+      },
+      "remedy": "Apply the classic principle: 'Contrast or Concord'. Either utilize different weights within a single family (Concord), or combine clearly contrasting categories (Serif + Sans, Geometric Sans + Humanist Sans)."
+    },
+    {
+      "id": "personality-polar-clash",
+      "name": "Aesthetic & Emotional Polar Clash",
+      "severity": "high",
+      "penalty": 25,
+      "category": "cohesion",
+      "detection": {
+        "condition": "('luxury' in primary_styles and 'grunge' in secondary_styles) or ('playful' in primary_styles and 'classic' in secondary_styles) or ('brutalist' in primary_styles and 'handwritten' in secondary_styles)",
+        "explanation": "Typefaces with contradictory emotional, cultural, or historical associations paired haphazardly."
+      },
+      "why_it_fails": "Typefaces communicate unconscious emotional cues. When a high-fashion luxury serif is paired with an urban distressed graffiti font or a playful cartoon marker in a serious financial context, the conflicting signals disorient the audience and erode brand credibility.",
+      "bad_pairing_example": {
+        "primary": "ithaca",
+        "secondary": "paint-marker",
+        "scenario": "Using a Didone luxury serif header with a graffiti street marker for subtitles in a premium cosmetics site."
+      },
+      "remedy": "Align all fonts with a unified design tone, audience expectation, and emotional brand archetype."
+    }
+  ]
+}

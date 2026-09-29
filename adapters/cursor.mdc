@@ -1,0 +1,25 @@
+---
+description: Font Intelligence typography decision system, font pairing, and CSS/Flutter/PowerPoint typography rules
+globs: **/*.{css,scss,tsx,jsx,html,vue,svelte,dart,json,md}
+alwaysApply: false
+---
+
+# Font Intelligence Typography System
+
+This project adheres to the **Font Intelligence Typography Decision System**.
+
+Canonical Skill:
+👉 [`.agents/skills/font-intelligence/SKILL.md`](file:///d:/font-intelligence/.agents/skills/font-intelligence/SKILL.md)
+
+## Core Mandates
+1. **Never Default to Generic Fonts**: Do NOT default to Inter, Roboto, Arial, or Helvetica unprompted. Use curated catalog fonts backed by technical facts.
+2. **Never Invent Fonts, Weights, or Scripts**: Strictly verify weights in `catalog/fonts.json` and OpenType scripts (zero-tofu policy).
+3. **Respect Explicit User Choices**: If the user asks for a specific font, anchor it and build complementary hierarchy around it.
+4. **No Decorative Fonts for Body**: Enforce readability >= 7/10 for body and UI prose.
+5. **Protect Existing Typography**: If CSS variables or Tailwind tokens already define a font family, preserve it unless redesign is requested.
+
+## Execution Tools
+- Recommend: `python scripts/recommend.py --use-case <id> --style "<vibe>" --platform <web|flutter>`
+- Score Pair: `python scripts/score_pair.py --primary <id> --secondary <id> --style <vibe>`
+- Search: `python scripts/search_fonts.py --mood "<vibe>" --role <body> --min-readability 8`
+- Export & Licenses: `python scripts/copy_fonts.py --fonts "<id1>,<id2>" --dest "dist/fonts"`

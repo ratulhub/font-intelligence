@@ -1,0 +1,14 @@
+{
+  "catalog_version": "1.0.0",
+  "schema_version": "2.0.0",
+  "skill_version": "1.0.0",
+  "generated_at": "2026-09-29T12:00:00+00:00",
+  "total_families": 103,
+  "total_files": 475,
+  "scalability_targets": {
+    "tier_1": 100,
+    "tier_2": 250,
+    "tier_3": 500,
+    "tier_4": 1000
+  }
+}

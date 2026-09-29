@@ -1,0 +1,678 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "title": "FontIntelligenceCuratedPairings",
+  "description": "Curated masterclass typography pairings engineered with deep typographic rationale, contrast metrics, and cross-platform recommendations.",
+  "total_pairings": 12,
+  "pairings": [
+    {
+      "id": "chillax-general-sans-tech-luxury",
+      "name": "Tech Luxury & Contemporary SaaS: Chillax + General Sans",
+      "project_styles": ["modern", "luxury", "minimal", "technical", "premium"],
+      "platforms": ["web", "mobile", "desktop"],
+      "primary_font": {
+        "id": "chillax",
+        "name": "Chillax",
+        "role": "hero",
+        "weight": 600,
+        "style": "normal"
+      },
+      "secondary_font": {
+        "id": "general-sans",
+        "name": "General Sans",
+        "role": "body",
+        "weight": 400,
+        "style": "normal"
+      },
+      "accent_font": {
+        "id": "ubuntu-mono",
+        "name": "Ubuntu Mono",
+        "role": "code",
+        "weight": 400,
+        "style": "normal"
+      },
+      "contrast_metrics": {
+        "weight_delta": 200,
+        "classification_contrast": "Subtle (Contemporary Geometric Sans vs Neo-Grotesque Sans)",
+        "stroke_contrast_dynamic": "Harmonious (Both maintain controlled monoline geometry)",
+        "x_height_harmony": "Near-Identical (Seamless optical line alignment across headers and body)"
+      },
+      "scores": {
+        "overall": 98,
+        "visual_contrast": 96,
+        "serif_sans_relationship": 94,
+        "personality": 99,
+        "readability": 98,
+        "width": 96,
+        "weight_availability": 100,
+        "role_compatibility": 100,
+        "project_style": 98,
+        "language": 95,
+        "platform": 100
+      },
+      "rationale": {
+        "summary": "WHY IT WORKS: Chillax introduces refined, avant-garde geometric elegance into high-level hero titles and section headers, while General Sans provides an unshakeable, neutral neo-grotesque foundation for dense interface elements and running paragraphs. Because both typefaces originate from contemporary digital foundries with generous x-heights and crisp subpixel rendering, they establish a high-end Silicon Valley aesthetic without any of the jarring friction common in mixed-sans combinations.",
+        "visual_contrast_why": "The contrast is created primarily through distinctive letterform personality and weight modulation rather than conflicting skeletons. Chillax features stylized circular curves and contemporary stylistic alternates, creating immediate visual interest at large sizes, while General Sans remains clean and disciplined.",
+        "role_harmony_why": "General Sans possesses top-tier readability ratings (10/10 in UI, 9/10 in body) and an expansive weight ladder with true italics. Pairing it with Chillax for display and Ubuntu Mono for technical telemetry creates an impenetrable, complete design system."
+      },
+      "typographic_recommendation": {
+        "hero": {"size": "3.5rem", "weight": 600, "line_height": "1.1", "letter_spacing": "-0.03em"},
+        "h1": {"size": "2.5rem", "weight": 600, "line_height": "1.2", "letter_spacing": "-0.02em"},
+        "h2": {"size": "1.75rem", "weight": 500, "line_height": "1.25", "letter_spacing": "-0.01em"},
+        "body": {"size": "1.0rem", "weight": 400, "line_height": "1.6", "letter_spacing": "0em"},
+        "ui": {"size": "0.875rem", "weight": 500, "line_height": "1.4", "letter_spacing": "0.01em"},
+        "code": {"size": "0.875rem", "weight": 400, "line_height": "1.5", "letter_spacing": "0em"}
+      }
+    },
+    {
+      "id": "ithaca-general-sans-editorial-luxury",
+      "name": "Haute Couture & Editorial Prestige: Ithaca + General Sans",
+      "project_styles": ["luxury", "editorial", "fashion", "premium", "classic"],
+      "platforms": ["web", "mobile", "print"],
+      "primary_font": {
+        "id": "ithaca",
+        "name": "Ithaca",
+        "role": "hero",
+        "weight": 500,
+        "style": "normal"
+      },
+      "secondary_font": {
+        "id": "general-sans",
+        "name": "General Sans",
+        "role": "body",
+        "weight": 400,
+        "style": "normal"
+      },
+      "accent_font": null,
+      "contrast_metrics": {
+        "weight_delta": 100,
+        "classification_contrast": "High (High-Contrast Didone Display Serif vs Neutral Neo-Grotesque Sans)",
+        "stroke_contrast_dynamic": "Dramatic (Ultra-high hairline/stem contrast vs Monoline discipline)",
+        "x_height_harmony": "Balanced (Ithaca capital majesty supported by General Sans open lowercases)"
+      },
+      "scores": {
+        "overall": 97,
+        "visual_contrast": 100,
+        "serif_sans_relationship": 100,
+        "personality": 98,
+        "readability": 95,
+        "width": 94,
+        "weight_availability": 92,
+        "role_compatibility": 98,
+        "project_style": 100,
+        "language": 92,
+        "platform": 96
+      },
+      "rationale": {
+        "summary": "WHY IT WORKS: The quintessential high-contrast pairing: Ithaca evokes the timeless sophistication of Vogue and architectural monographs through its razor-sharp hairline serifs and dramatic vertical stress, while General Sans grounds the reading experience with absolute legibility, neutral tone, and effortless modern usability.",
+        "visual_contrast_why": "The contrast operates on multiple planes: structural (serif vs sans), stroke modulation (extreme thick/thin vs uniform strokes), and historical heritage (neoclassical Didone vs contemporary digital grotesque).",
+        "role_harmony_why": "Ithaca is strictly confined to hero and section titles (where its delicate serifs render crisply at 32px+), entirely avoiding the catastrophic anti-pattern of using display serifs for body text. General Sans carries all paragraphs, captions, and navigation."
+      },
+      "typographic_recommendation": {
+        "hero": {"size": "4.0rem", "weight": 500, "line_height": "1.05", "letter_spacing": "-0.02em"},
+        "h1": {"size": "2.75rem", "weight": 500, "line_height": "1.15", "letter_spacing": "-0.01em"},
+        "h2": {"size": "2.0rem", "weight": 500, "line_height": "1.25", "letter_spacing": "0em"},
+        "body": {"size": "1.0625rem", "weight": 400, "line_height": "1.65", "letter_spacing": "0em"},
+        "ui": {"size": "0.8125rem", "weight": 500, "line_height": "1.3", "letter_spacing": "0.05em"}
+      }
+    },
+    {
+      "id": "credit-valley-general-sans-modern-publishing",
+      "name": "Classical Editorial & Long-Form Publishing: Credit Valley + General Sans",
+      "project_styles": ["editorial", "classic", "corporate", "premium"],
+      "platforms": ["web", "mobile", "print"],
+      "primary_font": {
+        "id": "credit-valley",
+        "name": "Credit Valley",
+        "role": "hero",
+        "weight": 700,
+        "style": "normal"
+      },
+      "secondary_font": {
+        "id": "credit-valley",
+        "name": "Credit Valley",
+        "role": "body",
+        "weight": 400,
+        "style": "normal"
+      },
+      "accent_font": {
+        "id": "general-sans",
+        "name": "General Sans",
+        "role": "ui",
+        "weight": 500,
+        "style": "normal"
+      },
+      "contrast_metrics": {
+        "weight_delta": 300,
+        "classification_contrast": "Editorial Hybrid (Transitional Serif Prose with Neo-Grotesque UI Navigation)",
+        "stroke_contrast_dynamic": "Moderate (Natural pen-derived modulation in text, clean lines in UI)",
+        "x_height_harmony": "Optimal (Classic book proportions for effortless ocular tracking)"
+      },
+      "scores": {
+        "overall": 96,
+        "visual_contrast": 94,
+        "serif_sans_relationship": 98,
+        "personality": 97,
+        "readability": 98,
+        "width": 95,
+        "weight_availability": 92,
+        "role_compatibility": 98,
+        "project_style": 98,
+        "language": 94,
+        "platform": 95
+      },
+      "rationale": {
+        "summary": "WHY IT WORKS: For long-form intellectual essays, journalism, and investigative reporting, Credit Valley delivers authentic bookish authority with genuine companion italics that ensure reading endurance over thousands of words. General Sans steps in exclusively for interface metadata, time-to-read badges, table of contents, and responsive navigation.",
+        "visual_contrast_why": "The contrast between the warm, literary serif prose and the crisp, surgical sans UI creates a clear functional boundary between the content being read and the medium being used to read it.",
+        "role_harmony_why": "Credit Valley has true italics (critical for bibliographic citations and semantic emphasis), avoiding faux-slant distortion entirely."
+      },
+      "typographic_recommendation": {
+        "hero": {"size": "3.0rem", "weight": 700, "line_height": "1.15", "letter_spacing": "-0.015em"},
+        "h1": {"size": "2.25rem", "weight": 700, "line_height": "1.25", "letter_spacing": "-0.01em"},
+        "h2": {"size": "1.5rem", "weight": 700, "line_height": "1.3", "letter_spacing": "0em"},
+        "body": {"size": "1.125rem", "weight": 400, "line_height": "1.75", "letter_spacing": "0em"},
+        "ui": {"size": "0.8125rem", "weight": 500, "line_height": "1.4", "letter_spacing": "0.03em"}
+      }
+    },
+    {
+      "id": "reckoner-ubuntu-industrial-brutalist",
+      "name": "Industrial Brutalism & Tech Power: Reckoner + Ubuntu",
+      "project_styles": ["brutalist", "industrial", "technical", "modern"],
+      "platforms": ["web", "mobile", "print"],
+      "primary_font": {
+        "id": "reckoner",
+        "name": "Reckoner",
+        "role": "hero",
+        "weight": 700,
+        "style": "normal"
+      },
+      "secondary_font": {
+        "id": "ubuntu",
+        "name": "Ubuntu",
+        "role": "body",
+        "weight": 400,
+        "style": "normal"
+      },
+      "accent_font": {
+        "id": "ubuntu-mono",
+        "name": "Ubuntu Mono",
+        "role": "code",
+        "weight": 400,
+        "style": "normal"
+      },
+      "contrast_metrics": {
+        "weight_delta": 300,
+        "classification_contrast": "High (Condensed Industrial Uppercase Sans vs Open Humanist Sans)",
+        "stroke_contrast_dynamic": "High (Monolithic condensed geometry vs Warm organic curves)",
+        "x_height_harmony": "Dynamic Contrast (Tall condensed capital impact countered by generous lowercase x-height)"
+      },
+      "scores": {
+        "overall": 95,
+        "visual_contrast": 98,
+        "serif_sans_relationship": 92,
+        "personality": 96,
+        "readability": 95,
+        "width": 90,
+        "weight_availability": 94,
+        "role_compatibility": 98,
+        "project_style": 98,
+        "language": 94,
+        "platform": 95
+      },
+      "rationale": {
+        "summary": "WHY IT WORKS: Reckoner strikes an unmistakable industrial, architectural chord with its solid, condensed geometric uppercase contours, functioning as a colossal graphical anchor. Because heavy condensed fonts are unreadable in paragraphs, pairing it with Ubuntu's exceptionally open humanist apertures and generous counters provides effortless reading comfort, resolving the brutalist aesthetic with uncompromising usability.",
+        "visual_contrast_why": "The contrast in horizontal width (compressed headlines vs relaxed, open body) creates an exhilarating optical tension.",
+        "role_harmony_why": "Ubuntu scores 9/10 in body, long-form, and UI legibility, while Ubuntu Mono perfectly completes the industrial engineering telemetry."
+      },
+      "typographic_recommendation": {
+        "hero": {"size": "4.5rem", "weight": 700, "line_height": "0.95", "letter_spacing": "0.02em"},
+        "h1": {"size": "3.0rem", "weight": 700, "line_height": "1.05", "letter_spacing": "0.01em"},
+        "h2": {"size": "1.875rem", "weight": 500, "line_height": "1.2", "letter_spacing": "0.03em"},
+        "body": {"size": "1.0rem", "weight": 400, "line_height": "1.6", "letter_spacing": "0em"},
+        "ui": {"size": "0.875rem", "weight": 500, "line_height": "1.4", "letter_spacing": "0.01em"},
+        "code": {"size": "0.875rem", "weight": 400, "line_height": "1.5", "letter_spacing": "0em"}
+      }
+    },
+    {
+      "id": "neuropol-general-sans-futuristic-scifi",
+      "name": "Cyberpunk & Futuristic Speculative UI: Neuropol + General Sans + Unispace",
+      "project_styles": ["futuristic", "technical", "modern"],
+      "platforms": ["web", "mobile", "desktop"],
+      "primary_font": {
+        "id": "neuropol",
+        "name": "Neuropol",
+        "role": "hero",
+        "weight": 400,
+        "style": "normal"
+      },
+      "secondary_font": {
+        "id": "general-sans",
+        "name": "General Sans",
+        "role": "body",
+        "weight": 400,
+        "style": "normal"
+      },
+      "accent_font": {
+        "id": "unispace",
+        "name": "Unispace",
+        "role": "code",
+        "weight": 700,
+        "style": "normal"
+      },
+      "contrast_metrics": {
+        "weight_delta": 0,
+        "classification_contrast": "High (Futuristic Sci-Fi Geometry vs Clean Neo-Grotesque)",
+        "stroke_contrast_dynamic": "Structural (Curvilinear techno loops vs Structured functional glyphs)",
+        "x_height_harmony": "Balanced"
+      },
+      "scores": {
+        "overall": 93,
+        "visual_contrast": 94,
+        "serif_sans_relationship": 90,
+        "personality": 97,
+        "readability": 94,
+        "width": 90,
+        "weight_availability": 90,
+        "role_compatibility": 96,
+        "project_style": 98,
+        "language": 90,
+        "platform": 94
+      },
+      "rationale": {
+        "summary": "WHY IT WORKS: Sci-fi and gaming interfaces frequently fail by setting entire paragraphs in unreadable techno novelty fonts. This system solves that problem: Neuropol delivers unmistakable cyberpunk identity for mission titles and game headers, Unispace powers HUD numbers and system telemetry, and General Sans delivers crystal-clear operational reading comfort for lore, settings, and dialogue.",
+        "visual_contrast_why": "Neuropol's distinct flat-bottom and curved techno arches create a futuristic silhouette, while General Sans recedes gracefully into the background.",
+        "role_harmony_why": "Strict role separation prevents visual burnout while completely preserving genre authenticity."
+      },
+      "typographic_recommendation": {
+        "hero": {"size": "3.5rem", "weight": 400, "line_height": "1.1", "letter_spacing": "0.04em"},
+        "h1": {"size": "2.25rem", "weight": 400, "line_height": "1.2", "letter_spacing": "0.03em"},
+        "body": {"size": "0.9375rem", "weight": 400, "line_height": "1.65", "letter_spacing": "0.01em"},
+        "ui": {"size": "0.8125rem", "weight": 500, "line_height": "1.35", "letter_spacing": "0.04em"},
+        "code": {"size": "0.8125rem", "weight": 700, "line_height": "1.4", "letter_spacing": "0.05em"}
+      }
+    },
+    {
+      "id": "kingsbridge-chillax-fashion-editorial",
+      "name": "High Fashion & Modern Magazine: Kingsbridge + Chillax",
+      "project_styles": ["fashion", "editorial", "luxury", "modern", "premium"],
+      "platforms": ["web", "mobile", "print"],
+      "primary_font": {
+        "id": "kingsbridge",
+        "name": "Kingsbridge",
+        "role": "hero",
+        "weight": 700,
+        "style": "normal"
+      },
+      "secondary_font": {
+        "id": "chillax",
+        "name": "Chillax",
+        "role": "body",
+        "weight": 400,
+        "style": "normal"
+      },
+      "accent_font": null,
+      "contrast_metrics": {
+        "weight_delta": 300,
+        "classification_contrast": "Architectural (Grotesque Condensed/Expanded vs Contemporary Geometric)",
+        "stroke_contrast_dynamic": "Balanced",
+        "x_height_harmony": "Harmonious"
+      },
+      "scores": {
+        "overall": 95,
+        "visual_contrast": 96,
+        "serif_sans_relationship": 92,
+        "personality": 97,
+        "readability": 92,
+        "width": 96,
+        "weight_availability": 100,
+        "role_compatibility": 96,
+        "project_style": 98,
+        "language": 94,
+        "platform": 96
+      },
+      "rationale": {
+        "summary": "WHY IT WORKS: Kingsbridge offers unmatched structural versatility through its 44 weights, allowing art directors to use compressed or expanded cuts for dramatic full-spread titles. Chillax matches this luxury quotient with warm, geometric modernism for subtitles and body copy.",
+        "visual_contrast_why": "The contrast between Kingsbridge's authoritative grotesque discipline and Chillax's softer geometric flourishes creates an effortlessly chic look.",
+        "role_harmony_why": "Both families offer deep weight options, enabling fine-grained hierarchy adjustments across responsive viewports."
+      },
+      "typographic_recommendation": {
+        "hero": {"size": "4.0rem", "weight": 700, "line_height": "1.05", "letter_spacing": "-0.02em"},
+        "h1": {"size": "2.75rem", "weight": 600, "line_height": "1.15", "letter_spacing": "-0.01em"},
+        "body": {"size": "1.0rem", "weight": 400, "line_height": "1.6", "letter_spacing": "0.01em"},
+        "ui": {"size": "0.875rem", "weight": 500, "line_height": "1.3", "letter_spacing": "0.03em"}
+      }
+    },
+    {
+      "id": "oligopoly-gudea-minimalist-product",
+      "name": "Minimalist Product & Hardware Brand: Oligopoly + Gudea",
+      "project_styles": ["minimal", "modern", "premium", "corporate"],
+      "platforms": ["web", "mobile", "print"],
+      "primary_font": {
+        "id": "oligopoly",
+        "name": "Oligopoly",
+        "role": "hero",
+        "weight": 700,
+        "style": "normal"
+      },
+      "secondary_font": {
+        "id": "gudea",
+        "name": "Gudea",
+        "role": "body",
+        "weight": 400,
+        "style": "normal"
+      },
+      "accent_font": null,
+      "contrast_metrics": {
+        "weight_delta": 300,
+        "classification_contrast": "Moderate (Sculpted Modern Geometric vs Humanist Body Sans)",
+        "stroke_contrast_dynamic": "Balanced",
+        "x_height_harmony": "Complementary"
+      },
+      "scores": {
+        "overall": 94,
+        "visual_contrast": 94,
+        "serif_sans_relationship": 92,
+        "personality": 95,
+        "readability": 97,
+        "width": 93,
+        "weight_availability": 92,
+        "role_compatibility": 98,
+        "project_style": 96,
+        "language": 94,
+        "platform": 95
+      },
+      "rationale": {
+        "summary": "WHY IT WORKS: Oligopoly embodies modern industrial design with its precise, razor-clean geometric forms reminiscent of Braun or Teenage Engineering. Gudea provides humanized warmth and superior reading cadence, preventing the digital experience from feeling sterile or clinical.",
+        "visual_contrast_why": "The contrast between mathematical precision in headlines and organic humanist proportions in paragraphs delivers both visual intrigue and optical comfort.",
+        "role_harmony_why": "Gudea was drawn specifically for continuous reading on screens, featuring open counters that remain legible even under low contrast conditions."
+      },
+      "typographic_recommendation": {
+        "hero": {"size": "3.25rem", "weight": 700, "line_height": "1.1", "letter_spacing": "-0.02em"},
+        "h1": {"size": "2.25rem", "weight": 700, "line_height": "1.2", "letter_spacing": "-0.01em"},
+        "body": {"size": "1.0rem", "weight": 400, "line_height": "1.6", "letter_spacing": "0em"},
+        "ui": {"size": "0.875rem", "weight": 500, "line_height": "1.35", "letter_spacing": "0.02em"}
+      }
+    },
+    {
+      "id": "general-sans-ubuntu-developer-portal",
+      "name": "Developer Hub & Cloud Infrastructure: General Sans + Ubuntu + Ubuntu Mono",
+      "project_styles": ["technical", "corporate", "modern"],
+      "platforms": ["web", "desktop"],
+      "primary_font": {
+        "id": "general-sans",
+        "name": "General Sans",
+        "role": "heading",
+        "weight": 600,
+        "style": "normal"
+      },
+      "secondary_font": {
+        "id": "ubuntu",
+        "name": "Ubuntu",
+        "role": "body",
+        "weight": 400,
+        "style": "normal"
+      },
+      "accent_font": {
+        "id": "ubuntu-mono",
+        "name": "Ubuntu Mono",
+        "role": "code",
+        "weight": 400,
+        "style": "normal"
+      },
+      "contrast_metrics": {
+        "weight_delta": 200,
+        "classification_contrast": "Workhorse Concord (Clean Grotesque Shell with Humanist Reading Core)",
+        "stroke_contrast_dynamic": "Uniform",
+        "x_height_harmony": "Perfect (Both have generous digital x-heights)"
+      },
+      "scores": {
+        "overall": 97,
+        "visual_contrast": 92,
+        "serif_sans_relationship": 96,
+        "personality": 98,
+        "readability": 100,
+        "width": 96,
+        "weight_availability": 98,
+        "role_compatibility": 100,
+        "project_style": 98,
+        "language": 98,
+        "platform": 98
+      },
+      "rationale": {
+        "summary": "WHY IT WORKS: Engineering documentation and developer portals require absolute clarity across prose, UI microcopy, and raw code. General Sans provides crisp architectural navigation, Ubuntu provides warm, non-fatiguing documentation text, and Ubuntu Mono delivers unambiguous numeral and glyph distinction (e.g. 0 vs O, 1 vs l vs I) essential for command-line syntax.",
+        "visual_contrast_why": "Hierarchy is achieved through weight delta and font family specialization rather than flamboyant display ornamentation.",
+        "role_harmony_why": "Combines two of the highest-rated readability engines in the catalog, ensuring zero cognitive friction for developers reading deep technical specs."
+      },
+      "typographic_recommendation": {
+        "h1": {"size": "2.25rem", "weight": 600, "line_height": "1.2", "letter_spacing": "-0.015em"},
+        "h2": {"size": "1.625rem", "weight": 600, "line_height": "1.25", "letter_spacing": "-0.01em"},
+        "body": {"size": "1.0rem", "weight": 400, "line_height": "1.65", "letter_spacing": "0em"},
+        "ui": {"size": "0.875rem", "weight": 500, "line_height": "1.4", "letter_spacing": "0.01em"},
+        "code": {"size": "0.875rem", "weight": 400, "line_height": "1.5", "letter_spacing": "0em"}
+      }
+    },
+    {
+      "id": "zt-shago-credit-valley-heavy-editorial",
+      "name": "Heavy Editorial & Investigative Journalism: Zt Shago + Credit Valley",
+      "project_styles": ["editorial", "brutalist", "modern"],
+      "platforms": ["web", "print"],
+      "primary_font": {
+        "id": "zt-shago",
+        "name": "Zt Shago",
+        "role": "hero",
+        "weight": 800,
+        "style": "normal"
+      },
+      "secondary_font": {
+        "id": "credit-valley",
+        "name": "Credit Valley",
+        "role": "body",
+        "weight": 400,
+        "style": "normal"
+      },
+      "accent_font": {
+        "id": "general-sans",
+        "name": "General Sans",
+        "role": "caption",
+        "weight": 500,
+        "style": "normal"
+      },
+      "contrast_metrics": {
+        "weight_delta": 400,
+        "classification_contrast": "Extreme (Monumental Black Neo-Grotesque vs Refined Transitional Serif)",
+        "stroke_contrast_dynamic": "High Impact",
+        "x_height_harmony": "Harmonious"
+      },
+      "scores": {
+        "overall": 96,
+        "visual_contrast": 100,
+        "serif_sans_relationship": 98,
+        "personality": 97,
+        "readability": 96,
+        "width": 94,
+        "weight_availability": 94,
+        "role_compatibility": 98,
+        "project_style": 98,
+        "language": 94,
+        "platform": 95
+      },
+      "rationale": {
+        "summary": "WHY IT WORKS: Front-page newspaper and breaking investigative journalism aesthetics demand overwhelming headline authority coupled with literary reading immersion. Zt Shago delivers crushing headline gravity at ExtraBold 800, which transitions effortlessly into the classical, rhythmic cadences of Credit Valley.",
+        "visual_contrast_why": "The 400-unit weight delta and the serif/sans clash creates an undeniable, dramatic editorial pulse.",
+        "role_harmony_why": "Zt Shago commands the eye from across the room, while Credit Valley keeps readers immersed for continuous paragraphs."
+      },
+      "typographic_recommendation": {
+        "hero": {"size": "4.25rem", "weight": 800, "line_height": "1.0", "letter_spacing": "-0.03em"},
+        "h1": {"size": "2.75rem", "weight": 800, "line_height": "1.1", "letter_spacing": "-0.02em"},
+        "body": {"size": "1.125rem", "weight": 400, "line_height": "1.7", "letter_spacing": "0em"},
+        "ui": {"size": "0.8125rem", "weight": 500, "line_height": "1.3", "letter_spacing": "0.03em"}
+      }
+    },
+    {
+      "id": "alphakind-simply-sans-playful-community",
+      "name": "Playful Brand & Creative Community: Alphakind + Simply Sans",
+      "project_styles": ["playful", "organic", "modern"],
+      "platforms": ["web", "mobile"],
+      "primary_font": {
+        "id": "alphakind",
+        "name": "Alphakind",
+        "role": "hero",
+        "weight": 400,
+        "style": "normal"
+      },
+      "secondary_font": {
+        "id": "simply-sans",
+        "name": "Simply Sans",
+        "role": "body",
+        "weight": 400,
+        "style": "normal"
+      },
+      "accent_font": null,
+      "contrast_metrics": {
+        "weight_delta": 0,
+        "classification_contrast": "Warm Casual (Friendly Hand-Lettered Script vs Clean Geometric Sans)",
+        "stroke_contrast_dynamic": "Organic vs Structured",
+        "x_height_harmony": "Balanced"
+      },
+      "scores": {
+        "overall": 92,
+        "visual_contrast": 94,
+        "serif_sans_relationship": 92,
+        "personality": 98,
+        "readability": 92,
+        "width": 90,
+        "weight_availability": 85,
+        "role_compatibility": 95,
+        "project_style": 97,
+        "language": 88,
+        "platform": 92
+      },
+      "rationale": {
+        "summary": "WHY IT WORKS: For wellness brands, social apps, and educational platforms, Alphakind brings approachable human warmth and creative cheer without descending into childish novelty. Simply Sans provides a quiet, disciplined geometric anchor that keeps buttons, captions, and text blocks crisp and clean.",
+        "visual_contrast_why": "The contrast between hand-drawn warmth in titles and geometric precision in body copy delivers friendliness without compromising professional polish.",
+        "role_harmony_why": "Alphakind is confined to hero titles and callouts, preventing script fatigue in body text."
+      },
+      "typographic_recommendation": {
+        "hero": {"size": "3.5rem", "weight": 400, "line_height": "1.15", "letter_spacing": "-0.01em"},
+        "h1": {"size": "2.25rem", "weight": 400, "line_height": "1.25", "letter_spacing": "0em"},
+        "body": {"size": "1.0rem", "weight": 400, "line_height": "1.6", "letter_spacing": "0em"},
+        "ui": {"size": "0.875rem", "weight": 700, "line_height": "1.35", "letter_spacing": "0.02em"}
+      }
+    },
+    {
+      "id": "raster-forge-general-sans-retro-gaming",
+      "name": "Retro Pixel Gaming & Digital Arcade: Raster Forge + General Sans",
+      "project_styles": ["retro", "technical", "playful"],
+      "platforms": ["web", "mobile", "desktop"],
+      "primary_font": {
+        "id": "raster-forge",
+        "name": "Raster Forge",
+        "role": "hero",
+        "weight": 400,
+        "style": "normal"
+      },
+      "secondary_font": {
+        "id": "general-sans",
+        "name": "General Sans",
+        "role": "body",
+        "weight": 400,
+        "style": "normal"
+      },
+      "accent_font": {
+        "id": "raster-forge",
+        "name": "Raster Forge",
+        "role": "number",
+        "weight": 400,
+        "style": "normal"
+      },
+      "contrast_metrics": {
+        "weight_delta": 0,
+        "classification_contrast": "Extreme (Authentic 8-Bit Pixel Bitmap vs High-Resolution Neo-Grotesque)",
+        "stroke_contrast_dynamic": "Stepped Bitmap Grid vs Smooth Cubic Bézier Curves",
+        "x_height_harmony": "Distinctive"
+      },
+      "scores": {
+        "overall": 91,
+        "visual_contrast": 98,
+        "serif_sans_relationship": 88,
+        "personality": 98,
+        "readability": 90,
+        "width": 88,
+        "weight_availability": 85,
+        "role_compatibility": 94,
+        "project_style": 98,
+        "language": 85,
+        "platform": 92
+      },
+      "rationale": {
+        "summary": "WHY IT WORKS: A masterclass in retro modernism: Raster Forge delivers nostalgic 8-bit arcade authenticity for high scores, leaderboard stats, and 16-bit badges, while General Sans guarantees that patch notes, inventory descriptions, and terms of service remain completely legible on Retina displays.",
+        "visual_contrast_why": "The stepped pixel bitmap contrast against ultra-smooth vectors creates a deliberate, delightful nostalgic aesthetic.",
+        "role_harmony_why": "Never attempts to force pixel fonts into multi-line text, avoiding optical strain."
+      },
+      "typographic_recommendation": {
+        "hero": {"size": "3.0rem", "weight": 400, "line_height": "1.2", "letter_spacing": "0.05em"},
+        "h1": {"size": "2.0rem", "weight": 400, "line_height": "1.3", "letter_spacing": "0.04em"},
+        "body": {"size": "0.9375rem", "weight": 400, "line_height": "1.6", "letter_spacing": "0em"},
+        "ui": {"size": "0.8125rem", "weight": 500, "line_height": "1.3", "letter_spacing": "0.02em"},
+        "number": {"size": "1.25rem", "weight": 400, "line_height": "1.0", "letter_spacing": "0.06em"}
+      }
+    },
+    {
+      "id": "bm-dohyeon-general-sans-korean-multilingual",
+      "name": "Global Multilingual & Korean Heritage: BM DoHyeon + General Sans",
+      "project_styles": ["modern", "editorial", "retro"],
+      "platforms": ["web", "mobile"],
+      "primary_font": {
+        "id": "bm-dohyeon",
+        "name": "BM DoHyeon",
+        "role": "hero",
+        "weight": 400,
+        "style": "normal"
+      },
+      "secondary_font": {
+        "id": "general-sans",
+        "name": "General Sans",
+        "role": "body",
+        "weight": 400,
+        "style": "normal"
+      },
+      "accent_font": {
+        "id": "ubuntu",
+        "name": "Ubuntu",
+        "role": "caption",
+        "weight": 400,
+        "style": "normal"
+      },
+      "contrast_metrics": {
+        "weight_delta": 0,
+        "classification_contrast": "Cross-Script Cultural (Bold Korean Acrylic Signboard Grotesque vs Modern Latin Neo-Grotesque)",
+        "stroke_contrast_dynamic": "Robust Block Forms vs Subtle Contemporary Curves",
+        "x_height_harmony": "Balanced Optical Center"
+      },
+      "scores": {
+        "overall": 94,
+        "visual_contrast": 95,
+        "serif_sans_relationship": 92,
+        "personality": 97,
+        "readability": 95,
+        "width": 94,
+        "weight_availability": 92,
+        "role_compatibility": 96,
+        "project_style": 96,
+        "language": 96,
+        "platform": 95
+      },
+      "rationale": {
+        "summary": "WHY IT WORKS: BM DoHyeon brings legendary Seoul street acrylic sign craftsmanship with complete native Hangul syllable coverage, creating bold, punchy bilingual titles. General Sans supports Latin headlines and global body copy with matching geometric strength and flawless rendering.",
+        "visual_contrast_why": "Both typefaces share solid geometric weight and generous proportions, preventing visual collapse across bilingual typography.",
+        "role_harmony_why": "Ensures that Korean characters and Latin typography sit comfortably side-by-side without baseline drop or optical sizing mismatch."
+      },
+      "typographic_recommendation": {
+        "hero": {"size": "3.5rem", "weight": 400, "line_height": "1.2", "letter_spacing": "-0.01em"},
+        "h1": {"size": "2.5rem", "weight": 400, "line_height": "1.25", "letter_spacing": "0em"},
+        "body": {"size": "1.0rem", "weight": 400, "line_height": "1.65", "letter_spacing": "0em"},
+        "ui": {"size": "0.875rem", "weight": 500, "line_height": "1.4", "letter_spacing": "0.01em"}
+      }
+    }
+  ]
+}

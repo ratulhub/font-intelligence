@@ -1,0 +1,44 @@
+---
+description: Font Intelligence typography decision system for font selection, pairings, UI styling, and token generation
+globs: **/*.{css,scss,sass,less,html,jsx,tsx,vue,svelte,dart,json,md}
+alwaysApply: false
+---
+
+# Cursor Rule: Font Intelligence
+
+When working on typography, fonts, UI design, CSS styling, or design systems, use the **Font Intelligence Typography Decision System**.
+
+## Canonical Source of Truth
+Follow the detailed protocol in:
+👉 [`.agents/skills/font-intelligence/SKILL.md`](file:///d:/font-intelligence/.agents/skills/font-intelligence/SKILL.md)
+
+## Activation Triggers
+Apply this rule when:
+- Creating or editing font tokens, `@font-face` rules, or CSS typography properties (`font-family`, `font-weight`, `letter-spacing`, `line-height`).
+- Designing new pages, components, SaaS dashboards, or mobile views.
+- Choosing font pairings or establishing heading/body hierarchy.
+- Verifying font licensing or multi-language script coverage.
+
+## Quick CLI Reference
+```bash
+# Get recommendations for a project
+python scripts/recommend.py --use-case <id> --style "<vibe>" --platform <web|flutter|powerpoint>
+
+# Score a candidate pairing
+python scripts/score_pair.py --primary <id> --secondary <id> --style <vibe>
+
+# Search catalog fonts
+python scripts/search_fonts.py --mood "<vibe>" --role <body> --min-readability 8
+```
+
+## Offline / Fast Fallback
+If Python is unavailable or context is limited:
+- Inspect `catalog/fonts.json` and `catalog/pairings.json`.
+- Refer to [`lite/font-intelligence-lite.md`](file:///d:/font-intelligence/lite/font-intelligence-lite.md).
+
+## Non-Negotiable Hard Rules
+1. Never invent fonts, weights, or language scripts.
+2. Never assign decorative fonts to body/UI text.
+3. Respect explicit user font preferences.
+4. Limit to 2 primary font families (plus monospace only for code/telemetry).
+5. Always provide robust generic system fallbacks.

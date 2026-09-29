@@ -1,0 +1,34 @@
+MIT License
+
+Copyright (c) 2026 Font Intelligence Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+### Font Binaries & Foundry Licenses Notice
+
+The MIT license above applies exclusively to the Font Intelligence software code,
+decision engine algorithms, schema definitions, agent skills, adapters, and documentation.
+
+The individual font files contained within the `All fonts/` directory are the intellectual
+property of their respective foundries and designers, and remain governed by their
+individual font licenses (SIL Open Font License, Apache 2.0, MIT, Creative Commons,
+or proprietary Freeware commercial grants) as tracked in `catalog/fonts.json` and
+detailed in `docs/redistribution-review.md`.
