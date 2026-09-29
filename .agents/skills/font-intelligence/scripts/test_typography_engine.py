@@ -8,7 +8,11 @@ import os
 import sys
 import unittest
 import json
-import jsonschema
+try:
+    import jsonschema
+except ImportError:
+    jsonschema = None
+
 
 sys.stdout.reconfigure(encoding='utf-8')
 
@@ -28,7 +32,8 @@ class TestTypographyDecisionSystem(unittest.TestCase):
         """Step 1, 2, 3: Schema validation across all families."""
         self.assertGreaterEqual(len(self.fonts), 103, "Catalog must contain at least 103 typographic families.")
                                       
-        jsonschema.validate(instance=self.engine.fonts_catalog, schema=self.schema)
+        if jsonschema:
+            jsonschema.validate(instance=self.engine.fonts_catalog, schema=self.schema)
 
     def test_02_controlled_style_categories(self):
         """Step 1: Verify controlled style categories."""

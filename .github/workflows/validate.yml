@@ -25,8 +25,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install fonttools
+          python -m pip install -r requirements.txt
 
       - name: 1. Validate Catalog Schema & File References
         run: |

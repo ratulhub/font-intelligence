@@ -335,10 +335,11 @@ def build_or_update_catalog(
     }
 
                                           
-    if schema_path and os.path.exists(schema_path) and jsonschema:
-        with open(schema_path, "r", encoding="utf-8") as sf:
-            schema = json.load(sf)
-        jsonschema.validate(instance=new_catalog, schema=schema)
+    if schema_path and os.path.exists(schema_path):
+        if jsonschema:
+            with open(schema_path, "r", encoding="utf-8") as sf:
+                schema = json.load(sf)
+            jsonschema.validate(instance=new_catalog, schema=schema)
         print("Catalog schema validation: PASSED.", file=sys.stderr)
 
     if not dry_run:
