@@ -6,20 +6,17 @@
   <meta name="description" content="Font Intelligence Specimen Archive: Dynamic typography specimen testing, multi-attribute filtering, and licensing verification for 103 catalog families.">
   <title>Font Intelligence — Typography Specimen & Foundry Studio</title>
   
-  <!-- Curated Editorial Typography for Interface -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
   
-  <!-- Dynamic Font-Faces injected by JavaScript -->
-  <style id="dynamic-font-faces"></style>
+    <style id="dynamic-font-faces"></style>
 </head>
 <body>
   <div class="app-container">
-    <!-- Header Navigation -->
-    <header class="top-nav" role="banner">
+        <header class="top-nav" role="banner">
       <div class="nav-brand">
         <div class="brand-monogram" aria-hidden="true">FI</div>
         <div class="brand-titles">
@@ -28,28 +25,26 @@
         </div>
       </div>
 
-      <!-- Catalog Statistics -->
-      <div class="nav-metrics" id="nav-metrics" aria-label="Catalog Statistics">
+            <div class="nav-metrics" id="nav-metrics" aria-label="Catalog Statistics">
         <div class="metric-pill">
-          <span class="metric-num" id="stat-total-fonts">103</span>
+          <span class="metric-num" id="stat-total-fonts">413</span>
           <span class="metric-lbl">Families</span>
         </div>
         <div class="metric-pill">
-          <span class="metric-num" id="stat-open-source">57</span>
-          <span class="metric-lbl">Public Open-Source</span>
+          <span class="metric-num" id="stat-open-source">108</span>
+          <span class="metric-lbl">Open Source</span>
         </div>
         <div class="metric-pill">
-          <span class="metric-num" id="stat-variable-fonts">6</span>
-          <span class="metric-lbl">Variable</span>
+          <span class="metric-num" id="stat-commercial-fonts">390</span>
+          <span class="metric-lbl">Free for Commercial Use</span>
         </div>
         <div class="metric-pill">
-          <span class="metric-num" id="stat-total-files">475</span>
-          <span class="metric-lbl">Verified Binaries</span>
+          <span class="metric-num" id="stat-personal-fonts">23</span>
+          <span class="metric-lbl">Free for Personal Use</span>
         </div>
       </div>
 
-      <!-- Actions -->
-      <div class="nav-actions">
+            <div class="nav-actions">
         <a href="../docs/redistribution-review.md" target="_blank" class="btn btn-outline btn-sm">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           Licensing Audit
@@ -61,11 +56,9 @@
       </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="main-layout" role="main">
+        <main class="main-layout" role="main">
       
-      <!-- Interactive Type Pairing Workbench -->
-      <section class="pairing-workbench" id="pairing-workbench" aria-label="Type Pairing Workbench">
+            <section class="pairing-workbench" id="pairing-workbench" aria-label="Type Pairing Workbench">
         <div class="pairing-workbench-header" id="pairing-toggle-btn">
           <div class="pairing-title-wrap">
             <span class="workbench-tag">Interactive</span>
@@ -127,8 +120,7 @@
         </div>
       </section>
 
-      <!-- Filter & Specimen Controls -->
-      <section class="control-panel" aria-label="Typography Search and Filters">
+            <section class="control-panel" aria-label="Typography Search and Filters">
         <div class="search-row">
           <div class="search-box">
             <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -216,13 +208,13 @@
           </div>
 
           <div class="filter-group">
-            <label for="filter-license">Distribution Status</label>
+            <label for="filter-license">License</label>
             <div class="select-wrapper">
               <select id="filter-license">
-                <option value="">All Statuses</option>
-                <option value="public-asset">Public Assets (57)</option>
-                <option value="catalog-only">Catalog Only (33)</option>
-                <option value="restricted">Restricted (4)</option>
+                <option value="">All Licenses</option>
+                <option value="open-source">Open Source (108)</option>
+                <option value="commercial">Free for Commercial Use (390)</option>
+                <option value="personal">Free for Personal Use (23)</option>
               </select>
             </div>
           </div>
@@ -236,8 +228,7 @@
           </div>
         </div>
 
-        <!-- Specimen Text Customizer -->
-        <div class="specimen-toolbar">
+                <div class="specimen-toolbar">
           <div class="specimen-inputs-row">
             <div class="custom-text-box">
               <label for="custom-text-input">Specimen Text:</label>
@@ -262,30 +253,26 @@
         </div>
       </section>
 
-      <!-- Meta Bar -->
-      <div class="results-meta">
+            <div class="results-meta">
         <span id="results-count" class="results-badge">Showing 103 font families</span>
         <div id="active-filters-chips" class="active-chips"></div>
       </div>
 
-      <!-- Specimen Container -->
-      <section id="font-grid" class="specimen-stream" aria-label="Font Specimens">
+            <section id="font-grid" class="specimen-stream" aria-label="Font Specimens">
         <div class="loading-state">
           <div class="spinner"></div>
           <p>Loading font intelligence catalog...</p>
         </div>
       </section>
 
-      <!-- Empty State -->
-      <div id="empty-state" class="empty-state hidden">
+            <div id="empty-state" class="empty-state hidden">
         <h3>No font families matched your criteria</h3>
         <p>Try clearing active filters or lowering the minimum readability threshold.</p>
         <button id="btn-clear-empty" class="btn btn-primary">Clear All Filters</button>
       </div>
     </main>
 
-    <!-- Detailed Inspection Drawer / Modal -->
-    <div id="inspector-modal" class="modal-backdrop hidden" aria-modal="true" role="dialog">
+        <div id="inspector-modal" class="modal-backdrop hidden" aria-modal="true" role="dialog">
       <div class="modal-window">
         <div class="modal-header">
           <div class="modal-title-wrap">
@@ -306,13 +293,11 @@
             <button class="modal-tab" data-tab="tokens">Code Tokens</button>
           </div>
 
-          <!-- Tab Content 1: Waterfall -->
-          <div id="tab-waterfall" class="tab-pane active">
+                    <div id="tab-waterfall" class="tab-pane active">
             <div id="modal-waterfall-list" class="waterfall-list"></div>
           </div>
 
-          <!-- Tab Content 2: Glyphs -->
-          <div id="tab-glyphs" class="tab-pane">
+                    <div id="tab-glyphs" class="tab-pane">
             <div class="glyph-section">
               <h4>Uppercase & Lowercase Latin</h4>
               <div id="modal-glyphs-letters" class="glyph-grid"></div>
@@ -327,13 +312,11 @@
             </div>
           </div>
 
-          <!-- Tab Content 3: Licensing -->
-          <div id="tab-licensing" class="tab-pane">
+                    <div id="tab-licensing" class="tab-pane">
             <div id="modal-licensing-content" class="licensing-details"></div>
           </div>
 
-          <!-- Tab Content 4: Code Tokens -->
-          <div id="tab-tokens" class="tab-pane">
+                    <div id="tab-tokens" class="tab-pane">
             <div class="token-block">
               <div class="token-header">
                 <span>CSS @font-face & Custom Properties</span>
@@ -353,15 +336,12 @@
       </div>
     </div>
 
-    <!-- Toast Notification -->
-    <div id="toast" class="toast hidden" role="status" aria-live="polite">
+        <div id="toast" class="toast hidden" role="status" aria-live="polite">
       <span id="toast-message">Copied to clipboard</span>
     </div>
   </div>
 
-  <!-- Offline Data Bundle -->
-  <script src="fonts-data.js"></script>
-  <!-- Application Logic -->
-  <script src="app.js"></script>
+    <script src="fonts-data.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

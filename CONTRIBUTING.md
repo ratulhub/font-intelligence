@@ -10,7 +10,7 @@ Font Intelligence is an engineering-grade typography decision engine. We priorit
 
 1. **Zero Hallucination Policy**: Never invent catalog fonts, weights, Unicode script coverage, or licensing permissions.
 2. **Understand Before Choosing**: Font recommendations must be backed by project situation constraints, platform rendering requirements, and a clear typographic rationale explaining **WHY** the combination works.
-3. **Single Canonical Truth**: All agent adapters and tools share the single canonical skill at [`.agents/skills/font-intelligence/SKILL.md`](file:///d:/font-intelligence/.agents/skills/font-intelligence/SKILL.md) and the single canonical catalog in `catalog/`. Never maintain duplicate font databases.
+3. **Single Canonical Truth**: All agent adapters and tools share the single canonical skill at [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md) and the single canonical catalog in `catalog/`. Never maintain duplicate font databases.
 
 ---
 

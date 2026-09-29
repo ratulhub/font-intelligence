@@ -14,7 +14,6 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG_PATH = os.path.join(ROOT_DIR, "catalog", "fonts.json")
 PREVIEW_DATA_JS = os.path.join(ROOT_DIR, "preview", "fonts-data.js")
 
-
 def main():
     if not os.path.exists(CATALOG_PATH):
         print(f"Error: Catalog not found at {CATALOG_PATH}", file=sys.stderr)
@@ -23,7 +22,7 @@ def main():
     with open(CATALOG_PATH, "r", encoding="utf-8") as f:
         catalog = json.load(f)
 
-    # Write window.CATALOG_DATA
+                               
     js_content = f"window.CATALOG_DATA = {json.dumps(catalog)};\n"
 
     os.makedirs(os.path.dirname(PREVIEW_DATA_JS), exist_ok=True)
@@ -31,7 +30,6 @@ def main():
         f.write(js_content)
 
     print(f"Generated {PREVIEW_DATA_JS} ({catalog['total_families']} font families, {len(js_content):,} bytes).")
-
 
 if __name__ == "__main__":
     main()

@@ -33,7 +33,7 @@ class TypographyEngine:
         self.pairings_data = self._load_json(self.pairings_file)
         self.usecases_data = self._load_json(self.usecases_file)
         
-        # Build font index with strict precedence: ID > Name > Alias
+                                                                    
         self.fonts_by_id = {}
         for font in self.fonts_catalog.get("fonts", []):
             self.fonts_by_id[font["id"]] = font
@@ -137,7 +137,7 @@ class TypographyEngine:
                 for av in profile.get("avoid_styles", []): avoid_styles.add(av)
                 rationale_snippets.append(f"{info['name']}: {info.get('why_it_works', '')}")
                 
-        # If no specific interpretation matched, fallback to raw style matching
+                                                                               
         if not matched:
             matched.append(style_query.title())
             preferred_styles.add(style_query.lower())
@@ -158,7 +158,8 @@ class TypographyEngine:
         """
         s_clean = script_name.strip().lower()
         tech = font.get("technical", {})
-        all_tags = [s.lower() for s in tech.get("scripts", [])] + [b.lower() for b in tech.get("unicode_blocks", [])]
+        script_tags = [s.lower() for s in tech.get("scripts", [])]
+        all_tags = script_tags + [b.lower() for b in tech.get("unicode_blocks", [])]
         
         if s_clean in ["latin", "latn"]:
             return any("latin" in t for t in all_tags)
@@ -167,11 +168,11 @@ class TypographyEngine:
         elif s_clean in ["greek", "grek"]:
             return any("greek" in t or "grek" in t for t in all_tags)
         elif s_clean in ["devanagari", "deva", "dev2"]:
-            return any("devanagari" in t or "deva" in t or "dev2" in t for t in all_tags)
+            return any("devanagari" in t or "deva" in t or "dev2" in t for t in script_tags)
         elif s_clean in ["bangla", "bengali", "beng"]:
-            return any("bangla" in t or "bengali" in t or "beng" in t for t in all_tags)
+            return any("bangla" in t or "bengali" in t or "beng" in t for t in script_tags)
         elif s_clean in ["arabic", "arab"]:
-            return any("arabic" in t or "arab" in t for t in all_tags)
+            return any("arabic" in t or "arab" in t for t in script_tags)
         elif s_clean in ["korean", "hangul", "ko"]:
             return any("hangul" in t or "korean" in t for t in all_tags) or "ko" in tech.get("languages", [])
         elif s_clean in ["japanese", "kana"]:
@@ -197,7 +198,7 @@ class TypographyEngine:
         unsupported_scripts = []
         guidance = {}
         
-        # Check global support for each script across all fonts
+                                                               
         for script in target_scripts:
             count = sum(1 for f in self.fonts_catalog.get("fonts", []) if self.font_supports_script(f, script))
             if count == 0:
@@ -210,7 +211,7 @@ class TypographyEngine:
                     guidance[script] = f"No font in the local catalog contains verified glyphs for script '{script}'."
 
         for f in fonts:
-            # Must support all requested scripts
+                                                
             valid = True
             for script in target_scripts:
                 if not self.font_supports_script(f, script):
@@ -241,7 +242,7 @@ class TypographyEngine:
         p_tech = primary_font.get("technical", {})
         s_tech = secondary_font.get("technical", {})
         
-        # 1. Decorative as Body
+                               
         s_cat = s_cur.get("category", "")
         s_readability = s_cur.get("readability", {})
         if secondary_role in ["body", "long_form", "long-form", "ui"] and (s_cat in ["display", "handwriting"] or s_readability.get("body", 10) < 6):
@@ -250,7 +251,7 @@ class TypographyEngine:
                 f"Secondary font '{secondary_font.get('name')}' is a {s_cat} font with low body readability ({s_readability.get('body', 'N/A')}/10), unsuited for {secondary_role} text."
             ))
             
-        # 2. Two similar display fonts
+                                      
         p_cat = p_cur.get("category", "")
         p_is_display = p_cat in ["display", "handwriting"] or any(t in p_cur.get("subtype", "") for t in ["condensed", "stencil", "display", "all-caps"])
         s_is_display = s_cat in ["display", "handwriting"] or any(t in s_cur.get("subtype", "") for t in ["condensed", "stencil", "display", "all-caps"])
@@ -260,7 +261,7 @@ class TypographyEngine:
                 f"Both '{primary_font.get('name')}' and '{secondary_font.get('name')}' are expressive fonts competing for focal dominance in heading roles."
             ))
             
-        # 3. Weak heading/body contrast
+                                       
         weight_delta = abs(primary_weight - secondary_weight)
         if weight_delta <= 100 and p_cat == s_cat and primary_font.get("id") != secondary_font.get("id"):
             if weight_delta == 0:
@@ -269,14 +270,14 @@ class TypographyEngine:
                     f"Heading '{primary_font.get('name')}' and body '{secondary_font.get('name')}' share identical or near-identical weight ({primary_weight} vs {secondary_weight}) with zero classification contrast."
                 ))
                 
-        # 4. Excessive font families
+                                    
         if all_family_count > 3:
             detected.append(self._get_ap_entry(
                 "excessive-font-families",
                 f"Project defines {all_family_count} distinct font families, exceeding the recommended limit of 2-3 families."
             ))
             
-        # 5. Language mismatch
+                              
         p_langs = set(p_tech.get("languages", ["en"]))
         s_langs = set(s_tech.get("languages", ["en"]))
         missing_in_p = [l for l in target_langs if l not in p_langs]
@@ -287,21 +288,21 @@ class TypographyEngine:
                 f"Missing target language support: Primary lacks {missing_in_p or 'none'}, Secondary lacks {missing_in_s or 'none'}."
             ))
             
-        # 6. Monospace for longform
+                                   
         if s_cat == "monospace" and secondary_role in ["body", "long_form", "long-form"]:
             detected.append(self._get_ap_entry(
                 "monospace-longform-fatigue",
                 f"Monospace font '{secondary_font.get('name')}' used for continuous {secondary_role} reading."
             ))
             
-        # 7. Low x-height in UI
+                               
         if secondary_role in ["ui", "button"] and s_readability.get("ui", 10) < 7:
             detected.append(self._get_ap_entry(
                 "low-x-height-ui",
                 f"Font '{secondary_font.get('name')}' has suboptimal UI legibility score ({s_readability.get('ui', 'N/A')}/10) for small interface controls."
             ))
             
-        # 8. Uncanny sans mismatch
+                                  
         if p_cat == "sans-serif" and s_cat == "sans-serif" and primary_font.get("id") != secondary_font.get("id"):
             p_sub = p_cur.get("subtype", "")
             s_sub = s_cur.get("subtype", "")
@@ -311,7 +312,7 @@ class TypographyEngine:
                     f"Both fonts are '{p_sub}' sans-serifs with low weight delta ({weight_delta}). Looks like an accidental rendering error rather than intentional contrast."
                 ))
                 
-        # 9. Personality polar clash
+                                    
         p_styles = set(p_cur.get("styles", []))
         s_styles = set(s_cur.get("styles", []))
         if ("luxury" in p_styles and "grunge" in s_styles) or ("brutalist" in p_styles and "handwritten" in s_styles):
@@ -382,13 +383,13 @@ class TypographyEngine:
         p_tech = primary_font.get("technical", {})
         s_tech = secondary_font.get("technical", {})
         
-        # Primary & Secondary weights
+                                     
         p_weights = p_tech.get("weights", [400])
         s_weights = s_tech.get("weights", [400])
         p_weight = ctx.get("primary_weight", 700 if 700 in p_weights else (p_weights[-1] if p_weights else 400))
         s_weight = ctx.get("secondary_weight", 400 if 400 in s_weights else (s_weights[0] if s_weights else 400))
         
-        # Check anti-patterns
+                             
         anti_patterns = self.detect_anti_patterns(
             primary_font=primary_font,
             secondary_font=secondary_font,
@@ -399,10 +400,10 @@ class TypographyEngine:
             target_languages=target_languages
         )
         
-        # Calculate 10 Dimensions
+                                 
         dimension_scores = {}
         
-        # 1. Visual Contrast
+                            
         weight_delta = abs(p_weight - s_weight)
         if weight_delta >= 400: vc_weight_score = 100
         elif weight_delta >= 300: vc_weight_score = 90
@@ -410,7 +411,7 @@ class TypographyEngine:
         elif weight_delta >= 100: vc_weight_score = 50
         else: vc_weight_score = 25
         
-        # Category classification contrast
+                                          
         p_cat = p_cur.get("category", "")
         s_cat = s_cur.get("category", "")
         if (p_cat == "serif" and s_cat == "sans-serif") or (p_cat == "sans-serif" and s_cat == "serif"):
@@ -418,7 +419,7 @@ class TypographyEngine:
         elif (p_cat == "display" and s_cat in ["sans-serif", "serif"]):
             vc_class_score = 95
         elif p_cat == s_cat and primary_font.get("id") == secondary_font.get("id"):
-            vc_class_score = 90 # Single family concord
+            vc_class_score = 90                        
         elif p_cat == s_cat and p_cur.get("subtype") != s_cur.get("subtype"):
             vc_class_score = 80
         else:
@@ -426,7 +427,7 @@ class TypographyEngine:
             
         dimension_scores["visual_contrast"] = int(0.5 * vc_weight_score + 0.5 * vc_class_score)
         
-        # 2. Serif / Sans Relationship
+                                      
         if (p_cat == "serif" and s_cat == "sans-serif"):
             ssr_score = 100
         elif (p_cat == "sans-serif" and s_cat == "serif"):
@@ -443,7 +444,7 @@ class TypographyEngine:
             ssr_score = 65
         dimension_scores["serif_sans_relationship"] = ssr_score
         
-        # 3. Personality
+                        
         p_styles = set(p_cur.get("styles", []))
         s_styles = set(s_cur.get("styles", []))
         common_styles = p_styles.intersection(s_styles)
@@ -454,12 +455,12 @@ class TypographyEngine:
         elif "modern" in p_styles and "minimal" in s_styles:
             pers_score = 94
         elif p_cat == "display" and ("modern" in s_styles or "minimal" in s_styles or "corporate" in s_styles):
-            pers_score = 90 # Neutral support for display
+            pers_score = 90                              
         else:
             pers_score = 75
         dimension_scores["personality"] = pers_score
         
-        # 4. Readability
+                        
         s_readability = s_cur.get("readability", {})
         if s_role in ["body", "long_form", "long-form"]:
             r_val = s_readability.get("body", 5)
@@ -475,18 +476,18 @@ class TypographyEngine:
         else: read_score = 20
         dimension_scores["readability"] = read_score
         
-        # 5. Width
+                  
         if "condensed" in p_cur.get("subtype", "") and "condensed" not in s_cur.get("subtype", ""):
-            width_score = 92 # Deliberate display contrast
+            width_score = 92                              
         elif "extended" in p_cur.get("subtype", "") and "extended" not in s_cur.get("subtype", ""):
             width_score = 90
         elif "condensed" in s_cur.get("subtype", "") and s_role in ["body", "long_form"]:
-            width_score = 45 # Anti-pattern for body
+            width_score = 45                        
         else:
             width_score = 95
         dimension_scores["width"] = width_score
         
-        # 6. Weight Availability
+                                
         s_weight_count = len(s_weights)
         if s_tech.get("variable", False) or s_weight_count >= 6:
             wa_score = 100
@@ -500,7 +501,7 @@ class TypographyEngine:
             wa_score = min(100, wa_score + 5)
         dimension_scores["weight_availability"] = wa_score
         
-        # 7. Role Compatibility
+                               
         p_roles = [r.lower() for r in p_cur.get("roles", [])]
         s_roles = [r.lower() for r in s_cur.get("roles", [])]
         p_fit = p_role.lower() in p_roles or "heading" in p_roles or "display" in p_roles
@@ -511,19 +512,19 @@ class TypographyEngine:
         else: role_score = 30
         dimension_scores["role_compatibility"] = role_score
         
-        # 8. Project Style
+                          
         target_s = project_style.lower()
         if target_s in [s.lower() for s in p_styles] and target_s in [s.lower() for s in s_styles]:
             ps_score = 100
         elif target_s in [s.lower() for s in p_styles]:
-            ps_score = 92 # Lead font carries the style
+            ps_score = 92                              
         elif target_s in [s.lower() for s in s_styles]:
             ps_score = 80
         else:
             ps_score = 65
         dimension_scores["project_style"] = ps_score
         
-        # 9. Language
+                     
         p_langs = set(p_tech.get("languages", ["en"]))
         s_langs = set(s_tech.get("languages", ["en"]))
         if all(l in p_langs and l in s_langs for l in target_languages):
@@ -534,14 +535,14 @@ class TypographyEngine:
             lang_score = 30
         dimension_scores["language"] = lang_score
         
-        # 10. Platform
+                      
         if s_tech.get("variable", False):
             plat_score = 100
         else:
             plat_score = 90
         dimension_scores["platform"] = plat_score
         
-        # Compute Weighted Score
+                                
         weights = self.scoring_model.get("weights", {
             "visual_contrast": 0.15,
             "serif_sans_relationship": 0.12,
@@ -557,14 +558,14 @@ class TypographyEngine:
         
         raw_score = sum(dimension_scores[k] * weights.get(k, 0.1) for k in dimension_scores)
         
-        # Apply anti-pattern penalty deductions
+                                               
         total_penalty = sum(ap.get("penalty", 20) for ap in anti_patterns)
         final_score = max(0, min(100, int(round(raw_score - total_penalty))))
         
-        # Assign Grade Tier
+                           
         grade = self._resolve_grade_tier(final_score, len(anti_patterns) > 0)
         
-        # Generate WHY it works explanation
+                                           
         explanation = self._generate_explanation(
             primary_font=primary_font,
             secondary_font=secondary_font,
@@ -731,7 +732,7 @@ class TypographyEngine:
         
         plat = platform.lower()
         
-        # Build calibrated fallback stacks, prepending companion fonts if non-Latin scripts are present
+                                                                                                       
         p_fallbacks = list(p_font.get('curated', {}).get('fallback', ['sans-serif'])) if p_font else ['sans-serif']
         s_fallbacks = list(s_font.get('curated', {}).get('fallback', ['sans-serif'])) if s_font else ['sans-serif']
         
@@ -743,7 +744,7 @@ class TypographyEngine:
             p_stack = f"'{p['name']}', " + ", ".join(p_fallbacks)
             s_stack = f"'{s['name']}', " + ", ".join(s_fallbacks)
 
-        # 1. Web
+                
         web_css = f"""/* Typography Tokens for {use_case.get('name')} */
 :root {{
   --font-heading: {p_stack};
@@ -765,7 +766,7 @@ body, p {{
   line-height: 1.65;
 }}"""
 
-        # 2. Flutter
+                    
         flutter_yaml = f"""# Flutter pubspec.yaml font definition
 flutter:
   fonts:
@@ -793,7 +794,7 @@ final bodyStyle = TextStyle(
   height: 1.5,
 );"""
 
-        # 3. React Native
+                         
         react_native = f"""// React Native StyleSheet typography tokens
 import {{ StyleSheet, Platform }} from 'react-native';
 
@@ -820,7 +821,7 @@ export const typography = StyleSheet.create({{
   }}
 }});"""
 
-        # 4. PowerPoint / Office Embedding
+                                          
         office_guidance = f"""MICROSOFT POWERPOINT / OFFICE EMBEDDING PROTOCOL:
 1. Target Format: Use TrueType (.ttf) outlines ONLY. Do NOT use OpenType (.otf) PostScript CFF outlines, which cause font-substitution bugs in PowerPoint on Windows.
 2. Verified Available Files:
@@ -857,14 +858,14 @@ export const typography = StyleSheet.create({{
         """
         candidates = []
         
-        # If primary font is specified, find best partners
+                                                          
         if primary_font_id:
             p_font = self.get_font(primary_font_id)
             if not p_font:
                 raise ValueError(f"Primary font '{primary_font_id}' not found in catalog.")
             primary_candidates = [p_font]
         else:
-            # Pick strong headline candidates matching project style
+                                                                    
             primary_candidates = []
             for f in self.fonts_catalog.get("fonts", []):
                 cur = f.get("curated", {})
@@ -874,7 +875,7 @@ export const typography = StyleSheet.create({{
             if not primary_candidates:
                 primary_candidates = [self.get_font("general-sans"), self.get_font("chillax"), self.get_font("ithaca")]
 
-        # Secondary partner candidates
+                                      
         secondary_pool = []
         for f in self.fonts_catalog.get("fonts", []):
             cur = f.get("curated", {})
@@ -882,7 +883,7 @@ export const typography = StyleSheet.create({{
             if r_score >= 7 and secondary_role in cur.get("roles", []):
                 secondary_pool.append(f)
                 
-        # If pool is empty, fallback to workhorses
+                                                  
         if not secondary_pool:
             secondary_pool = [
                 self.get_font("general-sans"),
@@ -892,7 +893,7 @@ export const typography = StyleSheet.create({{
                 self.get_font("simply-sans")
             ]
 
-        # Evaluate pairs
+                        
         seen_pairs = set()
         for p_font in primary_candidates:
             for s_font in secondary_pool:
@@ -907,12 +908,12 @@ export const typography = StyleSheet.create({{
                     context={"project_style": project_style, "platform": platform, "secondary_role": secondary_role}
                 )
                 
-                # Exclude pairs that triggered critical anti-patterns
+                                                                     
                 critical_aps = [ap for ap in eval_res["anti_patterns"] if ap.get("severity") == "critical"]
                 if not critical_aps:
                     candidates.append(eval_res)
 
-        # Sort by overall score descending
+                                          
         candidates.sort(key=lambda x: x["scores"]["overall"], reverse=True)
         return candidates[:limit]
 
@@ -1007,15 +1008,15 @@ export const typography = StyleSheet.create({{
             
         effective_platform = platform.lower() or uc.get("platform_performance", {}).get("target_platforms", ["web"])[0]
         
-        # Style interpretation
+                              
         effective_style_query = style_vibe or (uc.get("key_requirements", {}).get("ideal_styles", ["modern"])[0])
         style_meta = self.interpret_style(effective_style_query)
         
-        # Script filtering
+                          
         all_fonts = self.fonts_catalog.get("fonts", [])
         filtered_fonts, unsupported_scripts, script_guidance = self.filter_fonts_by_script(all_fonts, scripts)
         
-        # Extract companion fonts for code snippet fallback chains
+                                                                  
         companion_fonts_for_snippets = []
         if unsupported_scripts:
             for us in unsupported_scripts:
@@ -1026,11 +1027,11 @@ export const typography = StyleSheet.create({{
                 elif us == "Devanagari":
                     companion_fonts_for_snippets.extend(["Noto Sans Devanagari", "Poppins"])
 
-        # Companion strategy notice if some or all scripts are unsupported in local catalog
+                                                                                           
         companion_notice = ""
         eval_fonts = filtered_fonts
         if not filtered_fonts and unsupported_scripts:
-            # Check if any requested scripts are supported (e.g. Latin in ["Latin", "Bangla"])
+                                                                                              
             supported_requested = [s for s in scripts if s not in unsupported_scripts]
             if supported_requested:
                 eval_fonts, _, _ = self.filter_fonts_by_script(all_fonts, supported_requested)
@@ -1047,7 +1048,7 @@ export const typography = StyleSheet.create({{
                     f"Pair the Latin fonts below with recommended external companion font: {'; '.join(script_guidance.values())}"
                 )
 
-        # Notices for explicit user font choices and existing design systems
+                                                                            
         anchor_notice = ""
         anchored_entry = None
         if anchor_font:
@@ -1061,14 +1062,14 @@ export const typography = StyleSheet.create({{
         if existing_fonts:
             existing_notice = f"[✓] EXISTING DESIGN SYSTEM DETECTED: Found existing fonts [{', '.join(existing_fonts)}]. Recommending non-destructive additions without overriding existing typography (Hard Rule 6)."
 
-        # Pairings evaluation
-        # 1. Check curated pairings that match use case and are supported by script (unless user explicitly anchored a different font)
+                             
+                                                                                                                                      
         curated_matches = []
         if not anchor_font:
             for pair_id in uc.get("recommended_curated_pairings", []):
                 for cp in self.pairings_data.get("pairings", []):
                     if cp["id"] == pair_id:
-                        # Check if fonts in curated pair support all valid scripts
+                                                                                  
                         p_font = self.get_font(cp["primary_font"]["id"])
                         s_font = self.get_font(cp["secondary_font"]["id"])
                         if p_font and s_font:
@@ -1087,7 +1088,7 @@ export const typography = StyleSheet.create({{
                                 )
                                 curated_matches.append(eval_res)
                             
-        # 2. Dynamic recommendations from filtered font pool
+                                                            
         dynamic_candidates = []
         if eval_fonts:
             req_read = uc.get("key_requirements", {}).get("readability_priorities", {})
@@ -1109,7 +1110,7 @@ export const typography = StyleSheet.create({{
             if not primary_candidates:
                 primary_candidates = eval_fonts
 
-            # If user anchored a catalog font, lock it in as primary or secondary
+                                                                                 
             if anchored_entry:
                 a_roles = [r.lower() for r in anchored_entry.get("curated", {}).get("roles", [])]
                 if "body" in a_roles and "heading" not in a_roles:
@@ -1117,7 +1118,7 @@ export const typography = StyleSheet.create({{
                 else:
                     primary_candidates = [anchored_entry]
             elif anchor_font and not anchored_entry:
-                # External anchor font
+                                      
                 ext_name = anchor_font.strip()
                 is_serif = "serif" in ext_name.lower() or any(k in ext_name.lower() for k in ["playfair", "merriweather", "georgia", "times", "garamond"])
                 ext_font_obj = {
@@ -1149,7 +1150,7 @@ export const typography = StyleSheet.create({{
                             "languages": languages
                         }
                     )
-                    # Exclude critical anti-patterns
+                                                    
                     if not any(ap.get("severity") == "critical" for ap in eval_res["anti_patterns"]):
                         dynamic_candidates.append(eval_res)
                         
@@ -1157,7 +1158,7 @@ export const typography = StyleSheet.create({{
             
         combined_pairings = (curated_matches + dynamic_candidates)[:limit]
         
-        # Build platform snippets
+                                 
         code_snippets = self._generate_platform_snippets(
             combined_pairings[0] if combined_pairings else None,
             effective_platform,
@@ -1184,7 +1185,6 @@ export const typography = StyleSheet.create({{
             "recommended_pairings": combined_pairings,
             "code_snippets": code_snippets
         }
-
 
 def format_cli_evaluation(res: Dict[str, Any]) -> str:
     p = res["primary_font"]
@@ -1242,7 +1242,6 @@ def format_cli_evaluation(res: Dict[str, Any]) -> str:
     out.append(f"  UI:   font-size: {rec['ui']['size']}; font-weight: {rec['ui']['weight']}; line-height: {rec['ui']['line_height']}; letter-spacing: {rec['ui']['letter_spacing']};")
     out.append("=" * 80)
     return "\n".join(out)
-
 
 def format_cli_project_plan(plan: Dict[str, Any]) -> str:
     uc = plan["use_case"]
@@ -1310,12 +1309,11 @@ def format_cli_project_plan(plan: Dict[str, Any]) -> str:
     out.append("=" * 80)
     return "\n".join(out)
 
-
 def main():
     parser = argparse.ArgumentParser(description="Typography Decision Engine")
     subparsers = parser.add_subparsers(dest="command", help="Subcommand to run")
     
-    # evaluate
+              
     eval_parser = subparsers.add_parser("evaluate", help="Evaluate a specific font pairing")
     eval_parser.add_argument("--primary", required=True, help="Primary font ID or name")
     eval_parser.add_argument("--secondary", required=True, help="Secondary font ID or name")
@@ -1325,7 +1323,7 @@ def main():
     eval_parser.add_argument("--secondary-role", default="body", help="Role for secondary font")
     eval_parser.add_argument("--json", action="store_true", help="Output raw JSON")
     
-    # project (comprehensive project situation understanding)
+                                                             
     proj_parser = subparsers.add_parser("project", help="Plan typography based on project situation")
     proj_parser.add_argument("--use-case", required=True, help="Project use case (e.g. saas, fintech, dashboard, powerpoint, flutter, etc.)")
     proj_parser.add_argument("--style", default="", help="Style interpretation or vibe (e.g. 'expensive, not AI-looking', 'clean modern')")
@@ -1335,7 +1333,7 @@ def main():
     proj_parser.add_argument("--limit", type=int, default=3, help="Number of pairings to return")
     proj_parser.add_argument("--json", action="store_true", help="Output raw JSON")
     
-    # recommend
+               
     rec_parser = subparsers.add_parser("recommend", help="Dynamically recommend optimal pairings")
     rec_parser.add_argument("--style", default="modern", help="Project style")
     rec_parser.add_argument("--primary", default=None, help="Optional primary font ID")
@@ -1343,21 +1341,21 @@ def main():
     rec_parser.add_argument("--limit", type=int, default=3, help="Number of pairings to return")
     rec_parser.add_argument("--json", action="store_true", help="Output raw JSON")
     
-    # curated
+             
     cur_parser = subparsers.add_parser("curated", help="List curated master pairings")
     cur_parser.add_argument("--style", default=None, help="Filter by project style")
     cur_parser.add_argument("--json", action="store_true", help="Output raw JSON")
     
-    # anti-patterns
+                   
     ap_parser = subparsers.add_parser("anti-patterns", help="List typography anti-patterns")
     ap_parser.add_argument("--json", action="store_true", help="Output raw JSON")
     
-    # use-cases
+               
     uc_parser = subparsers.add_parser("use-cases", help="List supported project use cases")
     uc_parser.add_argument("--category", default=None, help="Filter by category (web, app, document, marketing)")
     uc_parser.add_argument("--json", action="store_true", help="Output raw JSON")
 
-    # interpret-style
+                     
     style_parser = subparsers.add_parser("interpret-style", help="Interpret colloquial vibe terms into typographic specifications")
     style_parser.add_argument("--style", required=True, help="Style query (e.g. 'expensive, not AI-looking')")
     style_parser.add_argument("--json", action="store_true", help="Output raw JSON")

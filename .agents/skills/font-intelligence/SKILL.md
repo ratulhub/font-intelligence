@@ -40,7 +40,7 @@ Access catalog files from `catalog/` or execute dedicated supporting CLI tools f
 - **Scan Source Binaries**: `python scripts/scan_fonts.py --source "All fonts"`
 - **Direct JSON Reading (Fallback)**: When Python cannot execute, read JSON files directly:
   - `catalog/use-cases.json`: Project requirements, performance budgets, and style mappings.
-  - `catalog/fonts.json`: 103 verified font families with roles, readability (1–10), and technical tables.
+  - `catalog/fonts.json`: 413 verified font families with roles, readability (1–10), and technical tables.
   - `catalog/pairings.json`: Curated masterclass pairings.
   - `catalog/anti-patterns.json`: 10 typography anti-patterns with point deductions.
   - `catalog/scoring.json`: 10-dimensional mathematical scoring model.
@@ -73,8 +73,7 @@ Establish explicit size, letter-spacing, and line-height scales:
 - **Numbers / Data**: Tabular figures (`tnum`) for tables/dashboards.
 
 ### Step 9: Select Weights
-- Only select integer weights confirmed in `technical.weights` (e.g., `400`, `600`, `700`).
-- Maintain a weight delta of at least **200–300 units** between headline and body (e.g., 700 vs 400) to ensure immediate visual hierarchy.
+- When both fonts offer multiple weights, a weight delta of 200–300 units (e.g., 700 vs 400) provides reliable hierarchy. However, do NOT require this universally: single-weight display or headline fonts establish powerful hierarchy through scale, classification contrast (serif vs sans), optical tracking, and structural composition.
 
 ### Step 10: Provide Implementation Tokens
 Deliver clean, copy-pasteable configuration with robust fallbacks:

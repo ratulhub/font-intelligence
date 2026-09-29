@@ -24,7 +24,6 @@ if not os.path.exists(os.path.join(ROOT_DIR, "catalog")):
 
 DEFAULT_CATALOG = os.path.join(ROOT_DIR, "catalog", "fonts.json")
 
-
 def audit_font_licenses(catalog_path: str) -> Dict[str, Any]:
     """Audit licenses across all catalog fonts."""
     with open(catalog_path, "r", encoding="utf-8") as f:
@@ -33,6 +32,9 @@ def audit_font_licenses(catalog_path: str) -> Dict[str, Any]:
     fonts = catalog.get("fonts", [])
     report = {
         "total_fonts": len(fonts),
+        "open_source_count": 0,
+        "commercial_count": 0,
+        "redistributable_count": 0,
         "permissive_count": 0,
         "freeware_count": 0,
         "commercial_proof_needed_count": 0,
@@ -50,12 +52,23 @@ def audit_font_licenses(catalog_path: str) -> Dict[str, Any]:
         l_type = lic.get("type", "Unknown")
         comm_ok = lic.get("commercial_use", False)
         redist_ok = lic.get("redistribution_allowed", False)
+        mod_ok = lic.get("modification_allowed", False)
+        is_os = lic.get("open_source", False)
+        vstat = lic.get("verification_status", "unknown")
+        labels = lic.get("labels", [])
         risk = lic.get("risk_level", "unknown")
         fs_perm = tech.get("embedding_permission", "")
 
         is_office_safe = ("Installable" in fs_perm or "Editable" in fs_perm) and "Restricted" not in fs_perm
 
-        # Classify status
+        if is_os:
+            report["open_source_count"] += 1
+        if comm_ok:
+            report["commercial_count"] += 1
+        if redist_ok:
+            report["redistributable_count"] += 1
+
+                         
         if risk == "permissive":
             report["permissive_count"] += 1
             status = "PERMISSIVE"
@@ -87,6 +100,10 @@ def audit_font_licenses(catalog_path: str) -> Dict[str, Any]:
             "license_type": l_type,
             "commercial_use": comm_ok,
             "redistribution_allowed": redist_ok,
+            "modification_allowed": mod_ok,
+            "open_source": is_os,
+            "verification_status": vstat,
+            "labels": labels,
             "risk_level": risk,
             "status": status,
             "office_embeddable": is_office_safe,
@@ -96,7 +113,6 @@ def audit_font_licenses(catalog_path: str) -> Dict[str, Any]:
         })
 
     return report
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -144,10 +160,11 @@ def main():
 
     print("=" * 80)
     print("FONT LICENSE & COMMERCIAL USE AUDIT REPORT")
-    print("=" * 80)
     print(f"• Total Families Audited:          {report['total_fonts']}")
-    print(f"• Permissive Open Source:          {report['permissive_count']} (OFL, Apache, MIT, CC0, Ubuntu)")
-    print(f"• Freeware (Commercial Granted):   {report['freeware_count']}")
+    print(f"• Open Source Confirmed:           {report['open_source_count']} (OFL, Apache 2.0, CC0, Public Domain)")
+    print(f"• Commercial Use Confirmed:        {report['commercial_count']}")
+    print(f"• Publicly Redistributable:        {report['redistributable_count']}")
+    print(f"• Freeware (Non-Open-Source):      {report['freeware_count']}")
     print(f"• Commercial Proof Needed:         {report['commercial_proof_needed_count']}")
     print(f"• Restricted / Demo Cut:           {report['restricted_count']}")
     print(f"• Unknown / Unclear:               {report['unknown_count']}")
@@ -155,18 +172,19 @@ def main():
     print("-" * 80)
 
     if args.format == "table":
-        header = f"{'ID':<18} {'STATUS':<14} {'COMMERCIAL':<11} {'EMBEDDING':<22} {'LICENSE TYPE'}"
+        header = f"{'ID':<18} {'OPEN SOURCE':<13} {'COMMERCIAL':<12} {'REDIST':<9} {'USER-FACING LABELS'}"
         print(header)
         print("-" * 80)
         for f in fonts_list:
+            os_str = "YES" if f.get("open_source") else "NO"
             comm_str = "YES" if f["commercial_use"] else "NO / DEMO"
-            embed_str = "Installable" if "Installable" in f["embedding_permission"] else ("Editable" if "Editable" in f["embedding_permission"] else f["embedding_permission"][:20])
-            print(f"{f['id'][:17]:<18} {f['status']:<14} {comm_str:<11} {embed_str:<22} {f['license_type'][:32]}")
+            redist_str = "YES" if f.get("redistribution_allowed") else "NO"
+            labels_str = ", ".join(f.get("labels", []))
+            print(f"{f['id'][:17]:<18} {os_str:<13} {comm_str:<12} {redist_str:<9} {labels_str}")
         print("-" * 80)
         print(f"Displayed {len(fonts_list)} of {report['total_fonts']} families (Filter: {args.filter})")
 
     print("=" * 80)
-
 
 if __name__ == "__main__":
     main()

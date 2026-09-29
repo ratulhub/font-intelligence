@@ -15,7 +15,6 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONTS_DIR = os.path.join(ROOT_DIR, "All fonts")
 OUT_JSON = os.path.join(ROOT_DIR, "docs", "repository-audit.json")
 
-
 def generate_audit():
     audit = {
         "generated_at": "2026-09-29T12:00:00+00:00",
@@ -61,7 +60,7 @@ def generate_audit():
                     fmt = ext.replace(".", "")
                     audit["formats"][fmt] = audit["formats"].get(fmt, 0) + 1
 
-                    # compute sha256
+                                    
                     with open(full, "rb") as fb:
                         h = hashlib.sha256(fb.read()).hexdigest()
 
@@ -127,7 +126,6 @@ def generate_audit():
         json.dump(audit, out_f, indent=2)
 
     print(f"Generated {OUT_JSON}: {audit['total_packages']} packages, {audit['total_font_files']} font files.")
-
 
 if __name__ == "__main__":
     generate_audit()

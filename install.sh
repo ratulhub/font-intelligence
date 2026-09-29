@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
-# ==============================================================================
-# Font Intelligence - Unified Multi-Agent Installer (Bash)
-# Installs Font Intelligence skill and platform adapters deterministically.
-# Usage:
-#   ./install.sh [all|antigravity|claude|cursor|windsurf|cline|copilot|codex|gemini] [--global]
-# ==============================================================================
+
 
 set -euo pipefail
 

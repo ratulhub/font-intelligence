@@ -1,0 +1,2 @@
+﻿license: SIL Open Font License (OFL)
+link: https://www.fontspace.com/playfair-display-font-f44531

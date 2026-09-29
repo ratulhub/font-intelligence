@@ -659,7 +659,7 @@ def main():
                         if 'italic' in subf or 'oblique' in subf or 'ital' in subf:
                             meta['style'] = 'italic'
                             
-                        # Variable font check
+                                             
                         if 'fvar' in font:
                             meta['variable'] = True
                             fvar = font['fvar']
@@ -684,7 +684,7 @@ def main():
                         
                         font.close()
                     except Exception as e:
-                        # Fallback for EOT
+                                          
                         if 'Chillax' in f: meta['family'] = 'Chillax'
                         elif 'GeneralSans' in f: meta['family'] = 'General Sans'
                         else: meta['family'] = pkg_name
@@ -756,7 +756,7 @@ def main():
         
         lic_info = get_package_license_improved(pkgs, metas)
         
-        # Check preservation of existing curation
+                                                 
         existing_item = existing_catalog_by_id.get(font_id)
         curated_info = get_curated_info(fam_name, existing_item.get('curated') if existing_item else None)
         
@@ -802,12 +802,12 @@ def main():
         "fonts": catalog_fonts
     }
     
-    # Validate against JSON schema
+                                  
     print("Validating generated catalog against schema...")
     jsonschema.validate(instance=full_catalog, schema=SCHEMA)
     print("VALIDATION SUCCESSFUL: Catalog strictly conforms to JSON schema.")
     
-    # Save to all target paths
+                              
     for target_dir in TARGET_DIRS:
         os.makedirs(target_dir, exist_ok=True)
         schema_file = os.path.join(target_dir, "fonts.schema.json")

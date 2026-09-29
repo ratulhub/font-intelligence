@@ -34,7 +34,6 @@ OUTPUT_MD = os.path.join(DOCS_DIR, "redistribution-review.md")
 
 TODAY = "2026-09-29"
 
-
 def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
     """Analyze font license and determine strict redistribution terms."""
     fid = font["id"]
@@ -45,7 +44,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
     ref_files = lic.get("reference_files", [])
     pkg = prov.get("source_packages", [fid])[0] if prov.get("source_packages") else fid
 
-    # Find primary license file
+                               
     license_file = None
     for rf in ref_files:
         low = rf.lower()
@@ -60,7 +59,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
     source_name = manufacturer or designer or pkg
     source_url = prov.get("designer_url") or prov.get("vendor_url") or lic.get("license_url")
 
-    # Default values
+                    
     tracking = {
         "license_name": l_type,
         "spdx_id": None,
@@ -75,7 +74,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
         "redistribution_notes": ""
     }
 
-    # 1. SIL Open Font License 1.1
+                                  
     if "sil open font license" in l_type.lower() or "ofl" in l_type.lower():
         tracking.update({
             "license_name": "SIL Open Font License 1.1",
@@ -88,7 +87,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
             "redistribution_notes": "Permitted to redistribute, bundle, embed, and modify under OFL-1.1 terms. Cannot be sold alone."
         })
 
-    # 2. Creative Commons Zero 1.0 (CC0)
+                                        
     elif "creative commons zero" in l_type.lower() or "cc0" in l_type.lower():
         tracking.update({
             "license_name": "Creative Commons Zero 1.0 Universal (CC0)",
@@ -101,7 +100,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
             "redistribution_notes": "Public domain dedication. Fully permissive for all commercial uses, modifications, and redistribution."
         })
 
-    # 3. Apache License 2.0
+                           
     elif "apache" in l_type.lower():
         tracking.update({
             "license_name": "Apache License 2.0",
@@ -114,7 +113,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
             "redistribution_notes": "Permissive open-source license allowing commercial use, redistribution, and modification with copyright notice."
         })
 
-    # 4. ITF Free Font License (Fontshare FFL)
+                                              
     elif "itf free font license" in l_type.lower() or "fontshare" in l_type.lower():
         tracking.update({
             "license_name": "ITF Free Font License (Fontshare FFL 2.0)",
@@ -127,7 +126,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
             "redistribution_notes": "Permissive foundry license from Indian Type Foundry allowing commercial use, embedding, and redistribution with attribution."
         })
 
-    # 5. Public Domain Dedication
+                                 
     elif "public domain" in l_type.lower():
         tracking.update({
             "license_name": "Public Domain Dedication",
@@ -140,7 +139,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
             "redistribution_notes": "No rights reserved. Free for commercial use, redistribution, and modification."
         })
 
-    # 6. Ubuntu Font Licence 1.0
+                                
     elif "ubuntu" in l_type.lower() and "licence" in l_type.lower():
         tracking.update({
             "license_name": "Ubuntu Font Licence 1.0",
@@ -153,7 +152,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
             "redistribution_notes": "Permissive open license developed by Canonical for Ubuntu. Allows redistribution and derivative fonts under UFL."
         })
 
-    # 7. 1001Fonts Free Commercial License (FFC)
+                                                
     elif "1001fonts" in l_type.lower() or "ffc" in l_type.lower():
         tracking.update({
             "license_name": "1001Fonts Free For Commercial Use License (FFC)",
@@ -166,7 +165,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
             "redistribution_notes": "Commercial design use permitted. However, Section 3 of FFC explicitly prohibits standalone font file redistribution, bundling, or re-hosting on GitHub/mirrors without written author permission."
         })
 
-    # 8. Creative Fabrica Commercial License
+                                            
     elif "creative fabrica" in l_type.lower():
         tracking.update({
             "license_name": "Creative Fabrica Commercial License",
@@ -179,7 +178,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
             "redistribution_notes": "Commercial license covers end-product creation by licensee. License text strictly prohibits redistributing, sharing, sublicensing, or extracting raw font binary files."
         })
 
-    # 9. Letterlays Commercial License
+                                      
     elif "letterlays" in l_type.lower():
         tracking.update({
             "license_name": "Letterlays Commercial License (Receipt PDF)",
@@ -192,7 +191,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
             "redistribution_notes": "Commercial design grant with receipt PDF. Prohibits raw font file distribution or open-source repackaging."
         })
 
-    # 10. Courbe Sans Free Standard License
+                                           
     elif "courbe sans" in l_type.lower():
         tracking.update({
             "license_name": "Courbe Sans Free Standard License",
@@ -205,7 +204,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
             "redistribution_notes": "Author grants free standard commercial design usage, but does not grant third-party public git repository redistribution rights."
         })
 
-    # 11. Freeware Grants (Befonts, Aluyeah, Author Grant)
+                                                          
     elif "freeware" in l_type.lower():
         tracking.update({
             "license_name": l_type,
@@ -218,7 +217,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
             "redistribution_notes": "Author text grants commercial design use. File redistribution on public code repositories is ambiguous or requires author written confirmation."
         })
 
-    # 12. NimaVisual EULA (No Redistribution)
+                                             
     elif "nimavisual" in l_type.lower():
         tracking.update({
             "license_name": "NimaVisual End User License Agreement",
@@ -231,7 +230,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
             "redistribution_notes": "RESTRICTED: License text explicitly states 'strictly no redistribution, selling, or file sharing'. Commercial design usage requires commercial license purchase."
         })
 
-    # 13. Eimantas Paškonis EULA
+                                
     elif "paškonis" in l_type.lower() or "paskonis" in l_type.lower():
         tracking.update({
             "license_name": "Eimantas Paškonis EULA (Commercial OK, No File Sharing)",
@@ -244,7 +243,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
             "redistribution_notes": "RESTRICTED FOR REDISTRIBUTION: Commercial design use granted, but license explicitly forbids uploading to public file-sharing sites or redistributing font binaries."
         })
 
-    # 14. Evaluation / Demo Cut
+                               
     elif "demo" in l_type.lower() or "evaluation" in l_type.lower():
         tracking.update({
             "license_name": "Evaluation / Demo Cut (Commercial Purchase Required)",
@@ -257,7 +256,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
             "redistribution_notes": "RESTRICTED: Personal use / demo cut only. Commercial usage and redistribution prohibited without purchasing commercial license from author."
         })
 
-    # 15. Unspecified Copyright
+                               
     elif "copyright" in l_type.lower():
         tracking.update({
             "license_name": l_type,
@@ -270,7 +269,7 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
             "redistribution_notes": "RESTRICTED: Contains standard copyright notice without explicit open-source or redistribution grant. Font files must not be published to public code repos."
         })
 
-    # 16. Unknown
+                 
     else:
         tracking.update({
             "license_name": "Unknown / Missing License Document",
@@ -284,7 +283,6 @@ def analyze_font_license(font: Dict[str, Any]) -> Dict[str, Any]:
         })
 
     return tracking
-
 
 def generate_markdown_report(fonts: List[Dict[str, Any]]) -> str:
     """Generate docs/redistribution-review.md."""
@@ -396,7 +394,6 @@ def generate_markdown_report(fonts: List[Dict[str, Any]]) -> str:
     lines.append("")
     return "\n".join(lines)
 
-
 def main():
     print("Building comprehensive licensing audit and redistribution review...")
 
@@ -408,23 +405,22 @@ def main():
 
     for f in fonts:
         tracking = analyze_font_license(f)
-        # Store tracking inside license
+                                       
         f["license"]["tracking"] = tracking
-        # Align license.redistribution_allowed with strict redistribution
+                                                                         
         f["license"]["redistribution_allowed"] = tracking["redistribution"]
 
-    # Write updated catalog
+                           
     with open(CATALOG_PATH, "w", encoding="utf-8") as f:
         json.dump(catalog, f, indent=2)
     print(f"Updated {CATALOG_PATH} with license tracking data.")
 
-    # Generate markdown report
+                              
     os.makedirs(DOCS_DIR, exist_ok=True)
     report_md = generate_markdown_report(fonts)
     with open(OUTPUT_MD, "w", encoding="utf-8") as f:
         f.write(report_md)
     print(f"Generated {OUTPUT_MD} ({len(report_md.splitlines())} lines).")
-
 
 if __name__ == "__main__":
     main()

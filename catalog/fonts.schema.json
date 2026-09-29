@@ -73,9 +73,13 @@
                 "enum": [
                   "sans-serif",
                   "serif",
+                  "slab-serif",
                   "display",
+                  "monospace",
                   "handwriting",
-                  "monospace"
+                  "script",
+                  "decorative",
+                  "blackletter"
                 ]
               },
               "subtype": {
@@ -87,16 +91,19 @@
                 "items": {
                   "type": "string",
                   "enum": [
-                    "display",
                     "hero",
+                    "display",
                     "heading",
                     "body",
                     "ui",
                     "UI",
                     "button",
-                    "number",
+                    "navigation",
                     "caption",
+                    "number",
+                    "price",
                     "code",
+                    "quote",
                     "logo",
                     "branding",
                     "accent"
@@ -122,6 +129,7 @@
                   "type": "string",
                   "enum": [
                     "modern",
+                    "minimal",
                     "premium",
                     "luxury",
                     "editorial",
@@ -129,20 +137,30 @@
                     "technical",
                     "corporate",
                     "playful",
-                    "classic",
+                    "friendly",
                     "futuristic",
-                    "minimal",
-                    "brutalist",
-                    "industrial",
-                    "geometric",
-                    "humanist",
+                    "classic",
                     "retro",
                     "vintage",
+                    "brutalist",
+                    "industrial",
                     "organic",
+                    "artistic",
+                    "sophisticated",
+                    "bold",
+                    "restrained",
+                    "expressive",
+                    "quirky",
+                    "geometric",
+                    "humanist",
                     "grunge",
                     "art-deco",
                     "decorative",
-                    "handwritten"
+                    "handwritten",
+                    "clean",
+                    "expensive",
+                    "elegant",
+                    "professional"
                   ]
                 }
               },
@@ -317,7 +335,9 @@
                     "ttf",
                     "woff",
                     "woff2",
-                    "eot"
+                    "eot",
+                    "ttc",
+                    "dfont"
                   ]
                 },
                 "weight": {
@@ -405,6 +425,9 @@
               "type",
               "commercial_use",
               "redistribution_allowed",
+              "modification_allowed",
+              "open_source",
+              "verification_status",
               "risk_level",
               "reference_files"
             ],
@@ -417,6 +440,27 @@
               },
               "redistribution_allowed": {
                 "type": "boolean"
+              },
+              "modification_allowed": {
+                "type": "boolean"
+              },
+              "open_source": {
+                "type": "boolean"
+              },
+              "verification_status": {
+                "type": "string",
+                "enum": [
+                  "verified",
+                  "needs-review",
+                  "restricted",
+                  "unknown"
+                ]
+              },
+              "labels": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "risk_level": {
                 "type": "string",
@@ -435,6 +479,18 @@
                 }
               },
               "license_url": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_url": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "verification_date": {
                 "type": [
                   "string",
                   "null"

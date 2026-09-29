@@ -18,7 +18,6 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from typography_engine import TypographyEngine, format_cli_evaluation
 
-
 def main():
     parser = argparse.ArgumentParser(
         description="Score any two fonts against a specific project context across 10 dimensions."
@@ -52,7 +51,7 @@ def main():
         print("Tip: Run search_fonts.py to find available fonts.", file=sys.stderr)
         sys.exit(1)
 
-    # If use-case provided, pull style if not overridden
+                                                        
     effective_style = args.style
     if args.use_case:
         uc = engine.get_use_case(args.use_case)
@@ -85,7 +84,6 @@ def main():
         print(json.dumps(eval_res, indent=2))
     else:
         print(format_cli_evaluation(eval_res))
-
 
 if __name__ == "__main__":
     main()

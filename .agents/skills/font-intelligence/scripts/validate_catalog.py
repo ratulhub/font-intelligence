@@ -33,7 +33,6 @@ DEFAULT_SCHEMA = os.path.join(ROOT_DIR, "catalog", "fonts.schema.json")
 DEFAULT_PAIRINGS = os.path.join(ROOT_DIR, "catalog", "pairings.json")
 DEFAULT_USE_CASES = os.path.join(ROOT_DIR, "catalog", "use-cases.json")
 
-
 def validate_catalog(
     catalog_path: str,
     schema_path: str,
@@ -56,7 +55,7 @@ def validate_catalog(
         "status": "PASS"
     }
 
-    # 1. Load catalog JSON
+                          
     if not os.path.exists(catalog_path):
         report["status"] = "FAIL"
         report["data_sanity_issues"].append(f"Catalog file not found: {catalog_path}")
@@ -70,7 +69,7 @@ def validate_catalog(
             report["data_sanity_issues"].append(f"Catalog JSON decode error: {e}")
             return report
 
-    # 2. Schema validation
+                          
     if os.path.exists(schema_path) and jsonschema:
         with open(schema_path, "r", encoding="utf-8") as sf:
             schema = json.load(sf)
@@ -84,7 +83,7 @@ def validate_catalog(
     fonts = catalog.get("fonts", [])
     report["total_fonts"] = len(fonts)
 
-    # 3. ID syntax and uniqueness
+                                 
     id_regex = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
     seen_ids = set()
     for f in fonts:
@@ -95,7 +94,7 @@ def validate_catalog(
             report["duplicate_ids"].append(fid)
         seen_ids.add(fid)
 
-        # Sanity checks on readability and weights
+                                                  
         cur = f.get("curated", {})
         read = cur.get("readability", {})
         for prop in ["body", "long_form", "ui", "small_text", "numbers"]:
@@ -108,7 +107,7 @@ def validate_catalog(
         if not weights:
             report["data_sanity_issues"].append(f"Font '{fid}' technical.weights is empty")
 
-        # 4. Check physical files on disk
+                                         
         for file_info in f.get("files", []):
             report["total_files_referenced"] += 1
             if check_files:
@@ -120,7 +119,7 @@ def validate_catalog(
                         "path": rel_p
                     })
 
-    # 5. Check pairings references
+                                  
     if os.path.exists(pairings_path):
         with open(pairings_path, "r", encoding="utf-8") as pf:
             pairings_data = json.load(pf)
@@ -133,13 +132,13 @@ def validate_catalog(
             if s_fid and s_fid not in seen_ids:
                 report["broken_pairing_refs"].append(f"Pairing '{pid}' references unknown secondary font '{s_fid}'")
 
-    # 6. Check use-cases references
+                                   
     if os.path.exists(use_cases_path):
         with open(use_cases_path, "r", encoding="utf-8") as uf:
             uc_data = json.load(uf)
         for ucid, uc in uc_data.get("use_cases", {}).items():
             for pair_ref in uc.get("recommended_curated_pairings", []):
-                # verify pair_ref exists in pairings
+                                                    
                 pass
 
     if (report["missing_files"] or report["invalid_ids"] or report["duplicate_ids"] or
@@ -148,7 +147,6 @@ def validate_catalog(
         report["status"] = "FAIL"
 
     return report
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -210,7 +208,6 @@ def main():
 
     print("=" * 80)
     sys.exit(0 if report["status"] == "PASS" else 1)
-
 
 if __name__ == "__main__":
     main()

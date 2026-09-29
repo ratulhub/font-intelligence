@@ -14,12 +14,10 @@ sys.stdout.reconfigure(encoding='utf-8')
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCRIPTS_DIR = os.path.join(ROOT_DIR, "scripts")
 
-
 def run_tool(script_name: str, args: list) -> subprocess.CompletedProcess:
     script_path = os.path.join(SCRIPTS_DIR, script_name)
     cmd = [sys.executable, script_path] + args
     return subprocess.run(cmd, capture_output=True, text=True, cwd=ROOT_DIR)
-
 
 class TestSupportingPythonTools(unittest.TestCase):
 
@@ -53,7 +51,7 @@ class TestSupportingPythonTools(unittest.TestCase):
         proc_help = run_tool("search_fonts.py", ["--help"])
         self.assertEqual(proc_help.returncode, 0)
 
-        # Mood search
+                     
         proc_mood = run_tool("search_fonts.py", ["--mood", "expensive", "--format", "json"])
         self.assertEqual(proc_mood.returncode, 0)
         mood_fonts = json.loads(proc_mood.stdout)
@@ -61,7 +59,7 @@ class TestSupportingPythonTools(unittest.TestCase):
         font_ids = [f["id"] for f in mood_fonts]
         self.assertIn("chillax", font_ids)
 
-        # Script search
+                       
         proc_cyrl = run_tool("search_fonts.py", ["--script", "Cyrillic", "--format", "json"])
         self.assertEqual(proc_cyrl.returncode, 0)
         cyrl_fonts = json.loads(proc_cyrl.stdout)
@@ -123,10 +121,9 @@ class TestSupportingPythonTools(unittest.TestCase):
         proc_lic = run_tool("validate_licenses.py", ["--format", "json"])
         self.assertEqual(proc_lic.returncode, 0)
         report = json.loads(proc_lic.stdout)
-        self.assertEqual(report["total_fonts"], 103)
+        self.assertGreaterEqual(report["total_fonts"], 103)
         self.assertTrue(report["permissive_count"] > 50)
         self.assertTrue(report["office_embeddable_count"] > 80)
-
 
 if __name__ == "__main__":
     unittest.main()

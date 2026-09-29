@@ -1,0 +1,168 @@
+{
+  "generated_at": "2026-09-29T14:00:00+00:00",
+  "previous_packages": 101,
+  "new_packages_added": 285,
+  "total_packages": 386,
+  "previous_families": 103,
+  "new_families_added": 310,
+  "total_families": 413,
+  "total_binaries": 1052,
+  "duplicate_binary_groups": 17,
+  "duplicate_binaries_total": 34,
+  "variable_families": 4,
+  "italic_families": 84,
+  "distribution_summary": {
+    "public_asset": 107,
+    "catalog_only": 69,
+    "restricted": 2,
+    "unknown": 235
+  },
+  "scripts_coverage": {
+    "latin": 413,
+    "cyrillic": 46,
+    "greek": 28,
+    "bangla": 0,
+    "arabic": 0,
+    "devanagari": 1,
+    "hangul": 2,
+    "cjk": 3
+  },
+  "duplicates": [
+    {
+      "hash": "34a4f80ffd26973aa7d53136a9bdfbf38ffd39bb507b34c072d5023d838d56c8",
+      "count": 2,
+      "files": [
+        "All fonts/Chillax_Complete/Chillax_Complete/Fonts/TTF/Chillax-Variable.ttf",
+        "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Variable.ttf"
+      ]
+    },
+    {
+      "hash": "4b2539d9ed3367e8f55f7ddd369ab13e17bb279ff2eb7fdca6c713af13d4df84",
+      "count": 2,
+      "files": [
+        "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/TTF/GeneralSans-Variable.ttf",
+        "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Variable.ttf"
+      ]
+    },
+    {
+      "hash": "4aa0c20dbb593ad82b41f090fbbc8efb1bfe3df85ca895c08092f77d467fea60",
+      "count": 2,
+      "files": [
+        "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/TTF/GeneralSans-VariableItalic.ttf",
+        "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-VariableItalic.ttf"
+      ]
+    },
+    {
+      "hash": "71ceb1751dc5d8ab888b0f19723c2e23c3b7fde9f28baa61fc1526f339e81788",
+      "count": 2,
+      "files": [
+        "All fonts/anak-bijak/Anak Bijak.otf",
+        "All fonts/anak-bijak-font/AnakBijak-R9aZW.otf"
+      ]
+    },
+    {
+      "hash": "da99f0d0e564e4613acdcc692eef536625b6a70a6ca4149813c0ee5203d9d84a",
+      "count": 2,
+      "files": [
+        "All fonts/anak-bijak/Anak Bijak.ttf",
+        "All fonts/anak-bijak-font/AnakBijak-BLKwx.ttf"
+      ]
+    },
+    {
+      "hash": "9f37755d4e7eeb9b87dde4fdd4b5c52909ab06b963f5e2237508e3ad1ba64281",
+      "count": 2,
+      "files": [
+        "All fonts/bakula/Bakula-OTF.otf",
+        "All fonts/bakula-font/BakulaRegular-PVwMP.otf"
+      ]
+    },
+    {
+      "hash": "961c3aebbf37cb82847e32394522d082d68fb74fd7ac69894f98ceb0dd7ae800",
+      "count": 2,
+      "files": [
+        "All fonts/bakula/Bakula-TTF.ttf",
+        "All fonts/bakula-font/BakulaRegular-LVMBy.ttf"
+      ]
+    },
+    {
+      "hash": "00933cf155794d07b7f6ad1714e03b782a363f1d7f5aca79cc7ba6c2437df5e2",
+      "count": 2,
+      "files": [
+        "All fonts/ithaca/Ithaca.ttf",
+        "All fonts/ithaca-font/Ithaca-LVB75.ttf"
+      ]
+    },
+    {
+      "hash": "55afe260dd5930cbb66e6db54627d919d3249b9beacdba124124be4cfb7a0c25",
+      "count": 2,
+      "files": [
+        "All fonts/martius/Martius-Italic.otf",
+        "All fonts/martius-font/MartiusItalic-PVA4E.ttf"
+      ]
+    },
+    {
+      "hash": "5fb2cc843885a119a8ed8d2c3b7c51f65d6d5542773ca727cf52b449232cfdeb",
+      "count": 2,
+      "files": [
+        "All fonts/martius/Martius-Regular.otf",
+        "All fonts/martius-font/Martius-LV9L4.ttf"
+      ]
+    },
+    {
+      "hash": "67f0bdb3490ac42e4f00b21d8b68e0337127fe1005e1391bf0d2216f74c11791",
+      "count": 2,
+      "files": [
+        "All fonts/opsilon/Opsilon-Italic.ttf",
+        "All fonts/opsilon-font/OpsilonItalic-3lm9p.ttf"
+      ]
+    },
+    {
+      "hash": "93ce3c2c66ecd9b3ac9a1f9d8d03b50883ec6d5a7087eb73edf13417486005d5",
+      "count": 2,
+      "files": [
+        "All fonts/opsilon/Opsilon-Regular.ttf",
+        "All fonts/opsilon-font/Opsilon-xRj8m.ttf"
+      ]
+    },
+    {
+      "hash": "7b7026730e15ce9a84eef9ef7501d133fdc2a1e6c589a45e4e82f7a349114963",
+      "count": 2,
+      "files": [
+        "All fonts/raster-forge/RasterForge.ttf",
+        "All fonts/raster-forge-font/RasterForgeRegular-JpBgm.ttf"
+      ]
+    },
+    {
+      "hash": "fe8749fe96b4072feeb79a060ded1b894e2f728e2b839fcb8914dfb2147b67c6",
+      "count": 2,
+      "files": [
+        "All fonts/society/Society-Regular.otf",
+        "All fonts/society/Society-Regular.ttf"
+      ]
+    },
+    {
+      "hash": "32c23dda462deeb4ba4c92aaac74999800ab06764252d5cedd9826dddfcd220e",
+      "count": 2,
+      "files": [
+        "All fonts/sweet-school/SweetSchool-Regular.otf",
+        "All fonts/sweet-school/SweetSchool-Regular.ttf"
+      ]
+    },
+    {
+      "hash": "99bbabffb33123ec7976075f40388df7f5644a872cba804916b135d0157fb288",
+      "count": 2,
+      "files": [
+        "All fonts/timeburner/timeburnerbold.ttf",
+        "All fonts/timeburner-font/TimeburnerBold-peGR.ttf"
+      ]
+    },
+    {
+      "hash": "1c227248b0194797a6f897d86f6cde9664793b33b51002826dac3c967a21ef23",
+      "count": 2,
+      "files": [
+        "All fonts/timeburner/timeburnernormal.ttf",
+        "All fonts/timeburner-font/Timeburner-xJB8.ttf"
+      ]
+    }
+  ]
+}

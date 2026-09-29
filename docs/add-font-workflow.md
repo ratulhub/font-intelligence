@@ -24,7 +24,7 @@ Before touching any files, verify that the font license grants:
 1. **Commercial Use**: Creation of commercial products, web UI, mobile apps, and slide decks.
 2. **Redistribution Rights**: Permission to host/bundle font binary files in public Git repositories without requiring end-user fee payment.
 - Preferred: SIL Open Font License 1.1 (`OFL-1.1`), Apache 2.0 (`Apache-2.0`), MIT, or Creative Commons Zero (`CC0-1.0`).
-- If restricted or unknown: Do **not** commit the raw binaries to public repositories; follow [docs/redistribution-review.md](file:///d:/font-intelligence/docs/redistribution-review.md).
+- If restricted or unknown: Do **not** commit the raw binaries to public repositories; follow [docs/redistribution-review.md](docs/redistribution-review.md).
 
 ### Step 2: Source Package Preservation
 Place the unaltered foundry package in `All fonts/<family-id>/`:
@@ -46,7 +46,7 @@ python scripts/scan_fonts.py --source "All fonts/<family-id>" --update-catalog
 ### Step 4: Curate Editorial Intelligence
 Open `catalog/fonts.json` and calibrate the non-algorithmic editorial fields:
 - **`curated.category`**: `serif`, `sans-serif`, `display`, `monospace`, or `handwriting`.
-- **`curated.subtype`**: Pick from [catalog/vocabularies.json](file:///d:/font-intelligence/catalog/vocabularies.json) (e.g. `geometric`, `neo-grotesk`, `editorial`).
+- **`curated.subtype`**: Pick from [catalog/vocabularies.json](catalog/vocabularies.json) (e.g. `geometric`, `neo-grotesk`, `editorial`).
 - **`curated.styles`**: Controlled tags (`modern`, `luxury`, `technical`, `brutalist`, etc.).
 - **`curated.roles`**: Allowed typography roles (`hero`, `heading`, `body`, `ui`, `number`).
 - **`curated.readability`**: Calibrate scores from 1 to 10 for `body`, `ui`, `small_text`, `long_form`, `numbers`.

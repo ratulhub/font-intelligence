@@ -1,0 +1,5803 @@
+{
+  "generated_at": "2026-09-29T14:00:00+00:00",
+  "version": "2.0.0",
+  "counts": {
+    "total_families": 413,
+    "public_asset_families": 112,
+    "catalog_only_families": 278,
+    "restricted_families": 23,
+    "unknown_families": 0,
+    "total_catalog_binaries": 1083,
+    "total_public_binaries": 540
+  },
+  "license_distribution": {
+    "SIL Open Font License 1.1 (OFL)": 55,
+    "Apache License 2.0": 1,
+    "Freeware": 240,
+    "Freeware (Free Commercial - Author Grant)": 10,
+    "Freeware (Personal & Commercial - Aluyeah Studio Grant)": 1,
+    "Creative Commons Zero 1.0 (CC0) / Public Domain": 29,
+    "1001Fonts Free Commercial License (FFC)": 9,
+    "Creative Fabrica Commercial License": 11,
+    "Evaluation / Demo Cut (Commercial Purchase Required)": 2,
+    "Creative Commons Zero 1.0 (CC0)": 19,
+    "Freeware (Tepid Monkey Freeware Grant)": 1,
+    "Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)": 3,
+    "Evaluation / Personal Use Demo": 3,
+    "Unspecified / Need Review": 10,
+    "ITF Free Font License (Fontshare FFL 2.0)": 2,
+    "Courbe Sans Free Standard License": 1,
+    "Freeware (Redistributable Freeware Grant)": 1,
+    "Freeware (Free Commercial - MJType Grant)": 1,
+    "Freeware (Commercial Use Allowed - Befonts Grant)": 1,
+    "Public Domain Dedication": 1,
+    "Eimantas Pa\u0161konis EULA (Commercial OK, No Redistribution)": 1,
+    "Freeware (Commercial Use For Everyone - Author Grant)": 1,
+    "Letterlays Commercial License (Receipt PDF)": 2,
+    "NimaVisual EULA (No Redistribution)": 2,
+    "Unknown (No License Document or Metadata)": 3,
+    "Freeware (Personal & Commercial Use Granted)": 1,
+    "Freeware (Author Freeware Grant)": 1,
+    "Freeware (General)": 1
+  },
+  "public_assets": [
+    {
+      "id": "achtung-bravo",
+      "name": "Achtung Bravo",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/achtung-bravo/Achtung Bravo Mac.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "22bcbabf65dde94732780df9838f7bf898cc2c884fd4c07f9cf0594d1dd1458a"
+        }
+      ]
+    },
+    {
+      "id": "aclonica",
+      "name": "Aclonica",
+      "license": "Apache License 2.0",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/aclonica/Aclonica.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "aec4ac0902f0d9597761557c59e4e0d5c9ac117c70d106ca1ae806082f6b234d"
+        }
+      ]
+    },
+    {
+      "id": "akasha",
+      "name": "Akasha",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/akasha-font/AkashaItalic-BWDd8.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "ae5b6258b198a59ad60288cb5144673c4843053c62df425c0f958bfc6408eac9"
+        },
+        {
+          "path": "All fonts/akasha-font/AkashaRegular-Rprn6.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "ae1706eb02876cd16fb41051a636c9bc5663096ce2a0211d345380315c62b84e"
+        }
+      ]
+    },
+    {
+      "id": "alice-yotsuba-inc",
+      "name": "Alice Yotsuba Inc.",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/alice-yotsuba-inc-font/AliceYotsubaInc-Ea7Zj.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "9f0ecaa3dc3d5a21f01880abebe5df9de7a364fe66004b028afdab29d0f29491"
+        }
+      ]
+    },
+    {
+      "id": "anklepants",
+      "name": "Anklepants",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/anklepants-font/AnklepantsRegular-ov4yx.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "5222c7e65aae3bd3866b069dee95147346dfde8747d876d7c14be58b330c6ffd"
+        }
+      ]
+    },
+    {
+      "id": "arab-quran-islamic",
+      "name": "arab quran islamic \u0661\u0664\u0660",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/arab-quran-islamic-140-font/ArabQuranIslamic140-vnmnZ.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "7d069d91feb1571320dee6d9255c120c63dc1c2ebcca807d223416b423f38522"
+        }
+      ]
+    },
+    {
+      "id": "arab-quran-islamic-140",
+      "name": "arab quran islamic 140",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/arab-quran-islamic-140-font/ArabQuranIslamic140-K7n4W.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "3e86282698e0d926ad9584f7c8bdeb45ee053743100d5de72739a25fdacebfb6"
+        }
+      ]
+    },
+    {
+      "id": "arnprior",
+      "name": "Arnprior",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/arnprior/Arnprior.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "33ddd4134fb48a8f5bb9c3b4f398d92ed508803ff092f1cff528844486d0854f"
+        }
+      ]
+    },
+    {
+      "id": "balhattan",
+      "name": "Balhattan",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/balhattan/Balhattan-Italic.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "21cc7e54d2c0f956d210d412f8a9eef228d00bdcc1c12e54616fb07b8bc7b569"
+        },
+        {
+          "path": "All fonts/balhattan/Balhattan-Italic.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "90856d3df4902f8a5f935125b9effbcfbb3047fcfc40a218ecedac996500fcf6"
+        },
+        {
+          "path": "All fonts/balhattan/Balhattan-Regular.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "6e52bc80e03f2691f674a44052a0a2d0fdbcdecc44f7960f7300758d08e7da2f"
+        },
+        {
+          "path": "All fonts/balhattan/Balhattan-Regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "7a352aee9f954eeba9c3a223e2125f978bc16ee37b21713621022281d5272e68"
+        }
+      ]
+    },
+    {
+      "id": "bedizen",
+      "name": "Bedizen",
+      "license": "Freeware (Tepid Monkey Freeware Grant)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/bedizen/bediz___.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "03aa710e0d8da60c72bcc0bc8688c7cbce334a6f102b4be971de32723928479b"
+        }
+      ]
+    },
+    {
+      "id": "big-scratch-brush",
+      "name": "Big Scratch Brush",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/big-scratch-brush-font/BigScratchBrush-PVY9g.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "768aa376a24dc92c2eda79ac50f03f3ff4dda328344d64ae9bd64fe2cb4c9b07"
+        }
+      ]
+    },
+    {
+      "id": "bm-dohyeon",
+      "name": "BM DoHyeon",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/bm-dohyeon/BMDOHYEON_otf.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "7d056916a8f67af5c6b098422a101b29713c66023a237c9b18efade3d6bec19e"
+        },
+        {
+          "path": "All fonts/bm-dohyeon/BMDOHYEON_ttf.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "43a71996b1205786ba7a793d870d4f9d28b9dc71e22cc4c9078a5e5f24f23971"
+        }
+      ]
+    },
+    {
+      "id": "bubble-sans",
+      "name": "Bubble Sans",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/bubble-sans-font/BubbleSansRegular-m2a7G.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "fd3c1c0394565e8d9bd807c8a74ec7f7d308f16ae3cdbe36f8a35b2f14307292"
+        }
+      ]
+    },
+    {
+      "id": "bubble-sans-x",
+      "name": "Bubble Sans X",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/bubble-sans-x-font/BubbleSansX3D-gwL3Y.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "3e4f6751883d3df2ee45ba7b619ec31e0e144865a12cfb924c83b3bb4bd56826"
+        },
+        {
+          "path": "All fonts/bubble-sans-x-font/BubbleSansXBlur-5yG3v.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "554707657f018b801491c0b3b1c39bc194c437c132d150cc1225ba28cd7f8aae"
+        },
+        {
+          "path": "All fonts/bubble-sans-x-font/BubbleSansXBold-G3LZA.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "63b08201938b5159466dbe3d87eeae9c07af3d0afb3c1075804404a1c4b0120e"
+        },
+        {
+          "path": "All fonts/bubble-sans-x-font/BubbleSansXBoldItalic-j9o1y.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "738b10cc7fe06f9e1bd3c526e584117b16a9b027181e292c51df2cb64c23490f"
+        },
+        {
+          "path": "All fonts/bubble-sans-x-font/BubbleSansXCondensed-zrByL.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "453e3556074999eb6b9687956c124d035386c2d97591cb2542f0fb7fe57b1e58"
+        },
+        {
+          "path": "All fonts/bubble-sans-x-font/BubbleSansXDistort-6Rlg1.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "c44e0df67c93a8d293a7b2d0c795f6fe440dd3c2ae111a7ad5f6cc1e1600f9db"
+        },
+        {
+          "path": "All fonts/bubble-sans-x-font/BubbleSansXDistorted-XG1Lo.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "f2a2be10b379762decbea12c044f1495cd4839ce8919b1d73c11c619a5c711bb"
+        },
+        {
+          "path": "All fonts/bubble-sans-x-font/BubbleSansXItalic-JpoZK.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "88913b8ce6eeeeb5c149832cefc9af55999ede4abdb943a5bfdc88596d311304"
+        },
+        {
+          "path": "All fonts/bubble-sans-x-font/BubbleSansXLightblur-9MRz2.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "eb9409e1b35aa5d2cb685ccf74d7acbfa94be391b3f5bf64879bc1af426e0af8"
+        },
+        {
+          "path": "All fonts/bubble-sans-x-font/BubbleSansXRegular-8O14g.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "fa1202fe8d0628eb2e87fa852f6720d85e15ac3874b5613bd5211bfea8cf8d66"
+        },
+        {
+          "path": "All fonts/bubble-sans-x-font/BubbleSansXShake-7On0l.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "447d08f24ee3a8ac2a0baa1ccf953740850b7ed39d62d8aa79d90e0a17506fed"
+        },
+        {
+          "path": "All fonts/bubble-sans-x-font/BubbleSansXShred-OG6O6.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "d43768ff82529c152e6977bfeb8362742a725957db004405d15f20c4280d1097"
+        },
+        {
+          "path": "All fonts/bubble-sans-x-font/BubbleSansXTilt-YqRyO.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "3b772f5fe4df4b5c45001f2691a992bfc19a8d3fd51e5beec17df2ee280295dd"
+        }
+      ]
+    },
+    {
+      "id": "chailce-noggin",
+      "name": "Chailce-Noggin",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/chailce-noggin-font/ChailceNogginRegular-2OXoW.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "779f7171d47fec0c0fa490b4577e47fb934e2ebd7fc5441b875063b884514e2c"
+        }
+      ]
+    },
+    {
+      "id": "chillax",
+      "name": "Chillax",
+      "license": "ITF Free Font License (Fontshare FFL 2.0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/OTF/Chillax-Bold.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "b56c3f1c2991cae44bc38a03649cb576d97cf455775b073cd8506d96c5fbb958"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/OTF/Chillax-Extralight.otf",
+          "format": "otf",
+          "weight": 200,
+          "sha256": "aac28d7e3f03e5d181d204778f775ae221689caa3b6eb7f2338077cad713fb30"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/OTF/Chillax-Light.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "6d7e1984fe95b3b59c74300e00da837434bc081ac4e39a6bec9bafad687fe7b3"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/OTF/Chillax-Medium.otf",
+          "format": "otf",
+          "weight": 500,
+          "sha256": "8c78c5cf94bf6233e5e5105ba4cf9f6556895c09dc97f3a4d96734f38703a885"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/OTF/Chillax-Regular.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "8c3380c8bf1fc835e3d3e8dc2ed155ee2b754a594d10559ce836ebda22d5e4eb"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/OTF/Chillax-Semibold.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "6efe8d9ef5eeb7aaa28a8387b8f808fcde29c7f3406bc7fd64e3ef42f39774d9"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/TTF/Chillax-Variable.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "34a4f80ffd26973aa7d53136a9bdfbf38ffd39bb507b34c072d5023d838d56c8"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Bold.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "1b3c2544a3c58c2f023b7248198bba30266796bbf10b1bb172467c7edca5207d"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Bold.woff",
+          "format": "woff",
+          "weight": 700,
+          "sha256": "75b79a3712576c61c19ec01f86935dad670117b080b8457001d8c74b09ef292f"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Bold.woff2",
+          "format": "woff2",
+          "weight": 700,
+          "sha256": "a4c966b319112a9904b16965857597bea008e2997009d6f0456bd5e2bd60adab"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Extralight.ttf",
+          "format": "ttf",
+          "weight": 200,
+          "sha256": "c02f51928b579716b19fc773a5167ed32f21134201996591a18441d55817202e"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Extralight.woff",
+          "format": "woff",
+          "weight": 200,
+          "sha256": "2c02c62ab653a00f16e861f0411161899185900162507a830ef787d6b7502b18"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Extralight.woff2",
+          "format": "woff2",
+          "weight": 200,
+          "sha256": "f5eaace8fca688d46c07455934be31f51df745357a5eb5f060cc23bfd917636e"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Light.ttf",
+          "format": "ttf",
+          "weight": 300,
+          "sha256": "629e93a4146cdc3c18ad26727baa6d3e4b94108f2d03d4d2faab910095da6b7a"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Light.woff",
+          "format": "woff",
+          "weight": 300,
+          "sha256": "240acaf017a8bed4b8c738b426734c990d39c4f7badbbacc9bc5793d4f1cfb47"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Light.woff2",
+          "format": "woff2",
+          "weight": 300,
+          "sha256": "6e00b48c38827d0eae48835be9e6a8307d87656b1da96ac308e115999e3308e5"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Medium.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "f3f6dda43bda92bfc237f02e3ffbf9de052facbcc51e3e3a6047907d23f31751"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Medium.woff",
+          "format": "woff",
+          "weight": 500,
+          "sha256": "527fd2bfb1d0ab55f3528810a113e2ff1e445ea21b90aedfdec275216d82514f"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Medium.woff2",
+          "format": "woff2",
+          "weight": 500,
+          "sha256": "afaf7e5fc33a5db46eb97ec9162ca86dbf07118c3a9acc8e33834a04740bef02"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "b3586cca58bea9b67d89c76c85d39b8d83166e659a4b046963b107a05922c929"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Regular.woff",
+          "format": "woff",
+          "weight": 400,
+          "sha256": "ab675a45f07abf3b8db425ce5421f62137c34175e8044f799b460fc3850a4584"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Regular.woff2",
+          "format": "woff2",
+          "weight": 400,
+          "sha256": "9dd1d20a2d2eb6285e859518cb96cc5ca8e343cc73e415ebfad5785942326265"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Semibold.ttf",
+          "format": "ttf",
+          "weight": 600,
+          "sha256": "ea44f4823df8f4c1929127cf8f2f2a8aae824302cec582b8a19c5eb37c517f62"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Semibold.woff",
+          "format": "woff",
+          "weight": 600,
+          "sha256": "b01323032e734fb3896e24a00c015e005a889ff2202d76416cf11c412caacce5"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Semibold.woff2",
+          "format": "woff2",
+          "weight": 600,
+          "sha256": "16cc2b75ef71f81aa3cd47792a8d349719c335a91e8787eb229aea5de279740a"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Variable.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "34a4f80ffd26973aa7d53136a9bdfbf38ffd39bb507b34c072d5023d838d56c8"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Variable.woff",
+          "format": "woff",
+          "weight": 700,
+          "sha256": "51a1cf6253e69639e34089b43d41a3717e3bf926d1f9315f5bba75d3964edd78"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Variable.woff2",
+          "format": "woff2",
+          "weight": 700,
+          "sha256": "4554fa2df4959226daea1f25a22cd54a7e5d2539e59769d0071547713d416106"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Bold.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "d7212a62430bd4efcc4b15e07b98878287f0f0686017a4eba556686b185824eb"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Extralight.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "a2e6644c8d7c2b61f6ff739ae681eb40841cb16112cf95a5687a8012a3b0dda8"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Light.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "72c682c55c8afc3c93dd7e83b0638f5a334a01cd39977e2312a1457af0c8190b"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Medium.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "7c1141e8e9f4cc8452d1923d70cd648d70c69e3f0fc2b2ddce28ef044ef18389"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Regular.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "db58f890fb2d202332549f24d5fd52d8de719700e2dd73b715ec6ef1bb85728e"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Semibold.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "0cfaa86d3bd40f59cbea75cefe6b0860c9584f5e490266ec0af72fcfc1d430df"
+        },
+        {
+          "path": "All fonts/Chillax_Complete/Chillax_Complete/Fonts/WEB/fonts/Chillax-Variable.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "d9ab01ac21bce35b523d0c729b22b629f744b79ea50559bf50ff23e913e3c0a0"
+        }
+      ]
+    },
+    {
+      "id": "correction-tape",
+      "name": "Correction Tape",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/correction-tape-font/CorrectionTape-6YV8Y.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "2693cbdb61d43c72bcee0915eeef700d991fc9ca54221b9e2d062858bba45488"
+        }
+      ]
+    },
+    {
+      "id": "credit-river",
+      "name": "Credit River",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/credit/Credit River.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "3c1893c6d2549d56049d0a00eab43495ae787fd9ddec5b31e374a9a91e199af1"
+        }
+      ]
+    },
+    {
+      "id": "credit-valley",
+      "name": "Credit Valley",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/credit/Credit River.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "3c1893c6d2549d56049d0a00eab43495ae787fd9ddec5b31e374a9a91e199af1"
+        },
+        {
+          "path": "All fonts/credit/Credit Valley Bold Italic.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "423103621473922dfba9032161f39b740c045c3d422bc5bbee721af9dc652deb"
+        },
+        {
+          "path": "All fonts/credit/Credit Valley Bold.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "4c14479db21d04f0e58d64d4d78f7d8ffceb4b8296a955806713e1d11ff6c529"
+        },
+        {
+          "path": "All fonts/credit/Credit Valley Italic.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "e3f20155a646eafd15de6823ceadc31a286cfe1cb8db5796ef6b666839ea0855"
+        },
+        {
+          "path": "All fonts/credit/Credit Valley.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "a05236ea9abb8c00c184cd3bcbed336137560189098dac615f0b79e544eb4521"
+        }
+      ]
+    },
+    {
+      "id": "cuyabra",
+      "name": "Cuyabra",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/cuyabra/cuyabra bold oblique.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "e5645d4ee2db77505d0951809fc4e09509f173d7cb669ce9f21561066e08c0ea"
+        },
+        {
+          "path": "All fonts/cuyabra/cuyabra bold.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "008afe5aeda8264b454855d57369f341e2ae08da1b5cef63f001b66a287cee42"
+        },
+        {
+          "path": "All fonts/cuyabra/cuyabra oblique.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "a233b523d14b4393442d8414dcf2c645bf3baae90a1c8ae78d5fa0a546a57bdb"
+        },
+        {
+          "path": "All fonts/cuyabra/cuyabra.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "36d08f9554f5226e72a4e8e3e9ad7ba895acd96fd9f917c89833d4b9ff3abd72"
+        }
+      ]
+    },
+    {
+      "id": "delta-block",
+      "name": "Delta Block",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/delta-block/DeltaBlock-Italic.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "7123ae4466a895e891474294f2d2ad8a4f2f2c730ddcf3054b1a7f43f38a39d9"
+        },
+        {
+          "path": "All fonts/delta-block/DeltaBlock-Italic.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "e9d41e68737d0080a40c2f11440edf91f8e55b4662c74ec7a09846440692d2b9"
+        },
+        {
+          "path": "All fonts/delta-block/DeltaBlock-Regular.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "25356fbdffe2360b20ed6b134f1c46967592971f574bf1c44339557e77efec13"
+        },
+        {
+          "path": "All fonts/delta-block/DeltaBlock-Regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "9ecd20e7eee8f2b0db39ad0b6ca2d97408ec985d53ac6b3236e2cef3285a2889"
+        }
+      ]
+    },
+    {
+      "id": "dense-letters",
+      "name": "Dense Letters",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/dense-letters-font/DenseLetters-nRgDO.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "534c17473b6fa9e69ed8c89c6fa48475ed0df8fc0bfe395c0dd707f5c64c4707"
+        }
+      ]
+    },
+    {
+      "id": "die-nasty",
+      "name": "Die Nasty",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/die-nasty/Die Nasty.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "214f7b5e6b5af195f238bbfc4bb9d6f4dcc4f28d8b9c454f31a91831bf53f0f3"
+        }
+      ]
+    },
+    {
+      "id": "digitalt",
+      "name": "Digitalt",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/digitalt-font/Digitalt-04no.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "2d0b64d7c2451afed9a761cad37bd5e71ea2bffa8ba4d33b375f10ae5d575007"
+        },
+        {
+          "path": "All fonts/digitalt-font/Digitalt-nGZM.otf",
+          "format": "otf",
+          "weight": 500,
+          "sha256": "e85470fa1fc22ccca8b5f211da49fc5b1996f0cb87fdcf87aeeb775d98d638ba"
+        }
+      ]
+    },
+    {
+      "id": "dosis",
+      "name": "Dosis",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/dosis/Dosis v1.7/Dosis-Bold.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "c9501cb6e7dd953a80a06979b9e31d4fb066427296954700548bdd9432aed489"
+        },
+        {
+          "path": "All fonts/dosis/Dosis v1.7/Dosis-Book.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "4cf42bf97303ddf5cdf2e4d72091d3ff66088ec914e4574efd7b8bd640c99199"
+        },
+        {
+          "path": "All fonts/dosis/Dosis v1.7/Dosis-ExtraBold.ttf",
+          "format": "ttf",
+          "weight": 800,
+          "sha256": "984da1fa292af555e6243fa39b95fee977385bf5338d8d9c9d90efcd1ea856f4"
+        },
+        {
+          "path": "All fonts/dosis/Dosis v1.7/Dosis-ExtraLight.ttf",
+          "format": "ttf",
+          "weight": 250,
+          "sha256": "49a8ec4690240a99a319be5a6e3de5d6ef42a143bc5f9c8ba6ca893753ad1630"
+        },
+        {
+          "path": "All fonts/dosis/Dosis v1.7/Dosis-Light.ttf",
+          "format": "ttf",
+          "weight": 300,
+          "sha256": "9a7cf14b47eee802e351894112074ad8c181b9e36b188741b481ecf4b79dae04"
+        },
+        {
+          "path": "All fonts/dosis/Dosis v1.7/Dosis-Medium.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "65522797d5f9d830a1c1576f337d27fc7179bedb4baaf7c547a615eb762870cd"
+        },
+        {
+          "path": "All fonts/dosis/Dosis v1.7/Dosis-SemiBold.ttf",
+          "format": "ttf",
+          "weight": 600,
+          "sha256": "cd9ecf7ff46288003c2c79e6c5205195340a2dd0057f5ef127547b47fb6be657"
+        }
+      ]
+    },
+    {
+      "id": "edge-of-the-galaxy",
+      "name": "Edge of the Galaxy",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/edge-of-the-galaxy-font/EdgeOfTheGalaxyItalic-ZVJB3.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "b6872a861f506ad717d1f3638350919beda740cf6771a95b51e1d8671fa63492"
+        },
+        {
+          "path": "All fonts/edge-of-the-galaxy-font/EdgeOfTheGalaxyPoster-3zRAp.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "40341a5e385ac446909d044bfd1bfcfc4ae73c9bafd9d640f55826a1813b750b"
+        },
+        {
+          "path": "All fonts/edge-of-the-galaxy-font/EdgeOfTheGalaxyPosterItalic-x3o1m.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "52881bbd8ce9af3b43bc2f44ab7c3c16b0c3276852e25ee087bf24f0ad686d13"
+        },
+        {
+          "path": "All fonts/edge-of-the-galaxy-font/EdgeOfTheGalaxyRegular-OVEa6.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "21003035fe9cbf1d036912b89cd230e275aa7962f69e55af7a1c5e3a3d98c95b"
+        }
+      ]
+    },
+    {
+      "id": "eightgon",
+      "name": "Eightgon",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/eightgon-font/Eightgon-OGn6p.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "6170b52d98d574408aa575b62604b4d5c0f17361500de6b4ef99231fda354d56"
+        },
+        {
+          "path": "All fonts/eightgon-font/EightgonItalic-Zpw6z.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "fa157b2988870f79cd06aa2101159693bc44fc3f0941368d1dfaca9295db09f6"
+        }
+      ]
+    },
+    {
+      "id": "elevatia",
+      "name": "Elevatia",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/elevatia-font/Elevatia-nA2AP.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "7aa3d81bd89d921d60fc962df57b723482d57db060fb326d46686b8a68cdc6bd"
+        },
+        {
+          "path": "All fonts/elevatia-font/ElevatiaItalic-lxMxy.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "57ef56673bd0fc32cd7dcc6981f9ce4ce9204e7141f42d9020bcfbf234f5ec61"
+        }
+      ]
+    },
+    {
+      "id": "enter-sansman",
+      "name": "Enter Sansman",
+      "license": "Freeware (Redistributable Freeware Grant)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/enter-sansman/entsani.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "16fd244c819b7b27a8a07b023f89752ea761395a2d34f2b9b4430e127d06d1bc"
+        },
+        {
+          "path": "All fonts/enter-sansman/entsans.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "5325336673664b6fdba02003c566b5723cb550a53676a3ce381dceb330af4819"
+        }
+      ]
+    },
+    {
+      "id": "evil-empire",
+      "name": "Evil Empire",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/evil-empire-font/EvilEmpire-lx5R0.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "b983c19f0acd9532f4fc347ee05bacf425e2bfdad1c3f526c6fcbb37ff961912"
+        }
+      ]
+    },
+    {
+      "id": "falling-sky",
+      "name": "Falling Sky",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/falling-sky-font/FallingSky-JKwK.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "ce9611d574379662e09b37d4b747c20d182f790f66c626e0054cddde3074604e"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyBlack-GYXA.otf",
+          "format": "otf",
+          "weight": 900,
+          "sha256": "2b5f648310e0ea286c09244e4aade1e93f253c1f17bf7d284506c0c665aef711"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyBlackOblique-j37y.otf",
+          "format": "otf",
+          "weight": 900,
+          "sha256": "f5d87884505029c945cf86a269a580dda82b3408ab65a92ba4cff818ee2bb17a"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyBold-zemL.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "e330f6482b9cad946ce682ccc2d3bd9216f35f1ce26add33bab951fecf8871af"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyBoldOblique-5zmv.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "33735a4c98b37ef053b5e2471c9450bb5cc64e111b934fa0360498370da95109"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyBoldplus-6GZ1.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "b67dc811f597ba65238097f0fdc01a431cadab2c6517aab2945e8add2ca95ae7"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyBoldplusOblique-yxmV.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "adb9272c13e9ec9e0edac991dac24519a1571bd7b19b5be3630496c58ae1e53a"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyCondensed-9qm2.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "3e74be9a18429ae7edbc9b4f008e6e0cadca60b1e38d70465a5582a79c41918c"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyCondensedOblique-leLw.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "2e80f12f225960aa9ef31b19a19e4e29d3c8a7ebcb5a58e8ef1cff53abe2969d"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyCondensedOutline-n5XO.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "53ef885ed448f5392e36dbdefee6b9793acc05af81f638afa695d7c875fbf302"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyCondensedOutlineOblique-1qZv.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "c1bc93a12439f08f3298c28f4b3d397f15ed345a55bb7149ba064a5e6f3e1a5d"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyExtended-RLdE.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "736a8f9f252cc0833ad339de1ee3b0a0770856c12bbf7bab4ad3ee54416690f4"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyExtendedOblique-BnYw.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "523414555e4f5f9d2123aa68eaf498e47d034fbcc30fefd4b984cb1ceca4b98a"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyExtendedOutline-8qjn.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "ee98dddbccb55b2e209769d1032f77e3917d7553a22f35f0a07ebb88a32fecd7"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyExtendedOutlineOblique-YBO2.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "91749dac80fd463301ca78577081b5374eb90cbde5f9d8534c4bead0d72b5dca"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyExtrabold-redB.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "9706146e0360551b2a7d43d9614ea28a541c476d9e6fc606c1cba2fa08d04143"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyExtraboldOblique-MwdP.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "b1d66e1333d0fa584cced8dc0509975aedc94b0a9cf35562edd004a36681b07f"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyLight-K2EX.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "a44da988dd5a5ee77a7e2b031dd54adf6605fb792da15b2301803c98df18ffdb"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyLightOblique-2q3o.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "68646efa58f3e772627ff4ae7110b6f381479e38aca982961c0d17c9057be0e2"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyMedium-ved9.otf",
+          "format": "otf",
+          "weight": 500,
+          "sha256": "db3d312f5206301d0dd4829f53c957c96e440022a6c50ac1b06a14256f1b628e"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyMediumOblique-leLD.otf",
+          "format": "otf",
+          "weight": 500,
+          "sha256": "e111c707e6dde673ee7123c0faaedf272f6e333aa500cbc89e5c2aeac96c1d55"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyOblique-n5XV.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "c365f83b859f3ff643247fc57762c88212d9e7e8cec9c60bebcca2010799d797"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyOutline-1qZ0.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "7e992d54cd17bad97cb09d6ac0dafdc8ff41363a7acb247f9a72d01831ece07b"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkyOutlineOblique-RLdV.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "0573927234a76e87fbd0035a3a0bd80237bafddd017d6f306810b200fc19d8d6"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkySemibold-Bn7B.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "7822c1152009dc8db4f31fed86b06de96e387d6766b53ff28e33b33d3708958e"
+        },
+        {
+          "path": "All fonts/falling-sky-font/FallingSkySemiboldOblique-8q7M.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "d83a52ef485bc9afd0af38255961a837704a2761bc7cd19670d04126000e2218"
+        }
+      ]
+    },
+    {
+      "id": "fonstars",
+      "name": "Fonstars",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/fonstars-v3-font/Fonstars-4Bo0p.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "690608ffcea6c4c5f5ba222eb0a261f2175b3b9762f4f1cc37b01dcd00ee5a19"
+        }
+      ]
+    },
+    {
+      "id": "free-cheese",
+      "name": "Free Cheese",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/free-cheese/FreeCheese-Italic.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "0640d589a8617461b6df29317cb85be8880bc7065d8ef492d1be5e72b6f5bbca"
+        },
+        {
+          "path": "All fonts/free-cheese/FreeCheese-Italic.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "94bf51ceb58e1ea604a2fa7ece6286b94bbf3d9de7fbe1935cfc5ac6825544f9"
+        },
+        {
+          "path": "All fonts/free-cheese/FreeCheese-Regular.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "94785c460cc05fc24c55899a5c0f9a3407d071af6fbff46c22ebc2ae628ca6b9"
+        },
+        {
+          "path": "All fonts/free-cheese/FreeCheese-Regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "9871bed27351f159b77e148783f2e1d99b80dd0f0eb3a312923d8327e0cbcf10"
+        }
+      ]
+    },
+    {
+      "id": "general-sans",
+      "name": "General Sans",
+      "license": "ITF Free Font License (Fontshare FFL 2.0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/OTF/GeneralSans-Bold.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "88bff1f629ba18f1342250753648b9e74196b8a2229fbf2f53d602d787fd23fc"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/OTF/GeneralSans-BoldItalic.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "6f94e46d463ff49032a4efa9adfbd48599eeb2a9e06c2932f696769958beb30e"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/OTF/GeneralSans-Extralight.otf",
+          "format": "otf",
+          "weight": 200,
+          "sha256": "0704bd53b5aa975fa9768490b52870184da515bf5c2813b4806edc263736a3f9"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/OTF/GeneralSans-ExtralightItalic.otf",
+          "format": "otf",
+          "weight": 200,
+          "sha256": "d4582abb35bd5ae85d6ae17245a5f840dd2487dda74ed3a509df60a0768670ac"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/OTF/GeneralSans-Italic.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "7409a475032d4a83fee4af9a586730c15a1c377f3faba38d2f0147af0d8900ff"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/OTF/GeneralSans-Light.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "6e4965d3b14bb02d4123cedaf87d2b4c3da7462a195d2e5d27f361f1fcd277a4"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/OTF/GeneralSans-LightItalic.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "5007719a739e657ee16b25f05172ce30563134d21d315193c50a2a204dfbd9c6"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/OTF/GeneralSans-Medium.otf",
+          "format": "otf",
+          "weight": 500,
+          "sha256": "a4c6067d3415ab1ec2e17e6bd0406c0d3f7a28c707c5ddd85ca6458cabd3dbf0"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/OTF/GeneralSans-MediumItalic.otf",
+          "format": "otf",
+          "weight": 500,
+          "sha256": "f2d2e4279116ed8b3a6f61609658ef01e95c7e7d1f47d5d484243fb8638deeb0"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/OTF/GeneralSans-Regular.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "f5cfd05c1dafa77e944670528a81958f7c21b7517bafd2a8796a3aa17e56b9ce"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/OTF/GeneralSans-Semibold.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "6ad3ed9661df911b511135f494805704dea322dc2ae10a9620764f56df39c30b"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/OTF/GeneralSans-SemiboldItalic.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "7d1393b5db4a2a89b07b78d1be844c45ef153c26c0ec5e4c62e02e2a7e1bbf57"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/TTF/GeneralSans-Variable.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "4b2539d9ed3367e8f55f7ddd369ab13e17bb279ff2eb7fdca6c713af13d4df84"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/TTF/GeneralSans-VariableItalic.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "4aa0c20dbb593ad82b41f090fbbc8efb1bfe3df85ca895c08092f77d467fea60"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Bold.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "fa87dd6422149ef8235b9038db3ee0f0e4addb29971a4d69483211ad7a451ab3"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Bold.woff",
+          "format": "woff",
+          "weight": 700,
+          "sha256": "efa7b65b250f629ba5235d806be9a0405fd0789c3d26bacdc8b0a449a5f81828"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Bold.woff2",
+          "format": "woff2",
+          "weight": 700,
+          "sha256": "0bb4361798c57a448ca3bb9aa251b5a2290f6d79b006edd4161e1962d0eafa26"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-BoldItalic.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "06727c4bfd0e963de1e8a1e00a3a0049e9e5aaa460e724650cdc6ef48205be84"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-BoldItalic.woff",
+          "format": "woff",
+          "weight": 700,
+          "sha256": "1c6cde49625edfa7b9a2417302681b4022c5317afd690990a032a1b95598d183"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-BoldItalic.woff2",
+          "format": "woff2",
+          "weight": 700,
+          "sha256": "ea718b373f4e23fd0ccfc6d9b84d088c40ffa4552a433026405d2dd51d2b6714"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Extralight.ttf",
+          "format": "ttf",
+          "weight": 200,
+          "sha256": "e26c7ded77651217471b2b9d776230092576715990195e4d33a13e51e7f3758e"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Extralight.woff",
+          "format": "woff",
+          "weight": 200,
+          "sha256": "c0485d569622fab574ff11eaf6a453c329f1443d3256a645b158a1c94f7c7ac3"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Extralight.woff2",
+          "format": "woff2",
+          "weight": 200,
+          "sha256": "21a77edcd9a564508a4950d673deb6e04a100762ca71a8499374df3f7fd9ee8b"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-ExtralightItalic.ttf",
+          "format": "ttf",
+          "weight": 200,
+          "sha256": "75da286d5e766f39bb3fdf38b3ee51511a8d79b78b7cabc3c32a11b4ed9a1abc"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-ExtralightItalic.woff",
+          "format": "woff",
+          "weight": 200,
+          "sha256": "8692dfee443d5da39d38e5f65624f1c6b8d66c6ac57db8b4abcbabd9e72d30c4"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-ExtralightItalic.woff2",
+          "format": "woff2",
+          "weight": 200,
+          "sha256": "cf704919268f59f45bbb7ce83381600a28bf05d36be3712e48a75c61d200c1f8"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Italic.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "772d9af6d4567de707c33bc8bb19a17bb2df96d045d21260f94d91bd54d05e7f"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Italic.woff",
+          "format": "woff",
+          "weight": 400,
+          "sha256": "0c562776a6ecc0f653b5d1f0507a9286e8de037ebec23bc599b4e40a6d9cae30"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Italic.woff2",
+          "format": "woff2",
+          "weight": 400,
+          "sha256": "186b415348302ff7dc244db0805c113f392ab523e59a0b553fb0b861ab19f030"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Light.ttf",
+          "format": "ttf",
+          "weight": 300,
+          "sha256": "3dafccbe82a8a71b79d78049d65665c3020af89cb960737fabfc0003f87efe1d"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Light.woff",
+          "format": "woff",
+          "weight": 300,
+          "sha256": "276e6b4505f5363e4a4f632c40c6f803481105a39caffcffc0abeb24b72b5eeb"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Light.woff2",
+          "format": "woff2",
+          "weight": 300,
+          "sha256": "33bb7354c8e1e55ce4c1dbfb769820a639c1ff05052ff32a2ab0741e816a3f94"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-LightItalic.ttf",
+          "format": "ttf",
+          "weight": 300,
+          "sha256": "19ea7d4c06487f8902adbe8a05abc9cc6288d84595b99cebb3713b889c7ca2b3"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-LightItalic.woff",
+          "format": "woff",
+          "weight": 300,
+          "sha256": "df2c99454a0d7afd2df0cdccd1d58c493f90598c8c2728c0206d722fc52ce004"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-LightItalic.woff2",
+          "format": "woff2",
+          "weight": 300,
+          "sha256": "56bb207acabbfe532c64802f1de346714695ac559ef671be922e0f6de8f9f809"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Medium.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "21a95d0f3b25dbe4ccbe3d7f45664069249ff1ccd030172878e7f68d85833cea"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Medium.woff",
+          "format": "woff",
+          "weight": 500,
+          "sha256": "b65dbd2366c3f312d56c07a480d5d38c063fbf29dfd59c9d73036df15556a6fc"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Medium.woff2",
+          "format": "woff2",
+          "weight": 500,
+          "sha256": "0168813e5da4bb7fcbffbe1305cc4932220772ff26c0488c5d62e28f579aa5ae"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-MediumItalic.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "6eba2a965ebef5f7dc202ceb45d1f2d03b94eaad091d76958dbc3035e31ad969"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-MediumItalic.woff",
+          "format": "woff",
+          "weight": 500,
+          "sha256": "c7001176ee73ea3798378f4d78a3bb9b45e930ef10dcd363e6fd4f6bf4714c8c"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-MediumItalic.woff2",
+          "format": "woff2",
+          "weight": 500,
+          "sha256": "c5ed8ea4cb39b7b860411dc3bf9a5847859c5f20c86c763716d4725054e41962"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "2e758fefe5a80a0c910505473de241a74cf6dd914ad6d576d571b610ee8efaf1"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Regular.woff",
+          "format": "woff",
+          "weight": 400,
+          "sha256": "104f5acade7c5d634dc075f57dca841911bc48c21a41aef62240b12ce5f736e3"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Regular.woff2",
+          "format": "woff2",
+          "weight": 400,
+          "sha256": "1336dc6137440a94f87d883bcc3ee26bdbd580606d61e89e6e530757d9328886"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Semibold.ttf",
+          "format": "ttf",
+          "weight": 600,
+          "sha256": "48ae5b24f0c1b040cab1e1884ed9a8bca45a4028999bfd2e76184dfe215a0856"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Semibold.woff",
+          "format": "woff",
+          "weight": 600,
+          "sha256": "35d1ec33f4b0f79dc0ff04446381f2a91b2cfba62e6193a10bc3ec46b26e3385"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Semibold.woff2",
+          "format": "woff2",
+          "weight": 600,
+          "sha256": "225c2c18bd1cebdd9c4aedc07201d5a5fd086f44d5418c09bce308a0832ccfcf"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-SemiboldItalic.ttf",
+          "format": "ttf",
+          "weight": 600,
+          "sha256": "3afb8e1d0fc1fed4b249215357afab94e3aed60faae065ac7bc2c3312db81e31"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-SemiboldItalic.woff",
+          "format": "woff",
+          "weight": 600,
+          "sha256": "de625443b459192ac5cac0a4e108add0acd532821b12ca62f140e5ba51bd967b"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-SemiboldItalic.woff2",
+          "format": "woff2",
+          "weight": 600,
+          "sha256": "629326363d8fc8f88e045f427e0178cfeb75cc8c3df09919beb21c1df20fcbbd"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Variable.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "4b2539d9ed3367e8f55f7ddd369ab13e17bb279ff2eb7fdca6c713af13d4df84"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Variable.woff",
+          "format": "woff",
+          "weight": 700,
+          "sha256": "922832eefea9498111972060d6bd9702386e4a83742dc94818452637ac5bce70"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Variable.woff2",
+          "format": "woff2",
+          "weight": 700,
+          "sha256": "49d3fbd2f1bcc9850d8d939cabf107d6ade508ce08419fca466b06879e4a0a8e"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-VariableItalic.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "4aa0c20dbb593ad82b41f090fbbc8efb1bfe3df85ca895c08092f77d467fea60"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-VariableItalic.woff",
+          "format": "woff",
+          "weight": 700,
+          "sha256": "c6843feb7c354252ac122a7d30a9608047e20b46821d73a39e8abd14a5e57247"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-VariableItalic.woff2",
+          "format": "woff2",
+          "weight": 700,
+          "sha256": "5caa1d9baebac52533458016a982cc699a6992c956054ce8e4d5cf51814ce28b"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Bold.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "8388607d2b1f31b53b5092706a12068fe3c2422f160155237fbd3c49b23de786"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-BoldItalic.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "ca074945c19b3e4335f221c5b2c57e45a48d7a81b2ac382e12ab227c05ab8a5d"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Extralight.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "536a1b7e3243be8a7367ca54dbb336c0d5eae3be2acb3965ac40b52dc48b5231"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-ExtralightItalic.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "c28d5181a803a543e386810af2cf3f9f157e3e1f5651b7f31d0f54bacdb3e32d"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Italic.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "80b3790f21bbee1fc058107030804a56b43d8f8e03eb20dacc560902c348d406"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Light.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "beb22a135745c49bd654372f51d09406ab8c5db2414c256615d5b65d23ddcf1f"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-LightItalic.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "ddf7a5c66ffe94805207a4044411a17335f71c5acc51842cfada1eb23b2e4ff4"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Medium.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "4940caf093e9cd4a7e8af493c0295d339da9184d64bbb7f20edf30b076412e26"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-MediumItalic.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "4e494704b9f58814b21d872126ae590434b455be0a960256da8c278de2ef435d"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Regular.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "4288cc1ffda02a5add7d151c94c0b69e50515c2af3cde3b58b2761c010eb3764"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Semibold.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "12fc0a4d49f51d27db0aa6dbd166067eed8d6c7669986e4f6eaaf379dc90c8f7"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-SemiboldItalic.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "f52b0695fdda4023821ea0ce65e085702bfa3f10f5c1a8a0f59e07fd65474a93"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Variable.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "af4df7088998bd7fc267a6ffca8ee1d0859ecf1ee8b48fd9016f8cb6943675f3"
+        },
+        {
+          "path": "All fonts/GeneralSans_Complete/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-VariableItalic.eot",
+          "format": "eot",
+          "weight": 400,
+          "sha256": "28d858b1afcf7cb5186c31ee125966784145779ef014a843382943b9391f918b"
+        }
+      ]
+    },
+    {
+      "id": "gerhaus",
+      "name": "Gerhaus",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/gerhaus-font/Gerhaus-PK69E.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "adf1452f6283aa5e4a821bdb9970903bfc93ea12e990c53647f61509a649ae79"
+        },
+        {
+          "path": "All fonts/gerhaus-font/GerhausItalic-d96l7.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "686142dc5f864db2e6ee870006e606ee032d07a2bd5670f398a952bd05a97dd4"
+        }
+      ]
+    },
+    {
+      "id": "glitch-goblin",
+      "name": "Glitch Goblin",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/glitch-goblin-font/GlitchGoblin-2O87v.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "01a73b57c0b5e7d1dd7ef22b3187a7aaf086f58cf7c2508b4f08184dfdb56a61"
+        }
+      ]
+    },
+    {
+      "id": "great-vibes",
+      "name": "Great Vibes",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/great-vibes-font/GreatVibes-A7yL.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1"
+        },
+        {
+          "path": "All fonts/great-vibes-font/GreatVibes-Wmr4.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "9b4de643c541cc8f85b8be33ea93f6131a7911bac9cb44015b49552e402b1b55"
+        }
+      ]
+    },
+    {
+      "id": "guanine",
+      "name": "Guanine",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/guanine/Guanine.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "32de85614f8423230cec8976ccf11fbcd1df93ed0d6fe42a68e3446b31e220af"
+        }
+      ]
+    },
+    {
+      "id": "gudea",
+      "name": "Gudea",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/gudea/Gudea-Bold.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "2b1b56763dd590f782b65b07978fbe6f9a83ba5ecfdaf698c0e942ca06181059"
+        },
+        {
+          "path": "All fonts/gudea/Gudea-Italic.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "d4e7abc76e5bf3686436938840927b3522fd704c1f920514b31b67993409e274"
+        },
+        {
+          "path": "All fonts/gudea/Gudea-Regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "a4b5410090a821ea17021627312babdf3d8db0271217fd8c4d9f629ef0a2d90b"
+        }
+      ]
+    },
+    {
+      "id": "hachicro-undertale-battle-font",
+      "name": "Hachicro (Undertale Battle Font)",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/hachicro-undertale-font/HachicroUndertaleBattleFontRegular-L3zlg.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "e0e1620f83465f938b211fec8759f951aa319075e8888477e1921e540b871bc3"
+        },
+        {
+          "path": "All fonts/hachicro-undertale-font/HachicroUndertaleBattleFontRegular-PKzBg.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "ed45addb6a102d338b1000225a14cdd74527687de42a257c0116c596bfc9afe1"
+        }
+      ]
+    },
+    {
+      "id": "handone",
+      "name": "Handone",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/handone-handwritten-font/HandoneMedium-nAevO.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "3a80abb79e5315a86befb6df432e7e07a74b9f689afab7c59c1f8ebf05719548"
+        }
+      ]
+    },
+    {
+      "id": "highway-gothic-b-fhwa",
+      "name": "Highway Gothic B FHWA",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/highway-gothic-b-fhwa-font/Highwaygothicb-E4zxW.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "6a9debca23b4b77e001238af6736735205871b0daa4b95b068d15815b2b18d24"
+        },
+        {
+          "path": "All fonts/highway-gothic-b-fhwa-font/Highwaygothicbminus10-OGzx6.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "7761be1fa9e722ec8b02df3eeec36b36990ac38a148d1ab88fc851800bacb98b"
+        },
+        {
+          "path": "All fonts/highway-gothic-b-fhwa-font/Highwaygothicbminus100-DYzxD.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "0bde08a8d31a3f5f9e2d8d91a1cb12f62251b371bafe42a2945aa0ff47a496fd"
+        },
+        {
+          "path": "All fonts/highway-gothic-b-fhwa-font/Highwaygothicbminus20-ZpYx3.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "9f6abaef49122e072a60652460fc1c0c2df3f5accee5454b80b0495890c982f5"
+        },
+        {
+          "path": "All fonts/highway-gothic-b-fhwa-font/Highwaygothicbminus30-3lgVp.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "7b3c75e1cca741c163759b75fc0fb18f63efc8b6296c30e79943d65b6cffb5be"
+        },
+        {
+          "path": "All fonts/highway-gothic-b-fhwa-font/Highwaygothicbminus40-xRVWm.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "94add87204726662b1b964bd354d8d7767678563fe31936c3664ec26dc0879cc"
+        },
+        {
+          "path": "All fonts/highway-gothic-b-fhwa-font/Highwaygothicbminus50-pgVPd.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "a1cd5e3b485c1f4cd2c036049c5aee7a11374ac5f72c6a6b1d06d5636c2aae99"
+        },
+        {
+          "path": "All fonts/highway-gothic-b-fhwa-font/Highwaygothicbplus10-ARzyp.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "bfeb17f415b19257595d17988051a9b1644a49e53a1929df144408a730cdfa4a"
+        },
+        {
+          "path": "All fonts/highway-gothic-b-fhwa-font/Highwaygothicbplus100-G3zDO.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "11ffb2b1b4b852c41e2a01c8fcfd75840b96c7e06fd2b5e298e067585c861dbb"
+        },
+        {
+          "path": "All fonts/highway-gothic-b-fhwa-font/Highwaygothicbplus20-q2VL1.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "f490532441ea2bcd0c86f5304e6fceb3b1fcda2e43e1d4d26023f915417a1054"
+        },
+        {
+          "path": "All fonts/highway-gothic-b-fhwa-font/Highwaygothicbplus30-V41Al.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "23c5b7438cf95053eba701b9ca2d163d82974c18bd771dcf8248733851ede2e7"
+        },
+        {
+          "path": "All fonts/highway-gothic-b-fhwa-font/Highwaygothicbplus40-JpzDm.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "ff788a19601303b652a2ee00ea80934650716728ef6885bc842700c0b3e9d1a1"
+        },
+        {
+          "path": "All fonts/highway-gothic-b-fhwa-font/Highwaygothicbplus50-j90e9.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "ae6032bd5b85ace82942a723b164f4369141ff9b446a2058bff9cb70e348bca7"
+        }
+      ]
+    },
+    {
+      "id": "holstein",
+      "name": "Holstein",
+      "license": "Public Domain Dedication",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/holstein/fh-holst/holsb___.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "52dd6024dfc60316f512c23b0caf4cde80218a2778f1199036efe2ccb3bd4192"
+        },
+        {
+          "path": "All fonts/holstein/fh-holst/holstein.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "0eeee87182428ed5f6cc7b53166941576ce805a755edf8d7b553eacda17e1342"
+        }
+      ]
+    },
+    {
+      "id": "home-video",
+      "name": "Home Video",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/home-video-font/HomeVideo-gwK51.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "5df883cc59c438d983461d65aae323d6ae61dbcb396ae884314b401672c30c1c"
+        },
+        {
+          "path": "All fonts/home-video-font/HomeVideoBold-XGpe9.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "87f5a79c1b73e6dce401f2d12603a071fe62654a8cda807fcb0ce697b817ef48"
+        }
+      ]
+    },
+    {
+      "id": "inflammable-age",
+      "name": "Inflammable Age",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/inflammable-age/Inflammable Age.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "9c0760c1ed346463c91f06a98dd6553764564f2c24d45d5bcf22cebe04e51ba7"
+        }
+      ]
+    },
+    {
+      "id": "ithaca",
+      "name": "Ithaca",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/ithaca/Ithaca.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "00933cf155794d07b7f6ad1714e03b782a363f1d7f5aca79cc7ba6c2437df5e2"
+        },
+        {
+          "path": "All fonts/ithaca-font/Ithaca-LVB75.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "00933cf155794d07b7f6ad1714e03b782a363f1d7f5aca79cc7ba6c2437df5e2"
+        }
+      ]
+    },
+    {
+      "id": "juliett",
+      "name": "Juliett",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/juliett-font/JuliettBold-vndlO.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "ba375a66493586d9cfe1d429e0a2f888dd0391908a1cc30f0696857e4fa81cdc"
+        },
+        {
+          "path": "All fonts/juliett-font/JuliettBoldItalic-2v3AK.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "a28eb72cee4913d339c11a2835ab186ed556b057d92a62a9ebb5f56f627e8e77"
+        },
+        {
+          "path": "All fonts/juliett-font/JuliettItalic-wodnZ.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "90a977cf6fa430ac9a8bb681435ce1f0f09277f6c48eb23d423b6ed641055cbb"
+        },
+        {
+          "path": "All fonts/juliett-font/JuliettRegular-7OXnA.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "4be335306f1c9ed7b23575c4a209864656f3717078c1618d8c9bf6a818210d55"
+        }
+      ]
+    },
+    {
+      "id": "kaph",
+      "name": "Kaph",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/kaph/Kaph-Italic.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "620be25a089cdae60000e2e00a873a883fd6f161771aba419709e7e86fd96000"
+        },
+        {
+          "path": "All fonts/kaph/Kaph-Italic.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "6be66c60740722170c831a9bf4043895b72992d5e7511f4756510514912a238f"
+        },
+        {
+          "path": "All fonts/kaph/Kaph-Regular.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "752b7a8b1146f2141dbfc99e6e182533eff4dd2213c0b502881cb5e2a9efc5c8"
+        },
+        {
+          "path": "All fonts/kaph/Kaph-Regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "8e868500fac8cdf3f4a33a27d506dfdb0a50f38e01e6d3e2f2c38a860b4fea22"
+        }
+      ]
+    },
+    {
+      "id": "kineks-round",
+      "name": "Kineks Round",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/kineks-round/KineksRound-Bold.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "68f1fc3a79682f5f3ade5cc3b1ffd63725b844ced478e409cfff4ca8fb3a419a"
+        },
+        {
+          "path": "All fonts/kineks-round/KineksRound-Bold.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "c9da5ecf4bfc55c802e0dcaaf9cc92d1db236d3b31c274eb8ae647fa0dfd500e"
+        },
+        {
+          "path": "All fonts/kineks-round/KineksRound-Light.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "a76b5626e7e3f55502dba51e08e3f72e2d5e86ebe408e2d0131898f4b8536651"
+        },
+        {
+          "path": "All fonts/kineks-round/KineksRound-Light.ttf",
+          "format": "ttf",
+          "weight": 300,
+          "sha256": "da345db4681f3434fb77694a262d48923e71775d47922c291731a85e00da32af"
+        },
+        {
+          "path": "All fonts/kineks-round/KineksRound-Medium.otf",
+          "format": "otf",
+          "weight": 500,
+          "sha256": "45ad4858a7bf6208ba619eb9776bcf48250ecf8f5a2e6705f8593180685f60f8"
+        },
+        {
+          "path": "All fonts/kineks-round/KineksRound-Medium.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "42ff0d61705074c8f31f023d3bab7ddee9b81f2665744593f8fb69a20c1961ae"
+        },
+        {
+          "path": "All fonts/kineks-round/KineksRound-Regular.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "2ab36898400bc92098dd1fccdd0e068f7d3465d4164324bcd276f681211df32b"
+        },
+        {
+          "path": "All fonts/kineks-round/KineksRound-Regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "ee66a97b311db08517c7c2a8b57b5b6c8f19ffa49d6145b897c26dbe3d23b46c"
+        },
+        {
+          "path": "All fonts/kineks-round/KineksRound-SemiBold.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "47b9f0dc00e9cd01d334292f7792c0219da0493c7052cdfbb2b24f8f49d44792"
+        },
+        {
+          "path": "All fonts/kineks-round/KineksRound-SemiBold.ttf",
+          "format": "ttf",
+          "weight": 600,
+          "sha256": "963e2f101591bf7bb329cce48c8440430db269dc5375e2e2cda68839815b92bd"
+        }
+      ]
+    },
+    {
+      "id": "kingsbridge",
+      "name": "Kingsbridge",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Bd It.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "ab9cd3a8515c5e8faeea7de69d3331f1e30f1d891d2cb520c5a7fc9adb35daee"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Bd.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "9368cf4987ef98e406a40af23f70eacd20c2edd7c9702eb07cfcf628e7f040c9"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Bk It.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "773cb589fc052db22e09a802291515449924766d8aaa2836e0e744a694de7515"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Bk.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "dd49fc8d57d35f78a63c2c1d8912793253f537f6bbf4da50aa87a2a38120532b"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Cd Bd It.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "69077fc4803d7c867b724f7011d090974d55fe3ae4b954c6c2f79dc70197ec7e"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Cd Bd.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "c4d9739e9755ea54a977ee75e4a91e23893ffc5118bb9beafbe62a03162e9235"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Cd Bk It.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "ca31607aa8016be1f11567fe4a8f9db344c7d77097823c9390864842e94c69d4"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Cd Bk.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "590bad4cff62d208a313ace288f9a0fb3de30fab3bd85466ba9cdbf92d419bf3"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Cd El It.otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "427983725bf8bc59d6c55a89ba2115bf35ad55bc8d1781df101dfe45c5c7c6a6"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Cd El.otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "947958f968f10de0893b7026e2f94abf96d279774efc5b4c1aa9568a5e8cbe88"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Cd Lt It.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "f2500d10c387316d405145031cadd722a25534b3ed423de57c52a1d82c8fe59b"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Cd Lt.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "d3b3595682f5553dec73981ad842a559c853ae8f5d87c7bdbdf38df26710c704"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Cd Rg It.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "0ebb44b9368f9fdf60d3f2dd842c378552428687cf1c5f9c9c87feac07e6e1f8"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Cd Rg.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "94a644e708abc5f8319e77ebf9f55628978963b0a2df2e6d0fb293d85954eb83"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Cd Sb It.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "b4a9deee19f936916425a93a98cb0aa804f7f8820b33f255afe5d13118518940"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Cd Sb.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "11a088a3ac494980162f5b84fc25f2f2808c6675233781d13018eacc0d348075"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Cd Ul .otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "182a155a5bb4cccb80c16736abd4bd1c77ca65faa8fb3a848f81bbf808f7acc3"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Cd Ul It.otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "3b475f8a43a575e932589903fed676154862d735b5c326719c31e05aa455885a"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge El It.otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "e345cdaaad7f1a137ea26a314b46cee8f5187bd9fb78d6aae717b442aaa59ecf"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge El.otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "8c8cd0e8dbd7fc62016cbdb93b7ce6137842b38191701b6f5f6aca5c4a5fd696"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ex Bd It.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "d29ff30be56ebb065a5787dc1bbf326dd2fbbfd85204b0ebcb17b8ceb9641669"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ex Bd.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "dd6a434e2451974bbad5a9c1b96249022f7505161ef7a317015576c0e72c31c3"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ex Bk It.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "a4f5f07a41cb501fde94560d2ee6221716d80594c1ae5d156cbcab6f889b542c"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ex Bk.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "de11b05d8d1a02e876dee02c2ec8221c3520259355c49f40c3f9452017979192"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ex El It.otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "61d726d97bee8eec1c04815ca1ac8692428bf447a924f20e3394463cdb0bd150"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ex El.otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "a9112870119799caf7faa4ca51f88c92be52fc261fd254f3fa8f6ad52c9b577d"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ex Lt It.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "5303c7207695743428f499b1075130894d5524f32976b92552d0993b8256231f"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ex Lt.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "5b3a45a909e204bf42c7e23aff09bd33c24fe90e0280a7a16d679f506677e0ec"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ex Rg It.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "e516232d1f8e8c067419f3c6d3cbc9c5ad45da1043e0f21be654acccca88c0a6"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ex Rg.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "5ae346b24566efb527f0c484c58d5b748a937b19feb615fb674119ba84db6101"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ex Sb It.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "5d885585679ac3c1137baabc5a5078a8feb1f953038a0ee4ae2683e598feec97"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ex Sb.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "47790b88ec64146b03c69ff54d182d9039c729328a2f05691b05af16d6baeace"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ex Ul .otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "a0e11d67d2fdf63cf2dafab482324a7e47a634a91b36626c699aae1f80ce32da"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ex Ul It.otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "e58891e3edb546db301456d74435ab259a6eb28578af18b8ac2465fe63696c94"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Lt It.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "a9e87613f8b2ba9d7cf07c26eafae09c502a673986715268cd1d87afaa746fa5"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Lt.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "80b6f04a32a89601ed239fc37982963b1a99fc4526f6327bd5bb1a1b0e6a41b5"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Rg It.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "be55c5a8c59588dbbb0a96f382b5dcb58a77bf6e8c31e48282309380087f342c"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Rg.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "fc522ec6b04fe4d7b0abc836c5b3e22f32aa5d1791a1e9a3d20719fc8c5c27b2"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sb It.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "93b255e9ffb6c139f7d0a055206563e83aba765469175834aca5c2d485ebb1e4"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sb.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "a03c08865397c6a9abab79899747d51720bd6923edaf1e9e0a4a5c8929fc2a09"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sc Bd It.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "abbbbb20a2f17f2e05c40d7fc24a58df174f89e7ea55cfd76706c37c78f9af96"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sc Bd.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "6067d142132d9f234e9bedc9ab19152518e12ed15b1146feb5287aa67a55368f"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sc Bk It.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "e381a8e589212d9452e3b96f315d54f516119be44fe361303d2a661ac65172a2"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sc Bk.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "12e03d14bae8fa8a4e0686cab00a244f4f9339651d85f518999cf3327dd4e0a6"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sc El It.otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "585546ed13ac02d6fdd450c125d96103883c4fcce008f8a2086d9ba95152c6c8"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sc El.otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "587c427139691b24325156be0e6df23dffad0bcfb3afca0e4a60d61ec48f7662"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sc Lt It.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "948f720b974b06a1aa120c14fd1302d94ef164f909f72e9ee805de12e30975f5"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sc Lt.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "8b8ba0e28959bcb4d31a7687942285546e744825890bd75eb236cdf90e2c7903"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sc Rg It.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "9996a607676ae709d8a3086def6f655c9f16de3157e11f92d796868e3d92cf2a"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sc Rg.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "85e368cf3a4d78d255209f5440e26102df9d3a7dede05038db4eb337626ae445"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sc Sb It.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "d024b21864e64d1e03355c5b8005398896a45e45163b5727e787ae0f2cb424ae"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sc Sb.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "dcf7f6ad165a7677b538e6da490de4bbdb09c3ba503bb5e893ed7ac629c8956f"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sc Ul .otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "d92e02c87f205dbccbd1c9e8920e16f672b6c1240c4423fc3c87e44bb10bbd46"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Sc Ul It.otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "5078321d3aacf194d373f5ede3c203048c897cd01952440f3a839bcf35a02f7e"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ul .otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "c2ca93f6271a503f8cb02d698f7857e222e548ee1632f2c84a160e9cde24ceb7"
+        },
+        {
+          "path": "All fonts/kingsbridge/Kingsbridge Ul It.otf",
+          "format": "otf",
+          "weight": 250,
+          "sha256": "8334938b315d7990bc68e7d4bb36800c1429ed143799f8c3b9230b769032a6a3"
+        }
+      ]
+    },
+    {
+      "id": "leporid",
+      "name": "Leporid",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/leporid-font/Leporid-d9ZAE.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "4943650aa4e316d67fb62cad073de68716081f20e4a99461254a9e4872cac7c1"
+        },
+        {
+          "path": "All fonts/leporid-font/LeporidItalic-mLRWa.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "38888de1ca989c8733d599be6d9bc9023c5559399ef9f20d869c11745439d861"
+        }
+      ]
+    },
+    {
+      "id": "liber-struct",
+      "name": "Liber Struct",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/liber-struct-font/LiberStructRegular-MA69e.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "b185ddaac8809f679be4691f395a5fc2b235625493d04b2bc6fca67a90200607"
+        },
+        {
+          "path": "All fonts/liber-struct-font/LiberStructRegular-rvBqO.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "bbe6e911289aaa4a12e1ff5cbb1288b614b1531f85703f75b17d2571de7b82d1"
+        }
+      ]
+    },
+    {
+      "id": "lumierepolis",
+      "name": "Lumierepolis",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/lumierepolis/Lumierepolis-Bold.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "f241c371401b921446c9dd572df29173838cbd79b78d4b117ef7c271f7e6f960"
+        },
+        {
+          "path": "All fonts/lumierepolis/Lumierepolis-Bold.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "7da9a8cc5b619ec6e378a9a85aa0923b95427ff5cc31e9e44754e99075c87876"
+        },
+        {
+          "path": "All fonts/lumierepolis/Lumierepolis-BoldItalic.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "955b575239d74cd180e8113e307cc3f10aa277c345c3b879ea0924bad7eb2993"
+        },
+        {
+          "path": "All fonts/lumierepolis/Lumierepolis-BoldItalic.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "bfb04b88203a2c0092333ee810ac820ba19860b7809935bb65285252c8347dad"
+        },
+        {
+          "path": "All fonts/lumierepolis/Lumierepolis-Italic.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "def03427835050bdc33d9f121d91bd0a3c7daec3ec420a93140c75be97b58aed"
+        },
+        {
+          "path": "All fonts/lumierepolis/Lumierepolis-Italic.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "25afbbda4a176be10c5faa2ddab98b0ee10e2d26e53889fedde3c012ea8d205d"
+        },
+        {
+          "path": "All fonts/lumierepolis/Lumierepolis-Light.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "09622200cba5e6bba3efb5c1644926170fd1b4bdf499dc1322794386051f18df"
+        },
+        {
+          "path": "All fonts/lumierepolis/Lumierepolis-Light.ttf",
+          "format": "ttf",
+          "weight": 300,
+          "sha256": "22c63738c849099cf423d92c05a0fb49211ab646d54f4f5a4b727156d6a823ec"
+        },
+        {
+          "path": "All fonts/lumierepolis/Lumierepolis-LightItalic.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "86819838df3e74d8643931f02909900a5048fd2c35b31a62a9e8ae5b62faf346"
+        },
+        {
+          "path": "All fonts/lumierepolis/Lumierepolis-LightItalic.ttf",
+          "format": "ttf",
+          "weight": 300,
+          "sha256": "e4b7765e13ed9d0b8cfdba0799374aa529f33b0d5743d75ddde7f71a3897af39"
+        },
+        {
+          "path": "All fonts/lumierepolis/Lumierepolis-Regular.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "a615ed73154d24e3e83ccd744d3b323442e8cf9f609787a0e7beeaa3c231e970"
+        },
+        {
+          "path": "All fonts/lumierepolis/Lumierepolis-Regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "d1d7724e469c5d2d1f43dfe943956b31d90621e2823f70a2ed83b8f0a13d043b"
+        }
+      ]
+    },
+    {
+      "id": "martius",
+      "name": "Martius",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/martius/Martius-Italic.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "55afe260dd5930cbb66e6db54627d919d3249b9beacdba124124be4cfb7a0c25"
+        },
+        {
+          "path": "All fonts/martius/Martius-Italic.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "8e989fb7291bb51f35bcaa39a2dd430673104b7ba7e8e966c562d998d3f96bcb"
+        },
+        {
+          "path": "All fonts/martius/Martius-Regular.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "5fb2cc843885a119a8ed8d2c3b7c51f65d6d5542773ca727cf52b449232cfdeb"
+        },
+        {
+          "path": "All fonts/martius/Martius-Regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "924f29b4059fc1773d982b6d6c7181c45205ba597ca71a105b93a8aab322b4e6"
+        },
+        {
+          "path": "All fonts/martius-font/Martius-LV9L4.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "5fb2cc843885a119a8ed8d2c3b7c51f65d6d5542773ca727cf52b449232cfdeb"
+        },
+        {
+          "path": "All fonts/martius-font/MartiusItalic-PVA4E.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "55afe260dd5930cbb66e6db54627d919d3249b9beacdba124124be4cfb7a0c25"
+        }
+      ]
+    },
+    {
+      "id": "matrixtype",
+      "name": "MatrixType",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/matrixtype-font/Matrixtype-lxMZX.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "ced82f299c65e5f540c796c12c4db4fb4a11e3f7bc797ec9d5158f339e8b3209"
+        },
+        {
+          "path": "All fonts/matrixtype-font/MatrixtypeBold-yYyB5.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "db27cdf84bc80b6775c1010f42a394cbec63e2a9f19ab1bbe8c2a35c19795808"
+        },
+        {
+          "path": "All fonts/matrixtype-font/MatrixtypeDisplay-9MyE5.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "36525c6962a7cdf11cf62c95a839ffb840e341ede9905ddf2d6c757208635a95"
+        },
+        {
+          "path": "All fonts/matrixtype-font/MatrixtypeDisplayBold-6R4e6.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "0f76de23ab4462b1d61387692eae170dd84a9415565a540356da1b0fcf94af90"
+        }
+      ]
+    },
+    {
+      "id": "minecraft",
+      "name": "Minecraft",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/minecraft-font/MinecraftBold-nMK1.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "62a3173d3d0fb1e7fd836dc08b2c00fab9d0724b77d8a2a0c8341f1b84c1db28"
+        },
+        {
+          "path": "All fonts/minecraft-font/MinecraftBoldItalic-1y1e.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "221f062ed63c0f3832aa694ac040b309931730c404e087c98b708c43a1ba9532"
+        },
+        {
+          "path": "All fonts/minecraft-font/MinecraftItalic-R8Mo.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "e6edea0a1c18470fad1e73474b817f251f3aff5b6eb5c595f38f42554bb764d9"
+        },
+        {
+          "path": "All fonts/minecraft-font/MinecraftRegular-Bmg3.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "c5bcd562c9151e23deb35ce8fb069bf3f8d22e1b71f0e2b70e253ee3925c2174"
+        }
+      ]
+    },
+    {
+      "id": "montserrat",
+      "name": "Montserrat",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/montserrat-font/MontserratBlack-3zOvZ.ttf",
+          "format": "ttf",
+          "weight": 900,
+          "sha256": "fb1c55afc6403bdba544b22f90ff409bac13ffe2ccd1c46753ab04470d0a29fb"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratBlack-ZVK6J.otf",
+          "format": "otf",
+          "weight": 900,
+          "sha256": "dc26880782a87c998ec08cf9122a17424c180194e8ea55469b85904fa1817ceb"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratBlackItalic-owBnV.ttf",
+          "format": "ttf",
+          "weight": 900,
+          "sha256": "165d63775904743a02c59d5febf26bc64d69d0d8d76d0e57536b7a01935cc0e9"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratBlackItalic-x3728.otf",
+          "format": "otf",
+          "weight": 900,
+          "sha256": "3c82290d2a02805e36cb9c89376397d2ea008f9f2c4bf0e8b3d001a83961b579"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratBold-DOWZd.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "5d5caff8a7765bb0a4cb07f6dd8bfbcab7fce623b6b4f6ed29e41958cac563fa"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratBold-p781R.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "a4da31f27b504bf9240588097ffe06484658cdd8c731ee2b98024d156cd61027"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratBoldItalic-4B3w9.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "1debbae269d2d32078985502cf2a5595c7a7e2610b9c92f1fde4d89e6693d991"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratBoldItalic-ALPax.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "c9cb06bf386b5e6ee839f4089484c7a0fb974530083713585aa66515233b4421"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratExtrabold-qZ7Rx.otf",
+          "format": "otf",
+          "weight": 800,
+          "sha256": "342c39304f869bfea83aec47a8a929f3629f4cb04517498570f2208bb80b9e7a"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratExtrabold-VGO60.ttf",
+          "format": "ttf",
+          "weight": 800,
+          "sha256": "e3873b06700ad313463002d6dad9b53a1010ebe744815e06c64a4d5dfb533fbd"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratExtraboldItalic-0WDM4.ttf",
+          "format": "ttf",
+          "weight": 800,
+          "sha256": "c8c6bb2d67361e5f2934dbc256fac39e2cb96b956c10f9959944d23646d20d11"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratExtraboldItalic-JRmqE.otf",
+          "format": "otf",
+          "weight": 800,
+          "sha256": "ad9f8a3868945aed6fd73b50eab442dbb74e01d3819f007551c92549f93413c0"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratExtralight-GOJpy.otf",
+          "format": "otf",
+          "weight": 275,
+          "sha256": "66eacee0a4a005d2bc2d25e7195719de0811c66221c6b6c6dff4d7d4c2c90e4c"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratExtralight-jEZ6j.ttf",
+          "format": "ttf",
+          "weight": 275,
+          "sha256": "08f24f250a3d7f1984d18e834990e15e9dd87a2a491a94fccf1a3ac78947d857"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratExtralightItalic-eZw6x.ttf",
+          "format": "ttf",
+          "weight": 275,
+          "sha256": "3564d3830ddf03d1840d44eabe514d3b7847973895891c7e55c5d6a4a45e6b66"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratExtralightItalic-z8dwG.otf",
+          "format": "otf",
+          "weight": 275,
+          "sha256": "3877fe761b30d3aca20672c52742729faa3735f976de0d6f1e780bbe22ce1f78"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratItalic-5187x.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "9201a423afb56e77c0c4a1b83e526f9466adadf8edaa6f4fcdfb4a5d5bf968ce"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratItalic-WyzEz.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "642dc645909d5ed60f878ff7c4afa6a5f69b5d3163e76f55b16a3734b6ed5157"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratLight-6YemM.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "c9bdcf18b13639137d97a6cc7dc20deebfdaeb9e504952e68d31eb984fb2e0fd"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratLight-ywBvq.ttf",
+          "format": "ttf",
+          "weight": 300,
+          "sha256": "89e0e9ee9b3cc0e4d0f3ede0b62cedeb17508e907139d24b10668b3de5e69f1a"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratLightItalic-9YEL7.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "67f5af134df5b566782530c0df16df4590a2e3999d127a6fc8ec58145f833ac0"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratLightItalic-axBzx.ttf",
+          "format": "ttf",
+          "weight": 300,
+          "sha256": "7ef8787b59b6e4fbce7f54434d1c2b1355ef6cf9bc8a9cf5c70fb7aaee470361"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratMedium-lgZ6e.otf",
+          "format": "otf",
+          "weight": 500,
+          "sha256": "b34d27b8a6d78ce0d4455ac4148945735ebb85a23e9a5efc694b072f3878a8c8"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratMedium-nRxlJ.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "a531bdef2bb42c7e1565e04cc746249eb44b3845fada6a143cd5eb33dad9a68b"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratMediumItalic-1GPK4.otf",
+          "format": "otf",
+          "weight": 500,
+          "sha256": "06eb98b20641c231fdea3f5ec7ee3e757a1cefdc0c9be7dfbc83320aa5329ad1"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratMediumItalic-EaqM4.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "0ce9932e78e8f963d320aa428e8f482db09d3fb50e4298d0babb42117f341d13"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratRegular-BWBEl.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "e771ab4bfbf5eb84bf4f86b882105d3c9ddd0cd45699fcfcc831e4ffa24f3f16"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratRegular-RpK6l.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "c328f23de78e921549f7df7ad757294e30ed822a3879a2b23750eb2d57ddcacd"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratSemibold-8M8PB.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "8429da345a8e21fc36ebef92e6d44785e031f45c2919b2fd9576f8b0afa91c4f"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratSemibold-Yz368.ttf",
+          "format": "ttf",
+          "weight": 600,
+          "sha256": "e8dc49810d915478da571ed51b2bec8ac5a390dbbf5fd8977b56f48ce92bdc8b"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratSemiboldItalic-OVZXA.ttf",
+          "format": "ttf",
+          "weight": 600,
+          "sha256": "0ebe3596db2e4c691be3e106ca613de27bc828fc0a87557914ee95da0c65baff"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratSemiboldItalic-rg2B9.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "027732a467639061117a284c41c30c39acbc984e0c8a1093b525b7d86e284a35"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratThin-K7B6D.ttf",
+          "format": "ttf",
+          "weight": 100,
+          "sha256": "6d690f4463e0d43f398c0811a1fa7f7f884e275995e9e5e2a29edf4cdb5812d7"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratThin-MVY6x.otf",
+          "format": "otf",
+          "weight": 100,
+          "sha256": "1350a17140a261c2b6c9ead22138a517c0ea81f3e03e7daf84592b7e96a08ffe"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratThinItalic-2O72w.otf",
+          "format": "otf",
+          "weight": 100,
+          "sha256": "908df86fcbc41121d3c6535ec103291957266c36b7f80a6a59e060f950a7d203"
+        },
+        {
+          "path": "All fonts/montserrat-font/MontserratThinItalic-ZVK3J.ttf",
+          "format": "ttf",
+          "weight": 100,
+          "sha256": "2f349c7ba4378668771cc645e13ee8b06243e1d3d72fe7aecfce42841600e728"
+        }
+      ]
+    },
+    {
+      "id": "neuropol",
+      "name": "Neuropol",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/neuropol/Neuropol.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "5b6b7b0536019ebda9c73c48dd1f71ae079a11ae7e3590fd4017f5759f338fc5"
+        }
+      ]
+    },
+    {
+      "id": "newestshape",
+      "name": "NewestShape",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/newest-shape/NewestShape-Bold.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "6bb7b48d2df90eeeff3813e4a64089ce6dc067bd2dbcc889cae91fc769f8fd20"
+        },
+        {
+          "path": "All fonts/newest-shape/NewestShape-BoldOblique.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "63a5a986d3e556c9197f81507962601e87801a0882d1a8d7202f647a2feb722a"
+        },
+        {
+          "path": "All fonts/newest-shape/NewestShape-Book.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "9403bcacf15bba08018caaf6ccadf298b654b37643fb9f1e1690bd85d904b13d"
+        },
+        {
+          "path": "All fonts/newest-shape/NewestShape-BookOblique.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "8a2ce004f6ec10886b34a37f5ee5f8211885e003d36ebc45d7f47d74cd7813c7"
+        }
+      ]
+    },
+    {
+      "id": "newshape",
+      "name": "NewShape",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/new-shape/NewShape-Bold.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "b3e9e1802c4976790ad6963bcb1007a0f8c4f899f750208f38c61daea470b5ec"
+        },
+        {
+          "path": "All fonts/new-shape/NewShape-BoldOblique.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "791b941d15f82c32cff5c12261dd1eeeeb07a9507615cd4d54a12b010c55a9fb"
+        },
+        {
+          "path": "All fonts/new-shape/NewShape-Book.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "ce692781388e9a840915bc2b5d8fba9e1f99368c6b8bcea07ae1f89b17049f33"
+        },
+        {
+          "path": "All fonts/new-shape/NewShape-BookOblique.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "01edc96f9e687b7c1eb92c4dbe8c26de4525dc9effa7da7bc392595df65f0ff0"
+        }
+      ]
+    },
+    {
+      "id": "newtown",
+      "name": "Newtown",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/newtown-font/Newtown-8e6M.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "376d82c5b660c059c182d848d0a96da9dbe7277d7c8820f6e9a2c99b1a256c65"
+        },
+        {
+          "path": "All fonts/newtown-font/NewtownBold-MpGp.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "b31a2a7a1b1a356ec51ac658a7dd2d2e02196e19e685434d32360452dffa3c5b"
+        },
+        {
+          "path": "All fonts/newtown-font/NewtownBoldItalic-YX0q.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "e12a0b6fd1658d997a80b68f1b340d1ca15c62756cab4cf7f6b4e9cb2c8bc30d"
+        },
+        {
+          "path": "All fonts/newtown-font/NewtownItalic-r3Ax.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "b508255d5134a1c28246b2a661f1ca5089767e6e4ab29714f1ec2464185acebc"
+        }
+      ]
+    },
+    {
+      "id": "oblata",
+      "name": "Oblata",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/oblata-display-font/OblataDisplayRegular-Zp8o8.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "7263cff6cec4b46c61cd5b57e6818c0b98898a173141aecfbfd6e7af9000e8c6"
+        }
+      ]
+    },
+    {
+      "id": "operation-napalm",
+      "name": "Operation Napalm",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/operation-napalm-font/OperationNapalm-nRBWO.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "24454062e6ad999f3a9e30fd351a1f34bb0f8fcfd121148336d19ed7783060b3"
+        },
+        {
+          "path": "All fonts/operation-napalm-font/OperationNapalmItalic-1GgAv.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "39fb2d26a18fb6d8040a5bdcb385bfc46880dee3272f710a35ce0339c7e838a6"
+        }
+      ]
+    },
+    {
+      "id": "opsilon",
+      "name": "Opsilon",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/opsilon/Opsilon-Italic.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "85efaa4b49bf47a9fc8446b013f8c620052505ae875a8cc882f6ae0d7ab8efc1"
+        },
+        {
+          "path": "All fonts/opsilon/Opsilon-Italic.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "67f0bdb3490ac42e4f00b21d8b68e0337127fe1005e1391bf0d2216f74c11791"
+        },
+        {
+          "path": "All fonts/opsilon/Opsilon-Regular.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "7b302f421a50f4d1e4237e40ccbb351a3b42ffadb040880bdf7a5c67dc42ce07"
+        },
+        {
+          "path": "All fonts/opsilon/Opsilon-Regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "93ce3c2c66ecd9b3ac9a1f9d8d03b50883ec6d5a7087eb73edf13417486005d5"
+        },
+        {
+          "path": "All fonts/opsilon-font/Opsilon-xRj8m.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "93ce3c2c66ecd9b3ac9a1f9d8d03b50883ec6d5a7087eb73edf13417486005d5"
+        },
+        {
+          "path": "All fonts/opsilon-font/OpsilonItalic-3lm9p.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "67f0bdb3490ac42e4f00b21d8b68e0337127fe1005e1391bf0d2216f74c11791"
+        }
+      ]
+    },
+    {
+      "id": "parisish",
+      "name": "Parisish",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/parisish-font/Parisish-EEoW.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "f4a8bc13c8d01d8c0bdec7e4ccf43e22c98a8490fc3891ae38de6096969fefa1"
+        }
+      ]
+    },
+    {
+      "id": "pixelated-elegance",
+      "name": "Pixelated Elegance",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/pixelated-elegance-font/PixelatedEleganceRegular-ovawB.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "1f253be437d5264d6d55904d50f282185dafe476163aa85fe78b1ff0d405057d"
+        }
+      ]
+    },
+    {
+      "id": "playfair",
+      "name": "Playfair",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/playfair-display-font/PlayfairDisplayBold-nRv8g.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "a45730a625e024b4092ea34ea8d81c5897ab689f3fb5dbb14da71d3c8872607e"
+        },
+        {
+          "path": "All fonts/playfair-display-font/PlayfairDisplayBoldItalic-rgx7y.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "43f5fe9378064c1d7a750a730f66de2f89bdc9b103d565fb68caaaa12b4aaa92"
+        },
+        {
+          "path": "All fonts/playfair-display-font/PlayfairDisplayItalic-BW0Rd.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "8c5a3f8ea42ba3e14e140a095b15947874111168e08b937f8335fb1db640870f"
+        },
+        {
+          "path": "All fonts/playfair-display-font/PlayfairDisplayRegular-ywLOY.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "17e6c4698298ec2bc9fe8f5bf7bc120607ae6d0a357c96e4436d7e69c7747601"
+        }
+      ]
+    },
+    {
+      "id": "playfair-display",
+      "name": "Playfair Display",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/playfair-display-font/PlayfairDisplayBlack-RpvVA.ttf",
+          "format": "ttf",
+          "weight": 900,
+          "sha256": "11bb6aa5fa1e1bcd3c1ea96f6c28d8b1a6003b85497e17c7278844d42e3c08c2"
+        },
+        {
+          "path": "All fonts/playfair-display-font/PlayfairDisplayBlackItalic-K7d4y.ttf",
+          "format": "ttf",
+          "weight": 900,
+          "sha256": "19742a22a35b471e16455b79786ea805c464478fe45267850d7d18e3574dd3f2"
+        },
+        {
+          "path": "All fonts/playfair-display-font/PlayfairDisplayExtrabold-1GDw2.ttf",
+          "format": "ttf",
+          "weight": 800,
+          "sha256": "a4f36d8a82e5d8000c763e033b319ba2817141653e8dade8c3d9e136942967cc"
+        },
+        {
+          "path": "All fonts/playfair-display-font/PlayfairDisplayExtraboldItalic-MVZaJ.ttf",
+          "format": "ttf",
+          "weight": 800,
+          "sha256": "96f585dcce60001832c1c5803e64d94337c443b557524d48feea21d524fa2327"
+        },
+        {
+          "path": "All fonts/playfair-display-font/PlayfairDisplayMedium-9YKZK.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "7f077a28e9a93eb91246fec8940896e8de76fc7876c01b6f8002c37b19392d3f"
+        },
+        {
+          "path": "All fonts/playfair-display-font/PlayfairDisplayMediumItalic-8MaEg.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "bfdbfb7b0c3f913610506a483c794be2ed87eeeee30220cd2a6214d80c2457a4"
+        },
+        {
+          "path": "All fonts/playfair-display-font/PlayfairDisplaySemibold-lg9nd.ttf",
+          "format": "ttf",
+          "weight": 600,
+          "sha256": "e10eb4a67618fbb77005356becf052cf9afec3f91f53385a97c8bce48486ed5e"
+        },
+        {
+          "path": "All fonts/playfair-display-font/PlayfairDisplaySemiboldItalic-YzEYO.ttf",
+          "format": "ttf",
+          "weight": 600,
+          "sha256": "12e4eac89bf5f7464df10c8cf4ff9ad1d6f04302f1bd146e13d1605893de23d6"
+        }
+      ]
+    },
+    {
+      "id": "press-start-2p",
+      "name": "Press Start 2P",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/press-start-2p-font/PressStart2P-vaV7.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "78b71542749b2f6920f60fe2c74fe85738284dcb9cd26a7ff6a642c54d38470b"
+        }
+      ]
+    },
+    {
+      "id": "princess-and-the-frog",
+      "name": "PrincesS AND THE FROG",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/princess-and-the-frog-font/PrincessAndTheFrog-XdMd.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "d6f64f50c3e7c4a5fd8fdf8ac80b1fef6a2840f0fb8d13bd69bbd49c849309f5"
+        }
+      ]
+    },
+    {
+      "id": "public-pixel",
+      "name": "Public Pixel",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/public-pixel-font/PublicPixel-rv0pA.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "931eb4bf9ef25a6d4bb31783b8681712a42b7408988d53971a3070a2f7443ccf"
+        }
+      ]
+    },
+    {
+      "id": "qumpellkano12",
+      "name": "QumpellkaNo12",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/qumpellkano12-font/Qumpellkano12-A6D2.otf",
+          "format": "otf",
+          "weight": 500,
+          "sha256": "b8249fed069e80d824902120cf57f033c725af313f09e40814a410cf27791b0f"
+        }
+      ]
+    },
+    {
+      "id": "raela-grotesque",
+      "name": "Raela Grotesque",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/raela-grotesque-font/RaelaGrotesqueBlack-Zp21m.ttf",
+          "format": "ttf",
+          "weight": 900,
+          "sha256": "7ea68072a1a5c776f11310ad6cfce073cede755e16cb95a11e5890357f2987ea"
+        },
+        {
+          "path": "All fonts/raela-grotesque-font/RaelaGrotesqueBold-E4Omn.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "e75caf10d936d979977e33cb1d89ad49850c123870b2084c543a1c39627f2f81"
+        },
+        {
+          "path": "All fonts/raela-grotesque-font/RaelaGrotesqueExtraBold-OGgW4.ttf",
+          "format": "ttf",
+          "weight": 800,
+          "sha256": "6a2787becd450d70364d4803b3cf3974c8d2e015ddd20cb690f34c632690864b"
+        },
+        {
+          "path": "All fonts/raela-grotesque-font/RaelaGrotesqueExtraLight-4nYxx.ttf",
+          "format": "ttf",
+          "weight": 200,
+          "sha256": "fc743e25051bca94bd478795f05aedad74c5b8a66084362691023d11c1a70338"
+        },
+        {
+          "path": "All fonts/raela-grotesque-font/RaelaGrotesqueLight-0v1ER.ttf",
+          "format": "ttf",
+          "weight": 300,
+          "sha256": "b025f086b450b098308560a1fda285de7ffd50d0979cd8679ff4e1f3be27cd13"
+        },
+        {
+          "path": "All fonts/raela-grotesque-font/RaelaGrotesqueMedium-WprDE.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "8bbaab39114c40a9f31702b3db82b93a7518f49b9987c318f65682be9e64e9b3"
+        },
+        {
+          "path": "All fonts/raela-grotesque-font/RaelaGrotesqueRegular-e9476.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "f6d66528d9afee4a703b4d53ff3ad650d0df0c8ccabfcbd991013209d923be7a"
+        },
+        {
+          "path": "All fonts/raela-grotesque-font/RaelaGrotesqueSemiBold-aY5KR.ttf",
+          "format": "ttf",
+          "weight": 600,
+          "sha256": "6c441d80303fba3f8ce9e68cc718c8ea02278d2532629a902e4da6eeb9c1b3c3"
+        },
+        {
+          "path": "All fonts/raela-grotesque-font/RaelaGrotesqueThin-ovpea.ttf",
+          "format": "ttf",
+          "weight": 100,
+          "sha256": "e43241ca17e3b1e1e263029098f89b43fad10ba3acbfb25c682ccf2d9557224e"
+        }
+      ]
+    },
+    {
+      "id": "raster-forge",
+      "name": "Raster Forge",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/raster-forge/RasterForge.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "7b7026730e15ce9a84eef9ef7501d133fdc2a1e6c589a45e4e82f7a349114963"
+        },
+        {
+          "path": "All fonts/raster-forge-font/RasterForgeRegular-JpBgm.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "7b7026730e15ce9a84eef9ef7501d133fdc2a1e6c589a45e4e82f7a349114963"
+        }
+      ]
+    },
+    {
+      "id": "relish-gargler",
+      "name": "Relish Gargler",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/relish-gargler/Relish Gargler.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "b9e5cbbcaa37d51cabbbe30fce1234086b791da934f389c54cfb52f1e3b2304c"
+        }
+      ]
+    },
+    {
+      "id": "rijusans",
+      "name": "Rijusans",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/rijusans-font/Rijusans-gwAvR.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "fae3b9b28d9de3782dbbc8353b3079ba18b2e02f1d00b2bc933c8fe45c79f159"
+        },
+        {
+          "path": "All fonts/rijusans-font/RijusansItalic-XGy2d.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "5effc5b79a4f15f1937565427244e037f92284a64538a9059fbe5320c596ba89"
+        }
+      ]
+    },
+    {
+      "id": "riverside",
+      "name": "RIVERSIDE",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/riverside-font/Riverside-PVwq2.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "d951eedc1d49c2132dc349b465be5702cba37133f1929739c863f83e35660b49"
+        }
+      ]
+    },
+    {
+      "id": "ro-spritendo",
+      "name": "RO Spritendo",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/ro-spritendo-font/RoSpritendoSemiboldBeta-vmVwZ.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "f0c50e088de24946ab6acbddab715de4c8be9eb54fae9034e97704a281fba4bd"
+        }
+      ]
+    },
+    {
+      "id": "ro-twimch",
+      "name": "RO twimch",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/ro-twimch-font/RoTwimchRegular-WyR3n.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "cee84ada6463453a2ac9f40cec90536634472529d46f5eb378285563e56db6db"
+        }
+      ]
+    },
+    {
+      "id": "roblox-font",
+      "name": "Roblox Font",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/roblox-font/RobloxFontRegular-X30AZ.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "18e4c26f305479e02492e5c8d2d41e430368ff8c2500f0bca52c913f318957ab"
+        },
+        {
+          "path": "All fonts/roblox-font/misc/RobloxFont-Regular.ttc",
+          "format": "ttc",
+          "weight": 400,
+          "sha256": "98723205a3c41e1850df661f6e758ae215d050504ceb5fbd43b9a845ded80945"
+        }
+      ]
+    },
+    {
+      "id": "rondal",
+      "name": "Rondal",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/rondal-font/RondalBold-2O4lW.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "747f6bbea7d49387e85feabce719684574ada8f33af1c35534c44dc483285897"
+        },
+        {
+          "path": "All fonts/rondal-font/RondalRegular-K7ORW.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "9293fb65e0fcc9069c13b2eefe1ee5acc60bd78580f69c2e578cf0197bbca912"
+        },
+        {
+          "path": "All fonts/rondal-font/RondalSemibold-vmZ5Z.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "a04dd88c37c90afc09dbe06ac38745e1da1c8e131518d79fa60d2528ec5d0078"
+        }
+      ]
+    },
+    {
+      "id": "ruthless-sketch",
+      "name": "Ruthless Sketch",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/ruthless-sketch/RuthlessSketch.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "e9f86184596960059f3de67e90a863da4f37102b639859996ab8d7cf16f6fb43"
+        },
+        {
+          "path": "All fonts/ruthless-sketch/RuthlessSketchItalic.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "e84b547eea9d07c13a9792f90535b1e76d8fc1894754f3176cea55840ee69fb6"
+        }
+      ]
+    },
+    {
+      "id": "ryga",
+      "name": "Ryga",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/ryga-font/RygaRegular-9Mrwn.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "5ef11c76f7e0a8e1032edb1d8405a2896b1cb91f1afffade3d15ac79f27ab616"
+        },
+        {
+          "path": "All fonts/ryga-font/RygaRegular-lxG30.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "062b25469bf9f341cda389b51fbe56d736b954d1570f87f06a67f8650a610217"
+        },
+        {
+          "path": "All fonts/ryga-font/misc/Ryga-2c36.woff2",
+          "format": "woff2",
+          "weight": 400,
+          "sha256": "ad41768a36fa55a29c03a8a03bc81d5ee2b72be13cab7e1d6b4b184844a2b35e"
+        }
+      ]
+    },
+    {
+      "id": "sagewold",
+      "name": "Sagewold",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/sagewold-font/Sagewold-ZpwvJ.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "8146bf530b461c3ed6ced867e1c9d0d49ff8c91c296f98ebf1ad7d787ba97ded"
+        },
+        {
+          "path": "All fonts/sagewold-font/SagewoldItalic-OGnlA.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "0763e2dc5ca7d704685e8134f1744ae9e418dac27750ac033c6600fa3fd959c2"
+        }
+      ]
+    },
+    {
+      "id": "sangyo",
+      "name": "Sangyo",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/sangyo-font/Sangyo-E4ywr.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "49bdb5b0d153ab6070581520660aa3d7c845382a1362548ad625114ede2a2488"
+        },
+        {
+          "path": "All fonts/sangyo-font/SangyoItalic-OGy0O.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "6a6e8ee622cdb5e249d94bd88478674ca5126fc4c2cb59622647d18650b5d66f"
+        }
+      ]
+    },
+    {
+      "id": "scabber",
+      "name": "Scabber",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/scabber-font/Scabber-q2Mn0.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "81e136eb22cc00cdc1c91e443c587814dbfc40a2e6deb683896e46d6364422c8"
+        }
+      ]
+    },
+    {
+      "id": "serati",
+      "name": "Serati",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/serati/Serati-Italic.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "c7f95d4f4fb784efe9e269ee2a74e8ca0955e624fadc70f60bedea030c63ebf7"
+        },
+        {
+          "path": "All fonts/serati/Serati-Italic.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "6551f26fcd49e7eaabcdceaf5cbb0e52603465855fd68a89886cc22ff77005b3"
+        },
+        {
+          "path": "All fonts/serati/Serati-Regular.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "a46d240e65b7074aca2def4a02b2d115fcbdeec8cb8ee1af87fec141131d974a"
+        },
+        {
+          "path": "All fonts/serati/Serati-Regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "bc0e3042fa3b4451fdf1798bf4795305499bea2865ee96fe4095fdfecaeb44cf"
+        }
+      ]
+    },
+    {
+      "id": "signwood",
+      "name": "Signwood",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/signwood-font/Signwood-vnvD7.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "2f263669703006dc6de501e691ea1ad33f46d1bb8e66d2e49d617a0d967bc778"
+        },
+        {
+          "path": "All fonts/signwood-font/SignwoodItalic-2v1Jl.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "8c65b69b77e65341c33d7db99172f8e0c15ac53b19bafdc9492a1a8a9e0674ae"
+        }
+      ]
+    },
+    {
+      "id": "simply-sans",
+      "name": "Simply Sans",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/simply-sans/SimplySans-Bold.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "dc654125bce1013d2448a95a9c01b4a43da6b802aeee4ae3f7c53bd2654da6c4"
+        },
+        {
+          "path": "All fonts/simply-sans/SimplySans-BoldItalic.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "abe14b13691f59f37f9d8eac04c53b1a9b468060cb460d85d2c3a47bb8ee4e65"
+        },
+        {
+          "path": "All fonts/simply-sans/SimplySans-Book.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "41b501f57df421ba548b7731c3651944b5cc5a3940064e8a29a4e535f7c92255"
+        },
+        {
+          "path": "All fonts/simply-sans/SimplySans-BookItalic.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "6b08f80c1b7a80ab63223618bd51590425fe1bbdcbff5c146a406aee9f04b0db"
+        }
+      ]
+    },
+    {
+      "id": "sochinyala-namikus",
+      "name": "Sochinyala (Namikus)",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/sochinyala-font/SochinyalanamikusBold-wo8Aw.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "a14c3e2fdf3daeeb476a55fc55563e75aeaf99134957c3424f8d3609df68bc6f"
+        },
+        {
+          "path": "All fonts/sochinyala-font/SochinyalanamikusBolditalic-vnBe4.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "e0ac6f181a59e7224bc073a6fa9f2011edc600e31179eb9862004ff5a6ab21a1"
+        },
+        {
+          "path": "All fonts/sochinyala-font/SochinyalanamikusItalic-7O7AB.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "76d4bce4b7e0c64ecca820e573922388911a8f26385a19702982aac896d2b086"
+        },
+        {
+          "path": "All fonts/sochinyala-font/SochinyalanamikusRegular-2vMqe.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "1ab0335a5f6f50ea5e3cc6dc77e1e664c9fde52d7e6ffc155e9852f40677a16f"
+        }
+      ]
+    },
+    {
+      "id": "stampcraft",
+      "name": "Stampcraft",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/stampcraft/Stampcraft-Italic.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "27c515937acd6dc482a8836d44dafa8a02b5d36188cec65810f00c372783fcad"
+        },
+        {
+          "path": "All fonts/stampcraft/Stampcraft-Italic.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "c74089aceb5a7301d3ae50bca976900fa475c8794cec48a3b065f2c16fdb30a1"
+        },
+        {
+          "path": "All fonts/stampcraft/Stampcraft-Regular.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "8a5bab7f99fba4099045c24cc77ec07679695ad26464944f1a036b62a62f945c"
+        },
+        {
+          "path": "All fonts/stampcraft/Stampcraft-Regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "bebf88e28361d8946ba58179c4398c131d6367cc8ccb5f69bfce2e7cf9930aa4"
+        }
+      ]
+    },
+    {
+      "id": "street-cred",
+      "name": "Street Cred",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/street-cred/Street Cred.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "0da5fed245f21d22b4e439a3d02e8cfcc504b960ac7e8793ad32a191dcb3881d"
+        }
+      ]
+    },
+    {
+      "id": "styllo",
+      "name": "Styllo",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/styllo/Styllo-Bold.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "976c84a74eb8e03a2c6ba47d8f9b2032df8b988f7d6ae18736a0e7269ac1bbd6"
+        },
+        {
+          "path": "All fonts/styllo/Styllo-Regular.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "e4c6061b88603ebb81e8e216c3e923130a8ed0d6343c9a090f7d6d73b721b8e1"
+        }
+      ]
+    },
+    {
+      "id": "the-mandalorian",
+      "name": "The Mandalorian",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/the-mandalorian-font/TheMandalorian-w11P2.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "34e02ec3f2b9f5616b6f8e0dc5832322e0eaf525bc60079d7761a32df606dfd0"
+        }
+      ]
+    },
+    {
+      "id": "trueno",
+      "name": "Trueno",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/trueno-font/Trueno-75PE.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "ebea463833709211e474d4bc431d6b13329cad446e0248d4867f4edc447be03f"
+        },
+        {
+          "path": "All fonts/trueno-font/Trueno-wml2.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "fd0ce418d5ef822d4723af7c1f72664b7f429deb4a1464a0409337d23236f256"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoBlack-mBYV.otf",
+          "format": "otf",
+          "weight": 900,
+          "sha256": "5205876bc2b1d406b9d6004fdf91436d4ceb8f3fea8ae1c361b7c532e624c483"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoBlackItalic-dXnl.otf",
+          "format": "otf",
+          "weight": 900,
+          "sha256": "62854ee88ede8d5c55a5692349f99abd28bd854595a5e1a7a9c552970d0f1457"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoBlackOutline-P43P.otf",
+          "format": "otf",
+          "weight": 900,
+          "sha256": "d9879c0a6f2b71a4ff738e5611a8d1a8f28247afaf98097b9bd8a1cfb874b812"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoBlackOutlineItalic-LLEy.otf",
+          "format": "otf",
+          "weight": 900,
+          "sha256": "1f7b19681e5463ad7155999a77d810998c4187e62f0d069cfa2c0af0296c5903"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoBold-XYE2.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "9caa3811e1893eccd7b490a5166d7e0a87bc5d32541e0050d185bef9e5c73e39"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoBoldItalic-g4B3.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "bcc6fbe806b99af7b0809d6939317708a401229f4f1e632cc839f3fce363130c"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoBoldOutline-oYMq.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "90c7b799eeed7b3f58fa93c955791f1a9aec374fa1583dfefa34504f570cfac4"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoBoldOutlineItalic-454Y.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "c7a964ebd514f189128a4585af79a8f7d28362429eb196cf310ff3051d2dc519"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoExtrabold-05gr.otf",
+          "format": "otf",
+          "weight": 800,
+          "sha256": "d87d3fa2b6e99b03b871c08b612718648da7e260ee2e898360c20a7b28216a46"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoExtraboldItalic-eg1O.otf",
+          "format": "otf",
+          "weight": 800,
+          "sha256": "6361130d11796f2a92b0b40219e7821acdab60db3042d03df3fb1464bc1b9790"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoExtraboldOutline-W8J9.otf",
+          "format": "otf",
+          "weight": 800,
+          "sha256": "ad30ded2ffe3d08fdc545eccf9b3245a758058612de1a16cfdff3b3ea8ce0d07"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoExtraboldOutlineItalic-adaJ.otf",
+          "format": "otf",
+          "weight": 800,
+          "sha256": "9ab14b929a59baf92b612e4851588a4cb01e8938fe501e692f0be266e036dd8e"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoLight-E2pg.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "733ed2f0573c24395286410e5101cb0c142be23453a3b9f67ed849c6e0e4e96a"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoLightItalic-OoMo.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "592cfde6e41fd3c379798cf0d4541e9efb5a5e564f7c15c3c32fbe867807371a"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoSemibold-Z9yl.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "4e52bdfdfb45191f16e49b56894af6e856f87d7ad32e505875004323cb29f779"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoSemiboldItalic-35Zy.otf",
+          "format": "otf",
+          "weight": 600,
+          "sha256": "101d0869559f134c1f2a48a24c0e4b7d060e41425a5ed73ec4766cbc33cc89a2"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoUltrablack-xdnV.otf",
+          "format": "otf",
+          "weight": 900,
+          "sha256": "c6be0981365b6253f784efd54de6516ceb0ff03437fbfe2069fefe936bfeb8ad"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoUltrablackItalic-prwv.otf",
+          "format": "otf",
+          "weight": 900,
+          "sha256": "eeea2a41b188c46a5b0517bd5ed260e72fb17a8cda7090105191bb982139b122"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoUltralight-DKax.otf",
+          "format": "otf",
+          "weight": 200,
+          "sha256": "59b4525997e320bd6b16ea2bcb79523b33d12080c4b62cd1532433bfdcb336ae"
+        },
+        {
+          "path": "All fonts/trueno-font/TruenoUltralightItalic-AYmD.otf",
+          "format": "otf",
+          "weight": 200,
+          "sha256": "860c523a4c1423d69de3a22c079ea44d32b80d83d43460e10b93fb42cfd97e49"
+        }
+      ]
+    },
+    {
+      "id": "type-light-sans",
+      "name": "Type Light Sans",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/type-light-sans-font/TypeLightSans-KV84p.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "d6b9f50fae6da46274433476a944bdd773fae496e519ed66832e1a4f513e3a63"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu",
+      "name": "Ubuntu",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-B.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "85180753fa255615b5f5b436c00b203567fb87a271a5af9dd095d43a429c53eb"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-BI.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "b91b92b936b824437358ea6d19cac8dcbf2cc762722b70bbf394371368350b3b"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-L.ttf",
+          "format": "ttf",
+          "weight": 300,
+          "sha256": "927d0f3de91ec09c04bd5d432bb2575ecf619c819e4e035f235cf983319406ac"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-LI.ttf",
+          "format": "ttf",
+          "weight": 300,
+          "sha256": "65f0734903f6c7a32e9bcc88345aea1ec5ef0338839eb77c05d65a64a9229c59"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-M.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "937d2d8bd5e87d8972f7b7d570dccac487a188df3d6bfad9d3492aeb1c9cdd6e"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-MI.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "d47b55fe1b65f22d9e2d543ef2e5be1d490eec80f2e0d98e2bf6af47fce05f8c"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-R.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "ff6c85b5b809994e8f4a24027db9d6d64505001b0cb2fa7176ac3377e94a6e4f"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-RI.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "6dc6b234242dc8695d9459e8924286a9b7c5be64558e4b43ed376b5c840c11c3"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-condensed",
+      "name": "Ubuntu Condensed",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-C.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "335173652aa12d172b97d21aa7d1a31b039eebc00d333ea49d624aa0b2d82736"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-mono",
+      "name": "Ubuntu Mono",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-B.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "85180753fa255615b5f5b436c00b203567fb87a271a5af9dd095d43a429c53eb"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-BI.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "b91b92b936b824437358ea6d19cac8dcbf2cc762722b70bbf394371368350b3b"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-C.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "335173652aa12d172b97d21aa7d1a31b039eebc00d333ea49d624aa0b2d82736"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-L.ttf",
+          "format": "ttf",
+          "weight": 300,
+          "sha256": "927d0f3de91ec09c04bd5d432bb2575ecf619c819e4e035f235cf983319406ac"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-LI.ttf",
+          "format": "ttf",
+          "weight": 300,
+          "sha256": "65f0734903f6c7a32e9bcc88345aea1ec5ef0338839eb77c05d65a64a9229c59"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-M.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "937d2d8bd5e87d8972f7b7d570dccac487a188df3d6bfad9d3492aeb1c9cdd6e"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-MI.ttf",
+          "format": "ttf",
+          "weight": 500,
+          "sha256": "d47b55fe1b65f22d9e2d543ef2e5be1d490eec80f2e0d98e2bf6af47fce05f8c"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-R.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "ff6c85b5b809994e8f4a24027db9d6d64505001b0cb2fa7176ac3377e94a6e4f"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/Ubuntu-RI.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "6dc6b234242dc8695d9459e8924286a9b7c5be64558e4b43ed376b5c840c11c3"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/UbuntuMono-B.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "11f15c3a6bbd998a8695fdefb3475931c3789aa035d7546f2efe78e83b352f6b"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/UbuntuMono-BI.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "sha256": "bd255784bb87b5c41513a12a86f0f9cf061bce4e8256d3bfe7234611002e8f48"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/UbuntuMono-R.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "b35dd9d2131d5d83a9b87fe9ad22c6288fa3d17688d43302c14da29812417d63"
+        },
+        {
+          "path": "All fonts/ubuntu/ubuntu-font-family-0.80/UbuntuMono-RI.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "960b2bc286c2ff7d49073303858c65e1fc9013c17a971b61123b02c39454ef75"
+        }
+      ]
+    },
+    {
+      "id": "umbara",
+      "name": "Umbara",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/umbara-typeface-font/Umbara-AReLL.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "620fb27742f4e1b4a131842af7ce54c8c474f68a7668747e9ed87635af9385ce"
+        }
+      ]
+    },
+    {
+      "id": "unispace",
+      "name": "Unispace",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/unispace/Unispace Bd It.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "e00c2e9733c82fb71069f054ed8d7c9a46156e921a41ae61021a92238c47e5b9"
+        },
+        {
+          "path": "All fonts/unispace/Unispace Bd.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "9909637bdb9c743d3e93b55e122ab9161c71162068b7ef553a4eefd22a29ab33"
+        },
+        {
+          "path": "All fonts/unispace/Unispace It.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "214fb3a947884b822f81e6d570200252baf5aacbf71b38e76985d8a9f7fa8c49"
+        },
+        {
+          "path": "All fonts/unispace/Unispace Rg.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "9fda3e137b8c77794eccc79630cb584b74200301a43b8e1eaa6dfec2e8fad732"
+        }
+      ]
+    },
+    {
+      "id": "unsightly",
+      "name": "Unsightly",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/unsightly-font/Unsightly-6R4PY.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "2b860071ef521df6308825bf0bc4a66067920927a6d0eff7e39eb1d06ddbaf37"
+        }
+      ]
+    },
+    {
+      "id": "unsteady-oversteer",
+      "name": "Unsteady Oversteer",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/unsteady-oversteer/Unsteady Oversteer.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "2de0b07829df82c9b2e08a1f6e302a19f98d89ebd0c6d290c5dfb1140c732518"
+        }
+      ]
+    },
+    {
+      "id": "vaticanus",
+      "name": "Vaticanus",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/vaticanus/Vaticanus.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "94d33b4c9d99e23d6bbffbb52a0e4648aed2cf608b7146f7c658383d7a176f2d"
+        },
+        {
+          "path": "All fonts/vaticanus/Vaticanus.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "f75ae4d77452b76ea19108ea1fdf47cedf4eaac73719860900e97f1baf8fadb4"
+        }
+      ]
+    },
+    {
+      "id": "vegur",
+      "name": "Vegur",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/vegur-font/Vegur-Yg1a.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "5c494cd1381fe91cfb511fd6efdb8ef8ec9555e48f78faaf7340e209e4a96536"
+        },
+        {
+          "path": "All fonts/vegur-font/VegurBold-rYOp.otf",
+          "format": "otf",
+          "weight": 700,
+          "sha256": "0643810681e276b8d2b37d09e089e76cffc882f6f002c1f68125eea6a6f87c76"
+        },
+        {
+          "path": "All fonts/vegur-font/VegurLight-My4w.otf",
+          "format": "otf",
+          "weight": 300,
+          "sha256": "b0d25ce0ea5fb6c6fe8da1c04680e2319a877ffe76f47dd57e19e81e48f3752d"
+        }
+      ]
+    },
+    {
+      "id": "viga",
+      "name": "Viga",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/viga/Viga-Regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "730ad2a38691ce19ee5aa9dd9ec84ae8737b2084b06eef13435a4facad9b063c"
+        }
+      ]
+    },
+    {
+      "id": "vincendo",
+      "name": "Vincendo",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/vincendo/Vincendo-Italic.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "ba2efff84ce654dbb49c8009aef8ea25e47de29529d0ee3b8104f4f6cc8b8ce0"
+        },
+        {
+          "path": "All fonts/vincendo/Vincendo-Italic.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "f8ea7e383288635bbed90d50122a95e423081299e98f61a754c775d8247e1cd9"
+        },
+        {
+          "path": "All fonts/vincendo/Vincendo-Regular.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "81070fbe19f934128511c7f1ff1caec163ecbfc7f09c21f2b7baa3bf420d754a"
+        },
+        {
+          "path": "All fonts/vincendo/Vincendo-Regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "e9daba991af97b83429fe9735893ec1c8810a2e80185a901afcd3cb05d90d6af"
+        }
+      ]
+    },
+    {
+      "id": "world-of-water",
+      "name": "World of Water",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/world-of-water/World of Water.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "43b2d066fa98105759378b3025b895d864ecf83e4c30d815516daf7e881ced08"
+        }
+      ]
+    },
+    {
+      "id": "x-company",
+      "name": "X Company",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/x-company-font/XCompany-GOR9y.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "6da79d76bf07adb9662a72e2a3e21680f1dee985cd9237722440af416476d75c"
+        },
+        {
+          "path": "All fonts/x-company-font/XCompanyItalic-jElKj.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "220d615b70df1613361d42da7c33e31271517c14b95a252f5c279c65e8e82687"
+        }
+      ]
+    },
+    {
+      "id": "y224",
+      "name": "Y224",
+      "license": "Creative Commons Zero 1.0 (CC0) / Public Domain",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/y224-font/Y224-2vdae.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "328ea4041ee468ae18255318029e386e9d952ef43fa4d6e10f11723f244826c8"
+        }
+      ]
+    },
+    {
+      "id": "zero-cool",
+      "name": "Zero Cool",
+      "license": "SIL Open Font License 1.1 (OFL)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/zero-cool/ZeroCool.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "2cfa8ce0697f4f4fdd87e85cabe39de5f2a138afcac09e183a9f3e36bcc7a402"
+        },
+        {
+          "path": "All fonts/zero-cool/ZeroCool.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "sha256": "81b898fb5f2ade991eb7c1435c7576545fcd4a92ee2c1d8c5e957b14001ccb8a"
+        }
+      ]
+    },
+    {
+      "id": "zorque",
+      "name": "Zorque",
+      "license": "Creative Commons Zero 1.0 (CC0)",
+      "commercial_use": true,
+      "redistribution_allowed": true,
+      "files": [
+        {
+          "path": "All fonts/zorque/Zorque.otf",
+          "format": "otf",
+          "weight": 400,
+          "sha256": "9bd9dab0721b5cea4aab74c1bf99bc2f6de6efb7a0e4dcd3f6b072d5f8a84a77"
+        }
+      ]
+    }
+  ],
+  "catalog_only": [
+    {
+      "id": "african",
+      "name": "African",
+      "license": "Freeware"
+    },
+    {
+      "id": "aicon",
+      "name": "AICON",
+      "license": "Freeware"
+    },
+    {
+      "id": "aix-milan",
+      "name": "Aix Milan",
+      "license": "Freeware (Free Commercial - Author Grant)"
+    },
+    {
+      "id": "al-saflers",
+      "name": "Al Saflers",
+      "license": "Freeware (Personal & Commercial - Aluyeah Studio Grant)"
+    },
+    {
+      "id": "aliquam",
+      "name": "Aliquam",
+      "license": "Freeware"
+    },
+    {
+      "id": "alphakind",
+      "name": "Alphakind",
+      "license": "Freeware"
+    },
+    {
+      "id": "ambery-garden",
+      "name": "Ambery Garden",
+      "license": "Freeware"
+    },
+    {
+      "id": "amore-2",
+      "name": "Amore 2",
+      "license": "Freeware"
+    },
+    {
+      "id": "ampunsuhu",
+      "name": "Ampunsuhu",
+      "license": "1001Fonts Free Commercial License (FFC)"
+    },
+    {
+      "id": "ana-danka",
+      "name": "Ana Danka",
+      "license": "Freeware"
+    },
+    {
+      "id": "anak-baik",
+      "name": "Anak Baik",
+      "license": "Freeware"
+    },
+    {
+      "id": "anak-bijak",
+      "name": "Anak Bijak",
+      "license": "Creative Fabrica Commercial License"
+    },
+    {
+      "id": "anak-bocil",
+      "name": "Anak Bocil",
+      "license": "Freeware"
+    },
+    {
+      "id": "anak-gedong",
+      "name": "Anak Gedong",
+      "license": "Creative Fabrica Commercial License"
+    },
+    {
+      "id": "anak-manja",
+      "name": "Anak Manja",
+      "license": "Freeware"
+    },
+    {
+      "id": "artsy-morning",
+      "name": "Artsy Morning",
+      "license": "Freeware"
+    },
+    {
+      "id": "asal-usul",
+      "name": "Asal Usul",
+      "license": "Freeware"
+    },
+    {
+      "id": "babbler",
+      "name": "Babbler",
+      "license": "Freeware"
+    },
+    {
+      "id": "baksoap",
+      "name": "Baksoap",
+      "license": "Freeware"
+    },
+    {
+      "id": "bakula",
+      "name": "Bakula",
+      "license": "Creative Fabrica Commercial License"
+    },
+    {
+      "id": "bangpop",
+      "name": "Bangpop",
+      "license": "Freeware"
+    },
+    {
+      "id": "barely-enough",
+      "name": "Barely Enough",
+      "license": "Freeware"
+    },
+    {
+      "id": "bedafutr",
+      "name": "Bedafutr",
+      "license": "Freeware"
+    },
+    {
+      "id": "belagak",
+      "name": "Belagak",
+      "license": "Freeware"
+    },
+    {
+      "id": "bigbelow",
+      "name": "Bigbelow",
+      "license": "Freeware"
+    },
+    {
+      "id": "bigover",
+      "name": "Bigover",
+      "license": "Freeware"
+    },
+    {
+      "id": "biocats",
+      "name": "Biocats",
+      "license": "Creative Fabrica Commercial License"
+    },
+    {
+      "id": "blackbold",
+      "name": "Blackbold",
+      "license": "Freeware"
+    },
+    {
+      "id": "blue-bubbles",
+      "name": "Blue Bubbles",
+      "license": "Freeware"
+    },
+    {
+      "id": "blue-ridge",
+      "name": "BLUE RIDGE",
+      "license": "Freeware"
+    },
+    {
+      "id": "blue-winter",
+      "name": "Blue Winter",
+      "license": "Freeware"
+    },
+    {
+      "id": "border-wall",
+      "name": "Border Wall",
+      "license": "Freeware"
+    },
+    {
+      "id": "borekids",
+      "name": "Borekids",
+      "license": "Freeware"
+    },
+    {
+      "id": "borghan",
+      "name": "Borghan",
+      "license": "Freeware"
+    },
+    {
+      "id": "butflow",
+      "name": "Butflow",
+      "license": "Creative Fabrica Commercial License"
+    },
+    {
+      "id": "castle-chunk",
+      "name": "Castle Chunk",
+      "license": "1001Fonts Free Commercial License (FFC)"
+    },
+    {
+      "id": "cider-gum",
+      "name": "Cider Gum",
+      "license": "Freeware"
+    },
+    {
+      "id": "codex",
+      "name": "CODEX",
+      "license": "Freeware"
+    },
+    {
+      "id": "collegiateheavyoutline",
+      "name": "CollegiateHeavyOutline",
+      "license": "Freeware"
+    },
+    {
+      "id": "cowboy",
+      "name": "Cowboy",
+      "license": "Freeware"
+    },
+    {
+      "id": "crucial",
+      "name": "Crucial",
+      "license": "1001Fonts Free Commercial License (FFC)"
+    },
+    {
+      "id": "deeps",
+      "name": "Deeps",
+      "license": "Freeware"
+    },
+    {
+      "id": "derma",
+      "name": "DERMA",
+      "license": "Freeware"
+    },
+    {
+      "id": "et-providencia",
+      "name": "ET Providencia",
+      "license": "Freeware"
+    },
+    {
+      "id": "excluded",
+      "name": "Excluded",
+      "license": "Freeware"
+    },
+    {
+      "id": "excludeditalic",
+      "name": "ExcludedItalic",
+      "license": "Freeware"
+    },
+    {
+      "id": "ferro-rosso",
+      "name": "Ferro Rosso",
+      "license": "Freeware"
+    },
+    {
+      "id": "flames",
+      "name": "Flames",
+      "license": "Freeware"
+    },
+    {
+      "id": "free-for-palestine",
+      "name": "Free for Palestine",
+      "license": "Freeware"
+    },
+    {
+      "id": "garute",
+      "name": "Garute",
+      "license": "Freeware (Free Commercial - MJType Grant)"
+    },
+    {
+      "id": "gladly-accept",
+      "name": "Gladly Accept",
+      "license": "Freeware"
+    },
+    {
+      "id": "greattool",
+      "name": "Greattool",
+      "license": "Freeware"
+    },
+    {
+      "id": "grisly-beast",
+      "name": "Grisly Beast",
+      "license": "Freeware"
+    },
+    {
+      "id": "grow-year",
+      "name": "Grow Year",
+      "license": "Freeware"
+    },
+    {
+      "id": "halo-dek",
+      "name": "Halo Dek",
+      "license": "Creative Fabrica Commercial License"
+    },
+    {
+      "id": "handson",
+      "name": "Handson",
+      "license": "Freeware"
+    },
+    {
+      "id": "harry-p",
+      "name": "Harry P",
+      "license": "Freeware"
+    },
+    {
+      "id": "heming",
+      "name": "Heming",
+      "license": "Freeware (Commercial Use Allowed - Befonts Grant)"
+    },
+    {
+      "id": "hey-august",
+      "name": "Hey August",
+      "license": "Freeware"
+    },
+    {
+      "id": "hey-louie",
+      "name": "HEY LOUIE",
+      "license": "Freeware"
+    },
+    {
+      "id": "high-school-usa-sans",
+      "name": "High School USA Sans",
+      "license": "Freeware"
+    },
+    {
+      "id": "high-school-usa-serif",
+      "name": "High School USA Serif",
+      "license": "Freeware"
+    },
+    {
+      "id": "hijo",
+      "name": "HiJO",
+      "license": "Freeware (Free Commercial - Author Grant)"
+    },
+    {
+      "id": "hirolliv",
+      "name": "HiRolliv",
+      "license": "Freeware (Free Commercial - Author Grant)"
+    },
+    {
+      "id": "hypermonosaturation",
+      "name": "Hypermonosaturation",
+      "license": "Freeware"
+    },
+    {
+      "id": "ichigayamincho",
+      "name": "ICHIGAYAMincho",
+      "license": "Freeware"
+    },
+    {
+      "id": "imuch",
+      "name": "iMuch",
+      "license": "Freeware (Free Commercial - Author Grant)"
+    },
+    {
+      "id": "iniya",
+      "name": "Iniya",
+      "license": "Freeware"
+    },
+    {
+      "id": "jazzy-huitbits",
+      "name": "Jazzy HuitBits",
+      "license": "Freeware (Free Commercial - Author Grant)"
+    },
+    {
+      "id": "jazzyrabbit",
+      "name": "JazzyRabbit",
+      "license": "Freeware (Free Commercial - Author Grant)"
+    },
+    {
+      "id": "jazzyrabbit-remake",
+      "name": "JazzyRabbit Remake",
+      "license": "Freeware (Free Commercial - Author Grant)"
+    },
+    {
+      "id": "jello-stone",
+      "name": "Jello Stone",
+      "license": "Freeware"
+    },
+    {
+      "id": "jogrunge",
+      "name": "JOGRUNGE",
+      "license": "Freeware (Free Commercial - Author Grant)"
+    },
+    {
+      "id": "joli",
+      "name": "JOLI\u00c8",
+      "license": "Freeware"
+    },
+    {
+      "id": "juliette",
+      "name": "juliette",
+      "license": "Freeware"
+    },
+    {
+      "id": "jumping-chick",
+      "name": "Jumping Chick",
+      "license": "Creative Fabrica Commercial License"
+    },
+    {
+      "id": "junegull",
+      "name": "Junegull",
+      "license": "Freeware"
+    },
+    {
+      "id": "kalima",
+      "name": "KALIMA",
+      "license": "Freeware (Free Commercial - Author Grant)"
+    },
+    {
+      "id": "kastore",
+      "name": "Kastore",
+      "license": "Creative Fabrica Commercial License"
+    },
+    {
+      "id": "kemujan",
+      "name": "Kemujan",
+      "license": "Freeware"
+    },
+    {
+      "id": "kindred",
+      "name": "KINDRED",
+      "license": "Freeware"
+    },
+    {
+      "id": "library-3-am",
+      "name": "LIBRARY 3 AM",
+      "license": "Freeware"
+    },
+    {
+      "id": "license-plate",
+      "name": "License Plate",
+      "license": "Freeware"
+    },
+    {
+      "id": "lofty-goals",
+      "name": "Lofty Goals",
+      "license": "Freeware"
+    },
+    {
+      "id": "mangabey",
+      "name": "Mangabey",
+      "license": "Freeware"
+    },
+    {
+      "id": "marker2",
+      "name": "Marker2",
+      "license": "1001Fonts Free Commercial License (FFC)"
+    },
+    {
+      "id": "matcha-cih",
+      "name": "Matcha Cih",
+      "license": "Freeware"
+    },
+    {
+      "id": "matcha-style",
+      "name": "Matcha Style",
+      "license": "Freeware"
+    },
+    {
+      "id": "matcha-world",
+      "name": "Matcha World",
+      "license": "Freeware"
+    },
+    {
+      "id": "mbah-liel",
+      "name": "Mbah Liel",
+      "license": "Freeware"
+    },
+    {
+      "id": "megamax-jonathan-too",
+      "name": "Megamax Jonathan Too",
+      "license": "Freeware"
+    },
+    {
+      "id": "melon-pop",
+      "name": "Melon Pop",
+      "license": "Freeware"
+    },
+    {
+      "id": "merci",
+      "name": "MERCI",
+      "license": "Freeware"
+    },
+    {
+      "id": "modestic-sans",
+      "name": "Modestic Sans",
+      "license": "Creative Fabrica Commercial License"
+    },
+    {
+      "id": "monument-valley-1-2",
+      "name": "Monument_Valley_1.2",
+      "license": "Freeware"
+    },
+    {
+      "id": "moonhouse",
+      "name": "moonhouse",
+      "license": "Freeware"
+    },
+    {
+      "id": "mouldy-cheese",
+      "name": "Mouldy Cheese",
+      "license": "Freeware"
+    },
+    {
+      "id": "mousou-record-g",
+      "name": "Mousou Record__G",
+      "license": "1001Fonts Free Commercial License (FFC)"
+    },
+    {
+      "id": "moyudan",
+      "name": "Moyudan",
+      "license": "Freeware"
+    },
+    {
+      "id": "murah",
+      "name": "Murah",
+      "license": "Freeware"
+    },
+    {
+      "id": "neris",
+      "name": "Neris",
+      "license": "Eimantas Pa\u0161konis EULA (Commercial OK, No Redistribution)"
+    },
+    {
+      "id": "neuropol-x",
+      "name": "Neuropol X",
+      "license": "Freeware"
+    },
+    {
+      "id": "neuropolitical",
+      "name": "Neuropolitical",
+      "license": "Freeware"
+    },
+    {
+      "id": "nikkyou-sans",
+      "name": "Nikkyou Sans",
+      "license": "Freeware"
+    },
+    {
+      "id": "njal",
+      "name": "Njal",
+      "license": "Freeware"
+    },
+    {
+      "id": "octosale",
+      "name": "Octosale",
+      "license": "Freeware"
+    },
+    {
+      "id": "odida",
+      "name": "odida",
+      "license": "Freeware"
+    },
+    {
+      "id": "oligopoly",
+      "name": "Oligopoly",
+      "license": "Freeware (Commercial Use For Everyone - Author Grant)"
+    },
+    {
+      "id": "oregon-ldo",
+      "name": "Oregon LDO",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-black",
+      "name": "Oregon LDO Black",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-black-sinistral",
+      "name": "Oregon LDO Black Sinistral",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-book",
+      "name": "Oregon LDO Book",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-book-sinistral",
+      "name": "Oregon LDO Book Sinistral",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-condensed",
+      "name": "Oregon LDO Condensed",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-condensed-black",
+      "name": "Oregon LDO Condensed Black",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-demibold",
+      "name": "Oregon LDO DemiBold",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-demibold-sinistral",
+      "name": "Oregon LDO DemiBold Sinistral",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-extended",
+      "name": "Oregon LDO Extended",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-extended-black",
+      "name": "Oregon LDO Extended Black",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-extrablack",
+      "name": "Oregon LDO ExtraBlack",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-extrablack-sinistral",
+      "name": "Oregon LDO ExtraBlack Sinistral",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-extrabold",
+      "name": "Oregon LDO ExtraBold",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-extrabold-sinistral",
+      "name": "Oregon LDO ExtraBold Sinistral",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-light",
+      "name": "Oregon LDO Light",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-light-sinistral",
+      "name": "Oregon LDO Light Sinistral",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-medium",
+      "name": "Oregon LDO Medium",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-medium-sinistral",
+      "name": "Oregon LDO Medium Sinistral",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-sinistral",
+      "name": "Oregon LDO Sinistral",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-ultrablack",
+      "name": "Oregon LDO UltraBlack",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-ultrablack-sinistral",
+      "name": "Oregon LDO UltraBlack Sinistral",
+      "license": "Freeware"
+    },
+    {
+      "id": "oregon-ldo-vanishing",
+      "name": "Oregon LDO Vanishing",
+      "license": "Freeware"
+    },
+    {
+      "id": "pacify-angry",
+      "name": "Pacify Angry",
+      "license": "Freeware"
+    },
+    {
+      "id": "paint-marker",
+      "name": "Paint Marker",
+      "license": "Letterlays Commercial License (Receipt PDF)"
+    },
+    {
+      "id": "palamecia-titling",
+      "name": "Palamecia Titling",
+      "license": "Freeware"
+    },
+    {
+      "id": "party-confetti",
+      "name": "Party Confetti",
+      "license": "Freeware"
+    },
+    {
+      "id": "pingsan",
+      "name": "Pingsan",
+      "license": "Creative Fabrica Commercial License"
+    },
+    {
+      "id": "print-bold",
+      "name": "Print Bold",
+      "license": "Freeware"
+    },
+    {
+      "id": "print-clearly",
+      "name": "Print Clearly",
+      "license": "Freeware"
+    },
+    {
+      "id": "print-dashed",
+      "name": "Print Dashed",
+      "license": "Freeware"
+    },
+    {
+      "id": "procrastinating-pixie",
+      "name": "Procrastinating Pixie",
+      "license": "Freeware"
+    },
+    {
+      "id": "progo",
+      "name": "PROGO",
+      "license": "Freeware (Free Commercial - Author Grant)"
+    },
+    {
+      "id": "quinb",
+      "name": "quinb",
+      "license": "Freeware"
+    },
+    {
+      "id": "radlush",
+      "name": "Radlush",
+      "license": "Freeware"
+    },
+    {
+      "id": "reckoner",
+      "name": "Reckoner",
+      "license": "1001Fonts Free Commercial License (FFC)"
+    },
+    {
+      "id": "rndi-tasik",
+      "name": "RNDI Tasik",
+      "license": "Freeware"
+    },
+    {
+      "id": "ronysiswadi-10",
+      "name": "RonySiswadi 10",
+      "license": "Freeware"
+    },
+    {
+      "id": "ronysiswadi-14",
+      "name": "RonySiswadi 14",
+      "license": "Freeware"
+    },
+    {
+      "id": "ronysiswadi-16",
+      "name": "RonySiswadi 16",
+      "license": "Freeware"
+    },
+    {
+      "id": "ronysiswadi-9",
+      "name": "RonySiswadi 9",
+      "license": "Freeware"
+    },
+    {
+      "id": "ronysiswadi-9-med",
+      "name": "RonySiswadi 9 Med",
+      "license": "Freeware"
+    },
+    {
+      "id": "ronysiswadi-architect-1",
+      "name": "RonySiswadi Architect 1",
+      "license": "Freeware"
+    },
+    {
+      "id": "ronysiswadi-architect-2",
+      "name": "RonySiswadi Architect 2",
+      "license": "Freeware"
+    },
+    {
+      "id": "ronysiswadi-architect-3",
+      "name": "RonySiswadi Architect 3",
+      "license": "Freeware"
+    },
+    {
+      "id": "ronysiswadi-architect-4",
+      "name": "RonySiswadi Architect 4",
+      "license": "Freeware"
+    },
+    {
+      "id": "ronysiswadi-architect-6",
+      "name": "RonySiswadi Architect 6",
+      "license": "Freeware"
+    },
+    {
+      "id": "rosemartin",
+      "name": "Rosemartin",
+      "license": "Freeware"
+    },
+    {
+      "id": "rusty-hooks",
+      "name": "Rusty Hooks",
+      "license": "Freeware"
+    },
+    {
+      "id": "salma-pro",
+      "name": "Salma Pro",
+      "license": "Freeware"
+    },
+    {
+      "id": "senja-santuy",
+      "name": "Senja Santuy",
+      "license": "Freeware"
+    },
+    {
+      "id": "singly-linked",
+      "name": "Singly Linked",
+      "license": "Freeware"
+    },
+    {
+      "id": "sparky-stones",
+      "name": "Sparky Stones",
+      "license": "Freeware"
+    },
+    {
+      "id": "speed-px-watch",
+      "name": "Speed PX Watch",
+      "license": "Freeware"
+    },
+    {
+      "id": "spicy-sale",
+      "name": "Spicy Sale",
+      "license": "Creative Fabrica Commercial License"
+    },
+    {
+      "id": "spongeboy",
+      "name": "Spongeboy",
+      "license": "Freeware"
+    },
+    {
+      "id": "star-jedi",
+      "name": "Star Jedi",
+      "license": "Freeware"
+    },
+    {
+      "id": "star-jedi-hollow",
+      "name": "Star Jedi Hollow",
+      "license": "Freeware"
+    },
+    {
+      "id": "star-jedi-outline",
+      "name": "Star Jedi Outline",
+      "license": "Freeware"
+    },
+    {
+      "id": "star-jedi-rounded",
+      "name": "Star Jedi Rounded",
+      "license": "Freeware"
+    },
+    {
+      "id": "summer",
+      "name": "Summer",
+      "license": "Freeware"
+    },
+    {
+      "id": "sunflower",
+      "name": "Sunflower",
+      "license": "Freeware"
+    },
+    {
+      "id": "sunny-spells",
+      "name": "Sunny Spells",
+      "license": "Freeware"
+    },
+    {
+      "id": "sunny-spells-basic",
+      "name": "Sunny Spells Basic",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-arena",
+      "name": "Super Arena",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-bakery",
+      "name": "Super Bakery",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-basic",
+      "name": "Super Basic",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-boys",
+      "name": "Super Boys",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-brain",
+      "name": "Super Brain",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-brave",
+      "name": "Super Brave",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-bubble",
+      "name": "Super Bubble",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-bubbly",
+      "name": "Super Bubbly",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-cacao",
+      "name": "Super Cacao",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-candy",
+      "name": "Super Candy",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-caramel",
+      "name": "Super Caramel",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-carbon",
+      "name": "Super Carbon",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-carnival",
+      "name": "Super Carnival",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-cartoon",
+      "name": "Super Cartoon",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-cereal",
+      "name": "Super Cereal",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-chips",
+      "name": "Super Chips",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-comic",
+      "name": "Super Comic",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-corn",
+      "name": "Super Corn",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-cottage",
+      "name": "Super Cottage",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-crawler",
+      "name": "Super Crawler",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-crumble",
+      "name": "Super Crumble",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-cursed",
+      "name": "Super Cursed",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-dessert",
+      "name": "Super Dessert",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-dream",
+      "name": "Super Dream",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-earthly",
+      "name": "Super Earthly",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-easy",
+      "name": "Super Easy",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-enjoy",
+      "name": "Super Enjoy",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-feel",
+      "name": "Super Feel",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-folks",
+      "name": "Super Folks",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-foods",
+      "name": "Super Foods",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-fortrees",
+      "name": "Super Fortrees",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-fortune",
+      "name": "Super Fortune",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-fresh",
+      "name": "Super Fresh",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-frog",
+      "name": "Super Frog",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-fuggy",
+      "name": "Super Fuggy",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-funky",
+      "name": "Super Funky",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-funnel",
+      "name": "Super Funnel",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-funtime",
+      "name": "Super Funtime",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-ghost",
+      "name": "Super Ghost",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-giggle",
+      "name": "Super Giggle",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-glue",
+      "name": "Super Glue",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-glue-outline",
+      "name": "Super Glue Outline",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-golden",
+      "name": "Super Golden",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-greatly",
+      "name": "Super Greatly",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-honey",
+      "name": "Super Honey",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-jellyfish",
+      "name": "Super Jellyfish",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-joyful",
+      "name": "Super Joyful",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-jungle",
+      "name": "Super Jungle",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-kinds",
+      "name": "Super Kinds",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-larky",
+      "name": "Super Larky",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-lobster",
+      "name": "Super Lobster",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-magical",
+      "name": "Super Magical",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-malibu",
+      "name": "Super Malibu",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-mellow",
+      "name": "Super Mellow",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-midnight",
+      "name": "Super Midnight",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-milk",
+      "name": "Super Milk",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-moods",
+      "name": "Super Moods",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-normal",
+      "name": "Super Normal",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-onigiri",
+      "name": "Super Onigiri",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-organic",
+      "name": "Super Organic",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-pancake",
+      "name": "Super Pancake",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-pastry",
+      "name": "Super Pastry",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-peace",
+      "name": "Super Peace",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-peach",
+      "name": "Super Peach",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-pencil",
+      "name": "Super Pencil",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-plants",
+      "name": "Super Plants",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-playful",
+      "name": "Super Playful",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-popstar",
+      "name": "Super Popstar",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-power",
+      "name": "Super Power",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-ramen",
+      "name": "Super Ramen",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-rocky",
+      "name": "Super Rocky",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-salad",
+      "name": "Super Salad",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-scribble",
+      "name": "Super Scribble",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-sedan",
+      "name": "Super Sedan",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-sense",
+      "name": "Super Sense",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-serene",
+      "name": "Super Serene",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-shake",
+      "name": "Super Shake",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-starfish",
+      "name": "Super Starfish",
+      "license": "Freeware (Personal & Commercial Use Granted)"
+    },
+    {
+      "id": "super-stone",
+      "name": "Super Stone",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-sunshine",
+      "name": "Super Sunshine",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-theory",
+      "name": "Super Theory",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-trend",
+      "name": "Super Trend",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-trivia",
+      "name": "Super Trivia",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-unicorn",
+      "name": "Super Unicorn",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-vanilla",
+      "name": "Super Vanilla",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-water",
+      "name": "Super Water",
+      "license": "Freeware"
+    },
+    {
+      "id": "super-woobly",
+      "name": "Super Woobly",
+      "license": "Freeware"
+    },
+    {
+      "id": "supply-center",
+      "name": "Supply Center",
+      "license": "Freeware"
+    },
+    {
+      "id": "takota",
+      "name": "Takota",
+      "license": "Freeware"
+    },
+    {
+      "id": "tao-baso",
+      "name": "Tao Baso",
+      "license": "Freeware"
+    },
+    {
+      "id": "thesead",
+      "name": "Thesead",
+      "license": "Freeware"
+    },
+    {
+      "id": "tomatoku",
+      "name": "Tomatoku",
+      "license": "Freeware"
+    },
+    {
+      "id": "tycho",
+      "name": "Tycho",
+      "license": "1001Fonts Free Commercial License (FFC)"
+    },
+    {
+      "id": "volley",
+      "name": "VOLLEY",
+      "license": "Freeware"
+    },
+    {
+      "id": "waloh",
+      "name": "Waloh",
+      "license": "Freeware"
+    },
+    {
+      "id": "wicky-javick",
+      "name": "WICKY JAVICK",
+      "license": "Freeware"
+    },
+    {
+      "id": "wide-road",
+      "name": "Wide Road",
+      "license": "Letterlays Commercial License (Receipt PDF)"
+    },
+    {
+      "id": "wiggly-curves",
+      "name": "Wiggly Curves",
+      "license": "Freeware"
+    },
+    {
+      "id": "winter-draw",
+      "name": "Winter Draw",
+      "license": "Freeware"
+    },
+    {
+      "id": "wkwk",
+      "name": "Wkwk",
+      "license": "Freeware"
+    },
+    {
+      "id": "wmxyo-supa",
+      "name": "wmxyo Supa",
+      "license": "Freeware"
+    },
+    {
+      "id": "yang-bagus",
+      "name": "Yang Bagus",
+      "license": "Freeware"
+    },
+    {
+      "id": "yeasty-flavors",
+      "name": "Yeasty Flavors",
+      "license": "Freeware"
+    },
+    {
+      "id": "zt-nature",
+      "name": "ZT Nature",
+      "license": "1001Fonts Free Commercial License (FFC)"
+    },
+    {
+      "id": "zt-shago",
+      "name": "Zt Shago",
+      "license": "1001Fonts Free Commercial License (FFC)"
+    },
+    {
+      "id": "zurich",
+      "name": "ZURICH",
+      "license": "Freeware"
+    }
+  ],
+  "restricted": [
+    {
+      "id": "antapani",
+      "name": "Antapani",
+      "license": "Evaluation / Demo Cut (Commercial Purchase Required)"
+    },
+    {
+      "id": "bjorn",
+      "name": "Bjorn",
+      "license": "Evaluation / Personal Use Demo"
+    },
+    {
+      "id": "bright-nova",
+      "name": "BRIGHT-NOVA",
+      "license": "Unspecified / Need Review"
+    },
+    {
+      "id": "courbe-sans",
+      "name": "Courbe Sans",
+      "license": "Courbe Sans Free Standard License"
+    },
+    {
+      "id": "cs-slacker-demo",
+      "name": "CS Slacker Demo",
+      "license": "Unspecified / Need Review"
+    },
+    {
+      "id": "guavine-demo",
+      "name": "Guavine Demo",
+      "license": "Unspecified / Need Review"
+    },
+    {
+      "id": "gumdrop-demo",
+      "name": "Gumdrop Demo",
+      "license": "Evaluation / Personal Use Demo"
+    },
+    {
+      "id": "hacked",
+      "name": "HACKED",
+      "license": "Unspecified / Need Review"
+    },
+    {
+      "id": "lokro",
+      "name": "Lokro",
+      "license": "Evaluation / Personal Use Demo"
+    },
+    {
+      "id": "marland",
+      "name": "Marland",
+      "license": "Unspecified / Need Review"
+    },
+    {
+      "id": "mountain-king",
+      "name": "Mountain King",
+      "license": "Unspecified / Need Review"
+    },
+    {
+      "id": "pixgamer",
+      "name": "PixGamer",
+      "license": "Unspecified / Need Review"
+    },
+    {
+      "id": "quango",
+      "name": "Quango",
+      "license": "NimaVisual EULA (No Redistribution)"
+    },
+    {
+      "id": "really-free",
+      "name": "Really Free",
+      "license": "Unspecified / Need Review"
+    },
+    {
+      "id": "sahuraya-demo",
+      "name": "Sahuraya Demo",
+      "license": "Unspecified / Need Review"
+    },
+    {
+      "id": "society",
+      "name": "Society",
+      "license": "Unknown (No License Document or Metadata)"
+    },
+    {
+      "id": "sunny",
+      "name": "Sunny",
+      "license": "Unspecified / Need Review"
+    },
+    {
+      "id": "sweet-school",
+      "name": "Sweet School",
+      "license": "Unknown (No License Document or Metadata)"
+    },
+    {
+      "id": "talero",
+      "name": "TALERO",
+      "license": "Unknown (No License Document or Metadata)"
+    },
+    {
+      "id": "the-bold-font",
+      "name": "THE BOLD FONT",
+      "license": "Freeware (Author Freeware Grant)"
+    },
+    {
+      "id": "timeburner",
+      "name": "Timeburner",
+      "license": "NimaVisual EULA (No Redistribution)"
+    },
+    {
+      "id": "warriot",
+      "name": "Warriot",
+      "license": "Evaluation / Demo Cut (Commercial Purchase Required)"
+    },
+    {
+      "id": "zillah-modern",
+      "name": "Zillah Modern",
+      "license": "Freeware (General)"
+    }
+  ],
+  "unknown": []
+}

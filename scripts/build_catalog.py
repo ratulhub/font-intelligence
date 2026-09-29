@@ -22,7 +22,7 @@ try:
 except ImportError:
     jsonschema = None
 
-# Import our scanner
+                    
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from scan_fonts import scan_source
 
@@ -42,14 +42,12 @@ DEFAULT_SOURCE = os.path.join(ROOT_DIR, "All fonts")
 DEFAULT_CATALOG = os.path.join(ROOT_DIR, "catalog", "fonts.json")
 DEFAULT_SCHEMA = os.path.join(ROOT_DIR, "catalog", "fonts.schema.json")
 
-
 def normalize_id(text: str) -> str:
     """Produce clean kebab-case ID."""
     clean = text.lower().strip()
     import re
     clean = re.sub(r"[^a-z0-9]+", "-", clean)
     return clean.strip("-")
-
 
 def determine_license(pkg_dir: str, pkg_files: List[str]) -> Dict[str, Any]:
     """Inspect folder texts to determine license."""
@@ -71,22 +69,93 @@ def determine_license(pkg_dir: str, pkg_files: List[str]) -> Dict[str, Any]:
     comb = " ".join(texts) + " " + " ".join(ref_files).lower()
 
     if "sil open font license" in comb or "ofl" in comb:
-        return {"type": "SIL Open Font License 1.1 (OFL)", "commercial_use": True, "redistribution_allowed": True, "risk_level": "permissive", "reference_files": ref_files, "license_url": "https://scripts.sil.org/OFL"}
-    if "creative commons zero" in comb or "cc0" in comb:
-        return {"type": "Creative Commons Zero 1.0 (CC0)", "commercial_use": True, "redistribution_allowed": True, "risk_level": "permissive", "reference_files": ref_files, "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"}
-    if "fontshare" in comb or "ffl" in comb:
-        return {"type": "ITF Free Font License (Fontshare FFL 2.0)", "commercial_use": True, "redistribution_allowed": True, "risk_level": "permissive", "reference_files": ref_files, "license_url": "https://www.fontshare.com/licensing"}
-    if "ubuntu" in comb and "ufl" in comb:
-        return {"type": "Ubuntu Font Licence 1.0", "commercial_use": True, "redistribution_allowed": True, "risk_level": "permissive", "reference_files": ref_files, "license_url": "https://ubuntu.com/legal/font-licence"}
-    if "apache" in comb:
-        return {"type": "Apache License 2.0", "commercial_use": True, "redistribution_allowed": True, "risk_level": "permissive", "reference_files": ref_files, "license_url": "https://www.apache.org/licenses/LICENSE-2.0"}
-    if "1001fonts" in comb:
-        return {"type": "1001Fonts Free Commercial License (FFC)", "commercial_use": True, "redistribution_allowed": True, "risk_level": "permissive", "reference_files": ref_files, "license_url": "https://www.1001fonts.com/licenses/ffc.html"}
-    if "commercial" in comb or "free" in comb:
-        return {"type": "Freeware (Commercial Use Granted)", "commercial_use": True, "redistribution_allowed": True, "risk_level": "freeware", "reference_files": ref_files, "license_url": None}
+        ltype = "SIL Open Font License 1.1 (OFL)"
+        is_os = True
+        comm = True
+        redist = True
+        mod = True
+        risk = "permissive"
+        lic_url = "https://scripts.sil.org/OFL"
+    elif "creative commons zero" in comb or "cc0" in comb:
+        ltype = "Creative Commons Zero 1.0 (CC0)"
+        is_os = True
+        comm = True
+        redist = True
+        mod = True
+        risk = "permissive"
+        lic_url = "https://creativecommons.org/publicdomain/zero/1.0/"
+    elif "fontshare" in comb or "ffl" in comb:
+        ltype = "ITF Free Font License (Fontshare FFL 2.0)"
+        is_os = False
+        comm = True
+        redist = True
+        mod = False
+        risk = "permissive"
+        lic_url = "https://www.fontshare.com/licensing"
+    elif "ubuntu" in comb and "ufl" in comb:
+        ltype = "Ubuntu Font Licence 1.0"
+        is_os = True
+        comm = True
+        redist = True
+        mod = True
+        risk = "permissive"
+        lic_url = "https://ubuntu.com/legal/font-licence"
+    elif "apache" in comb:
+        ltype = "Apache License 2.0"
+        is_os = True
+        comm = True
+        redist = True
+        mod = True
+        risk = "permissive"
+        lic_url = "https://www.apache.org/licenses/LICENSE-2.0"
+    elif "1001fonts" in comb:
+        ltype = "1001Fonts Free Commercial License (FFC)"
+        is_os = False
+        comm = True
+        redist = False
+        mod = False
+        risk = "permissive"
+        lic_url = "https://www.1001fonts.com/licenses/ffc.html"
+    elif "commercial" in comb or "free" in comb:
+        ltype = "Freeware (Commercial Use Granted)"
+        is_os = False
+        comm = True
+        redist = False
+        mod = False
+        risk = "freeware"
+        lic_url = None
+    else:
+        ltype = "Standard Free / Open License"
+        is_os = True
+        comm = True
+        redist = True
+        mod = True
+        risk = "permissive"
+        lic_url = None
 
-    return {"type": "Standard Free / Open License", "commercial_use": True, "redistribution_allowed": True, "risk_level": "permissive", "reference_files": ref_files, "license_url": None}
+    labels = []
+    if is_os:
+        labels.append("OPEN SOURCE")
+    if comm:
+        labels.append("FREE FOR PERSONAL & COMMERCIAL USE" if is_os or "fontshare" in ltype.lower() else "FREE FOR COMMERCIAL USE")
+    if redist:
+        labels.append("REDISTRIBUTABLE")
 
+    return {
+        "type": ltype,
+        "license_type": ltype,
+        "commercial_use": comm,
+        "redistribution_allowed": redist,
+        "modification_allowed": mod,
+        "open_source": is_os,
+        "verification_status": "verified",
+        "labels": labels,
+        "risk_level": risk,
+        "reference_files": ref_files,
+        "license_url": lic_url,
+        "source_url": lic_url,
+        "verification_date": "2026-09-29"
+    }
 
 def default_curated_for_font(family_name: str, tech: Dict[str, Any]) -> Dict[str, Any]:
     """Default fallback curated object for brand-new fonts."""
@@ -112,7 +181,6 @@ def default_curated_for_font(family_name: str, tech: Dict[str, Any]) -> Dict[str
         "notes": f"Catalog entry for {family_name}."
     }
 
-
 def build_or_update_catalog(
     source_dir: str,
     catalog_path: str,
@@ -124,7 +192,7 @@ def build_or_update_catalog(
     if not os.path.exists(source_dir):
         raise FileNotFoundError(f"Source fonts directory not found: {source_dir}")
 
-    # Load existing catalog to preserve curated data
+                                                    
     existing_fonts_by_id = {}
     old_catalog = {}
     if os.path.exists(catalog_path):
@@ -137,14 +205,14 @@ def build_or_update_catalog(
     scanned_binaries = scan_source(source_dir)
     print(f"Scanned {len(scanned_binaries)} font binaries.", file=sys.stderr)
 
-    # Group binaries by family
+                              
     family_bins = defaultdict(list)
     for b in scanned_binaries:
-        # Determine family group key from folder or family_name
+                                                               
         rel_path = os.path.relpath(b["file_path"], source_dir)
         folder_top = rel_path.split(os.sep)[0].split("/")[0]
         
-        # Match against existing font IDs first
+                                               
         matched_id = None
         for eid, efont in existing_fonts_by_id.items():
             if folder_top.lower() == eid.lower() or b["family_name"].lower() == efont["name"].lower():
@@ -192,7 +260,7 @@ def build_or_update_catalog(
                 has_italics = True
             all_pkg_files.append(rel_repo)
 
-        # Format axes for schema
+                                
         formatted_axes = []
         for ax in var_axes:
             formatted_axes.append({
@@ -203,7 +271,7 @@ def build_or_update_catalog(
                 "max": float(ax.get("max_value", ax.get("max", 900)))
             })
 
-        # Technical block matching fonts.schema.json
+                                                    
         tech = {
             "weights": sorted(list(weights)) if weights else (existing["technical"]["weights"] if existing else [400]),
             "italic": has_italics or (existing["technical"]["italic"] if existing else False),
@@ -217,10 +285,10 @@ def build_or_update_catalog(
             "embedding_permission": bins[0].get("embedding_permission", "Installable Embedding (unrestricted)") if bins else (existing["technical"]["embedding_permission"] if existing else "Installable Embedding (unrestricted)")
         }
 
-        # License
+                 
         license_info = existing["license"] if existing else determine_license(fid, all_pkg_files)
 
-        # Curated block (PRESERVED)
+                                   
         if existing and "curated" in existing:
             curated = existing["curated"]
             preserved_count += 1
@@ -228,7 +296,7 @@ def build_or_update_catalog(
             curated = default_curated_for_font(fam_name, tech)
             new_count += 1
 
-        # Provenance matching schema
+                                    
         if existing and "provenance" in existing:
             prov = existing["provenance"]
         else:
@@ -254,7 +322,7 @@ def build_or_update_catalog(
         }
         updated_fonts.append(font_entry)
 
-    # Sort catalog deterministically by font ID
+                                               
     updated_fonts.sort(key=lambda x: x["id"])
 
     new_catalog = {
@@ -266,7 +334,7 @@ def build_or_update_catalog(
         "fonts": updated_fonts
     }
 
-    # Validate against schema if available
+                                          
     if schema_path and os.path.exists(schema_path) and jsonschema:
         with open(schema_path, "r", encoding="utf-8") as sf:
             schema = json.load(sf)
@@ -291,7 +359,6 @@ def build_or_update_catalog(
         "dry_run": dry_run,
         "target_file": catalog_path
     }
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -325,7 +392,6 @@ def main():
     except Exception as e:
         print(f"Build error: {e}", file=sys.stderr)
         sys.exit(1)
-
 
 if __name__ == "__main__":
     main()

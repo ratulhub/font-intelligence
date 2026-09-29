@@ -3,7 +3,7 @@
 This repository uses the **Font Intelligence Typography Decision System**.
 
 ## Canonical Source of Truth
-👉 [`.agents/skills/font-intelligence/SKILL.md`](file:///d:/font-intelligence/.agents/skills/font-intelligence/SKILL.md)
+👉 [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md)
 
 ## Activation
 Activate Font Intelligence when:
@@ -17,11 +17,11 @@ Activate Font Intelligence when:
 - **Search**: `python scripts/search_fonts.py --mood "<vibe>" --role <body> --min-readability 8`
 - **Score Pair**: `python scripts/score_pair.py --primary <id> --secondary <id> --style <vibe>`
 - **Offline / No Tool Access**: Read `catalog/fonts.json`, `catalog/use-cases.json`, and `catalog/pairings.json`.
-- **Compact Fallback**: Use [`lite/font-intelligence-lite.md`](file:///d:/font-intelligence/lite/font-intelligence-lite.md) for quick lookups.
+- **Compact Fallback**: Use [`lite/font-intelligence-lite.md`](lite/font-intelligence-lite.md) for quick lookups.
 
 ## Key Rules
 1. Never invent fonts, weights, or language scripts.
 2. Never use decorative fonts for body text.
 3. Respect explicit user font preferences.
 4. Keep to maximum 2 primary families (plus monospace only when needed).
-5. All full requirements: see [`.agents/skills/font-intelligence/SKILL.md`](file:///d:/font-intelligence/.agents/skills/font-intelligence/SKILL.md).
+5. All full requirements: see [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md).

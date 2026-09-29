@@ -3,7 +3,7 @@
 This repository contains the **Font Intelligence Typography Decision System**.
 
 The **canonical source of truth** for all agent instructions, rules, and decision protocols is:
-👉 [`.agents/skills/font-intelligence/SKILL.md`](file:///d:/font-intelligence/.agents/skills/font-intelligence/SKILL.md)
+👉 [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md)
 
 ### Agent Adapter Architecture
 All coding agents share a single core skill, identical catalog, and unified rules:
@@ -76,7 +76,7 @@ python scripts/validate_licenses.py --filter office-embeddable
 ## 4. Offline / Direct JSON Mode (No Python)
 
 If Python execution is unavailable, inspect catalog JSON files directly:
-- **`catalog/fonts.json`**: 103 verified families with roles, readability (1–10), and technical tables.
+- **`catalog/fonts.json`**: 413 verified families with roles, readability (1–10), and technical tables.
 - **`catalog/use-cases.json`**: 29 project situations, performance budgets, and style mappings.
 - **`catalog/pairings.json`**: Curated masterclass pairings.
 - **`catalog/anti-patterns.json`**: 10 typography anti-patterns with point deductions.
@@ -89,7 +89,7 @@ If Python execution is unavailable, inspect catalog JSON files directly:
 1. Never invent catalog fonts when making autonomous recommendations.
 2. Never invent weights (only use confirmed weights in `technical.weights`).
 3. Never invent language support (zero tofu policy; never guess script coverage).
-4. Do NOT assume "free for commercial use" = "allowed to redistribute on GitHub". Refer to [`docs/redistribution-review.md`](file:///d:/font-intelligence/docs/redistribution-review.md).
+4. Do NOT assume "free for commercial use" = "allowed to redistribute on GitHub". Refer to [`docs/redistribution-review.md`](docs/redistribution-review.md).
 5. Respect explicit user font choices.
 6. Do not replace an existing project's typography system unprompted.
 7. Never use decorative fonts for continuous body text.
@@ -98,4 +98,4 @@ If Python execution is unavailable, inspect catalog JSON files directly:
 10. Consider platform and performance (Core Web Vitals < 100 KB; TrueType `.ttf` outlines for PowerPoint/Word).
 11. Always generate robust generic fallbacks.
 
-For the complete specification, read [`.agents/skills/font-intelligence/SKILL.md`](file:///d:/font-intelligence/.agents/skills/font-intelligence/SKILL.md).
+For the complete specification, read [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md).

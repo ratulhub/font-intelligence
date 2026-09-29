@@ -1,21 +1,5 @@
-<#
-.SYNOPSIS
-    Font Intelligence - Unified Multi-Agent Installer (PowerShell)
-.DESCRIPTION
-    Installs the Font Intelligence skill and platform adapters for Windows.
-.PARAMETER Target
-    Adapter to configure: all, antigravity, claude, cursor, windsurf, cline, copilot, codex, gemini.
-.PARAMETER DestDir
-    Target directory to install adapters into (defaults to current directory).
-.PARAMETER Global
-    If set, installs to global user configuration paths where applicable.
-.EXAMPLE
-    .\install.ps1 -Target all
-    .\install.ps1 -Target cursor -DestDir "C:\path\to\my-project"
-    .\install.ps1 -Target antigravity -Global
-#>
-
 param (
+
     [string]$Target = "all",
     [string]$DestDir = "",
     [switch]$Global = $false

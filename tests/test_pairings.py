@@ -18,7 +18,6 @@ PAIRINGS_PATH = os.path.join(ROOT_DIR, "catalog", "pairings.json")
 SCORING_PATH = os.path.join(ROOT_DIR, "catalog", "scoring.json")
 ANTI_PATTERNS_PATH = os.path.join(ROOT_DIR, "catalog", "anti-patterns.json")
 
-
 class TestPairingsAndScoring(unittest.TestCase):
 
     @classmethod
@@ -58,7 +57,6 @@ class TestPairingsAndScoring(unittest.TestCase):
         ap_ids = [ap["id"] for ap in eval_res["anti_patterns_detected"]]
         self.assertIn("decorative-as-body", ap_ids)
         self.assertLess(eval_res["score"], 60)
-
 
 if __name__ == "__main__":
     unittest.main()

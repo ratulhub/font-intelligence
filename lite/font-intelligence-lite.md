@@ -1,8 +1,8 @@
 # Font Intelligence Lite — Compact Typography Decision Fallback
 
-> **Compact Cheatsheet**: Use this lightweight guide when operating under constrained context windows, offline environments without Python execution, or when rapid font recommendations are needed without loading the full 103-font catalog.
+> **Compact Cheatsheet**: Use this lightweight guide when operating under constrained context windows, offline environments without Python execution, or when rapid font recommendations are needed without loading the full 413-font catalog.
 >
-> **Canonical Source of Truth**: For dynamic scoring algorithms, licensing audits, and full technical metadata, always consult [`.agents/skills/font-intelligence/SKILL.md`](file:///d:/font-intelligence/.agents/skills/font-intelligence/SKILL.md).
+> **Canonical Source of Truth**: For dynamic scoring algorithms, licensing audits, and full technical metadata, always consult [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md).
 
 ---
 
@@ -129,4 +129,4 @@ code, pre, .tabular-stat {
 
 ---
 
-> For dynamic scoring, licensing verification, and the complete 103-font catalog, see the canonical [`.agents/skills/font-intelligence/SKILL.md`](file:///d:/font-intelligence/.agents/skills/font-intelligence/SKILL.md).
+> For dynamic scoring, licensing verification, and the complete 103-font catalog, see the canonical [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md).

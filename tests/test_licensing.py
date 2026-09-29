@@ -13,7 +13,6 @@ sys.stdout.reconfigure(encoding='utf-8')
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG_PATH = os.path.join(ROOT_DIR, "catalog", "fonts.json")
 
-
 class TestLicensing(unittest.TestCase):
 
     @classmethod
@@ -45,7 +44,6 @@ class TestLicensing(unittest.TestCase):
         for font in self.catalog["fonts"]:
             embedding = font["technical"].get("embedding_permission")
             self.assertIsNotNone(embedding, f"Font {font['id']} missing embedding_permission")
-
 
 if __name__ == "__main__":
     unittest.main()

@@ -43,7 +43,6 @@
     btnClearEmpty: document.getElementById('btn-clear-empty'),
     dynamicStyle: document.getElementById('dynamic-font-faces'),
     
-    // Pairing Workbench Elements
     pairingWorkbench: document.getElementById('pairing-workbench'),
     pairingToggleBtn: document.getElementById('pairing-toggle-btn'),
     pairingHeadingSelect: document.getElementById('pairing-heading-select'),
@@ -58,13 +57,11 @@
     pairingQuoteText: document.getElementById('pairing-quote-text'),
     pairingBtnDemo: document.getElementById('pairing-btn-demo'),
 
-    // Stats
     statTotal: document.getElementById('stat-total-fonts'),
     statOpenSource: document.getElementById('stat-open-source'),
-    statVariable: document.getElementById('stat-variable-fonts'),
-    statFiles: document.getElementById('stat-total-files'),
+    statCommercial: document.getElementById('stat-commercial-fonts'),
+    statPersonal: document.getElementById('stat-personal-fonts'),
 
-    // Modal
     modal: document.getElementById('inspector-modal'),
     modalCloseBtn: document.getElementById('modal-close-btn'),
     modalFontName: document.getElementById('modal-font-name'),
@@ -145,16 +142,27 @@
   function updateMetrics() {
     if (elements.statTotal) elements.statTotal.textContent = state.fonts.length;
     if (elements.statOpenSource) {
-      const pubCount = state.fonts.filter(f => f.distribution_status === 'public-asset').length;
-      elements.statOpenSource.textContent = pubCount;
+      const osCount = state.fonts.filter(f => f.license && f.license.open_source).length;
+      elements.statOpenSource.textContent = osCount;
     }
-    if (elements.statVariable) {
-      const varCount = state.fonts.filter(f => f.technical && f.technical.variable).length;
-      elements.statVariable.textContent = varCount;
+    if (elements.statCommercial) {
+      const commCount = state.fonts.filter(f => f.license && f.license.commercial_use).length;
+      elements.statCommercial.textContent = commCount;
     }
-    if (elements.statFiles) {
-      const totalFiles = state.fonts.reduce((acc, f) => acc + (f.files ? f.files.length : 0), 0);
-      elements.statFiles.textContent = totalFiles;
+    if (elements.statPersonal) {
+      const personalCount = state.fonts.filter(f => !f.license || !f.license.commercial_use).length;
+      elements.statPersonal.textContent = personalCount;
+    }
+  }
+
+  function getLicenseBadge(font) {
+    const lic = font.license || {};
+    if (lic.open_source) {
+      return '<span class="tag-pill tag-verified">OPEN SOURCE</span>';
+    } else if (lic.commercial_use) {
+      return '<span class="tag-pill tag-review">FREE FOR COMMERCIAL USE</span>';
+    } else {
+      return '<span class="tag-pill tag-restricted">FREE FOR PERSONAL USE</span>';
     }
   }
 
@@ -202,7 +210,6 @@
     elements.pairingQuoteText.style.fontFamily = `'${headId}-preview', ${headFallback}`;
     elements.pairingBtnDemo.style.fontFamily = `'${bodyId}-preview', ${bodyFallback}`;
 
-    // Scoring heuristic
     let score = 88;
     const headCat = headFont.curated?.category;
     const bodyCat = bodyFont.curated?.category;
@@ -395,7 +402,9 @@
       if (state.selectedRole && !(cur.roles || []).includes(state.selectedRole)) return false;
 
       if (state.selectedLicense) {
-        if (dist !== state.selectedLicense) return false;
+        if (state.selectedLicense === 'open-source' && !font.license?.open_source) return false;
+        if (state.selectedLicense === 'commercial' && !font.license?.commercial_use) return false;
+        if (state.selectedLicense === 'personal' && font.license?.commercial_use) return false;
       }
 
       if (state.selectedScript) {
@@ -468,7 +477,12 @@
     }
 
     if (state.selectedLicense) {
-      addChip(`Status: ${state.selectedLicense}`, () => {
+      let lbl = 'License: ';
+      if (state.selectedLicense === 'open-source') lbl += 'Open Source';
+      else if (state.selectedLicense === 'commercial') lbl += 'Free for Commercial Use';
+      else if (state.selectedLicense === 'personal') lbl += 'Free for Personal Use';
+      else lbl += state.selectedLicense;
+      addChip(lbl, () => {
         state.selectedLicense = '';
         elements.filterLicense.value = '';
         applyFilters();
@@ -526,18 +540,10 @@
 
   function renderStream() {
     const html = state.filteredFonts.map(font => {
-      const cur = font.curated || {};
       const tech = font.technical || {};
-      const dist = font.distribution_status || 'unknown';
       const weights = tech.weights || [400];
       const fallbackStack = (cur.fallback || ['sans-serif']).join(', ');
-
-      let statusBadge = '<span class="tag-pill tag-verified">Public Open-Source</span>';
-      if (dist === 'catalog-only') {
-        statusBadge = '<span class="tag-pill tag-review">Catalog Only</span>';
-      } else if (dist === 'restricted') {
-        statusBadge = '<span class="tag-pill tag-restricted">Restricted</span>';
-      }
+      const licenseBadge = getLicenseBadge(font);
 
       const weightChips = weights.map((w, i) => `
         <button class="weight-selector-chip ${i === 0 ? 'active' : ''}" data-weight="${w}">${w}</button>
@@ -553,7 +559,7 @@
 
             <div class="entry-badges">
               <span class="tag-pill tag-category">${cur.category || 'sans-serif'}</span>
-              ${statusBadge}
+              ${licenseBadge}
               ${tech.variable ? '<span class="tag-pill tag-variable">Variable</span>' : ''}
               ${tech.italic ? '<span class="tag-pill tag-category">Italic</span>' : ''}
             </div>
@@ -591,13 +597,9 @@
     const html = state.filteredFonts.map(font => {
       const cur = font.curated || {};
       const tech = font.technical || {};
-      const dist = font.distribution_status || 'unknown';
       const weights = tech.weights || [400];
       const fallbackStack = (cur.fallback || ['sans-serif']).join(', ');
-
-      let statusBadge = '<span class="tag-pill tag-verified">Public</span>';
-      if (dist === 'catalog-only') statusBadge = '<span class="tag-pill tag-review">Catalog Only</span>';
-      else if (dist === 'restricted') statusBadge = '<span class="tag-pill tag-restricted">Restricted</span>';
+      const licenseBadge = getLicenseBadge(font);
 
       return `
         <article class="specimen-entry" data-id="${font.id}" style="padding: 18px 20px;">
@@ -607,7 +609,7 @@
             </div>
             <div class="entry-badges">
               <span class="tag-pill tag-category">${cur.category || 'sans'}</span>
-              ${statusBadge}
+              ${licenseBadge}
             </div>
           </div>
 
@@ -694,7 +696,6 @@
     elements.modalFontCat.textContent = cur.category || 'Family';
     elements.modalFontId.textContent = font.id;
 
-    // 1. Waterfall
     const waterfallSizes = [64, 48, 36, 24, 18, 14];
     elements.waterfallList.innerHTML = waterfallSizes.map(size => `
       <div class="waterfall-item">
@@ -708,7 +709,6 @@
       </div>
     `).join('');
 
-    // 2. Glyphs
     const latinUpper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const latinLower = 'abcdefghijklmnopqrstuvwxyz';
     elements.glyphsLetters.innerHTML = (latinUpper + latinLower).split('').map(char => `
@@ -725,18 +725,19 @@
       <div class="glyph-cell" style="font-family: '${font.id}-preview', ${fallbackStack};">${char}</div>
     `).join('');
 
-    // 3. Licensing Details
+    const category = lic.open_source ? 'OPEN SOURCE' : (lic.commercial_use ? 'FREE FOR COMMERCIAL USE' : 'FREE FOR PERSONAL USE');
     elements.licensingContent.innerHTML = `
       <div style="display: flex; flex-direction: column; gap: 14px; font-size: 13px;">
-        <div><strong>License:</strong> ${track.license_name || lic.type}</div>
-        <div><strong>Commercial Use:</strong> ${track.commercial_use ? 'Approved for commercial projects' : 'Personal / Demo only'}</div>
-        <div><strong>Redistribution:</strong> ${track.redistribution ? 'Permitted in public open-source repositories' : 'Restricted; retain in catalog-only mode'}</div>
-        <div><strong>Source / Foundry:</strong> ${track.source || 'Foundry Package'}</div>
-        <div><strong>Notes:</strong> ${track.redistribution_notes || 'Standard terms apply.'}</div>
+        <div><strong>License Category:</strong> <span style="font-family: var(--font-mono); font-size: 12px; color: var(--accent); font-weight: 600;">${category}</span></div>
+        <div><strong>License Type:</strong> ${lic.type || 'Unknown'}</div>
+        <div><strong>Commercial Use:</strong> ${lic.commercial_use ? 'Approved (Free for Commercial Use)' : 'Restricted (Personal Use Only)'}</div>
+        <div><strong>Open Source:</strong> ${lic.open_source ? 'Yes (Confirmed Open Source)' : 'No'}</div>
+        <div><strong>Verification Status:</strong> <span style="text-transform: uppercase; font-family: var(--font-mono); font-size: 11px;">${lic.verification_status || 'unknown'}</span></div>
+        ${lic.source_url ? `<div><strong>Source / Reference:</strong> <a href="${lic.source_url}" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: underline;">${lic.source_url}</a></div>` : ''}
+        <div><strong>Verification Date:</strong> ${lic.verification_date || '2026-09-29'}</div>
       </div>
     `;
 
-    // 4. Code Tokens
     const bestFile = (font.files || []).find(f => f.format === 'woff2') || (font.files || [])[0];
     const cssCode = `@font-face {
   font-family: '${font.name}';

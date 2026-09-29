@@ -14,7 +14,6 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG_PATH = os.path.join(ROOT_DIR, "catalog", "fonts.json")
 SCHEMA_PATH = os.path.join(ROOT_DIR, "catalog", "fonts.schema.json")
 
-
 class TestFontCatalog(unittest.TestCase):
 
     @classmethod
@@ -58,7 +57,6 @@ class TestFontCatalog(unittest.TestCase):
             self.assertIn("readability", font["curated"], f"Font {font['id']} missing readability")
             self.assertIn("weights", font["technical"], f"Font {font['id']} missing technical weights")
             self.assertTrue(len(font["technical"]["weights"]) > 0, f"Font {font['id']} has empty weights")
-
 
 if __name__ == "__main__":
     unittest.main()

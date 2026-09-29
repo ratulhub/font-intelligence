@@ -1,23 +1,26 @@
 # Font Intelligence: Typography Decision System
 
-[![CI Status](https://img.shields.io/badge/CI-Passing-success?style=flat-square)](file:///.github/workflows/validate.yml)
-[![Verified Fonts](https://img.shields.io/badge/Catalog-103%20Families%20(475%20Files)-blue?style=flat-square)](file:///catalog/fonts.json)
-[![Evaluation Matrix](https://img.shields.io/badge/Evaluation-24%2F24%20Tests%20Passed-brightgreen?style=flat-square)](file:///docs/evaluation-report.md)
+[![CI Status](https://img.shields.io/badge/CI-Passing-success?style=flat-square)](.github/workflows/validate.yml)
+[![Verified Fonts](https://img.shields.io/badge/Catalog-413%20Families%20(1%2C083%20Binaries)-blue?style=flat-square)](catalog/fonts.json)
+[![Public Assets](https://img.shields.io/badge/Public%20Assets-112%20Permissive%20Families-green?style=flat-square)](docs/public-assets-manifest.md)
+[![Evaluation Matrix](https://img.shields.io/badge/Evaluation-81%2F81%20Tests%20Passed-brightgreen?style=flat-square)](docs/v1-release-audit.md)
 [![Python Version](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-blue?style=flat-square)](#installation)
 [![Multi-Agent Portable](https://img.shields.io/badge/Agents-8%20Platforms%20Supported-purple?style=flat-square)](#supported-agent-architecture)
 
-An engineering-grade typography decision engine and font intelligence system for modern AI coding agents and human designers. Replaces generic defaults (Inter, Roboto, Arial) with mathematically scored, anti-pattern-checked typeface pairings backed by deep typographic rationales and copy-pasteable implementation tokens.
+An algorithmic typography decision system and font pairing engine for AI coding agents, UI/UX designers, and developers. Replaces generic defaults (Inter, Roboto, Arial) with mathematically scored, anti-pattern-checked typeface pairings backed by deep typographic rationales and copy-pasteable implementation tokens.
+
+Each font retains its original license and redistribution terms are documented individually. Permissive open-source fonts are organized in `assets/fonts/` for immediate use, while catalog-only entries provide metadata for local design reasoning.
 
 ---
 
 ## 1. What Font Intelligence Is
 
 Coding agents and developers frequently struggle with digital typography:
-- They default to the same 3 bland fonts (`Inter`, `Roboto`, `Arial`) regardless of brand tone or use case.
+- They default to the same bland fonts (`Inter`, `Roboto`, `Arial`) regardless of brand tone or use case.
 - They hallucinate weights that don't exist in font binaries (e.g., requesting `weight: 500` for a font that only has 700).
 - They guess language script coverage, resulting in missing character boxes (**tofu**) on international scripts like Bangla or Arabic.
 - They commit catastrophic typography anti-patterns, such as setting multi-paragraph body text in distressed display fonts or pairing competing novelty fonts.
-- They assume "free for commercial use" allows redistribution on GitHub without checking license terms.
+- They assume "free for commercial use" allows raw binary redistribution on GitHub without checking license terms.
 
 **Font Intelligence solves this.**
 
@@ -27,7 +30,8 @@ Font Intelligence operates as an algorithmic design partner:
 3. **Audits Language Scripts (Zero Tofu)**: Verifies OpenType binary tables. If an international script is unsupported locally, it strictly reports 0 local fonts and recommends verified open-source companion fonts (`Hind Siliguri`, `Noto Sans Bengali`, `Amiri`).
 4. **Evaluates 10 Mathematical Dimensions**: Scores candidate pairs across Visual Contrast, Serif/Sans Dynamic, Personality Resonance, Readability, Width, Weight Availability, Role Compatibility, Project Style Fit, Language Parity, and Platform Suitability.
 5. **Audits 10 Lethal Anti-Patterns**: Deducts severe penalties (-15 to -45 pts) for unreadable body text, uncanny sans mismatches, or weight starvation.
-6. **Delivers Calibrated Code Tokens**: Emits production-ready CSS Custom Properties, Flutter `pubspec.yaml`, React Native `StyleSheet`, and Microsoft Office TrueType embedding instructions.
+6. **Separates Public Assets**: Manages verified open-source fonts in `assets/fonts/` while preserving non-distributable packages safely as `catalog-only`.
+7. **Delivers Calibrated Code Tokens**: Emits production-ready CSS Custom Properties, Flutter `pubspec.yaml`, React Native `StyleSheet`, and Microsoft Office TrueType embedding instructions.
 
 ---
 
@@ -63,7 +67,7 @@ No separate font databases or duplicate schemas are maintained across agents.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/font-intelligence.git
+git clone https://github.com/ratulhub/font-intelligence.git
 cd font-intelligence
 
 # 2. (Optional) Install fonttools for binary inspection
@@ -77,18 +81,18 @@ pip install fonttools
 ```
 
 ### Comprehensive Platform & Typography Manuals
-Explore deep reference guides in [`references/`](file:///references/):
-- **Typography & Scale**: [`typography-rules.md`](file:///references/typography-rules.md), [`pairing-rules.md`](file:///references/pairing-rules.md), [`accessibility.md`](file:///references/accessibility.md)
-- **Web & Frameworks**: [`web.md`](file:///references/web.md), [`react.md`](file:///references/react.md), [`nextjs.md`](file:///references/nextjs.md), [`tailwind.md`](file:///references/tailwind.md)
-- **Mobile**: [`flutter.md`](file:///references/flutter.md), [`react-native.md`](file:///references/react-native.md), [`android.md`](file:///references/android.md), [`ios.md`](file:///references/ios.md)
-- **Documents & Slides**: [`presentations.md`](file:///references/presentations.md), [`documents.md`](file:///references/documents.md), [`branding.md`](file:///references/branding.md)
+Explore deep reference guides in [`references/`](references/):
+- **Typography & Scale**: [`typography-rules.md`](references/typography-rules.md), [`pairing-rules.md`](references/pairing-rules.md), [`accessibility.md`](references/accessibility.md)
+- **Web & Frameworks**: [`web.md`](references/web.md), [`react.md`](references/react.md), [`nextjs.md`](references/nextjs.md), [`tailwind.md`](references/tailwind.md)
+- **Mobile**: [`flutter.md`](references/flutter.md), [`react-native.md`](references/react-native.md), [`android.md`](references/android.md), [`ios.md`](references/ios.md)
+- **Documents & Slides**: [`presentations.md`](references/presentations.md), [`documents.md`](references/documents.md), [`branding.md`](references/branding.md)
 
 ### Launch Interactive Visual Studio
 Font Intelligence includes an interactive, zero-dependency typography preview studio:
 ```bash
 python -m http.server 8080
 ```
-Open **`http://localhost:8080/preview/index.html`** in your browser to inspect all 103 families, filter by role/readability/style, and test interactive type specimens.
+Open **`http://localhost:8080/preview/index.html`** in your browser to inspect all 413 families, filter by role/readability/style, and test interactive type specimens.
 
 ---
 
@@ -188,7 +192,7 @@ python scripts/validate_licenses.py --filter issues-only
 1. **Never invent catalog fonts**: Only recommend real, verified fonts from `catalog/fonts.json`.
 2. **Never invent weights**: Only specify weights listed in `technical.weights`.
 3. **Never invent language support**: Zero tofu tolerance. For Bangla, Arabic, etc., recommend verified external companion fonts (`Hind Siliguri`, `Noto Sans Bengali`, `Amiri`).
-4. **Never assume commercial use = GitHub redistribution**: Verify license grants before redistributing font files. See [`docs/redistribution-review.md`](file:///d:/font-intelligence/docs/redistribution-review.md).
+4. **Never assume commercial use = GitHub redistribution**: Verify license grants before redistributing font files. See [`docs/redistribution-review.md`](docs/redistribution-review.md).
 5. **Respect explicit user font choices**: If the user asks for a font, adopt it and pair around it. Never override user selections.
 6. **Do not replace existing typography systems**: Integrate with existing fonts; never overwrite unprompted.
 7. **No decorative fonts for body text**: Display, script, and decorative typefaces must never be assigned to `body` or `ui` roles.
@@ -201,12 +205,14 @@ python scripts/validate_licenses.py --filter issues-only
 
 ## 8. Licensing & Redistribution Terms
 
-All 103 font families in Font Intelligence are cataloged with their exact legal licensing terms. Refer to [`docs/redistribution-review.md`](file:///d:/font-intelligence/docs/redistribution-review.md) for the complete legal review.
+All 413 font families in Font Intelligence are cataloged with verified licensing terms and clear separation of concerns:
 
-- **Permissive Open Source (57 Families)**: Distributed under SIL Open Font License (OFL 1.1), Apache 2.0, MIT, Ubuntu Font License, or Creative Commons Zero (CC0). Fully redistributable.
-- **Freeware Commercial (20 Families)**: Commercial use granted by author/foundry.
-- **Proof Needed (13 Families)**: Commercial license granted via marketplace receipts; redistribution on public repositories requires proof of purchase.
-- **Restricted / Demo Cuts (13 Families)**: Evaluation cuts requiring commercial upgrades for production deployment. The system warns developers before exporting.
+- **Open Source (108 Families)**: Distributed under SIL Open Font License (OFL 1.1), Apache 2.0, MIT, Ubuntu Font License, or Creative Commons Zero (CC0).
+- **Free for Commercial Use (390 Families)**: Explicitly approved for commercial project use.
+- **Redistributable Public Assets (112 Families)**: Verified font packages safe for repository redistribution located in `assets/fonts/`.
+- **Personal Use Only (23 Families)**: Preserved for local design evaluation.
+
+Refer to [`docs/redistribution-review.md`](docs/redistribution-review.md) and [`docs/public-assets-manifest.md`](docs/public-assets-manifest.md) for full licensing records.
 
 ---
 
@@ -231,7 +237,7 @@ python -m unittest discover -s scripts -p "test_*.py"
 python scripts/run_evaluation_matrix.py
 ```
 
-For guidelines on adding new fonts, project use cases, or curated pairings, please read [`CONTRIBUTING.md`](file:///d:/font-intelligence/CONTRIBUTING.md).
+For guidelines on adding new fonts, project use cases, or curated pairings, please read [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ---
 

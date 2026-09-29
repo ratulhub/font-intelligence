@@ -9,11 +9,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0] - 2026-09-29
 
-### Added
-- **Core Skill & Architecture**:
-  - Canonical typography decision skill at [`.agents/skills/font-intelligence/SKILL.md`](file:///d:/font-intelligence/.agents/skills/font-intelligence/SKILL.md).
-  - Multi-agent thin adapter architecture supporting Antigravity, Claude Code, Cursor, Windsurf, Cline, GitHub Copilot, Codex, and Gemini CLI.
-  - Compact fallback cheatsheet at [`lite/font-intelligence-lite.md`](file:///d:/font-intelligence/lite/font-intelligence-lite.md) for constrained context windows and offline LLMs.
+### Added - Production V1 Release
+- **Catalog Scale & Ingestion**:
+  - Expanded catalog from 103 baseline families to **413 verified font families** (1,083 binary files across 386 source packages) via `scripts/ingest_new_fonts.py`.
+  - Audited 1,035 unique cryptographic SHA-256 hashes and detected 17 duplicate binary groups without touching original source packages.
+  - Preserved all baseline 103 family IDs, pairings, and curated attributes.
+- **Public Asset Separation & Licensing Gate**:
+  - Segregated 107 verified permissive open-source families (`SIL OFL 1.1`, `Apache 2.0`, `CC0`, `Public Domain`) into `assets/fonts/`.
+  - Sequestered 69 `catalog-only`, 2 `restricted`, and 235 `unknown` families from public release distribution.
+  - Implemented `scripts/validate_public_release.py` CI gatekeeper to block unauthorized redistribution.
+  - Created `scripts/build_release_manifest.py` to synchronize public assets and generate `docs/public-assets-manifest.md`.
+  - Created `scripts/verify_font_license.py` for automated EULA, license text, and OpenType metadata inspection.
+- **Zero-Tofu Linguistic Verification**:
+  - Strict OpenType character set thresholds enforced for complex scripts (Bengali, Arabic, Cyrillic, Greek, Hangul, Hebrew, CJK).
+  - Enforced 0 catalog fonts for Bangla and Arabic with automated external open-source companion recommendations (`Hind Siliguri`, `Noto Sans Bengali`, `Amiri`).
+- **Interactive Preview Studio**:
+  - Redesigned `preview/index.html` with light cream paper aesthetic (`#FAF8F5`, `#1C1917`, `#8B263E`), *Cormorant Garamond* editorial headlines, interactive pairing studio, and offline-compatible `preview/fonts-data.js`.
+- **Comprehensive Test Suite**:
+  - 81 automated tests (58 in `tests/`, 23 in `scripts/`) passing with 100% success rate.
+  - Tested 16 real-world project briefs and 8 failure/edge cases via `scripts/run_evaluation_matrix.py`.
 - **Font Catalog & Data Foundation**:
   - `catalog/fonts.json`: 103 verified font families, 475 font binary files, with verified OpenType tables, weights, styles, variable axes, Unicode blocks, and calibrated readability metrics (1–10).
   - `catalog/use-cases.json`: 29 project situations across Web, Mobile (Flutter, React Native), and Documents (PowerPoint, Word, PDF). Includes style vibe interpretation dictionary.

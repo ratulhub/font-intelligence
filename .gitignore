@@ -1,4 +1,3 @@
-# Python bytecode and cache
 __pycache__/
 *.py[cod]
 *$py.class
@@ -7,7 +6,6 @@ __pycache__/
 .coverage
 htmlcov/
 
-# Virtual environments
 venv/
 .venv/
 env/
@@ -15,13 +13,11 @@ ENV/
 env.bak/
 venv.bak/
 
-# Operating System files
 .DS_Store
 Thumbs.db
 ehthumbs.db
 [Dd]esktop.ini
 
-# IDE & Editor settings
 .vscode/
 .idea/
 *.sublime-project
@@ -29,14 +25,13 @@ ehthumbs.db
 *.swp
 *.swo
 
-# Build and export outputs
 dist/
 build/
 *.egg-info/
 out/
 
-# Local logs and temporary files
 *.log
 *.tmp
 temp/
 scratch/
+

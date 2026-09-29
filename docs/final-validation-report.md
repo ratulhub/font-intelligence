@@ -22,9 +22,9 @@ A comprehensive end-to-end audit was executed across all 68 phases of the Font I
 | **Licensing & Embedding Tests**| `tests/test_licensing.py` | 3 | 3 | 0 | 0.04s |
 | **Language & Script Tests** | `tests/test_languages.py` | 4 | 4 | 0 | 0.06s |
 | **Pairings & 10D Scoring Tests**| `tests/test_pairings.py` | 3 | 3 | 0 | 0.05s |
-| **20 Project Cases (Phase 57)**| `tests/test_recommendations.py` | 20 | 20 | 0 | 0.18s |
-| **17 Negative Cases (Phase 58)**| `tests/test_negative_cases.py` | 17 | 17 | 0 | 0.07s |
-| **Prompt Simulation (Phase 59)**| `tests/test_behavior.py` | 7 | 7 | 0 | 0.06s |
+| **20 Project Cases **| `tests/test_recommendations.py` | 20 | 20 | 0 | 0.18s |
+| **17 Negative Cases **| `tests/test_negative_cases.py` | 17 | 17 | 0 | 0.07s |
+| **Prompt Simulation **| `tests/test_behavior.py` | 7 | 7 | 0 | 0.06s |
 | **Supporting CLI Tools Tests** | `scripts/test_supporting_tools.py`| 8 | 8 | 0 | 2.10s |
 | **Typography Engine Tests** | `scripts/test_typography_engine.py`| 15 | 15 | 0 | 0.28s |
 | **Real-User Matrix Harness** | `scripts/run_evaluation_matrix.py`| 24 | 24 | 0 | 0.42s |

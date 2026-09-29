@@ -4,7 +4,7 @@ This project uses the **Font Intelligence Typography Decision System**.
 
 ## Canonical Source of Truth
 Read and follow:
-👉 [`.agents/skills/font-intelligence/SKILL.md`](file:///d:/font-intelligence/.agents/skills/font-intelligence/SKILL.md)
+👉 [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md)
 
 ## Activation
 Activate when:

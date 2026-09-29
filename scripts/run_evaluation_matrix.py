@@ -18,7 +18,7 @@ def run_tests():
     engine = TypographyEngine()
     results = {"project_tests": [], "failure_tests": []}
 
-    # 16 Real User Requests
+                           
     project_requests = [
         {"id": 1, "name": "Premium fashion website", "use_case": "fashion", "style": "premium", "platform": "web", "scripts": ["Latin"]},
         {"id": 2, "name": "Luxury ecommerce website", "use_case": "ecommerce", "style": "luxury", "platform": "web", "scripts": ["Latin"]},
@@ -53,7 +53,7 @@ def run_tests():
         pairings = plan["recommended_pairings"]
         best = pairings[0] if pairings else None
         
-        # Check criteria
+                        
         uc = plan["use_case"]
         style_meta = plan["style_interpretation"]
         audit = plan["language_script_audit"]
@@ -94,7 +94,7 @@ def run_tests():
     print("RUNNING 8 FAILURE & EDGE CASE TESTS")
     print("================================================================================")
     
-    # Failure Case 1: Requested font doesn't exist
+                                                  
     print("Testing Failure Case 1: Requested font doesn't exist...")
     fc1_res = {}
     try:
@@ -106,7 +106,7 @@ def run_tests():
         fc1_res = {"name": "Requested font doesn't exist", "status": "PASSED" if f_check is None else "FAILED", "behavior": "Returns None gracefully without throwing uncaught crash", "details": "get_font returns None, CLI raises clear error"}
     results["failure_tests"].append(fc1_res)
 
-    # Failure Case 2: Bangla unsupported in catalog
+                                                   
     print("Testing Failure Case 2: Bangla unsupported in catalog...")
     plan_bn = engine.plan_project_typography("news", "editorial", target_scripts=["Bangla"])
     audit_bn = plan_bn["language_script_audit"]
@@ -119,7 +119,7 @@ def run_tests():
     }
     results["failure_tests"].append(fc2_res)
 
-    # Failure Case 3: License unknown / restricted
+                                                  
     print("Testing Failure Case 3: License unknown / restricted...")
     society_font = engine.get_font("society")
     soc_lic = society_font.get("license", {})
@@ -136,7 +136,7 @@ def run_tests():
     }
     results["failure_tests"].append(fc3_res)
 
-    # Failure Case 4: Only Bold exists
+                                      
     print("Testing Failure Case 4: Only Bold exists (Reckoner)...")
     reckoner = engine.get_font("reckoner")
     eval_only_bold = engine.evaluate_pairing(engine.get_font("general-sans"), reckoner)
@@ -150,10 +150,10 @@ def run_tests():
     }
     results["failure_tests"].append(fc4_res)
 
-    # Failure Case 5: Only Regular exists (Alphakind / Raster Forge)
+                                                                    
     print("Testing Failure Case 5: Only Regular exists...")
-    alpha = engine.get_font("alphakind") # only 400
-    simply = engine.get_font("simply-sans") # 400
+    alpha = engine.get_font("alphakind")           
+    simply = engine.get_font("simply-sans")      
     eval_only_reg = engine.evaluate_pairing(alpha, simply)
     delta_fc5 = abs(eval_only_reg["primary_font"]["weight"] - eval_only_reg["secondary_font"]["weight"])
     fc5_res = {
@@ -164,7 +164,7 @@ def run_tests():
     }
     results["failure_tests"].append(fc5_res)
 
-    # Failure Case 6: Existing project already has fonts
+                                                        
     print("Testing Failure Case 6: Existing project already has fonts...")
     plan_existing = engine.plan_project_typography("saas", existing_fonts=["Inter", "Roboto"])
     fc6_passed = "EXISTING DESIGN SYSTEM DETECTED" in plan_existing.get("existing_fonts_notice", "")
@@ -176,7 +176,7 @@ def run_tests():
     }
     results["failure_tests"].append(fc6_res)
 
-    # Failure Case 7: User explicitly chooses a font
+                                                    
     print("Testing Failure Case 7: User explicitly chooses a font (Chillax)...")
     plan_anchor = engine.plan_project_typography("saas", anchor_font="Chillax")
     top_anchor_p = plan_anchor["recommended_pairings"][0]["primary_font"]["name"]
@@ -189,7 +189,7 @@ def run_tests():
     }
     results["failure_tests"].append(fc7_res)
 
-    # Failure Case 8: User asks for decorative font as body
+                                                           
     print("Testing Failure Case 8: User asks for decorative font as body (Castle Chunk)...")
     castle = engine.get_font("castle-chunk")
     eval_dec = engine.evaluate_pairing(engine.get_font("general-sans"), castle, context={"secondary_role": "body"})

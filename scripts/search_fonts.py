@@ -21,7 +21,6 @@ if not os.path.exists(os.path.join(ROOT_DIR, "catalog")):
 CATALOG_PATH = os.path.join(ROOT_DIR, "catalog", "fonts.json")
 USE_CASES_PATH = os.path.join(ROOT_DIR, "catalog", "use-cases.json")
 
-
 def load_catalog_and_use_cases(cat_path: str, uc_path: str):
     with open(cat_path, "r", encoding="utf-8") as f:
         catalog = json.load(f)
@@ -33,7 +32,6 @@ def load_catalog_and_use_cases(cat_path: str, uc_path: str):
             use_cases = uc_data.get("use_cases", {})
             style_interp = uc_data.get("style_interpretations", {})
     return catalog.get("fonts", []), use_cases, style_interp
-
 
 def search_fonts(
     fonts: List[Dict[str, Any]],
@@ -54,7 +52,7 @@ def search_fonts(
     """Filter catalog fonts by multiple criteria."""
     results = []
 
-    # Map use-case to requirements
+                                  
     uc_styles = []
     uc_roles = []
     if use_case:
@@ -64,7 +62,7 @@ def search_fonts(
             uc_styles = [s.lower() for s in uc_info.get("key_requirements", {}).get("ideal_styles", [])]
             uc_roles = [r.lower() for r in uc_info.get("key_requirements", {}).get("typography_roles", [])]
 
-    # Map mood to styles
+                        
     mood_styles = []
     mood_cats = []
     if mood:
@@ -89,63 +87,63 @@ def search_fonts(
         f_langs = [l.lower() for l in tech.get("languages", [])]
         f_read = cur.get("readability", {})
 
-        # Free-text Query
+                         
         if query:
             q_clean = query.lower()
             text_corpus = f"{f_id} {f_name} {f_cat} {' '.join(f_styles)} {' '.join(f_roles)} {cur.get('notes', '')}".lower()
             if q_clean not in text_corpus:
                 continue
 
-        # Category
+                  
         if category and category.lower() != f_cat:
             continue
 
-        # Mood categories filter
+                                
         if mood_cats and f_cat not in mood_cats:
             continue
 
-        # Style
+               
         if style:
             req_style = style.lower().strip()
             if req_style not in f_styles:
                 continue
 
-        # Mood styles
+                     
         if mood_styles:
             if not any(ms in f_styles for ms in mood_styles):
                 continue
 
-        # Use case styles/roles
+                               
         if uc_styles and not any(us in f_styles for us in uc_styles):
             continue
 
-        # Role
+              
         if role:
             req_role = role.lower().strip()
             if req_role not in f_roles:
                 continue
 
-        # Script
+                
         if script:
             req_script = script.lower().strip()
             if not any(req_script in s for s in f_scripts):
                 continue
 
-        # Language
+                  
         if language:
             req_lang = language.lower().strip()
             if req_lang not in f_langs:
                 continue
 
-        # Variable only
+                       
         if variable_only and not tech.get("variable", False):
             continue
 
-        # Platform check
+                        
         if platform:
             plat_clean = platform.lower().strip()
             if plat_clean in ["powerpoint", "word", "office"]:
-                # Must have ttf format and permissive embedding
+                                                               
                 has_ttf = any(file_info.get("format") == "ttf" for file_info in f.get("files", []))
                 fs_perm = tech.get("embedding_permission", "")
                 if not has_ttf or "Restricted" in fs_perm:
@@ -155,7 +153,7 @@ def search_fonts(
                 if not has_web:
                     continue
 
-        # Min readability
+                         
         if min_readability > 0:
             target_prop = role.lower() if role in ["body", "ui", "numbers", "long_form", "small_text"] else "body"
             score = f_read.get(target_prop, 0)
@@ -165,7 +163,6 @@ def search_fonts(
         results.append(f)
 
     return results
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -249,7 +246,7 @@ def main():
             print(f"    Embedding:    {tech.get('embedding_permission')}")
             print(f"    Notes:        {cur.get('notes')}\n")
     else:
-        # Table view
+                    
         header = f"{'ID':<18} {'FAMILY NAME':<20} {'CATEGORY':<12} {'WEIGHTS':<15} {'BODY':<5} {'UI':<4} {'SCRIPTS'}"
         print(header)
         print("-" * 80)
@@ -266,7 +263,6 @@ def main():
             print(f"{f['id'][:17]:<18} {f['name'][:19]:<20} {cur.get('category', '')[:11]:<12} {w_str[:14]:<15} {b_score:<5} {ui_score:<4} {scripts_str}")
 
     print("=" * 80)
-
 
 if __name__ == "__main__":
     main()

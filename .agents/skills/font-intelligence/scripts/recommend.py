@@ -16,10 +16,9 @@ from typing import Dict, List, Any, Optional
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-# Import TypographyEngine
+                         
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from typography_engine import TypographyEngine, format_cli_project_plan
-
 
 def parse_text_brief(text: str) -> Dict[str, Any]:
     """Parse unstructured text brief for use-case, style, and platform keywords."""
@@ -32,7 +31,7 @@ def parse_text_brief(text: str) -> Dict[str, Any]:
         "languages": ["en"]
     }
 
-    # Detect use cases
+                      
     use_case_keywords = {
         "fintech": "fintech",
         "neobank": "fintech",
@@ -75,7 +74,7 @@ def parse_text_brief(text: str) -> Dict[str, Any]:
             brief["use_case"] = uc
             break
 
-    # Detect platform
+                     
     if "flutter" in low: brief["platform"] = "flutter"
     elif "react native" in low or "reactnative" in low: brief["platform"] = "react-native"
     elif "ios" in low or "iphone" in low: brief["platform"] = "ios"
@@ -86,7 +85,7 @@ def parse_text_brief(text: str) -> Dict[str, Any]:
     elif "mobile" in low or "app" in low: brief["platform"] = "mobile"
     else: brief["platform"] = "web"
 
-    # Detect style vibes
+                        
     style_hits = []
     vibe_words = [
         "expensive", "premium", "luxury", "clean", "modern", "editorial",
@@ -99,7 +98,7 @@ def parse_text_brief(text: str) -> Dict[str, Any]:
     if style_hits:
         brief["style"] = ", ".join(style_hits)
 
-    # Detect scripts
+                    
     if "cyrillic" in low or "russian" in low or "ukrainian" in low:
         brief["scripts"].append("Cyrillic")
     if "greek" in low:
@@ -114,7 +113,6 @@ def parse_text_brief(text: str) -> Dict[str, Any]:
         brief["scripts"].append("Hangul")
 
     return brief
-
 
 def run_recommendation(
     engine: TypographyEngine,
@@ -138,7 +136,6 @@ def run_recommendation(
         existing_fonts=existing_fonts,
         limit=limit
     )
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -166,7 +163,7 @@ def main():
     scripts = [s.strip() for s in args.scripts.split(",") if s.strip()]
     languages = [l.strip() for l in args.languages.split(",") if l.strip()]
 
-    # If a brief file is provided, load and parse it
+                                                    
     if args.brief:
         if not os.path.exists(args.brief):
             print(f"Error: Brief file '{args.brief}' not found.", file=sys.stderr)
@@ -189,7 +186,7 @@ def main():
                 print(f"Error parsing JSON brief: {e}", file=sys.stderr)
                 sys.exit(1)
         else:
-            # Free-text parsing
+                               
             parsed = parse_text_brief(content)
             use_case = use_case or parsed["use_case"]
             style = style or parsed["style"]
@@ -220,7 +217,6 @@ def main():
         print(json.dumps(plan, indent=2))
     else:
         print(format_cli_project_plan(plan))
-
 
 if __name__ == "__main__":
     main()

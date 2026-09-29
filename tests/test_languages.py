@@ -14,7 +14,6 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT_DIR, "scripts"))
 from typography_engine import TypographyEngine
 
-
 class TestLanguageSupport(unittest.TestCase):
 
     @classmethod
@@ -46,7 +45,6 @@ class TestLanguageSupport(unittest.TestCase):
         font_ids = [f["id"] for f in cyrillic_fonts]
         self.assertIn("antapani", font_ids)
         self.assertIn("balhattan", font_ids)
-
 
 if __name__ == "__main__":
     unittest.main()

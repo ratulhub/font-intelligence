@@ -1,11 +1,6 @@
-/* ==========================================================================
-   Font Intelligence — Typography Specimen & Foundry Inspection System
-   Aesthetic: Warm Cream Paper, Editorial High-Contrast Typography, Swiss Discipline
-   ========================================================================== */
 
 :root {
-  /* Warm Linen & Cream Paper Palette */
-  --bg-canvas: #FAF8F5;
+    --bg-canvas: #FAF8F5;
   --bg-canvas-subtle: #F3EFEB;
   --bg-surface: #FFFFFF;
   --bg-surface-elevated: #FDFCFA;
@@ -16,20 +11,17 @@
   --border-strong: #C4BCB0;
   --border-focus: #1C1917;
   
-  /* Ink & Typography Hierarchy */
-  --text-ink: #1C1917;
+    --text-ink: #1C1917;
   --text-secondary: #57524A;
   --text-muted: #8A8378;
   --text-subtle: #A8A196;
   
-  /* Editorial Accents */
-  --accent-crimson: #8B263E;
+    --accent-crimson: #8B263E;
   --accent-crimson-subtle: #F8ECEF;
   --accent-navy: #1E293B;
   --accent-ochre: #8D5B18;
   
-  /* Status & Compliance Badges */
-  --badge-verified-bg: #EDF5F0;
+    --badge-verified-bg: #EDF5F0;
   --badge-verified-text: #1B5E38;
   --badge-verified-border: #C8E2D0;
   
@@ -41,13 +33,11 @@
   --badge-restricted-text: #991B1B;
   --badge-restricted-border: #F8CBCB;
   
-  /* Typography Families */
-  --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+    --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   
-  /* Geometry & Shadows */
-  --radius-xs: 3px;
+    --radius-xs: 3px;
   --radius-sm: 6px;
   --radius-md: 8px;
   --radius-lg: 12px;
@@ -76,14 +66,12 @@ body {
   min-height: 100vh;
 }
 
-/* Master Container */
 .app-container {
   max-width: 1480px;
   margin: 0 auto;
   padding: 0 32px 80px 32px;
 }
 
-/* Masthead Navigation */
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -135,7 +123,6 @@ body {
   color: var(--text-muted);
 }
 
-/* Metrics Pill Strip */
 .nav-metrics {
   display: flex;
   align-items: center;
@@ -175,7 +162,6 @@ body {
   gap: 10px;
 }
 
-/* Button System */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -218,7 +204,6 @@ body {
   font-size: 12px;
 }
 
-/* Pairing Workbench Panel */
 .pairing-workbench {
   background: var(--bg-surface);
   border: 1px solid var(--border-hairline);
@@ -375,7 +360,6 @@ body {
   color: var(--accent-crimson);
 }
 
-/* Pairing Specimen Stage */
 .pairing-preview-stage {
   display: flex;
   flex-direction: column;
@@ -441,7 +425,6 @@ body {
   color: var(--text-muted);
 }
 
-/* Control Panel (Search, Filters, Specimen Customizer) */
 .control-panel {
   background: var(--bg-surface);
   border: 1px solid var(--border-hairline);
@@ -454,7 +437,6 @@ body {
   gap: 20px;
 }
 
-/* Search Row */
 .search-row {
   display: flex;
   justify-content: space-between;
@@ -510,7 +492,6 @@ body {
   padding: 1px 6px;
 }
 
-/* View Mode Toggles */
 .view-toggles {
   display: flex;
   background: var(--bg-canvas-subtle);
@@ -541,7 +522,6 @@ body {
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
-/* Filter Grid */
 .filter-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -606,7 +586,6 @@ input[type="range"] {
   cursor: pointer;
 }
 
-/* Specimen Customization Toolbar */
 .specimen-toolbar {
   display: flex;
   flex-direction: column;
@@ -680,7 +659,6 @@ input[type="range"] {
   min-width: 36px;
 }
 
-/* Presets Pills */
 .quick-presets {
   display: flex;
   align-items: center;
@@ -715,7 +693,6 @@ input[type="range"] {
   border-color: var(--text-ink);
 }
 
-/* Results Meta & Active Filters */
 .results-meta {
   display: flex;
   justify-content: space-between;
@@ -761,9 +738,6 @@ input[type="range"] {
   color: var(--accent-crimson);
 }
 
-/* ==========================================================================
-   Editorial Specimen Stream Layout (Primary Default)
-   ========================================================================== */
 .specimen-stream {
   display: flex;
   flex-direction: column;
@@ -787,7 +761,6 @@ input[type="range"] {
   box-shadow: var(--shadow-elevated);
 }
 
-/* Entry Header Strip */
 .entry-meta-row {
   display: flex;
   justify-content: space-between;
@@ -871,7 +844,6 @@ input[type="range"] {
   border: 1px solid #EAC8D2;
 }
 
-/* Weight Selection Ladder */
 .entry-weights-row {
   display: flex;
   align-items: center;
@@ -901,7 +873,6 @@ input[type="range"] {
   border-color: var(--text-ink);
 }
 
-/* Fluid Live Specimen Canvas */
 .entry-canvas {
   padding: 16px 0;
   overflow-x: auto;
@@ -916,7 +887,6 @@ input[type="range"] {
   transition: font-size 0.1s ease;
 }
 
-/* Secondary Typographic Strip */
 .entry-substrip {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -947,14 +917,12 @@ input[type="range"] {
   gap: 8px;
 }
 
-/* Grid View Alternative */
 .specimen-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   gap: 20px;
 }
 
-/* Loading & Empty States */
 .loading-state, .empty-state {
   text-align: center;
   padding: 80px 20px;
@@ -989,7 +957,6 @@ input[type="range"] {
   margin-bottom: 20px;
 }
 
-/* Specimen Inspection Modal / Drawer */
 .modal-backdrop {
   position: fixed;
   inset: 0;
@@ -1103,7 +1070,6 @@ input[type="range"] {
   display: block;
 }
 
-/* Waterfall List */
 .waterfall-list {
   display: flex;
   flex-direction: column;
@@ -1124,7 +1090,6 @@ input[type="range"] {
   color: var(--text-muted);
 }
 
-/* Glyph Grid */
 .glyph-section {
   margin-bottom: 28px;
 }
@@ -1156,7 +1121,6 @@ input[type="range"] {
   color: var(--text-ink);
 }
 
-/* Token Block */
 .token-block {
   margin-bottom: 20px;
   background: var(--bg-canvas-subtle);
@@ -1187,7 +1151,6 @@ input[type="range"] {
   color: var(--text-ink);
 }
 
-/* Toast */
 .toast {
   position: fixed;
   bottom: 24px;

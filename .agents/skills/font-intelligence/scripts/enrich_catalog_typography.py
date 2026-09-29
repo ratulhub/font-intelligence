@@ -47,7 +47,7 @@ TYPOGRAPHY_ROLES = [
     "accent"
 ]
 
-# Explicit design intelligence mappings for font families
+                                                         
 CURATION_MAP = {
     "general-sans": {
         "category": "sans-serif",
@@ -685,7 +685,7 @@ def infer_font_intelligence(font):
             cur["styles"] = ["modern"]
         return cur
     
-    # Heuristic inference based on category, subtype, and name
+                                                              
     cur_cat = font['curated'].get('category', 'display')
     cur_sub = font['curated'].get('subtype', 'decorative-headline')
     name = font['name'].lower()
@@ -727,7 +727,7 @@ def infer_font_intelligence(font):
         roles = ["display", "accent", "branding"]
         readability = {"body": 2, "long_form": 1, "ui": 2, "small_text": 1, "numbers": 4, "factors": {"x_height": "casual", "aperture": "open", "stroke_contrast": "variable", "legibility_tier": "accent-only"}}
         
-    else: # display
+    else:          
         styles = ["modern", "decorative"]
         if any(w in name for w in ['bold', 'chunk', 'block', 'heavy', 'black']): styles.append("brutalist")
         if any(w in name for w in ['cyber', 'future', 'techno', 'zero', 'talero', 'space']): styles.append("futuristic")
@@ -736,7 +736,7 @@ def infer_font_intelligence(font):
         roles = ["display", "hero", "heading"]
         readability = {"body": 2, "long_form": 1, "ui": 2, "small_text": 1, "numbers": 5, "factors": {"x_height": "display", "aperture": "stylized", "stroke_contrast": "variable", "legibility_tier": "display-only"}}
 
-    # Ensure unique valid styles
+                                
     clean_styles = sorted(list(set(s for s in styles if s in CONTROLLED_STYLES)))
     if not clean_styles:
         clean_styles = ["modern"]
@@ -754,7 +754,7 @@ def infer_font_intelligence(font):
 def main():
     print("Starting catalog enrichment with controlled style categories, typography roles, and readability properties...")
     
-    # 1. Update Schema
+                      
     for target_dir in CATALOG_DIRS:
         schema_path = os.path.join(target_dir, "fonts.schema.json")
         fonts_path = os.path.join(target_dir, "fonts.json")
@@ -808,14 +808,14 @@ def main():
             json.dump(schema, f, indent=2)
         print(f"Updated schema at {schema_path}")
         
-        # 2. Enrich fonts.json
+                              
         with open(fonts_path, 'r', encoding='utf-8') as f:
             catalog = json.load(f)
             
         for font in catalog["fonts"]:
             font["curated"] = infer_font_intelligence(font)
             
-        # 3. Validate against schema
+                                    
         print(f"Validating catalog at {fonts_path} against updated schema...")
         jsonschema.validate(instance=catalog, schema=schema)
         print("Schema validation PASSED!")
