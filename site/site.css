@@ -140,15 +140,22 @@ p.lead {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 68px;
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 40px);
+  gap: 20px;
 }
 
 .brand-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   text-decoration: none;
   color: var(--ink-900);
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .brand-badge {
@@ -156,75 +163,87 @@ p.lead {
   color: var(--canvas);
   font-family: var(--font-mono);
   font-weight: 700;
-  font-size: 0.85rem;
-  padding: 6px 9px;
+  font-size: 0.82rem;
+  padding: 5px 8px;
   border-radius: var(--radius-sm);
   letter-spacing: -0.02em;
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
+  line-height: 1;
 }
 
 .brand-title {
   font-family: var(--font-serif);
-  font-size: 1.45rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
   line-height: 1;
-}
-
-.brand-subtitle {
-  font-size: 0.72rem;
-  color: var(--ink-500);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-top: 2px;
-  font-weight: 500;
+  white-space: nowrap;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: clamp(10px, 1.6vw, 22px);
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
-.nav-item a {
+.nav-link {
   text-decoration: none;
   color: var(--ink-700);
-  font-size: 0.92rem;
-  font-weight: 500;
-  transition: color 0.15s ease;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  transition: all 0.15s ease;
+  line-height: 1;
 }
 
-.nav-item a:hover {
+.nav-link:hover {
   color: var(--crimson);
+  background: var(--surface-alt);
+}
+
+.nav-link.nav-link-docs {
+  background: var(--crimson-light);
+  color: var(--crimson);
+  border: 1px solid var(--crimson-border);
+  font-weight: 700;
+}
+
+.nav-link.nav-link-docs:hover {
+  background: var(--crimson);
+  color: #ffffff;
+  border-color: var(--crimson);
 }
 
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 10px 18px;
+  gap: 7px;
+  padding: 7px 14px;
   border-radius: var(--radius-sm);
   font-family: var(--font-sans);
-  font-size: 0.92rem;
+  font-size: 0.85rem;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.15s ease;
   border: 1px solid transparent;
+  white-space: nowrap;
+  line-height: 1;
 }
 
 .btn-sm {
@@ -1189,10 +1208,24 @@ p.lead {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
+  .nav-menu {
+    gap: 10px;
+  }
+  .nav-link {
+    font-size: 0.82rem;
+    padding: 5px 8px;
+  }
+}
+
+@media (max-width: 900px) {
   .nav-menu {
     display: none;
   }
+  .nav-wrap {
+    padding: 0 20px;
+  }
+}
   .hero-headline {
     font-size: 2.8rem;
   }
