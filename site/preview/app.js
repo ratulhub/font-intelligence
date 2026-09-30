@@ -97,37 +97,54 @@
       return;
     }
 
-    try {
-      const response = await fetch('../catalog/fonts.json');
-      if (!response.ok) throw new Error(`HTTP error ${response.status}`);
-      const data = await response.json();
-      state.fonts = data.fonts || [];
-    } catch (err) {
-      if (window.CATALOG_DATA && window.CATALOG_DATA.fonts) {
-        state.fonts = window.CATALOG_DATA.fonts;
-      } else {
-        elements.fontGrid.innerHTML = `
-          <div class="empty-state">
-            <h3>Unable to load font catalog</h3>
-            <p>Please ensure preview/fonts-data.js is present or serve this folder over HTTP.</p>
-          </div>
-        `;
+    const candidateUrls = [
+      '../catalog/fonts.json',
+      '/catalog/fonts.json',
+      'https://raw.githubusercontent.com/ratulhub/font-intelligence/main/catalog/fonts.json'
+    ];
+
+    for (const url of candidateUrls) {
+      try {
+        const response = await fetch(url);
+        if (response.ok) {
+          const data = await response.json();
+          if (data && data.fonts && data.fonts.length) {
+            state.fonts = data.fonts;
+            return;
+          }
+        }
+      } catch (e) {
       }
     }
+
+    if (window.CATALOG_DATA && window.CATALOG_DATA.fonts) {
+      state.fonts = window.CATALOG_DATA.fonts;
+      return;
+    }
+
+    elements.fontGrid.innerHTML = `
+      <div class="empty-state">
+        <h3>Unable to load font catalog</h3>
+        <p>Please ensure preview/fonts-data.js is present or serve this folder over HTTP.</p>
+      </div>
+    `;
   }
 
   function injectFontFaces() {
     let cssRules = [];
+    const isRemote = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
     state.fonts.forEach(font => {
       const files = font.files || [];
       const best = files.find(f => f.format === 'woff2') || files.find(f => f.format === 'ttf') || files[0];
       if (best && best.path) {
-        const webPath = '../' + best.path;
+        const rawGithub = `https://raw.githubusercontent.com/ratulhub/font-intelligence/main/${encodeURI(best.path)}`;
+        const localPath = '../' + best.path;
+        const fontUrl = isRemote ? rawGithub : localPath;
         const fmt = best.format === 'woff2' ? 'woff2' : (best.format === 'otf' ? 'opentype' : 'truetype');
         cssRules.push(`
           @font-face {
             font-family: '${font.id}-preview';
-            src: url('${webPath}') format('${fmt}');
+            src: url('${fontUrl}') format('${fmt}');
             font-weight: 100 900;
             font-style: normal;
             font-display: swap;

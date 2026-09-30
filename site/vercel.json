@@ -2,9 +2,15 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/preview", "destination": "/preview/", "permanent": false }
+  ],
   "rewrites": [
     { "source": "/docs", "destination": "/docs/index.html" },
-    { "source": "/preview", "destination": "/preview/index.html" }
+    { "source": "/preview/", "destination": "/preview/index.html" },
+    { "source": "/style.css", "destination": "/preview/style.css" },
+    { "source": "/fonts-data.js", "destination": "/preview/fonts-data.js" },
+    { "source": "/app.js", "destination": "/preview/app.js" }
   ],
   "headers": [
     {
@@ -17,16 +23,16 @@
       ]
     },
     {
-      "source": "/assets/fonts/(.*)",
+      "source": "/(.*)\\.(woff2|woff|ttf|otf)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
         { "key": "Access-Control-Allow-Origin", "value": "*" }
       ]
     },
     {
-      "source": "/(.*)\\.(woff2|woff|ttf|otf)",
+      "source": "/preview/(.*)\\.(css|js)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" },
         { "key": "Access-Control-Allow-Origin", "value": "*" }
       ]
     }

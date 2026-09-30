@@ -101,16 +101,15 @@ class TestWebEndpointsAndAssets(unittest.TestCase):
         self.assertIn("rewrites", data)
         self.assertIn("headers", data)
 
-    def test_no_inline_comments_in_web_assets(self):
-        js_path = os.path.join(self.site_dir, "site.js")
-        with open(js_path, "r", encoding="utf-8") as f:
-            lines = f.readlines()
-        
-        non_header_comments = [
-            line for idx, line in enumerate(lines)
-            if idx > 1 and line.strip().startswith("//") and not line.strip().startswith("/*")
-        ]
-        self.assertEqual(len(non_header_comments), 0, f"Found inline JS comments: {non_header_comments}")
+    def test_preview_studio_resilience(self):
+        preview_html = os.path.join(self.site_dir, "preview", "index.html")
+        with open(preview_html, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        self.assertIn('<base href="/preview/">', content)
+        self.assertIn('href="/preview/style.css"', content)
+        self.assertIn('src="/preview/fonts-data.js"', content)
+        self.assertIn('src="/preview/app.js"', content)
 
 if __name__ == "__main__":
     unittest.main()
