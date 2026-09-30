@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Font Intelligence Specimen Archive: Dynamic typography specimen testing, multi-attribute filtering, and licensing verification for 103 catalog families.">
+  <title>Font Intelligence — Typography Specimen & Foundry Studio</title>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  
+    <style id="dynamic-font-faces"></style>
+</head>
+<body>
+  <div class="app-container">
+        <header class="top-nav" role="banner">
+      <div class="nav-brand">
+        <div class="brand-monogram" aria-hidden="true">FI</div>
+        <div class="brand-titles">
+          <h1>Font Intelligence</h1>
+          <span class="brand-subtitle">Specimen Archive & Decision Engine</span>
+        </div>
+      </div>
+
+            <div class="nav-metrics" id="nav-metrics" aria-label="Catalog Statistics">
+        <div class="metric-pill">
+          <span class="metric-num" id="stat-total-fonts">413</span>
+          <span class="metric-lbl">Families</span>
+        </div>
+        <div class="metric-pill">
+          <span class="metric-num" id="stat-open-source">108</span>
+          <span class="metric-lbl">Open Source</span>
+        </div>
+        <div class="metric-pill">
+          <span class="metric-num" id="stat-commercial-fonts">390</span>
+          <span class="metric-lbl">Free for Commercial Use</span>
+        </div>
+        <div class="metric-pill">
+          <span class="metric-num" id="stat-personal-fonts">23</span>
+          <span class="metric-lbl">Free for Personal Use</span>
+        </div>
+      </div>
+
+            <div class="nav-actions">
+        <a href="../docs/redistribution-review.md" target="_blank" class="btn btn-outline btn-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          Licensing Audit
+        </a>
+        <button id="btn-reset-filters" class="btn btn-outline btn-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+          Reset Filters
+        </button>
+      </div>
+    </header>
+
+        <main class="main-layout" role="main">
+      
+            <section class="pairing-workbench" id="pairing-workbench" aria-label="Type Pairing Workbench">
+        <div class="pairing-workbench-header" id="pairing-toggle-btn">
+          <div class="pairing-title-wrap">
+            <span class="workbench-tag">Interactive</span>
+            <span class="pairing-title">Live Typographic Pairing Studio</span>
+          </div>
+          <svg class="toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+
+        <div class="pairing-workbench-body">
+          <div class="pairing-controls">
+            <div class="control-item">
+              <label for="pairing-heading-select">Primary Headline Font</label>
+              <select id="pairing-heading-select" class="select-clean"></select>
+            </div>
+
+            <div class="control-item">
+              <label for="pairing-body-select">Secondary Body Font</label>
+              <select id="pairing-body-select" class="select-clean"></select>
+            </div>
+
+            <div class="control-item">
+              <label for="pairing-usecase-select">Project Archetype</label>
+              <select id="pairing-usecase-select" class="select-clean">
+                <option value="luxury">Luxury & Editorial Publication</option>
+                <option value="saas">SaaS & Modern Technology</option>
+                <option value="fintech">Fintech & Analytical Dashboard</option>
+                <option value="brutalist">Industrial Brutalism & Posters</option>
+              </select>
+            </div>
+
+            <div class="pairing-score-card">
+              <div>
+                <span class="score-rating" id="pairing-score-rating">Masterclass</span>
+                <div class="score-num-wrap">
+                  <span class="score-num" id="pairing-score-val">95</span>
+                  <span class="score-denom">/ 100</span>
+                </div>
+              </div>
+              <div class="pairing-score-meta">
+                <span id="pairing-score-desc" style="font-size: 11px; color: var(--text-muted); display: block; max-width: 140px;">Optimal contrast & weight delta</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pairing-preview-stage">
+            <span class="pairing-eyebrow" id="pairing-eyebrow-text">Volume XIV • Digital Architecture</span>
+            <h2 class="pairing-headline" id="pairing-headline-text">The Anatomy of Structural Form & Typography</h2>
+            <p class="pairing-lead" id="pairing-lead-text">
+              Every typeface possesses an internal architecture: an equilibrium of counter-spaces, stem thicknesses, and rhythmic cadence. When paired with deliberate optical contrast, typography transforms mere legibility into enduring visual authority.
+            </p>
+            <blockquote class="pairing-quote" id="pairing-quote-text">
+              “Order and simplification are the first steps toward the mastery of a subject.”
+            </blockquote>
+            <div class="pairing-ui-row">
+              <button class="btn-pairing-demo" id="pairing-btn-demo">Read Monograph</button>
+              <span class="pairing-meta-text">Curated Pairing • Verified OpenType Metrics</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <section class="control-panel" aria-label="Typography Search and Filters">
+        <div class="search-row">
+          <div class="search-box">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="search-input" class="search-input" placeholder="Search by font name, style, category, or notes..." autocomplete="off" spellcheck="false">
+            <span class="search-shortcut">/</span>
+          </div>
+
+          <div class="view-toggles">
+            <button id="view-stream" class="view-btn active" title="Specimen Stream View">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="4" rx="1"/><rect x="3" y="11" width="18" height="4" rx="1"/><rect x="3" y="18" width="18" height="4" rx="1"/></svg>
+              Stream
+            </button>
+            <button id="view-grid" class="view-btn" title="Grid View">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+              Grid
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-grid">
+          <div class="filter-group">
+            <label for="filter-category">Category</label>
+            <div class="select-wrapper">
+              <select id="filter-category">
+                <option value="">All Categories</option>
+                <option value="sans-serif">Sans-Serif</option>
+                <option value="serif">Serif</option>
+                <option value="display">Display</option>
+                <option value="monospace">Monospace</option>
+                <option value="handwriting">Handwriting</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-style">Design Style</label>
+            <div class="select-wrapper">
+              <select id="filter-style">
+                <option value="">All Styles</option>
+                <option value="modern">Modern</option>
+                <option value="luxury">Luxury</option>
+                <option value="premium">Premium</option>
+                <option value="editorial">Editorial</option>
+                <option value="brutalist">Brutalist</option>
+                <option value="minimal">Minimal</option>
+                <option value="corporate">Corporate</option>
+                <option value="technical">Technical</option>
+                <option value="futuristic">Futuristic</option>
+                <option value="playful">Playful</option>
+                <option value="classic">Classic</option>
+                <option value="geometric">Geometric</option>
+                <option value="humanist">Humanist</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-script">Language / Script</label>
+            <div class="select-wrapper">
+              <select id="filter-script">
+                <option value="">All Scripts</option>
+                <option value="Latin">Latin (103 families)</option>
+                <option value="Cyrillic">Cyrillic (16 verified)</option>
+                <option value="Greek">Greek (14 verified)</option>
+                <option value="Hangul">Hangul (2 verified)</option>
+                <option value="Bangla">Bangla (Zero-Tofu / Companion)</option>
+                <option value="Arabic">Arabic (Zero-Tofu / Companion)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-role">Typography Role</label>
+            <div class="select-wrapper">
+              <select id="filter-role">
+                <option value="">All Roles</option>
+                <option value="heading">Heading</option>
+                <option value="body">Body Prose</option>
+                <option value="ui">UI & Microcopy</option>
+                <option value="number">Numbers & Data</option>
+                <option value="display">Display & Hero</option>
+                <option value="code">Code / Monospace</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-license">License</label>
+            <div class="select-wrapper">
+              <select id="filter-license">
+                <option value="">All Licenses</option>
+                <option value="open-source">Open Source (108)</option>
+                <option value="commercial">Free for Commercial Use (390)</option>
+                <option value="personal">Free for Personal Use (23)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-group slider-group">
+            <div class="slider-header">
+              <label for="filter-readability">Min Readability</label>
+              <span id="readability-val" class="slider-badge">≥ 1 / 10</span>
+            </div>
+            <input type="range" id="filter-readability" min="1" max="10" value="1" step="1">
+          </div>
+        </div>
+
+                <div class="specimen-toolbar">
+          <div class="specimen-inputs-row">
+            <div class="custom-text-box">
+              <label for="custom-text-input">Specimen Text:</label>
+              <input type="text" id="custom-text-input" value="Sphinx of black quartz, judge my vow." placeholder="Type custom specimen text...">
+            </div>
+
+            <div class="size-controls">
+              <label for="font-size-slider">Size:</label>
+              <span id="font-size-val" class="font-size-badge">32px</span>
+              <input type="range" id="font-size-slider" min="16" max="72" value="32" step="1">
+            </div>
+          </div>
+
+          <div class="quick-presets">
+            <span class="presets-label">Presets:</span>
+            <button class="preset-pill active" data-preset="Sphinx of black quartz, judge my vow.">Pangram</button>
+            <button class="preset-pill" data-preset="Modern Digital Architecture & Typography">Headlines</button>
+            <button class="preset-pill" data-preset="Numbers: 0123456789  $4,892,105.40  +18.4%">Telemetry</button>
+            <button class="preset-pill" data-preset="Confirm Order • Settings • Status Indicator">UI Controls</button>
+            <button class="preset-pill" data-preset="আমাদের সুন্দর বাংলা বর্ণমালা এবং সংখ্যা ১২৩৪৫">Bangla</button>
+          </div>
+        </div>
+      </section>
+
+            <div class="results-meta">
+        <span id="results-count" class="results-badge">Showing 103 font families</span>
+        <div id="active-filters-chips" class="active-chips"></div>
+      </div>
+
+            <section id="font-grid" class="specimen-stream" aria-label="Font Specimens">
+        <div class="loading-state">
+          <div class="spinner"></div>
+          <p>Loading font intelligence catalog...</p>
+        </div>
+      </section>
+
+            <div id="empty-state" class="empty-state hidden">
+        <h3>No font families matched your criteria</h3>
+        <p>Try clearing active filters or lowering the minimum readability threshold.</p>
+        <button id="btn-clear-empty" class="btn btn-primary">Clear All Filters</button>
+      </div>
+    </main>
+
+        <div id="inspector-modal" class="modal-backdrop hidden" aria-modal="true" role="dialog">
+      <div class="modal-window">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <h2 id="modal-font-name">Font Name</h2>
+            <span id="modal-font-category" class="tag-pill">Category</span>
+            <span id="modal-font-id" class="tag-code">id</span>
+          </div>
+          <button id="modal-close-btn" class="close-btn" aria-label="Close dialog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-tabs">
+            <button class="modal-tab active" data-tab="waterfall">Weights Waterfall</button>
+            <button class="modal-tab" data-tab="glyphs">Glyph Set</button>
+            <button class="modal-tab" data-tab="licensing">Licensing Terms</button>
+            <button class="modal-tab" data-tab="tokens">Code Tokens</button>
+          </div>
+
+                    <div id="tab-waterfall" class="tab-pane active">
+            <div id="modal-waterfall-list" class="waterfall-list"></div>
+          </div>
+
+                    <div id="tab-glyphs" class="tab-pane">
+            <div class="glyph-section">
+              <h4>Uppercase & Lowercase Latin</h4>
+              <div id="modal-glyphs-letters" class="glyph-grid"></div>
+            </div>
+            <div class="glyph-section">
+              <h4>Numerals & Tabular Figures</h4>
+              <div id="modal-glyphs-numbers" class="glyph-grid"></div>
+            </div>
+            <div class="glyph-section">
+              <h4>Punctuation & Symbols</h4>
+              <div id="modal-glyphs-symbols" class="glyph-grid"></div>
+            </div>
+          </div>
+
+                    <div id="tab-licensing" class="tab-pane">
+            <div id="modal-licensing-content" class="licensing-details"></div>
+          </div>
+
+                    <div id="tab-tokens" class="tab-pane">
+            <div class="token-block">
+              <div class="token-header">
+                <span>CSS @font-face & Custom Properties</span>
+                <button id="btn-copy-css" class="btn btn-sm btn-outline">Copy CSS</button>
+              </div>
+              <pre><code id="modal-code-css"></code></pre>
+            </div>
+            <div class="token-block">
+              <div class="token-header">
+                <span>Flutter pubspec.yaml & TextStyle</span>
+                <button id="btn-copy-flutter" class="btn btn-sm btn-outline">Copy Flutter</button>
+              </div>
+              <pre><code id="modal-code-flutter"></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div id="toast" class="toast hidden" role="status" aria-live="polite">
+      <span id="toast-message">Copied to clipboard</span>
+    </div>
+  </div>
+
+    <script src="fonts-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

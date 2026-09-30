@@ -1,10 +1,14 @@
 import unittest
 import os
-import re
+import json
 
 class TestWebEndpointsAndAssets(unittest.TestCase):
     def setUp(self):
         self.root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        self.site_dir = os.path.join(self.root_dir, "site")
+
+    def test_site_folder_exists(self):
+        self.assertTrue(os.path.isdir(self.site_dir), "site/ directory must exist")
 
     def test_required_site_files_exist(self):
         required_files = [
@@ -18,14 +22,29 @@ class TestWebEndpointsAndAssets(unittest.TestCase):
             "vercel.json",
             "docs/index.html",
             "docs.html",
-            "preview/index.html"
+            "preview/index.html",
+            "README.md"
         ]
         for rel_path in required_files:
-            full_path = os.path.join(self.root_dir, rel_path)
-            self.assertTrue(os.path.exists(full_path), f"Missing file: {rel_path}")
+            full_path = os.path.join(self.site_dir, rel_path)
+            self.assertTrue(os.path.exists(full_path), f"Missing file in site/: {rel_path}")
+
+    def test_root_is_clean_of_vercel_artifacts(self):
+        artifacts = [
+            "index.html",
+            "site.css",
+            "site.js",
+            "robots.txt",
+            "sitemap.xml",
+            "vercel.json",
+            "docs.html"
+        ]
+        for item in artifacts:
+            full_path = os.path.join(self.root_dir, item)
+            self.assertFalse(os.path.exists(full_path), f"Vercel artifact should not be in repository root: {item}")
 
     def test_index_html_seo_and_structure(self):
-        index_path = os.path.join(self.root_dir, "index.html")
+        index_path = os.path.join(self.site_dir, "index.html")
         with open(index_path, "r", encoding="utf-8") as f:
             content = f.read()
 
@@ -47,7 +66,7 @@ class TestWebEndpointsAndAssets(unittest.TestCase):
         self.assertIn('id="tester"', content)
 
     def test_robots_txt_format(self):
-        robots_path = os.path.join(self.root_dir, "robots.txt")
+        robots_path = os.path.join(self.site_dir, "robots.txt")
         with open(robots_path, "r", encoding="utf-8") as f:
             content = f.read()
 
@@ -56,7 +75,7 @@ class TestWebEndpointsAndAssets(unittest.TestCase):
         self.assertIn("Sitemap:", content)
 
     def test_sitemap_xml_format(self):
-        sitemap_path = os.path.join(self.root_dir, "sitemap.xml")
+        sitemap_path = os.path.join(self.site_dir, "sitemap.xml")
         with open(sitemap_path, "r", encoding="utf-8") as f:
             content = f.read()
 
@@ -66,7 +85,7 @@ class TestWebEndpointsAndAssets(unittest.TestCase):
         self.assertIn('<loc>https://font-intelligence.vercel.app/docs</loc>', content)
 
     def test_llms_txt_format(self):
-        llms_path = os.path.join(self.root_dir, "llms.txt")
+        llms_path = os.path.join(self.site_dir, "llms.txt")
         with open(llms_path, "r", encoding="utf-8") as f:
             content = f.read()
 
@@ -75,8 +94,7 @@ class TestWebEndpointsAndAssets(unittest.TestCase):
         self.assertIn("## Hard rules", content)
 
     def test_vercel_json_syntax(self):
-        import json
-        vercel_path = os.path.join(self.root_dir, "vercel.json")
+        vercel_path = os.path.join(self.site_dir, "vercel.json")
         with open(vercel_path, "r", encoding="utf-8") as f:
             data = json.load(f)
         self.assertEqual(data.get("version"), 2)
@@ -84,7 +102,7 @@ class TestWebEndpointsAndAssets(unittest.TestCase):
         self.assertIn("headers", data)
 
     def test_no_inline_comments_in_web_assets(self):
-        js_path = os.path.join(self.root_dir, "site.js")
+        js_path = os.path.join(self.site_dir, "site.js")
         with open(js_path, "r", encoding="utf-8") as f:
             lines = f.readlines()
         
