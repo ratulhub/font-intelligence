@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Intelligence — Algorithmic Typography Decision System for AI Agents & Designers</title>
+  <meta name="description" content="A portable typography decision system and font pairing engine for AI coding agents and designers. Eliminates generic defaults (Inter, Roboto) with 10-dimension scored pairings, verified OpenType weights, zero tofu, and copy-ready tokens.">
+  <meta name="keywords" content="typography, font pairing, font intelligence, AI coding agents, web design, UI UX design, OpenType, zero tofu, design system, Claude Code, Cursor, Codex, Tailwind typography, Flutter fonts">
+  <meta name="author" content="Font Intelligence">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  
+  <link rel="canonical" href="https://font-intelligence.vercel.app/">
+  
+  <meta property="og:title" content="Font Intelligence — Algorithmic Typography Decision System">
+  <meta property="og:description" content="Stop defaulting to Inter and Roboto. Teach your AI coding agents typographic taste with 10-dimension scored pairings, verified weights, and zero-tofu audits.">
+  <meta property="og:url" content="https://font-intelligence.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Font Intelligence">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Font Intelligence — Algorithmic Typography Engine">
+  <meta name="twitter:description" content="Scored pairings, verified OpenType weights, and zero tofu for AI coding agents and designers.">
+  
+  <meta name="google-site-verification" content="google-search-console-verification-token">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="site.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Font Intelligence",
+    "operatingSystem": "All (Web, macOS, Windows, Linux)",
+    "applicationCategory": "DeveloperApplication",
+    "description": "Algorithmic typography decision system and font pairing engine for AI coding agents, UI/UX designers, and front-end engineers.",
+    "url": "https://font-intelligence.vercel.app",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Font Intelligence Project",
+      "url": "https://github.com/ratulhub/font-intelligence"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav-wrap">
+      <a href="/" class="brand-link" aria-label="Font Intelligence Home">
+        <span class="brand-badge" aria-hidden="true">FI</span>
+        <div class="brand-text">
+          <span class="brand-title">Font Intelligence</span>
+          <span class="brand-subtitle">Typography Decision System</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <div class="nav-item"><a href="#why">Why FI</a></div>
+        <div class="nav-item"><a href="#vibe-studio">Pairing Studio</a></div>
+        <div class="nav-item"><a href="#scoring">10-D Scoring</a></div>
+        <div class="nav-item"><a href="#anti-patterns">Anti-Patterns</a></div>
+        <div class="nav-item"><a href="#zero-bloat">Zero-Bloat</a></div>
+        <div class="nav-item"><a href="#agents">Agents</a></div>
+        <div class="nav-item"><a href="/docs">Docs</a></div>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/preview/" class="btn btn-outline btn-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          Specimen Archive
+        </a>
+        <a href="https://github.com/ratulhub/font-intelligence" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub Star
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="pill pill-crimson">Algorithmic Typography Decision System • v1.0.0</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Stop Defaulting to Inter.<br>
+            Give Your AI <strong>Typographic Taste.</strong>
+          </h1>
+
+          <p class="hero-description">
+            A portable intelligence system for AI coding agents and design engineers. Evaluates font pairings across 10 dimensions, verifies OpenType weights, guarantees zero tofu, and outputs production code tokens with zero repository bloat.
+          </p>
+
+          <div class="hero-actions">
+            <div class="quick-clone-box">
+              <code>git clone https://github.com/ratulhub/font-intelligence.git</code>
+              <button class="btn btn-sm btn-primary" data-copy-text="git clone https://github.com/ratulhub/font-intelligence.git" aria-label="Copy clone command">Copy</button>
+            </div>
+            <a href="/docs" class="btn btn-secondary">
+              Read Documentation
+            </a>
+            <a href="/preview/" class="btn btn-outline">
+              Live Specimen Archive
+            </a>
+          </div>
+        </div>
+
+        <div class="metrics-strip" aria-label="Key Catalog Metrics">
+          <div class="metric-item">
+            <span class="metric-value">413</span>
+            <span class="metric-label">Verified Families</span>
+            <span class="metric-sub">1,083 OpenType binaries</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">10-D</span>
+            <span class="metric-label">Scoring Engine</span>
+            <span class="metric-sub">Weighted mathematical fit</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">10</span>
+            <span class="metric-label">Anti-Patterns</span>
+            <span class="metric-sub">Deductions up to -45 pts</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">0</span>
+            <span class="metric-label">Script Tofu</span>
+            <span class="metric-sub">Strict OpenType table audits</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">0%</span>
+            <span class="metric-label">Repo Bloat</span>
+            <span class="metric-sub">Auto clean_project.py delivery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">The Core Problem</span>
+          <h2 class="section-title">Why Current AI Typography Fails</h2>
+          <p class="section-lead">When AI agents write front-end code, they default to three fonts, guess weights that don't exist, and break multilingual text.</p>
+        </div>
+
+        <div class="comparison-grid">
+          <div class="comparison-col col-bad">
+            <span class="comparison-badge">The Typical AI Default</span>
+            <h3 class="comparison-title font-sans">Predictable & Broken</h3>
+            <ul class="comparison-items">
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <span><strong>Lazy Defaulting:</strong> Suggests Inter, Roboto, or Arial for every project regardless of industry or vibe.</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <span><strong>Faux Bold Blurs:</strong> Emits CSS weights like <code>font-weight: 500</code> for families that only ship Regular (400) and Bold (700).</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <span><strong>Language Tofu:</strong> Guesses Bengali, Arabic, Cyrillic, or CJK coverage, rendering broken empty boxes to international users.</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <span><strong>Decorative Fatigue:</strong> Uses high-flair display typefaces for continuous 13px body text.</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <span><strong>Repository Bloat:</strong> Leaves heavy multi-megabyte skill folders and hundreds of unneeded font files inside your repo.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="comparison-col col-good">
+            <span class="comparison-badge">Font Intelligence</span>
+            <h3 class="comparison-title font-sans">Algorithmic Rigor</h3>
+            <ul class="comparison-items">
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span><strong>29 Diagnostic Archetypes:</strong> Analyzes audience, platform, and colloquial vibes ("expensive", "clean", "not AI-looking") into optical categories.</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span><strong>Confirmed Technical Weights:</strong> Emits only confirmed OpenType weights from <code>technical.weights</code>. Zero faux-bold artifacts.</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span><strong>Zero Tofu Guarantee:</strong> Strictly audits <code>cmap</code> tables. When catalog fonts lack support, automatically injects verified companions (Hind Siliguri, Amiri).</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span><strong>Anti-Pattern Defense:</strong> Enforces 10 strict guards (-15 to -45 penalties), requiring readability scores &ge; 7/10 for body and UI.</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span><strong>Zero-Bloat Delivery:</strong> Step 11 automatically prunes unreferenced fonts and deletes the temporary skill folder upon project completion.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vibe-studio" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Interactive Studio</span>
+          <h2 class="section-title">The "Vibe-to-Type" Pairing Engine</h2>
+          <p class="section-lead">Select any colloquial aesthetic prompt below to watch the typography engine compute optical balance, score mathematical harmony, and emit calibrated tokens.</p>
+        </div>
+
+        <div class="playground-card">
+          <div class="vibe-nav-bar" role="tablist" aria-label="Aesthetic Vibes">
+            <button class="vibe-btn active" data-vibe="luxury" role="tab" aria-selected="true">Luxury & Editorial</button>
+            <button class="vibe-btn" data-vibe="modernist" role="tab" aria-selected="false">Modernist SaaS</button>
+            <button class="vibe-btn" data-vibe="not_ai" role="tab" aria-selected="false">Not AI-Looking</button>
+            <button class="vibe-btn" data-vibe="developer" role="tab" aria-selected="false">Technical / Dev</button>
+            <button class="vibe-btn" data-vibe="editorial" role="tab" aria-selected="false">Literary Classic</button>
+          </div>
+
+          <div class="playground-body">
+            <div class="specimen-canvas">
+              <span class="specimen-category" id="vibe-category">High-End Editorial & Luxury</span>
+              <h3 class="specimen-heading" id="vibe-heading" style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; letter-spacing: -0.015em; line-height: 1.05;">
+                The Architecture of Uncompromising Silence.
+              </h3>
+              <p class="specimen-body" id="vibe-body" style="font-family: 'Hanken Grotesk', system-ui, sans-serif; font-weight: 400;">
+                High-contrast Didone serifs meet sculpted neo-grotesque proportion. Wide capital tracking, restrained leadings, and crisp mathematical contrast announce timeless authority.
+              </p>
+              <div class="specimen-metadata">
+                <span>Headline: <strong id="spec-lead-family">Cormorant Garamond (600)</strong></span>
+                <span>Body: <strong id="spec-body-family">Hanken Grotesk (400)</strong></span>
+                <span>Readability: <strong>9.4 / 10</strong></span>
+              </div>
+            </div>
+
+            <div class="specimen-telemetry">
+              <div class="telemetry-card">
+                <div class="telemetry-header">
+                  <span class="telemetry-title">Engine Assessment</span>
+                  <span class="score-badge" id="vibe-score">96 / 100</span>
+                </div>
+                <div class="telemetry-list">
+                  <div class="telemetry-row">
+                    <span>Weight Delta</span>
+                    <span id="vibe-delta">200 (600 / 400)</span>
+                  </div>
+                  <div class="telemetry-row">
+                    <span>Visual Contrast</span>
+                    <span id="vibe-contrast">Structural Serif / Sans</span>
+                  </div>
+                  <div class="telemetry-row">
+                    <span>Reading Endurance</span>
+                    <span id="vibe-endurance">9.4 / 10</span>
+                  </div>
+                  <div class="telemetry-row">
+                    <span>Anti-Pattern Penalty</span>
+                    <span style="color:#059669">0 pts (Shielded)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="token-preview">
+                <button class="token-copy-btn" data-copy-target="#vibe-token-code" aria-label="Copy CSS tokens">Copy CSS</button>
+                <pre id="vibe-token-code" style="margin:0; background:transparent; border:none; padding:0; color:inherit;">:root {
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Hanken Grotesk', system-ui, sans-serif;
+  --font-weight-heading: 600;
+  --font-weight-body: 400;
+  --letter-spacing-heading: -0.015em;
+  --line-height-body: 1.65;
+}</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="scoring" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Algorithmic Framework</span>
+          <h2 class="section-title">The 10-Dimension Scoring Model</h2>
+          <p class="section-lead">Every pair candidate is evaluated against 10 weighted dimensions summing to 100%. Only high-harmony combinations survive.</p>
+        </div>
+
+        <div class="scoring-grid">
+          <div class="scoring-card">
+            <div class="scoring-top">
+              <span class="scoring-name">1. Visual Contrast</span>
+              <span class="scoring-weight">15% Weight</span>
+            </div>
+            <div class="scoring-bar-track"><div class="scoring-bar-fill" style="width: 100%;"></div></div>
+            <p class="scoring-desc">Requires a confirmed weight delta of &ge; 200, or structural serif-to-sans tension. Prevents flat, muddy visual hierarchy.</p>
+          </div>
+
+          <div class="scoring-card">
+            <div class="scoring-top">
+              <span class="scoring-name">2. Readability & Endurance</span>
+              <span class="scoring-weight">15% Weight</span>
+            </div>
+            <div class="scoring-bar-track"><div class="scoring-bar-fill" style="width: 100%;"></div></div>
+            <p class="scoring-desc">Measures x-height, aperture openness, stroke modulation, and counters. Enforces a strict minimum of 7/10 for body and UI.</p>
+          </div>
+
+          <div class="scoring-card">
+            <div class="scoring-top">
+              <span class="scoring-name">3. Serif / Sans Dynamic</span>
+              <span class="scoring-weight">12% Weight</span>
+            </div>
+            <div class="scoring-bar-track"><div class="scoring-bar-fill" style="width: 80%;"></div></div>
+            <p class="scoring-desc">Balances optical cadence between lead and companion, avoiding conflicting stroke terminals or awkward axis conflicts.</p>
+          </div>
+
+          <div class="scoring-card">
+            <div class="scoring-top">
+              <span class="scoring-name">4. Personality Resonance</span>
+              <span class="scoring-weight">12% Weight</span>
+            </div>
+            <div class="scoring-bar-track"><div class="scoring-bar-fill" style="width: 80%;"></div></div>
+            <p class="scoring-desc">Guarantees historical, cultural, and industry alignment. Prohibits dissonant pairings like luxury Didone paired with techno display.</p>
+          </div>
+
+          <div class="scoring-card">
+            <div class="scoring-top">
+              <span class="scoring-name">5. Role Compatibility</span>
+              <span class="scoring-weight">10% Weight</span>
+            </div>
+            <div class="scoring-bar-track"><div class="scoring-bar-fill" style="width: 66%;"></div></div>
+            <p class="scoring-desc">Audits whether typefaces are assigned strictly to their verified roles (display faces never used for body paragraphs).</p>
+          </div>
+
+          <div class="scoring-card">
+            <div class="scoring-top">
+              <span class="scoring-name">6. Weight Availability</span>
+              <span class="scoring-weight">10% Weight</span>
+            </div>
+            <div class="scoring-bar-track"><div class="scoring-bar-fill" style="width: 66%;"></div></div>
+            <p class="scoring-desc">Verifies physical family depth, true italic availability, and variable axis ranges from OpenType metadata.</p>
+          </div>
+
+          <div class="scoring-card">
+            <div class="scoring-top">
+              <span class="scoring-name">7. Proportional Width</span>
+              <span class="scoring-weight">8% Weight</span>
+            </div>
+            <div class="scoring-bar-track"><div class="scoring-bar-fill" style="width: 53%;"></div></div>
+            <p class="scoring-desc">Checks optical balance between headline letter width and body column width, avoiding ultra-condensed with ultra-extended.</p>
+          </div>
+
+          <div class="scoring-card">
+            <div class="scoring-top">
+              <span class="scoring-name">8. Project Style Fit</span>
+              <span class="scoring-weight">8% Weight</span>
+            </div>
+            <div class="scoring-bar-track"><div class="scoring-bar-fill" style="width: 53%;"></div></div>
+            <p class="scoring-desc">Direct alignment with one of 29 defined use-case archetypes (Fintech, SaaS, Editorial, Mobile, eCommerce, etc.).</p>
+          </div>
+
+          <div class="scoring-card">
+            <div class="scoring-top">
+              <span class="scoring-name">9. Language Parity</span>
+              <span class="scoring-weight">5% Weight</span>
+            </div>
+            <div class="scoring-bar-track"><div class="scoring-bar-fill" style="width: 33%;"></div></div>
+            <p class="scoring-desc">Audits OpenType <code>cmap</code> tables to ensure headline and body render target scripts without missing character glyphs.</p>
+          </div>
+
+          <div class="scoring-card">
+            <div class="scoring-top">
+              <span class="scoring-name">10. Platform Suitability</span>
+              <span class="scoring-weight">5% Weight</span>
+            </div>
+            <div class="scoring-bar-track"><div class="scoring-bar-fill" style="width: 33%;"></div></div>
+            <p class="scoring-desc">Enforces web payloads under 100 KB, Flutter engine compatibility, and TrueType outlines for Microsoft PowerPoint embedding.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="anti-patterns" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Quality Safeguards</span>
+          <h2 class="section-title">The 10 Anti-Pattern Shields</h2>
+          <p class="section-lead">If a candidate pairing commits any typographic anti-pattern, severe point penalties are subtracted automatically.</p>
+        </div>
+
+        <div class="anti-grid">
+          <div class="anti-card">
+            <div class="anti-header">
+              <span class="anti-title">Decorative as Body</span>
+              <span class="anti-penalty">-45 pts</span>
+            </div>
+            <p class="anti-rule">Strictly prohibits display, handwriting, or decorative typefaces in continuous body or UI roles.</p>
+          </div>
+
+          <div class="anti-card">
+            <div class="anti-header">
+              <span class="anti-title">Script Mismatch / Tofu</span>
+              <span class="anti-penalty">-45 pts</span>
+            </div>
+            <p class="anti-rule">Refuses unverified scripts. If missing, reports 0 catalog fonts and injects verified open-source companions.</p>
+          </div>
+
+          <div class="anti-card">
+            <div class="anti-header">
+              <span class="anti-title">Competing Display Fonts</span>
+              <span class="anti-penalty">-30 pts</span>
+            </div>
+            <p class="anti-rule">Guarantees only one vocal lead font per typographic hierarchy. Two high-personality faces may not compete.</p>
+          </div>
+
+          <div class="anti-card">
+            <div class="anti-header">
+              <span class="anti-title">Weak Contrast / Flat</span>
+              <span class="anti-penalty">-25 pts</span>
+            </div>
+            <p class="anti-rule">Penalizes headline and body with less than 200 weight delta or lacking structural serif/sans classification contrast.</p>
+          </div>
+
+          <div class="anti-card">
+            <div class="anti-header">
+              <span class="anti-title">Excessive Font Families</span>
+              <span class="anti-penalty">-25 pts</span>
+            </div>
+            <p class="anti-rule">Restricts designs to maximum 2 primary families (heading + body/UI), with monospace reserved strictly for code/data.</p>
+          </div>
+
+          <div class="anti-card">
+            <div class="anti-header">
+              <span class="anti-title">Personality Polar Clash</span>
+              <span class="anti-penalty">-25 pts</span>
+            </div>
+            <p class="anti-rule">Prevents emotionally clashing tones, such as high-fashion Didone paired with distressed grunge display.</p>
+          </div>
+
+          <div class="anti-card">
+            <div class="anti-header">
+              <span class="anti-title">Low x-Height in UI Microcopy</span>
+              <span class="anti-penalty">-20 pts</span>
+            </div>
+            <p class="anti-rule">Requires wide apertures and large x-height for 11px to 13px captions, badges, and interface controls.</p>
+          </div>
+
+          <div class="anti-card">
+            <div class="anti-header">
+              <span class="anti-title">Hairline Screen Fatigue</span>
+              <span class="anti-penalty">-20 pts</span>
+            </div>
+            <p class="anti-rule">Prohibits 100 or 200 ultra-thin hairline weights for continuous reading text on digital screens.</p>
+          </div>
+
+          <div class="anti-card">
+            <div class="anti-header">
+              <span class="anti-title">Monospace Longform Fatigue</span>
+              <span class="anti-penalty">-15 pts</span>
+            </div>
+            <p class="anti-rule">Restricts monospace fonts to code listings, timestamps, and tabular data tables. Never continuous prose.</p>
+          </div>
+
+          <div class="anti-card">
+            <div class="anti-header">
+              <span class="anti-title">Uncanny Sans Mismatch</span>
+              <span class="anti-penalty">-15 pts</span>
+            </div>
+            <p class="anti-rule">Forbids pairing two near-identical neo-grotesque sans-serifs that look like an unintentional rendering error.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="zero-bloat" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Repository Hygiene</span>
+          <h2 class="section-title">Zero-Bloat Project Delivery (Step 11)</h2>
+          <p class="section-lead">Skill folders can be heavy. Font Intelligence ensures that once your agent finishes writing your project, only the exact font binaries you used stay in your repository.</p>
+        </div>
+
+        <div class="bloat-card">
+          <div class="bloat-flow">
+            <div class="flow-step">
+              <div class="flow-step-num">1</div>
+              <h3 class="flow-step-title font-sans">Diagnostic & Export</h3>
+              <p class="flow-step-desc">The AI agent diagnoses the brief and copies selected font files into your project's <code>fonts/</code> directory.</p>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-num">2</div>
+              <h3 class="flow-step-title font-sans">Project Generation</h3>
+              <p class="flow-step-desc">The agent codes your application, generating CSS custom properties, Tailwind tokens, or Flutter configurations.</p>
+            </div>
+            <div class="flow-step active">
+              <div class="flow-step-num">3</div>
+              <h3 class="flow-step-title font-sans">Automatic Cleanup</h3>
+              <p class="flow-step-desc">The agent runs <code>clean_project.py</code>, scanning CSS/code references and pruning unused weights.</p>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-num">4</div>
+              <h3 class="flow-step-title font-sans">Clean Delivery</h3>
+              <p class="flow-step-desc">The temporary skill folder is deleted. Your repository stays feather-light with zero unnecessary files.</p>
+            </div>
+          </div>
+
+          <div class="token-preview" style="margin-top: 24px;">
+            <button class="token-copy-btn" data-copy-text="python scripts/clean_project.py --project-dir path/to/project --keep-fonts &quot;chillax,general-sans&quot;">Copy CLI</button>
+            <pre style="margin:0; background:transparent; border:none; padding:0; color:inherit;"># Automated Zero-Bloat Execution Command
+python scripts/clean_project.py --project-dir path/to/project --keep-fonts "chillax,general-sans"</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="agents" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Unified Agent Architecture</span>
+          <h2 class="section-title">Works with Every Coding Agent</h2>
+          <p class="section-lead">One canonical skill at <code>.agents/skills/font-intelligence/SKILL.md</code> shared across all 8 supported agent ecosystems.</p>
+        </div>
+
+        <div class="agent-hub-card">
+          <div class="agent-nav-tabs" role="tablist" aria-label="Coding Agent Adapters">
+            <button class="agent-tab active" data-target="agent-claude" role="tab" aria-selected="true">Claude Code</button>
+            <button class="agent-tab" data-target="agent-cursor" role="tab" aria-selected="false">Cursor</button>
+            <button class="agent-tab" data-target="agent-codex" role="tab" aria-selected="false">Codex / Antigravity</button>
+            <button class="agent-tab" data-target="agent-windsurf" role="tab" aria-selected="false">Windsurf</button>
+            <button class="agent-tab" data-target="agent-cline" role="tab" aria-selected="false">Cline</button>
+            <button class="agent-tab" data-target="agent-copilot" role="tab" aria-selected="false">GitHub Copilot</button>
+            <button class="agent-tab" data-target="agent-gemini" role="tab" aria-selected="false">Gemini CLI</button>
+          </div>
+
+          <div id="agent-claude" class="agent-tab-content active">
+            <div class="agent-panel-grid">
+              <div>
+                <h3 style="margin-bottom: 12px;">Claude Code Integration</h3>
+                <p>Native adapter via <code>CLAUDE.md</code>. Instructs Claude to activate Font Intelligence whenever styling components or creating front-end UI.</p>
+                <div class="note" style="margin-top: 16px;">
+                  <strong>Activation Rule:</strong> Claude automatically diagnoses the use case, audits OpenType scripts, scores pairs across 10 dimensions, and delivers clean code tokens.
+                </div>
+              </div>
+              <div class="agent-code-block">
+                <button class="agent-copy-btn" data-copy-target="#claude-prompt">Copy Prompt</button>
+                <pre id="claude-prompt" style="margin:0; background:transparent; border:none; padding:0; color:inherit;"># Example Claude Prompt
+"Design a high-end fintech portfolio landing page. 
+Use Font Intelligence to select the typography. 
+Style: 'expensive, not AI-looking'. 
+Ensure zero tofu and output CSS custom properties."</pre>
+              </div>
+            </div>
+          </div>
+
+          <div id="agent-cursor" class="agent-tab-content">
+            <div class="agent-panel-grid">
+              <div>
+                <h3 style="margin-bottom: 12px;">Cursor Rules Integration</h3>
+                <p>Configured via <code>.cursorrules</code> and <code>.cursor/rules/font-intelligence.mdc</code> for real-time cursor AI completions and Composer tasks.</p>
+                <div class="note" style="margin-top: 16px;">
+                  <strong>Zero Faux-Bold:</strong> Cursor is instructed to never suggest weights that do not exist in the confirmed catalog metadata.
+                </div>
+              </div>
+              <div class="agent-code-block">
+                <button class="agent-copy-btn" data-copy-target="#cursor-prompt">Copy Prompt</button>
+                <pre id="cursor-prompt" style="margin:0; background:transparent; border:none; padding:0; color:inherit;"># Cursor Composer Instruction
+"Generate the typography design tokens for our SaaS dashboard.
+Activate Font Intelligence rules from .cursorrules.
+Pair a high-x-height heading with readable UI sans."</pre>
+              </div>
+            </div>
+          </div>
+
+          <div id="agent-codex" class="agent-tab-content">
+            <div class="agent-panel-grid">
+              <div>
+                <h3 style="margin-bottom: 12px;">Codex & Antigravity</h3>
+                <p>Configured via <code>AGENTS.md</code> and <code>.codex/instructions.md</code> with full programmatic CLI tool execution support.</p>
+                <div class="note" style="margin-top: 16px;">
+                  <strong>CLI Execution:</strong> Agents can autonomously execute <code>python scripts/recommend.py</code> and <code>python scripts/score_pair.py</code>.
+                </div>
+              </div>
+              <div class="agent-code-block">
+                <button class="agent-copy-btn" data-copy-target="#codex-prompt">Copy Prompt</button>
+                <pre id="codex-prompt" style="margin:0; background:transparent; border:none; padding:0; color:inherit;">python scripts/recommend.py \
+  --use-case fintech \
+  --style "expensive, not AI-looking" \
+  --platform web</pre>
+              </div>
+            </div>
+          </div>
+
+          <div id="agent-windsurf" class="agent-tab-content">
+            <div class="agent-panel-grid">
+              <div>
+                <h3 style="margin-bottom: 12px;">Windsurf Cascade</h3>
+                <p>Configured via <code>.windsurfrules</code> to empower Cascade with deep typographic knowledge across Next.js, Tailwind, and Flutter projects.</p>
+              </div>
+              <div class="agent-code-block">
+                <button class="agent-copy-btn" data-copy-target="#windsurf-prompt">Copy Prompt</button>
+                <pre id="windsurf-prompt" style="margin:0; background:transparent; border:none; padding:0; color:inherit;">"Configure Tailwind typography for our publishing app.
+Use Font Intelligence to select the heading and body pair.
+Check for anti-patterns and enforce readability >= 8."</pre>
+              </div>
+            </div>
+          </div>
+
+          <div id="agent-cline" class="agent-tab-content">
+            <div class="agent-panel-grid">
+              <div>
+                <h3 style="margin-bottom: 12px;">Cline Integration</h3>
+                <p>Configured via <code>.clinerules</code> to guide autonomous coding workflows without human intervention.</p>
+              </div>
+              <div class="agent-code-block">
+                <button class="agent-copy-btn" data-copy-target="#cline-prompt">Copy Prompt</button>
+                <pre id="cline-prompt" style="margin:0; background:transparent; border:none; padding:0; color:inherit;">"Read .agents/skills/font-intelligence/SKILL.md.
+Recommend a pair for a mobile banking app in Flutter.
+Audit platform constraints and provide pubspec.yaml."</pre>
+              </div>
+            </div>
+          </div>
+
+          <div id="agent-copilot" class="agent-tab-content">
+            <div class="agent-panel-grid">
+              <div>
+                <h3 style="margin-bottom: 12px;">GitHub Copilot</h3>
+                <p>Configured via <code>.github/copilot-instructions.md</code> for repository-wide awareness in Copilot Chat and PR reviews.</p>
+              </div>
+              <div class="agent-code-block">
+                <button class="agent-copy-btn" data-copy-target="#copilot-prompt">Copy Prompt</button>
+                <pre id="copilot-prompt" style="margin:0; background:transparent; border:none; padding:0; color:inherit;">"Review our CSS typography stack using Font Intelligence rules.
+Flag any anti-patterns and ensure weight deltas exceed 200."</pre>
+              </div>
+            </div>
+          </div>
+
+          <div id="agent-gemini" class="agent-tab-content">
+            <div class="agent-panel-grid">
+              <div>
+                <h3 style="margin-bottom: 12px;">Gemini CLI</h3>
+                <p>Configured via <code>GEMINI.md</code> thin adapter pointing directly to the canonical skill.</p>
+              </div>
+              <div class="agent-code-block">
+                <button class="agent-copy-btn" data-copy-target="#gemini-prompt">Copy Prompt</button>
+                <pre id="gemini-prompt" style="margin:0; background:transparent; border:none; padding:0; color:inherit;">"Search the Font Intelligence catalog for a clean body font 
+with readability >= 8 and confirmed Latin + Cyrillic coverage."</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tester" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Interactive Specimen</span>
+          <h2 class="section-title">Optical Rhythm Sandbox</h2>
+          <p class="section-lead">Type your own words and adjust typography controls to evaluate cadence, tracking, and optical scale in real time.</p>
+        </div>
+
+        <div class="tester-box">
+          <div class="tester-controls">
+            <div class="control-group">
+              <label for="select-font-family">Family:</label>
+              <select id="select-font-family">
+                <option value="'Cormorant Garamond', Georgia, serif">Cormorant Garamond (Editorial Serif)</option>
+                <option value="'Plus Jakarta Sans', system-ui, sans-serif">Plus Jakarta Sans (Modernist Sans)</option>
+                <option value="'Hanken Grotesk', system-ui, sans-serif">Hanken Grotesk (Humanist Sans)</option>
+                <option value="'Cinzel', Georgia, serif">Cinzel (Sculpted Display)</option>
+                <option value="'JetBrains Mono', monospace">JetBrains Mono (Technical Monospace)</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label for="select-font-weight">Weight:</label>
+              <select id="select-font-weight">
+                <option value="300">300 (Light)</option>
+                <option value="400">400 (Regular)</option>
+                <option value="600" selected>600 (SemiBold)</option>
+                <option value="700">700 (Bold)</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label for="slider-font-size">Size: <span id="label-font-size">42px</span></label>
+              <input type="range" id="slider-font-size" min="18" max="72" value="42">
+            </div>
+
+            <div class="control-group">
+              <label for="slider-leading">Leading: <span id="label-leading">1.25</span></label>
+              <input type="range" id="slider-leading" min="1.0" max="2.0" step="0.05" value="1.25">
+            </div>
+
+            <div class="control-group">
+              <label for="slider-tracking">Tracking: <span id="label-tracking">-0.01em</span></label>
+              <input type="range" id="slider-tracking" min="-5" max="15" value="-1">
+            </div>
+          </div>
+
+          <div id="specimen-live-text" class="tester-output" contenteditable="true" spellcheck="false" aria-label="Editable Specimen Text Area">
+            Typography is the craft of endowing human language with a durable visual form.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hall-of-fame" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Curated Masterclass</span>
+          <h2 class="section-title">The Pairing Hall of Fame</h2>
+          <p class="section-lead">A selection of time-tested combinations from <code>catalog/pairings.json</code> engineered to resist obsolescence.</p>
+        </div>
+
+        <div class="fame-grid">
+          <div class="fame-card">
+            <div class="fame-tags">
+              <span class="pill pill-crimson">Luxury / Fintech</span>
+              <span class="pill pill-neutral">Score 97</span>
+            </div>
+            <h3 class="fame-specimen-lead font-serif" style="font-size:2.2rem; font-weight:600;">Chillax &amp; General Sans</h3>
+            <p class="fame-specimen-sub">Wide geometric display headlines with geometric circular counters, grounded by ultra-clean neo-grotesque body copy.</p>
+            <div class="fame-footer">
+              <span>Delta: <strong>300 (700 / 400)</strong></span>
+              <span>Payload: <strong>68 KB WOFF2</strong></span>
+            </div>
+          </div>
+
+          <div class="fame-card">
+            <div class="fame-tags">
+              <span class="pill pill-amber">Editorial / Culture</span>
+              <span class="pill pill-neutral">Score 98</span>
+            </div>
+            <h3 class="fame-specimen-lead font-serif" style="font-size:2.2rem; font-weight:400; font-style:italic;">Ithaca &amp; Satoshi</h3>
+            <p class="fame-specimen-sub">High-contrast literary editorial display paired with modern grotesque sans for effortless longform endurance.</p>
+            <div class="fame-footer">
+              <span>Delta: <strong>Harmonic Contrast</strong></span>
+              <span>Endurance: <strong>9.6 / 10</strong></span>
+            </div>
+          </div>
+
+          <div class="fame-card">
+            <div class="fame-tags">
+              <span class="pill pill-emerald">Developer / Data</span>
+              <span class="pill pill-neutral">Score 95</span>
+            </div>
+            <h3 class="fame-specimen-lead font-sans" style="font-size:2rem; font-weight:700;">Cabinet Grotesk &amp; Ubuntu Mono</h3>
+            <p class="fame-specimen-sub">Expressive contemporary headlines paired with unambiguous terminal monospace for technical infrastructure.</p>
+            <div class="fame-footer">
+              <span>Delta: <strong>300 (700 / 400)</strong></span>
+              <span>Figures: <strong>Tabular (tnum)</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="docs-portal" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Documentation & Specs</span>
+          <h2 class="section-title">Deep Technical Documentation</h2>
+          <p class="section-lead">Explore complete specifications, CLI tools, algorithm models, and licensing audits.</p>
+        </div>
+
+        <div class="docs-jump-grid">
+          <a href="/docs#quick-start" class="docs-jump-card">
+            <h3>Quick Start <span aria-hidden="true">&rarr;</span></h3>
+            <p>Installation scripts for macOS, Linux, and Windows PowerShell.</p>
+          </a>
+          <a href="/docs#cli" class="docs-jump-card">
+            <h3>CLI Reference <span aria-hidden="true">&rarr;</span></h3>
+            <p>Commands for recommendation, scoring, search, export, and cleanup.</p>
+          </a>
+          <a href="/docs#how" class="docs-jump-card">
+            <h3>Decision Workflow <span aria-hidden="true">&rarr;</span></h3>
+            <p>The 11-step protocol every typographic brief passes through.</p>
+          </a>
+          <a href="/docs#licensing" class="docs-jump-card">
+            <h3>Licensing Matrix <span aria-hidden="true">&rarr;</span></h3>
+            <p>Audit breakdown across Open Source, Commercial, and Public Assets.</p>
+          </a>
+          <a href="/docs#scripts" class="docs-jump-card">
+            <h3>Zero-Tofu Audit <span aria-hidden="true">&rarr;</span></h3>
+            <p>OpenType script coverage rules for Bengali, Arabic, Cyrillic, and CJK.</p>
+          </a>
+          <a href="/preview/" class="docs-jump-card">
+            <h3>Specimen Studio <span aria-hidden="true">&rarr;</span></h3>
+            <p>Full 413-family interactive archive with multi-attribute filtering.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <b>Font Intelligence</b>
+          <p>The algorithmic typography decision system for AI coding agents and human designers.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#why">Why FI</a></li>
+            <li><a href="#vibe-studio">Pairing Studio</a></li>
+            <li><a href="#scoring">10-D Scoring</a></li>
+            <li><a href="#anti-patterns">Anti-Patterns</a></li>
+            <li><a href="#zero-bloat">Zero-Bloat Protocol</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="/docs">Full Documentation</a></li>
+            <li><a href="/preview/">Specimen Studio</a></li>
+            <li><a href="/llms.txt">llms.txt Specification</a></li>
+            <li><a href="/sitemap.xml">XML Sitemap</a></li>
+            <li><a href="https://github.com/ratulhub/font-intelligence/blob/main/CHANGELOG.md">Changelog (v1.0.0)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community & Open Source</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/ratulhub/font-intelligence" target="_blank" rel="noopener">GitHub Repository</a></li>
+            <li><a href="https://github.com/ratulhub/font-intelligence/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing Guide</a></li>
+            <li><a href="https://github.com/ratulhub/font-intelligence/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a></li>
+            <li><a href="https://github.com/ratulhub/font-intelligence/issues" target="_blank" rel="noopener">Issue Tracker</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Font Intelligence Project. MIT Licensed. Open-source typography intelligence.</div>
+        <div>Designed with verified OpenType metrics and zero tofu.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+# Font Intelligence — Full Technical Context for LLMs & AI Agents
+
+> Canonical Typography Decision System and Font Pairing Engine for AI Coding Agents.
+> Repository: https://github.com/ratulhub/font-intelligence
+> Documentation: https://font-intelligence.vercel.app/docs
+> License: MIT (Code & Engine), Open Font License / Commercial Permissive for Fonts
+
+## 1. System Overview
+Font Intelligence is an algorithmic typography system that prevents AI coding agents from defaulting to generic typography (Inter, Roboto, Arial) and making structural typography mistakes. It operates across 10 evaluation dimensions, checks against 10 explicit anti-patterns, and enforces zero tofu, verified OpenType weights, and zero-bloat project delivery.
+
+## 2. 10-Dimension Scoring Model (Weights sum to 100%)
+1. Visual Contrast (15%): Minimum weight delta of 200 between heading and body, or structural serif/sans contrast.
+2. Readability & Endurance (15%): x-height, open apertures, and longform endurance score >= 7/10 for body and UI roles.
+3. Serif / Sans Dynamic (12%): Optical rhythm, stroke modulation, and structural harmony between families.
+4. Personality Resonance (12%): Cultural and historical alignment with the project domain.
+5. Role Compatibility (10%): Ensuring display faces are never used for continuous text.
+6. Weight Availability (10%): Verified family depth; no invented weights.
+7. Proportional Width (8%): Optical width balance between headlines and body text.
+8. Project Style Fit (8%): Direct fit for the 29 defined use-case archetypes.
+9. Language Parity (5%): Verified OpenType script support with zero tofu.
+10. Platform Suitability (5%): Web payload < 100 KB; TrueType .ttf for Microsoft Office.
+
+## 3. The 10 Typography Anti-Patterns
+1. Decorative as Body (-45 pts): No display or decorative fonts for continuous body text.
+2. Script Mismatch / Tofu (-45 pts): Refuse unverified language scripts.
+3. Competing Display Faces (-30 pts): Only one vocal lead font per typographic hierarchy.
+4. Weak Contrast / Flat Hierarchy (-25 pts): Enforce >= 200 weight delta.
+5. Excessive Font Families (-25 pts): Maximum 2 primary families (plus monospace for code).
+6. Personality Polar Clash (-25 pts): Prohibit conflicting vibes (e.g. ultra-luxury with grunge).
+7. Low x-Height in UI Microcopy (-20 pts): Enforce open apertures for 11-13px UI labels.
+8. Hairline Screen Fatigue (-20 pts): Never use 100 or 200 weights for continuous text.
+9. Monospace Longform Fatigue (-15 pts): Monospace reserved strictly for code and tabular figures.
+10. Uncanny Sans Mismatch (-15 pts): Prohibit two near-identical neo-grotesque sans-serifs.
+
+## 4. Zero-Bloat Project Delivery (Step 11)
+When an agent completes a project:
+1. Export only chosen fonts: `python scripts/copy_fonts.py --fonts "<chosen_fonts>" --dest "<dest_dir>" --prune-unused`
+2. Run post-project cleanup: `python scripts/clean_project.py --project-dir "<user_project_dir>" --keep-fonts "<chosen_fonts>"`
+3. The temporary skill folder and unused font files are deleted. Only the used font binaries remain in the user's project.
+
+## 5. Supported Platforms
+- Claude Code (`CLAUDE.md`)
+- Cursor (`.cursorrules`, `.cursor/rules/font-intelligence.mdc`)
+- Codex / Antigravity (`AGENTS.md`, `.agents/skills/font-intelligence/SKILL.md`)
+- Windsurf (`.windsurfrules`)
+- Cline (`.clinerules`)
+- GitHub Copilot (`.github/copilot-instructions.md`)
+- Gemini CLI (`GEMINI.md`)
+- Compact Lite (`lite/font-intelligence-lite.md`)

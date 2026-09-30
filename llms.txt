@@ -1,0 +1,42 @@
+# Font Intelligence
+
+> A typography decision system and font pairing engine for AI coding agents, UI/UX designers, and developers. It replaces default fonts (Inter, Roboto, Arial) with scored, anti-pattern-checked pairings, verified weights, and copy-pasteable code tokens. Version 1.0.0, MIT licensed.
+
+Repository: https://github.com/ratulhub/font-intelligence
+Website: https://font-intelligence.vercel.app
+Documentation: https://font-intelligence.vercel.app/docs
+Canonical skill file: .agents/skills/font-intelligence/SKILL.md
+
+## What it does
+- Diagnoses the project against 29 use cases and translates vibe words ("expensive", "clean", "not AI-looking") into typographic terms.
+- Scores font pairs on 10 weighted dimensions and applies 10 anti-pattern penalties (-15 to -45 points).
+- Audits OpenType script coverage (zero-tofu policy). Bangla and Arabic return 0 catalog fonts and map to Hind Siliguri, Noto Sans Bengali, and Amiri.
+- Emits only weights listed in technical.weights.
+- Outputs CSS custom properties, Flutter pubspec.yaml, React Native StyleSheet, and Microsoft Office TrueType embedding guidance.
+- Zero-bloat delivery: prunes unused fonts and deletes temporary skill folders from user projects upon completion.
+- Catalog: 413 families, 1,083 binaries. 112 permissive families are redistributable in assets/fonts/.
+
+## Hard rules
+1. Never invent catalog fonts, weights, or language support.
+2. Never equate commercial use with GitHub redistribution.
+3. Respect explicit user fonts.
+4. Do not replace existing typography systems.
+5. No decorative fonts in body or ui roles.
+6. Maximum 2 primary families (plus mono when code or data is present).
+7. Readability 7/10 or higher for body and UI.
+8. WOFF2 under 100 KB for web; .ttf outlines for Microsoft Office.
+9. Always generate calibrated system fallbacks.
+10. Zero-bloat project delivery: only used font files stay in user project repositories.
+
+## Key commands
+- python scripts/recommend.py --use-case fintech --style "expensive, not AI-looking" --platform web
+- python scripts/score_pair.py --primary chillax --secondary general-sans --style luxury
+- python scripts/search_fonts.py --mood "clean" --role body --min-readability 8 --script Latin
+- python scripts/copy_fonts.py --fonts "chillax,general-sans" --dest "dist/fonts" --prune-unused
+- python scripts/clean_project.py --project-dir path/to/project --keep-fonts "chillax,general-sans"
+
+## Agent adapters
+Antigravity, Claude Code (CLAUDE.md), Codex (AGENTS.md), Cursor (.cursorrules), Windsurf (.windsurfrules), Cline (.clinerules), GitHub Copilot (.github/copilot-instructions.md), Gemini CLI (GEMINI.md). Compact fallback: lite/font-intelligence-lite.md.
+
+## Canonical Data
+catalog/fonts.json, catalog/use-cases.json, catalog/pairings.json, catalog/scoring.json, catalog/anti-patterns.json

@@ -1,0 +1,28 @@
+# robots.txt for Font Intelligence
+# https://font-intelligence.vercel.app
+
+User-agent: *
+Allow: /
+Allow: /docs
+Allow: /preview/
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /sitemap.xml
+
+# AI Agents & LLM Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://font-intelligence.vercel.app/sitemap.xml

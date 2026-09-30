@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Font Intelligence Docs — Algorithmic Typography Engine Specification</title>
+<meta name="description" content="Comprehensive documentation for Font Intelligence: 10-dimension font pairing engine, zero-tofu OpenType verification, anti-pattern shields, and agent integration.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://font-intelligence.vercel.app/docs">
+<meta property="og:title" content="Font Intelligence Documentation">
+<meta property="og:description" content="Typography decision system and font pairing engine for AI coding agents and designers.">
+<meta property="og:url" content="https://font-intelligence.vercel.app/docs">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Font Intelligence">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Font Intelligence Documentation">
+<meta name="twitter:description" content="Typography decision system and font pairing engine for AI coding agents and designers.">
+<meta name="google-site-verification" content="google-search-console-verification-token">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,600&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Font Intelligence Documentation & Specification",
+  "description": "Technical specification, scoring models, and agent protocols for the Font Intelligence typography system.",
+  "url": "https://font-intelligence.vercel.app/docs",
+  "author": {
+    "@type": "Organization",
+    "name": "Font Intelligence"
+  }
+}
+</script>
+<style>
+:root{--bg:#fbfaf8;--fg:#1c1917;--mut:#6a645e;--rule:#e4e0da;--acc:#8b263e;--code:#f0ede8;--soft:#f5f2ee;--surface:#ffffff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:28px}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 1rem/1.7 "Hanken Grotesk",system-ui,sans-serif;display:grid;grid-template-columns:280px 1fr}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;margin:0;line-height:1.05}
+code,pre{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;font-size:.82rem}
+a{color:var(--acc);text-decoration:underline;text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+aside{position:sticky;top:0;height:100vh;overflow-y:auto;padding:30px 24px;border-right:1px solid var(--rule);background:var(--soft)}
+aside .brand-link{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg);margin-bottom:6px}
+aside .brand-badge{background:var(--fg);color:var(--bg);font:600 .75rem/1 "JetBrains Mono",monospace;padding:4px 7px;border-radius:3px}
+aside b{font:600 1.4rem "Cormorant Garamond",serif;display:block}
+aside small{display:block;color:var(--mut);margin-bottom:20px;font-size:.8rem}
+aside .nav-quick{display:flex;gap:8px;margin-bottom:20px}
+aside .nav-quick a{font-size:.8rem;color:var(--fg);text-decoration:none;padding:3px 8px;border:1px solid var(--rule);background:var(--bg);border-radius:3px}
+aside .nav-quick a:hover{border-color:var(--fg)}
+aside h4{margin:20px 0 6px;font-size:.78rem;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.05em}
+aside a.doc-link{display:block;color:var(--fg);text-decoration:none;padding:4px 0 4px 12px;border-left:2px solid var(--rule);font-size:.9rem}
+aside a.doc-link:hover{color:var(--acc)}
+aside a.doc-link.on{border-color:var(--acc);color:var(--acc);font-weight:600}
+main{padding:72px clamp(20px,6vw,88px) 110px;max-width:980px}
+.hero h1{font-weight:300;font-size:clamp(2.8rem,7vw,5.5rem);letter-spacing:-.02em}
+.hero h1 b{font-weight:600}
+.hero p{max-width:62ch;color:var(--mut);font-size:1.12rem;margin:24px 0 0}
+.btns{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap}
+.btns a{padding:9px 18px;border:1px solid var(--fg);border-radius:4px;text-decoration:none;color:var(--fg);font-weight:600;font-size:.9rem}
+.btns a:first-child{background:var(--fg);color:var(--bg)}
+.btns a:hover{opacity:.9}
+section{padding-top:72px}
+h2{font-weight:600;font-size:2.3rem;margin-bottom:14px;border-bottom:1px solid var(--rule);padding-bottom:10px}
+h3{font-weight:600;font-size:1.45rem;margin:28px 0 8px}
+p,li{max-width:68ch}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.9rem}
+th,td{text-align:left;padding:10px 14px 10px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+th{color:var(--mut);font-weight:600}
+.tw{overflow-x:auto}
+:not(pre)>code{background:var(--code);padding:2px 6px;border-radius:3px}
+pre{position:relative;background:var(--code);padding:16px 18px;border-radius:5px;overflow-x:auto;margin:14px 0;border:1px solid var(--rule)}
+pre button{position:absolute;top:8px;right:8px;background:var(--bg);border:1px solid var(--rule);color:var(--mut);border-radius:3px;padding:3px 9px;font:inherit;font-size:.75rem;cursor:pointer}
+pre button:hover{color:var(--fg);border-color:var(--fg)}
+.bar{padding:9px 0;border-bottom:1px solid var(--rule)}
+.bar div{display:flex;justify-content:space-between;gap:12px;font-weight:600;font-size:.95rem}
+.bar i{display:block;height:8px;background:var(--acc);border-radius:2px;margin:6px 0 4px}
+.bar span{color:var(--mut);font-size:.86rem}
+.note{border-left:3px solid var(--acc);background:var(--soft);padding:12px 18px;margin:18px 0;max-width:68ch;border-radius:0 4px 4px 0}
+details{border-bottom:1px solid var(--rule);padding:12px 0;max-width:68ch}
+summary{cursor:pointer;font-weight:600}
+details p{margin:8px 0 0;color:var(--mut)}
+@media (max-width:880px){body{display:block}aside{position:static;height:auto;border:0;border-bottom:1px solid var(--rule);padding:20px}aside a.doc-link{display:inline-block;border:0;padding:2px 10px 2px 0}aside h4{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<aside>
+  <a href="/" class="brand-link">
+    <span class="brand-badge">FI</span>
+    <b>Font Intelligence</b>
+  </a>
+  <small>Documentation & Specification, v1.0.0</small>
+  <div class="nav-quick">
+    <a href="/">← Landing</a>
+    <a href="/preview/">Specimen Studio</a>
+    <a href="https://github.com/ratulhub/font-intelligence" target="_blank" rel="noopener">GitHub</a>
+  </div>
+  <nav id="nav"></nav>
+</aside>
+<main>
+<div class="hero">
+<h1>Scored pairings.<br>Verified weights.<br><b>Zero tofu.</b></h1>
+<p>Font Intelligence is a typography decision system for AI coding agents, UI/UX designers, and developers. It replaces default choices like Inter, Roboto, and Arial with scored, anti-pattern-checked pairings and copy-pasteable tokens.</p>
+<div class="btns">
+  <a href="#quick-start">Get started</a>
+  <a href="/">View Interactive Home</a>
+  <a href="/preview/">Open Specimen Studio</a>
+  <a href="https://github.com/ratulhub/font-intelligence" target="_blank" rel="noopener">GitHub Repo</a>
+</div>
+</div>
+
+<section id="overview" data-g="Start"><h2>Overview</h2>
+<p>The catalog holds 413 verified families and 1,083 font binaries from 386 source packages. Every recommendation is checked against real weights, real script coverage, and real license terms, then explained in typographic terms.</p>
+<div class="tw"><table id="t-prob"></table></div>
+<h3>Features</h3>
+<div class="tw"><table id="t-feat"></table></div></section>
+
+<section id="quick-start" data-g="Start"><h2>Quick start</h2>
+<p>Requires Python 3.10, 3.11, or 3.12. <code>fonttools</code> is optional and only needed for binary inspection.</p>
+<pre>git clone https://github.com/ratulhub/font-intelligence.git
+cd font-intelligence
+pip install fonttools          # optional
+./install.sh all               # Linux / macOS
+.\install.ps1 -Target all      # Windows (PowerShell)</pre>
+<h3>Open the preview studio</h3>
+<p>The studio needs no dependencies. It filters all 413 families by category, style, role, script, and readability, and includes a live type tester for Latin, numbers, UI controls, and non-Latin scripts.</p>
+<pre>python -m http.server 8080
+# open http://localhost:8080/preview/index.html</pre></section>
+
+<section id="ai-agents" data-g="Start"><h2>Use it with an AI agent</h2>
+<p>All 8 supported platforms read one canonical skill at <code>.agents/skills/font-intelligence/SKILL.md</code>. Each adapter file only points to it. After installing, ask your agent for UI or typography work and it should apply the skill on its own. To be explicit, use a prompt like this:</p>
+<pre>Use the Font Intelligence skill. Before choosing any font, read
+.agents/skills/font-intelligence/SKILL.md, diagnose the use case,
+audit script coverage, and score the pairing. Do not default to
+Inter, Roboto, or Arial. Give me the rationale and code tokens.</pre>
+<h3>When the skill activates</h3>
+<ul><li>Designing or coding UI/UX, landing pages, SaaS dashboards, or mobile apps</li><li>Selecting, pairing, or styling fonts in CSS, Tailwind, Flutter, React Native, or slide decks</li><li>Branding, editorial design, or typography hierarchy decisions</li><li>Evaluating legibility, performance budgets, or commercial and redistribution licenses</li></ul>
+<h3>Adapters</h3>
+<div class="tw"><table id="t-agents"></table></div>
+<p>Use <code>lite/font-intelligence-lite.md</code> as a compact fallback when context is tight. If Python is unavailable, the agent can read the catalog JSON directly (see <a href="#catalog">Catalog</a>). This site also ships an <a href="/llms.txt">llms.txt</a> summary for AI crawlers.</p></section>
+
+<section id="cli" data-g="Reference"><h2>CLI reference</h2>
+<p>Run every command from the repository root.</p>
+<div class="tw"><table id="t-cli"></table></div>
+<h3>Other scripts</h3>
+<div class="tw"><table id="t-scripts"></table></div></section>
+
+<section id="how" data-g="Reference"><h2>How it works</h2>
+<p>Every brief passes through the same eleven steps.</p>
+<ol>
+<li>Diagnose the project against <code>catalog/use-cases.json</code> (29 use cases).</li>
+<li>Translate vibe words with <code>style_interpretations</code>.</li>
+<li>If the user named a font, anchor on it and pair around it.</li>
+<li>Filter candidates by the hard rules.</li>
+<li>Audit script coverage. Unverified scripts are refused.</li>
+<li>Score the pair on 10 dimensions from <code>catalog/scoring.json</code>.</li>
+<li>Audit 10 anti-patterns from <code>catalog/anti-patterns.json</code>.</li>
+<li>Select only weights listed in <code>technical.weights</code>.</li>
+<li>Output the rationale and code tokens.</li>
+<li>Export fonts and copy licenses (<code>scripts/copy_fonts.py --prune-unused</code>).</li>
+<li>Zero-bloat project delivery: Clean unneeded fonts and remove skill folder (<code>scripts/clean_project.py</code>).</li>
+</ol>
+<h3>Vibe decoder</h3>
+<div class="tw"><table id="t-vibe"></table></div></section>
+
+<section id="scoring" data-g="Reference"><h2>Scoring engine</h2>
+<p>Each pair is scored across ten weighted dimensions. Weights sum to 100%.</p>
+<div id="bars"></div></section>
+
+<section id="anti" data-g="Reference"><h2>Anti-patterns</h2>
+<p>Each violation subtracts points from a pair's score, from 15 up to 45.</p>
+<div class="tw"><table id="t-anti"></table></div></section>
+
+<section id="rules" data-g="Reference"><h2>Hard rules</h2>
+<ol>
+<li><b>Never invent</b> catalog fonts, weights, or language support.</li>
+<li><b>Never equate</b> commercial use with GitHub redistribution. Verify the license grant first.</li>
+<li><b>Respect explicit user fonts.</b> Adopt them and pair around them.</li>
+<li><b>Do not replace</b> existing typography systems unprompted.</li>
+<li><b>No decorative fonts</b> in <code>body</code> or <code>ui</code> roles.</li>
+<li><b>Maximum 2 primary families:</b> one heading and one body/UI, plus mono when code or data is present.</li>
+<li><b>Readability 7/10 or higher</b> for body and UI.</li>
+<li><b>Respect platform limits:</b> WOFF2 under 100 KB for web, <code>.ttf</code> outlines for Microsoft Office.</li>
+<li><b>Always generate</b> calibrated system fallbacks.</li>
+<li><b>Zero-bloat project delivery:</b> only used font files stay in user project repositories upon completion.</li>
+</ol></section>
+
+<section id="scripts" data-g="Reference"><h2>Script support</h2>
+<p>The zero-tofu policy checks OpenType tables before anything is recommended. Strict character-set thresholds apply to Bengali, Arabic, Cyrillic, Greek, Hangul, Hebrew, and CJK.</p>
+<p>When no catalog font supports a script, Font Intelligence reports 0 catalog fonts and names verified open-source companions. These companions are also injected into CSS custom properties and the Flutter and React Native fallback stacks.</p>
+<div class="note">Bangla and Arabic map to <code>Hind Siliguri</code>, <code>Noto Sans Bengali</code>, and <code>Amiri</code>.</div></section>
+
+<section id="tokens" data-g="Reference"><h2>Code tokens</h2>
+<p>Output is ready to paste into your project:</p>
+<ul><li>CSS custom properties</li><li>Flutter <code>pubspec.yaml</code> entries</li><li>React Native <code>StyleSheet</code> values</li><li>Microsoft Office TrueType embedding instructions</li></ul>
+<pre>python scripts/copy_fonts.py --fonts "chillax,general-sans" --dest "dist/fonts" --snippets all --prune-unused</pre>
+<p>The export tool bundles licenses and warns loudly when a font is <code>UNKNOWN</code>, <code>RESTRICTED</code>, or <code>PROOF_NEEDED</code>. Existing design-system fonts are never overwritten. Pass them with <code>--existing-fonts</code>.</p>
+<h3>Reference guides</h3>
+<div class="tw"><table id="t-ref"></table></div></section>
+
+<section id="catalog" data-g="Data and licensing"><h2>Catalog</h2>
+<p>Without Python, read the JSON directly.</p>
+<div class="tw"><table id="t-cat"></table></div>
+<p>The curated baseline is 103 families with 12 hand-written pairings. The other 310 families came from bulk ingestion (<code>scripts/ingest_new_fonts.py</code>), which recorded 1,035 unique SHA-256 hashes and 17 duplicate binary groups without touching source packages.</p></section>
+
+<section id="licensing" data-g="Data and licensing"><h2>Licensing</h2>
+<p>Each font keeps its original license. Free for commercial use does not mean redistributable.</p>
+<div class="tw"><table id="t-lic"></table></div>
+<h3>Distribution status</h3>
+<p>Public release is gated. Only verified permissive families ship in <code>assets/fonts/</code>. The rest stay in the catalog without being redistributed. <code>scripts/validate_public_release.py</code> blocks unauthorized redistribution in CI.</p>
+<div class="tw"><table id="t-dist"></table></div>
+<p>The engine, scripts, decision models, and agent skill files are MIT licensed. Font binaries in <code>All fonts/</code> keep their foundry licenses.</p></section>
+
+<section id="contribute" data-g="Project"><h2>Validate and contribute</h2>
+<p>Run these before every push. CI runs the same checks on Python 3.10 to 3.12. There are 81 tests: 58 domain tests and 23 CLI and engine tests.</p>
+<pre>python scripts/validate_catalog.py
+python scripts/validate_licenses.py --filter issues-only
+python -m unittest discover -s tests -p "test_*.py"
+python -m unittest discover -s scripts -p "test_*.py"
+python scripts/run_evaluation_matrix.py</pre>
+<p>The evaluation matrix runs 16 real project briefs and 8 failure cases (24/24 pass). To add fonts, use cases, or pairings, read <a href="https://github.com/ratulhub/font-intelligence/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p></section>
+
+<section id="changelog" data-g="Project"><h2>Changelog</h2>
+<h3>1.0.0 (2026-09-29)</h3>
+<p>Production V1 release. The catalog grew from 103 to 413 families, public assets were separated behind a licensing gate, zero-tofu checks were added for complex scripts, and the preview studio was redesigned with 81 automated tests. Zero-bloat cleanup protocol added in Step 11.</p>
+<p>Full history: <a href="https://github.com/ratulhub/font-intelligence/blob/main/CHANGELOG.md">CHANGELOG.md</a>.</p></section>
+
+<section id="faq" data-g="Project"><h2>FAQ</h2>
+<details><summary>Why does a Bangla search return 0 catalog fonts?</summary><p>No catalog font passes the strict OpenType coverage check for Bengali, so none is recommended. You get verified companions instead: Hind Siliguri and Noto Sans Bengali.</p></details>
+<details><summary>Can I redistribute a font that is free for commercial use?</summary><p>Not automatically. Commercial permission and GitHub redistribution are separate grants. Check the license in the catalog and <code>docs/redistribution-review.md</code>.</p></details>
+<details><summary>Will it override the fonts I already use?</summary><p>No. Pass them with <code>--existing-fonts</code> and Font Intelligence works around them. A font you name explicitly is anchored with <code>--anchor</code>.</p></details>
+<details><summary>Why can't it suggest weight 500 for my font?</summary><p>It only emits weights listed in <code>technical.weights</code>. Requesting a weight a family does not ship causes faux bold or fallback rendering.</p></details>
+<details><summary>Does it work without Python?</summary><p>Yes. An agent can read <code>catalog/fonts.json</code>, <code>use-cases.json</code>, <code>pairings.json</code>, <code>scoring.json</code>, and <code>anti-patterns.json</code> directly.</p></details>
+<details><summary>How does Zero-Bloat project delivery prevent repo bloat?</summary><p>Running <code>python scripts/clean_project.py --project-dir &lt;path&gt;</code> parses your project's CSS and code to detect which font files are actually loaded, prunes unreferenced fonts, and cleans the temporary skill folder so only chosen font binaries remain.</p></details>
+</section>
+</main>
+<script>
+const R="https://github.com/ratulhub/font-intelligence/blob/main/";
+const c=s=>s.replace(/`([^`]+)`/g,"<code>$1</code>").replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2">$1</a>');
+function tbl(id,h,r){const el=document.getElementById(id);if(!el)return;el.innerHTML="<thead><tr>"+h.map(x=>"<th>"+x+"</th>").join("")+"</tr></thead><tbody>"+r.map(a=>"<tr>"+a.map(x=>"<td>"+c(x)+"</td>").join("")+"</tr>").join("")+"</tbody>"}
+tbl("t-prob",["Agents usually","Font Intelligence"],[
+["Default to `Inter`, `Roboto`, `Arial`","Diagnoses the project across 29 use cases and decodes vibe prompts like \"expensive\" or \"not AI-looking\""],
+["Request weights a font does not ship","Emits only weights in `technical.weights`"],
+["Guess script coverage and ship tofu","Audits OpenType tables and names verified companions"],
+["Set body text in display faces","Applies 10 anti-pattern penalties"],
+["Treat free commercial use as redistributable","Tracks license and redistribution status per font"],
+["Leave heavy skill folders in user repos","Runs zero-bloat cleanup with `clean_project.py`"]]);
+tbl("t-feat",["Capability","Detail"],[
+["10-dimension scoring","Weighted pair evaluation from contrast to platform suitability"],
+["Script audit","Zero-tofu policy with verified companions"],
+["Public asset separation","Permissive fonts in `assets/fonts/`; the rest stay `catalog-only`"],
+["Code tokens","CSS, Flutter, React Native, Microsoft Office"],
+["Zero-bloat cleanup","Keeps only used font binaries, deletes temporary skill folder"],
+["Interactive studio","Filter and test all 413 families offline"]]);
+tbl("t-agents",["Platform","Adapter files"],[
+["Antigravity","`.agents/skills/font-intelligence/`, `.agents/rules/font-intelligence.md`"],
+["Claude Code","`CLAUDE.md`"],["Codex","`AGENTS.md`, `.codex/instructions.md`"],
+["Cursor","`.cursorrules`, `.cursor/rules/font-intelligence.mdc`"],["Windsurf","`.windsurfrules`"],
+["Cline","`.clinerules`"],["GitHub Copilot","`.github/copilot-instructions.md`"],["Gemini CLI","`GEMINI.md`"]]);
+tbl("t-cli",["Task","Command"],[
+["Recommend pairings","`python scripts/recommend.py --use-case fintech --style \"expensive, not AI-looking\" --platform web`"],
+["Anchor on a chosen font","`python scripts/recommend.py --use-case saas --anchor \"Chillax\"`"],
+["Keep existing fonts","`python scripts/recommend.py --use-case ecommerce --existing-fonts \"Inter, Roboto\"`"],
+["Search the catalog","`python scripts/search_fonts.py --mood \"clean\" --role body --min-readability 8 --script Latin`"],
+["Score a pair","`python scripts/score_pair.py --primary chillax --secondary general-sans --style luxury`"],
+["Export fonts & prune unused","`python scripts/copy_fonts.py --fonts \"chillax,general-sans\" --dest \"dist/fonts\" --prune-unused --snippets all`"],
+["Clean user project","`python scripts/clean_project.py --project-dir path/to/project --keep-fonts \"chillax,general-sans\"`"],
+["Validate catalog","`python scripts/validate_catalog.py`"],
+["Audit licenses","`python scripts/validate_licenses.py --filter issues-only`"]]);
+tbl("t-scripts",["Script","Purpose"],[
+["`scan_fonts.py`","OpenType parser that extracts metadata and Unicode blocks"],
+["`build_catalog.py`","Deterministic catalog compiler that keeps curated editorial fields"],
+["`ingest_new_fonts.py`","Bulk ingestion of new font packages"],
+["`verify_font_license.py`","Inspects EULA, license text, and OpenType metadata"],
+["`clean_project.py`","Post-project zero-bloat cleanup utility"],
+["`build_release_manifest.py`","Syncs public assets and writes `docs/public-assets-manifest.md`"],
+["`validate_public_release.py`","CI gate that blocks unauthorized redistribution"]]);
+tbl("t-vibe",["Prompt","Typographic translation"],[
+["Expensive / Luxury","High-contrast Didone serif or sculpted display sans, light-to-medium headlines, wide caps tracking (`+0.05em`), neutral sans body"],
+["Clean / Minimalist","Unadorned neo-grotesque, open apertures, monoline strokes, line-height `1.6+`"],
+["Not AI-looking","Character-rich display (`Ithaca`, `Chillax`, `Credit Valley`, `Reckoner`) with a 200 to 300 weight delta"],
+["Technical / Developer","High x-height sans, tabular figures (`tnum`), unambiguous mono (`Ubuntu Mono`)"]]);
+const dims=[["Visual Contrast",15,"Weight delta of 200 or more; serif and sans classification contrast"],["Serif / Sans Dynamic",12,"Harmony of structure and optical cadence"],["Personality Resonance",12,"Cultural, historical, and emotional alignment"],["Readability",15,"x-height, aperture openness, reading endurance of 7/10 or more"],["Proportional Width",8,"Optical balance between headline and body widths"],["Weight Availability",10,"Family depth, variable axes, confirmed true italics"],["Role Compatibility",10,"Fit for the assigned role (display is not body)"],["Project Style Fit",8,"Alignment with use-case design goals"],["Language Parity",5,"Full glyph coverage for all target scripts"],["Platform Suitability",5,"Web payload under 100 KB, Flutter rendering, PowerPoint TrueType outlines"]];
+const bEl=document.getElementById("bars");if(bEl){bEl.innerHTML=dims.map(d=>`<div class="bar"><div><span style="color:inherit;font-size:inherit">${d[0]}</span><span style="color:inherit;font-size:inherit">${d[1]}%</span></div><i style="width:${d[1]/15*100}%"></i><span>${d[2]}</span></div>`).join("");}
+tbl("t-anti",["Anti-pattern","Penalty","Rule"],[
+["Decorative as Body","-45","No display or handwriting faces for paragraphs"],
+["Script Mismatch / Tofu","-45","Unverified scripts are refused"],
+["Competing Display Fonts","-30","One vocal lead per hierarchy"],
+["Weak Contrast / Flat Hierarchy","-25","Weight delta of 200 or more"],
+["Excessive Font Families","-25","Max 2 primary families, plus mono for code"],
+["Personality Polar Clash","-25","No conflicting tones, such as luxury serif with graffiti"],
+["Low x-Height in UI Microcopy","-20","Open apertures for 11 to 13 px UI text"],
+["Hairline Screen Fatigue","-20","No 100 or 200 weights for continuous body text"],
+["Monospace Longform Fatigue","-15","Mono for code and tabular data only"],
+["Uncanny Sans Mismatch","-15","No two near-identical neo-grotesques"]]);
+const g=(n)=>`[${n}](${R}references/${n}.md)`;
+tbl("t-ref",["Area","Guides"],[
+["Typography",[g("typography-rules"),g("pairing-rules"),g("accessibility")].join(", ")],
+["Web",[g("web"),g("react"),g("nextjs"),g("tailwind")].join(", ")],
+["Mobile",[g("flutter"),g("react-native"),g("android"),g("ios")].join(", ")],
+["Documents and slides",[g("presentations"),g("documents"),g("branding")].join(", ")]]);
+tbl("t-cat",["File","Contents"],[
+["`catalog/fonts.json`","413 families with roles, readability (1 to 10), weights, styles, variable axes, and Unicode blocks"],
+["`catalog/use-cases.json`","29 project situations across web, mobile, and documents, with performance budgets and style mappings"],
+["`catalog/pairings.json`","Curated pairings with typographic rationales"],
+["`catalog/anti-patterns.json`","10 anti-patterns with point deductions"],
+["`catalog/scoring.json`","The 10-dimension scoring model"]]);
+tbl("t-lic",["Tier","Families","Terms"],[
+["Open Source","108","OFL 1.1, Apache 2.0, MIT, Ubuntu Font License, CC0"],
+["Free for Commercial Use","390","Explicitly approved for commercial projects"],
+["Redistributable Public Assets","112","Verified packages in `assets/fonts/`, safe for repository redistribution"],
+["Personal Use Only","23","Preserved for local design evaluation"]]);
+tbl("t-dist",["Status","Families"],[["Public assets","112"],["Catalog-only","69"],["Restricted","2"],["Unknown","235"]]);
+const nav=document.getElementById("nav");let last="";
+document.querySelectorAll("main section").forEach(s=>{if(s.dataset.g!==last){last=s.dataset.g;const h=document.createElement("h4");h.textContent=last;nav.appendChild(h)}const a=document.createElement("a");a.href="#"+s.id;a.className="doc-link";a.textContent=s.querySelector("h2").textContent;nav.appendChild(a)});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){nav.querySelectorAll("a.doc-link").forEach(a=>a.classList.toggle("on",a.hash==="#"+e.target.id))}}),{rootMargin:"-20% 0px -70% 0px"});
+document.querySelectorAll("main section").forEach(s=>io.observe(s));
+document.querySelectorAll("pre").forEach(p=>{const b=document.createElement("button");b.textContent="Copy";b.type="button";b.onclick=()=>{navigator.clipboard.writeText(p.firstChild.textContent).then(()=>{b.textContent="Copied";setTimeout(()=>b.textContent="Copy",1500)})};p.appendChild(b)});
+</script>
+</body>
+</html>
