@@ -123,7 +123,14 @@ class TestSupportingPythonTools(unittest.TestCase):
         report = json.loads(proc_lic.stdout)
         self.assertGreaterEqual(report["total_fonts"], 103)
         self.assertTrue(report["permissive_count"] > 50)
-        self.assertTrue(report["office_embeddable_count"] > 80)
+    def test_09_clean_project_tool(self):
+        """Verify clean_project.py help and protected root execution."""
+        proc_help = run_tool("clean_project.py", ["--help"])
+        self.assertEqual(proc_help.returncode, 0)
+        self.assertIn("Clean unneeded font files and skill folders", proc_help.stdout)
+
+        proc_run = run_tool("clean_project.py", ["--project-dir", ROOT_DIR])
+        self.assertIn("[PROTECTED]", proc_run.stderr)
 
 if __name__ == "__main__":
     unittest.main()

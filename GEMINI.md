@@ -17,6 +17,8 @@ Activate Font Intelligence when:
 - **Recommend**: `python scripts/recommend.py --use-case <id> --style "<vibe>" --platform <web|flutter|powerpoint>`
 - **Search**: `python scripts/search_fonts.py --mood "<vibe>" --role <body> --min-readability 8`
 - **Score Pair**: `python scripts/score_pair.py --primary <id> --secondary <id> --style <vibe>`
+- **Export & Prune**: `python scripts/copy_fonts.py --fonts "<id1,id2>" --dest "<path>" --prune-unused`
+- **Clean User Project**: `python scripts/clean_project.py --project-dir <path>`
 - **Offline / No Tool Access**: Read `catalog/fonts.json`, `catalog/use-cases.json`, and `catalog/pairings.json`.
 - **Compact Fallback**: Use [`lite/font-intelligence-lite.md`](lite/font-intelligence-lite.md) for quick lookups.
 
@@ -25,4 +27,5 @@ Activate Font Intelligence when:
 2. Never use decorative fonts for body text.
 3. Respect explicit user font preferences.
 4. Keep to maximum 2 primary families (plus monospace only when needed).
-5. All full requirements: see [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md).
+5. Zero-bloat delivery: leave only used font files in user projects; prune unused fonts and remove temporary skill folders upon completion.
+6. All full requirements: see [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md).

@@ -17,3 +17,4 @@ Invoke the canonical skill instructions:
 - Never invent fonts, weights, or script coverage.
 - Strictly enforce `body` readability $\ge 7/10$.
 - Respect user-specified fonts as primary anchors.
+- Zero-bloat delivery: leave only used fonts in project; remove temporary skill folders upon completion.

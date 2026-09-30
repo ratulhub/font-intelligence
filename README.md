@@ -80,6 +80,8 @@ python -m http.server 8080
 | Search the catalog | `python scripts/search_fonts.py --mood "clean" --role body --min-readability 8 --script Latin` |
 | Score a pair | `python scripts/score_pair.py --primary chillax --secondary general-sans --style luxury` |
 | Export fonts and snippets | `python scripts/copy_fonts.py --fonts "chillax,general-sans" --dest "dist/fonts" --snippets all` |
+| Export & prune unselected | `python scripts/copy_fonts.py --fonts "chillax,general-sans" --dest "dist/fonts" --prune-unused` |
+| Clean project (zero bloat) | `python scripts/clean_project.py --project-dir path/to/project --keep-fonts "chillax,general-sans"` |
 | Validate catalog | `python scripts/validate_catalog.py` |
 | Audit licenses | `python scripts/validate_licenses.py --filter issues-only` |
 
@@ -155,6 +157,7 @@ Brief
 7. **Readability ≥ 7/10** for body and UI.
 8. **Respect platform limits**: WOFF2 < 100 KB for web; `.ttf` outlines for Microsoft Office.
 9. **Always generate** calibrated system fallbacks.
+10. **Zero-bloat delivery**: Leave only used font files in user projects; prune unneeded fonts and remove temporary skill folders upon completion.
 
 ---
 

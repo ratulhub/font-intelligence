@@ -82,6 +82,12 @@ Deliver clean, copy-pasteable configuration with robust fallbacks:
 - **React Native**: Platform-specific `StyleSheet` definitions.
 - **Office / PowerPoint**: `.ttf` file paths and PowerPoint embedding instructions.
 
+### Step 11: Zero-Bloat Project Delivery (Post-Project Cleanup)
+When font integration or project creation is complete:
+- Export ONLY the chosen font files into the project assets directory: `python scripts/copy_fonts.py --fonts "<id1,id2>" --dest "<project>/fonts" --prune-unused`.
+- Clean up unneeded files and remove temporary skill folders from the user's project: `python scripts/clean_project.py --project-dir <path>`.
+- Ensure ONLY the actually used font files and their CSS/Flutter tokens remain in the user's final project repository.
+
 ---
 
 ## 2. Hard Rules
@@ -97,6 +103,7 @@ Deliver clean, copy-pasteable configuration with robust fallbacks:
 9. **Prioritize readability for body and UI**: Body/UI fonts must have verified readability scores $\ge 7/10$, open apertures, and adequate x-height.
 10. **Respect platform and performance**: Enforce Core Web Vitals budgets (< 100 KB payload, WOFF2/variable fonts). For PowerPoint/Word, enforce TrueType (`.ttf`) outlines to prevent Microsoft Office substitution bugs.
 11. **Always generate robust fallbacks**: Pair custom fonts with calibrated system fallback stacks (e.g. `system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif`).
+12. **Zero-bloat project delivery**: Never leave unneeded font files, extra weights, or temporary skill folders inside the user's final project repository upon completion. Only the used font binaries must remain.
 
 ---
 

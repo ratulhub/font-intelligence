@@ -47,6 +47,7 @@ Activate Font Intelligence whenever a user request involves:
 4. **Strict Script Audit**: Verify OpenType script support. If unsupported (e.g. Bangla, Arabic), report 0 catalog fonts and provide verified open-source companion recommendations (`Hind Siliguri`, `Noto Sans Bengali`, `Amiri`).
 5. **Score & Check Anti-Patterns**: Evaluate across 10 dimensions (`catalog/scoring.json`) and audit against the 10 typography anti-patterns (`catalog/anti-patterns.json`).
 6. **Provide Code Tokens**: Output calibrated CSS custom properties, Flutter `pubspec.yaml`, or PowerPoint TrueType embedding instructions.
+7. **Zero-Bloat Delivery**: Export only chosen fonts (`python scripts/copy_fonts.py --fonts "..." --dest "<project>/fonts" --prune-unused`) and clean project workspace (`python scripts/clean_project.py --project-dir <path>`) so only used font files stay in the user's project.
 
 ---
 
@@ -67,7 +68,10 @@ python scripts/score_pair.py --primary chillax --secondary general-sans --style 
 # 4. Export Fonts & Copy Licenses
 python scripts/copy_fonts.py --fonts "chillax,general-sans" --dest "dist/fonts" --snippets all
 
-# 5. Audit Licensing & Redistribution Terms
+# 5. Clean User Project (Keep Only Used Fonts, Prune Skill Folder)
+python scripts/clean_project.py --project-dir path/to/project --keep-fonts "chillax,general-sans"
+
+# 6. Audit Licensing & Redistribution Terms
 python scripts/validate_licenses.py --filter office-embeddable
 ```
 
@@ -97,5 +101,6 @@ If Python execution is unavailable, inspect catalog JSON files directly:
 9. Enforce readability scores $\ge 7/10$ for body and UI.
 10. Consider platform and performance (Core Web Vitals < 100 KB; TrueType `.ttf` outlines for PowerPoint/Word).
 11. Always generate robust generic fallbacks.
+12. Zero-bloat project delivery: Never leave unused font files, unneeded weights, or temporary skill folders inside the user's project repository upon completion. Only the used font binaries must remain.
 
 For the complete specification, read [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md).

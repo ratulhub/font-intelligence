@@ -24,4 +24,5 @@ Activate Font Intelligence when:
 2. Never use decorative fonts for body text.
 3. Respect explicit user font preferences.
 4. Keep to maximum 2 primary families (plus monospace only when needed).
-5. All full requirements: see [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md).
+5. Zero-bloat delivery: leave only used font files in user projects; prune unneeded fonts and remove temporary skill folders upon completion.
+6. All full requirements: see [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md).

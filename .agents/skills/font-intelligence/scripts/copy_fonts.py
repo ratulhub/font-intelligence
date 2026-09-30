@@ -213,6 +213,8 @@ def main():
     parser.add_argument("--snippets", choices=["css", "flutter", "all", "none"], default="css", help="Implementation snippets to generate (default: css)")
     parser.add_argument("--dry-run", action="store_true", help="Preview operations without copying files")
     parser.add_argument("--force-export", action="store_true", help="Force export of restricted or unknown fonts for private testing")
+    parser.add_argument("--prune-unused", action="store_true", help="Remove unselected fonts from destination directory")
+    parser.add_argument("--clean-skill", action="store_true", help="Remove local skill directory from target project after export")
     parser.add_argument("--catalog", default=CATALOG_PATH, help="Path to fonts.json")
 
     args = parser.parse_args()
@@ -234,6 +236,33 @@ def main():
         dry_run=args.dry_run,
         force_export=args.force_export
     )
+
+    if args.prune_unused and not args.dry_run and os.path.exists(args.dest):
+        copied_filenames = {c["filename"].lower() for c in copied}
+        for item in os.listdir(args.dest):
+            item_path = os.path.join(args.dest, item)
+            ext = os.path.splitext(item)[1].lower()
+            if ext in [".woff2", ".woff", ".ttf", ".otf", ".eot"] and item.lower() not in copied_filenames:
+                try:
+                    os.remove(item_path)
+                    print(f"  [PRUNED UNUSED] {item}")
+                except Exception as e:
+                    print(f"  Warning pruning {item}: {e}", file=sys.stderr)
+
+    if args.clean_skill and not args.dry_run:
+        cur = os.path.abspath(args.dest)
+        canonical_skill = os.path.abspath(os.path.join(ROOT_DIR, ".agents", "skills", "font-intelligence"))
+        for _ in range(5):
+            skill_target = os.path.join(cur, ".agents", "skills", "font-intelligence")
+            if os.path.exists(skill_target) and os.path.isdir(skill_target):
+                if os.path.abspath(skill_target) != canonical_skill:
+                    shutil.rmtree(skill_target, ignore_errors=True)
+                    print(f"  [CLEANED SKILL] Removed {skill_target}")
+                    break
+            parent = os.path.dirname(cur)
+            if parent == cur:
+                break
+            cur = parent
 
     print("=" * 80)
     print("FONT ASSET EXPORT REPORT")

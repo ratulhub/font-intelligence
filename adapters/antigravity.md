@@ -1,19 +1,20 @@
-# Antigravity Adapter — Font Intelligence
+# Antigravity Workspace Rule: Font Intelligence
 
-This project uses the **Font Intelligence Typography Decision System**.
+Activate the **Font Intelligence Typography Decision System** whenever a user task touches font selection, typography hierarchy, UI styling, CSS font stacks, or visual design tokens.
 
-## Canonical Source of Truth
-Read and follow:
+## Canonical Skill
+Invoke the canonical skill instructions:
 👉 [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md)
 
-## Activation
-Activate when:
-- Designing or coding front-end UI, styling components, or configuring design systems.
-- Recommending, pairing, or configuring typefaces in CSS, Tailwind, Flutter, React Native, or slides.
-- Establishing typographic scale, line-height, letter-spacing, or numerical figure alignment.
-- Auditing font legibility, script coverage, or redistribution licensing.
+## Rapid Execution
+- Run `python scripts/recommend.py --use-case <id> --style "<vibe>" --platform <plat>` for data-backed recommendations.
+- Score pairings with `python scripts/score_pair.py --primary <id> --secondary <id> --style <vibe>`.
+- If offline, parse `catalog/use-cases.json` and `catalog/fonts.json` directly.
+- For quick reference, check [`lite/font-intelligence-lite.md`](lite/font-intelligence-lite.md).
 
-## Execution
-- Recommend pairings: `python scripts/recommend.py --use-case <id> --style "<vibe>" --platform <web|flutter|powerpoint>`
-- Search fonts: `python scripts/search_fonts.py --mood "<vibe>" --role <body> --min-readability 8`
-- Score pair: `python scripts/score_pair.py --primary <id> --secondary <id> --style <vibe>`
+## Hard Constraints
+- Never default to generic popular fonts (Inter, Roboto, Arial) without explicit project justification.
+- Never invent fonts, weights, or script coverage.
+- Strictly enforce `body` readability $\ge 7/10$.
+- Respect user-specified fonts as primary anchors.
+- Zero-bloat delivery: leave only used fonts in project; remove temporary skill folders upon completion.

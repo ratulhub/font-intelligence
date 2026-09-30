@@ -126,7 +126,8 @@ code, pre, .tabular-stat {
 6. **Maximum 2 primary families**: 1 heading + 1 body, plus monospace only for telemetry/code.
 7. **Readability first**: Body/UI fonts must score $\ge 7/10$ with open apertures.
 8. **Platform performance**: Web payloads < 100 KB (WOFF2); TrueType (`.ttf`) outlines for PowerPoint/Word.
+9. **Zero-bloat delivery**: Leave only used font files in user projects; prune unneeded fonts and remove temporary skill folders upon completion.
 
 ---
 
-> For dynamic scoring, licensing verification, and the complete 103-font catalog, see the canonical [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md).
+> For dynamic scoring, licensing verification, and the complete 413-font catalog, see the canonical [`.agents/skills/font-intelligence/SKILL.md`](.agents/skills/font-intelligence/SKILL.md).
